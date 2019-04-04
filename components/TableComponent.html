@@ -1,0 +1,4255 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ceph-dashboard documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ceph-dashboard documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>TableComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/shared/datatable/table/table.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/AfterContentChecked" target="_blank" >AfterContentChecked</a></code>
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnChanges" target="_blank" >OnChanges</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>cd-table</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./table.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./table.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#cellTemplates">cellTemplates</a>
+                            </li>
+                            <li>
+                                <a href="#checkIconTpl">checkIconTpl</a>
+                            </li>
+                            <li>
+                                <a href="#classAddingTpl">classAddingTpl</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#currentWidth">currentWidth</a>
+                            </li>
+                            <li>
+                                <a href="#executingTpl">executingTpl</a>
+                            </li>
+                            <li>
+                                <a href="#loadingError">loadingError</a>
+                            </li>
+                            <li>
+                                <a href="#loadingIndicator">loadingIndicator</a>
+                            </li>
+                            <li>
+                                <a href="#localStorage">localStorage</a>
+                            </li>
+                            <li>
+                                <a href="#paginationClasses">paginationClasses</a>
+                            </li>
+                            <li>
+                                <a href="#perSecondTpl">perSecondTpl</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#reloadSubscriber">reloadSubscriber</a>
+                            </li>
+                            <li>
+                                <a href="#routerLinkTpl">routerLinkTpl</a>
+                            </li>
+                            <li>
+                                <a href="#rows">rows</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#saveSubscriber">saveSubscriber</a>
+                            </li>
+                            <li>
+                                <a href="#search">search</a>
+                            </li>
+                            <li>
+                                <a href="#selection">selection</a>
+                            </li>
+                            <li>
+                                <a href="#sparklineTpl">sparklineTpl</a>
+                            </li>
+                            <li>
+                                <a href="#table">table</a>
+                            </li>
+                            <li>
+                                <a href="#tableCellBoldTpl">tableCellBoldTpl</a>
+                            </li>
+                            <li>
+                                <a href="#tableColumns">tableColumns</a>
+                            </li>
+                            <li>
+                                <a href="#tableName">tableName</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#updating">updating</a>
+                            </li>
+                            <li>
+                                <a href="#userConfig">userConfig</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#_addTemplates">_addTemplates</a>
+                            </li>
+                            <li>
+                                <a href="#_calculateUniqueTableName">_calculateUniqueTableName</a>
+                            </li>
+                            <li>
+                                <a href="#_initUserConfigAutoSave">_initUserConfigAutoSave</a>
+                            </li>
+                            <li>
+                                <a href="#_initUserConfigProxy">_initUserConfigProxy</a>
+                            </li>
+                            <li>
+                                <a href="#_loadUserConfig">_loadUserConfig</a>
+                            </li>
+                            <li>
+                                <a href="#_saveUserConfig">_saveUserConfig</a>
+                            </li>
+                            <li>
+                                <a href="#basicDataSearch">basicDataSearch</a>
+                            </li>
+                            <li>
+                                <a href="#changeSorting">changeSorting</a>
+                            </li>
+                            <li>
+                                <a href="#createSortingDefinition">createSortingDefinition</a>
+                            </li>
+                            <li>
+                                <a href="#filterHiddenColumns">filterHiddenColumns</a>
+                            </li>
+                            <li>
+                                <a href="#getRowClass">getRowClass</a>
+                            </li>
+                            <li>
+                                <a href="#initUserConfig">initUserConfig</a>
+                            </li>
+                            <li>
+                                <a href="#ngAfterContentChecked">ngAfterContentChecked</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnChanges">ngOnChanges</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy">ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onSelect">onSelect</a>
+                            </li>
+                            <li>
+                                <a href="#refreshBtn">refreshBtn</a>
+                            </li>
+                            <li>
+                                <a href="#reloadData">reloadData</a>
+                            </li>
+                            <li>
+                                <a href="#reset">reset</a>
+                            </li>
+                            <li>
+                                <a href="#rowIdentity">rowIdentity</a>
+                            </li>
+                            <li>
+                                <a href="#setLimit">setLimit</a>
+                            </li>
+                            <li>
+                                <a href="#subSearch">subSearch</a>
+                            </li>
+                            <li>
+                                <a href="#toggleColumn">toggleColumn</a>
+                            </li>
+                            <li>
+                                <a href="#updateColumns">updateColumns</a>
+                            </li>
+                            <li>
+                                <a href="#updateFilter">updateFilter</a>
+                            </li>
+                            <li>
+                                <a href="#updateSelected">updateSelected</a>
+                            </li>
+                            <li>
+                                <a href="#updateUserColumns">updateUserColumns</a>
+                            </li>
+                            <li>
+                                <a href="#useCustomClass">useCustomClass</a>
+                            </li>
+                            <li>
+                                <a href="#useData">useData</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#autoReload">autoReload</a>
+                            </li>
+                            <li>
+                                <a href="#autoSave">autoSave</a>
+                            </li>
+                            <li>
+                                <a href="#columnMode">columnMode</a>
+                            </li>
+                            <li>
+                                <a href="#columns">columns</a>
+                            </li>
+                            <li>
+                                <a href="#customCss">customCss</a>
+                            </li>
+                            <li>
+                                <a href="#data">data</a>
+                            </li>
+                            <li>
+                                <a href="#footer">footer</a>
+                            </li>
+                            <li>
+                                <a href="#forceIdentifier">forceIdentifier</a>
+                            </li>
+                            <li>
+                                <a href="#header">header</a>
+                            </li>
+                            <li>
+                                <a href="#identifier">identifier</a>
+                            </li>
+                            <li>
+                                <a href="#limit">limit</a>
+                            </li>
+                            <li>
+                                <a href="#selectionType">selectionType</a>
+                            </li>
+                            <li>
+                                <a href="#sorts">sorts</a>
+                            </li>
+                            <li>
+                                <a href="#toolHeader">toolHeader</a>
+                            </li>
+                            <li>
+                                <a href="#updateSelectionOnRefresh">updateSelectionOnRefresh</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#fetchData">fetchData</a>
+                            </li>
+                            <li>
+                                <a href="#updateSelection">updateSelection</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(ngZone: <a href="https://angular.io/api/core/NgZone" target="_blank">NgZone</a>, cdRef: <a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank">ChangeDetectorRef</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="161" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:161</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>ngZone</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/NgZone" target="_blank" >NgZone</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>cdRef</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank" >ChangeDetectorRef</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="autoReload"></a>
+                        <b>autoReload</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>5000</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:85</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Auto reload time in ms - per default every 5s
+You can set it to 0, undefined or false to disable the auto reload feature in order to
+trigger &#39;fetchData&#39; if the reload button is clicked.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="autoSave"></a>
+                        <b>autoSave</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="104" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:104</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="columnMode"></a>
+                        <b>columnMode</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;flex&#x27;</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:65</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="columns"></a>
+                        <b>columns</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/CdTableColumn.html" target="_self" >CdTableColumn[]</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:59</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="customCss"></a>
+                        <b>customCss</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="108" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:108</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="data"></a>
+                        <b>data</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:56</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="footer"></a>
+                        <b>footer</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:74</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="forceIdentifier"></a>
+                        <b>forceIdentifier</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="94" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:94</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="header"></a>
+                        <b>header</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="71" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:71</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="identifier"></a>
+                        <b>identifier</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;id&#x27;</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="90" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:90</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="limit"></a>
+                        <b>limit</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>10</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="77" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:77</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectionType"></a>
+                        <b>selectionType</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>undefined</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="98" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:98</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sorts"></a>
+                        <b>sorts</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>SortPropDir[]</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:62</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="toolHeader"></a>
+                        <b>toolHeader</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:68</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="updateSelectionOnRefresh"></a>
+                        <b>updateSelectionOnRefresh</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>&quot;always&quot; | &quot;never&quot; | &quot;onChange&quot;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;onChange&#x27;</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="101" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:101</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="fetchData"></a>
+                        <b>fetchData</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="120" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:120</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Should be a function to update the input data if undefined nothing will be triggered</p>
+<p>Sometimes it&#39;s useful to only define fetchData once.
+Example:
+Usage of multiple tables with data which is updated by the same function
+What happens:
+The function is triggered through one table and all tables will update</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="updateSelection"></a>
+                        <b>updateSelection</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="131" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:131</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>This should be defined if you need access to the selection object.</p>
+<p>Each time the table selection changes, this will be triggered and
+the new selection object will be sent.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_addTemplates"></a>
+                    <span class="name">
+                        <b>
+                            _addTemplates
+                        </b>
+                        <a href="#_addTemplates"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>_addTemplates()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="314"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:314</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_calculateUniqueTableName"></a>
+                    <span class="name">
+                        <b>
+                            _calculateUniqueTableName
+                        </b>
+                        <a href="#_calculateUniqueTableName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>_calculateUniqueTableName(columns)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="235"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:235</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>columns</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_initUserConfigAutoSave"></a>
+                    <span class="name">
+                        <b>
+                            _initUserConfigAutoSave
+                        </b>
+                        <a href="#_initUserConfigAutoSave"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>_initUserConfigAutoSave()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="262"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:262</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_initUserConfigProxy"></a>
+                    <span class="name">
+                        <b>
+                            _initUserConfigProxy
+                        </b>
+                        <a href="#_initUserConfigProxy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>_initUserConfigProxy(observer)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="267"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:267</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>observer</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_loadUserConfig"></a>
+                    <span class="name">
+                        <b>
+                            _loadUserConfig
+                        </b>
+                        <a href="#_loadUserConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>_loadUserConfig()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="255"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:255</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_saveUserConfig"></a>
+                    <span class="name">
+                        <b>
+                            _saveUserConfig
+                        </b>
+                        <a href="#_saveUserConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>_saveUserConfig(config)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="277"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:277</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>config</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="basicDataSearch"></a>
+                    <span class="name">
+                        <b>
+                            basicDataSearch
+                        </b>
+                        <a href="#basicDataSearch"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>basicDataSearch(searchTerm: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, rows: any[], columns: <a href="../interfaces/CdTableColumn.html">CdTableColumn[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="513"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:513</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>searchTerm</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>rows</td>
+                                    <td>
+                                            <code>any[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>columns</td>
+                                    <td>
+                                                <code><a href="../interfaces/CdTableColumn.html" target="_self" >CdTableColumn[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeSorting"></a>
+                    <span class="name">
+                        <b>
+                            changeSorting
+                        </b>
+                        <a href="#changeSorting"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeSorting(undefined)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="467"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:467</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createSortingDefinition"></a>
+                    <span class="name">
+                        <b>
+                            createSortingDefinition
+                        </b>
+                        <a href="#createSortingDefinition"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createSortingDefinition(prop: TableColumnProp)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="458"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:458</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>prop</td>
+                                    <td>
+                                            <code>TableColumnProp</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>SortPropDir[]</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filterHiddenColumns"></a>
+                    <span class="name">
+                        <b>
+                            filterHiddenColumns
+                        </b>
+                        <a href="#filterHiddenColumns"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>filterHiddenColumns()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="289"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:289</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getRowClass"></a>
+                    <span class="name">
+                        <b>
+                            getRowClass
+                        </b>
+                        <a href="#getRowClass"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getRowClass()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="540"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:540</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>() &#x3D;&gt; { clickable: boolean; }</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initUserConfig"></a>
+                    <span class="name">
+                        <b>
+                            initUserConfig
+                        </b>
+                        <a href="#initUserConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initUserConfig()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="214"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:214</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngAfterContentChecked"></a>
+                    <span class="name">
+                        <b>
+                            ngAfterContentChecked
+                        </b>
+                        <a href="#ngAfterContentChecked"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngAfterContentChecked()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="302"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:302</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnChanges"></a>
+                    <span class="name">
+                        <b>
+                            ngOnChanges
+                        </b>
+                        <a href="#ngOnChanges"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnChanges()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="336"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:336</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <b>
+                            ngOnDestroy
+                        </b>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="293"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:293</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="165"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:165</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSelect"></a>
+                    <span class="name">
+                        <b>
+                            onSelect
+                        </b>
+                        <a href="#onSelect"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSelect()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="430"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:430</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="refreshBtn"></a>
+                    <span class="name">
+                        <b>
+                            refreshBtn
+                        </b>
+                        <a href="#refreshBtn"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>refreshBtn()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="366"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:366</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="reloadData"></a>
+                    <span class="name">
+                        <b>
+                            reloadData
+                        </b>
+                        <a href="#reloadData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>reloadData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="347"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:347</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="reset"></a>
+                    <span class="name">
+                        <b>
+                            reset
+                        </b>
+                        <a href="#reset"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>reset()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="398"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:398</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Reset the data table to correct state. This includes:
+- Disable loading indicator
+- Reset &#39;Updating&#39; flag</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="rowIdentity"></a>
+                    <span class="name">
+                        <b>
+                            rowIdentity
+                        </b>
+                        <a href="#rowIdentity"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>rowIdentity()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="371"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:371</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>(row: any) &#x3D;&gt; any</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setLimit"></a>
+                    <span class="name">
+                        <b>
+                            setLimit
+                        </b>
+                        <a href="#setLimit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setLimit(e)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="340"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:340</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>e</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="subSearch"></a>
+                    <span class="name">
+                        <b>
+                            subSearch
+                        </b>
+                        <a href="#subSearch"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>subSearch(data: any[], currentSearch: string[], columns: <a href="../interfaces/CdTableColumn.html">CdTableColumn[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="489"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:489</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                            <code>any[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>currentSearch</td>
+                                    <td>
+                                            <code>string[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>columns</td>
+                                    <td>
+                                                <code><a href="../interfaces/CdTableColumn.html" target="_self" >CdTableColumn[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleColumn"></a>
+                    <span class="name">
+                        <b>
+                            toggleColumn
+                        </b>
+                        <a href="#toggleColumn"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleColumn($event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="435"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:435</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>$event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateColumns"></a>
+                    <span class="name">
+                        <b>
+                            updateColumns
+                        </b>
+                        <a href="#updateColumns"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateColumns()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="446"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:446</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateFilter"></a>
+                    <span class="name">
+                        <b>
+                            updateFilter
+                        </b>
+                        <a href="#updateFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateFilter(clearSearch)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="471"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:471</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>clearSearch</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>false</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateSelected"></a>
+                    <span class="name">
+                        <b>
+                            updateSelected
+                        </b>
+                        <a href="#updateSelected"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateSelected()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="408"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:408</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>After updating the data, we have to update the selected items
+because details may have changed,
+or some selected items may have been removed.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateUserColumns"></a>
+                    <span class="name">
+                        <b>
+                            updateUserColumns
+                        </b>
+                        <a href="#updateUserColumns"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateUserColumns()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="281"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:281</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="useCustomClass"></a>
+                    <span class="name">
+                        <b>
+                            useCustomClass
+                        </b>
+                        <a href="#useCustomClass"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>useCustomClass(value: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="324"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:324</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>value</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="useData"></a>
+                    <span class="name">
+                        <b>
+                            useData
+                        </b>
+                        <a href="#useData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>useData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="381"
+                            class="link-to-prism">src/app/shared/datatable/table/table.component.ts:381</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cellTemplates"></a>
+                        <span class="name">
+                            <b>
+                            cellTemplates</b>
+                            <a href="#cellTemplates"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>literal type</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{}</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="139" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:139</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="checkIconTpl"></a>
+                        <span class="name">
+                            <b>
+                            checkIconTpl</b>
+                            <a href="#checkIconTpl"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>TemplateRef&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;checkIconTpl&#x27;)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:46</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="classAddingTpl"></a>
+                        <span class="name">
+                            <b>
+                            classAddingTpl</b>
+                            <a href="#classAddingTpl"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>TemplateRef&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;classAddingTpl&#x27;)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:52</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentWidth"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            currentWidth</b>
+                            <a href="#currentWidth"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="161" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:161</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="executingTpl"></a>
+                        <span class="name">
+                            <b>
+                            executingTpl</b>
+                            <a href="#executingTpl"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>TemplateRef&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;executingTpl&#x27;)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:50</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loadingError"></a>
+                        <span class="name">
+                            <b>
+                            loadingError</b>
+                            <a href="#loadingError"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="145" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:145</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loadingIndicator"></a>
+                        <span class="name">
+                            <b>
+                            loadingIndicator</b>
+                            <a href="#loadingIndicator"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>true</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="144" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:144</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="localStorage"></a>
+                        <span class="name">
+                            <b>
+                            localStorage</b>
+                            <a href="#localStorage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>window.localStorage</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="154" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:154</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="paginationClasses"></a>
+                        <span class="name">
+                            <b>
+                            paginationClasses</b>
+                            <a href="#paginationClasses"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    pagerLeftArrow: &#x27;i fa fa-angle-double-left&#x27;,
+    pagerRightArrow: &#x27;i fa fa-angle-double-right&#x27;,
+    pagerPrevious: &#x27;i fa fa-angle-left&#x27;,
+    pagerNext: &#x27;i fa fa-angle-right&#x27;
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="146" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:146</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="perSecondTpl"></a>
+                        <span class="name">
+                            <b>
+                            perSecondTpl</b>
+                            <a href="#perSecondTpl"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>TemplateRef&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;perSecondTpl&#x27;)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:48</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="reloadSubscriber"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            reloadSubscriber</b>
+                            <a href="#reloadSubscriber"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="156" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:156</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="routerLinkTpl"></a>
+                        <span class="name">
+                            <b>
+                            routerLinkTpl</b>
+                            <a href="#routerLinkTpl"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>TemplateRef&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;routerLinkTpl&#x27;)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="rows"></a>
+                        <span class="name">
+                            <b>
+                            rows</b>
+                            <a href="#rows"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="143" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:143</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="saveSubscriber"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            saveSubscriber</b>
+                            <a href="#saveSubscriber"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="155" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:155</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="search"></a>
+                        <span class="name">
+                            <b>
+                            search</b>
+                            <a href="#search"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="142" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:142</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selection"></a>
+                        <span class="name">
+                            <b>
+                            selection</b>
+                            <a href="#selection"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new CdTableSelection()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="136" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:136</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Use this variable to access the selected row(s).</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sparklineTpl"></a>
+                        <span class="name">
+                            <b>
+                            sparklineTpl</b>
+                            <a href="#sparklineTpl"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>TemplateRef&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;sparklineTpl&#x27;)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="table"></a>
+                        <span class="name">
+                            <b>
+                            table</b>
+                            <a href="#table"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>DatatableComponent</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(DatatableComponent)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tableCellBoldTpl"></a>
+                        <span class="name">
+                            <b>
+                            tableCellBoldTpl</b>
+                            <a href="#tableCellBoldTpl"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>TemplateRef&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;tableCellBoldTpl&#x27;)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tableColumns"></a>
+                        <span class="name">
+                            <b>
+                            tableColumns</b>
+                            <a href="#tableColumns"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/CdTableColumn.html" target="_self" >CdTableColumn[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="138" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:138</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tableName"></a>
+                        <span class="name">
+                            <b>
+                            tableName</b>
+                            <a href="#tableName"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="153" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:153</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="updating"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            updating</b>
+                            <a href="#updating"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="157" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:157</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="userConfig"></a>
+                        <span class="name">
+                            <b>
+                            userConfig</b>
+                            <a href="#userConfig"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/CdUserConfig.html" target="_self" >CdUserConfig</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{}</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="152" class="link-to-prism">src/app/shared/datatable/table/table.component.ts:152</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+  AfterContentChecked,
+  ChangeDetectorRef,
+  Component,
+  EventEmitter,
+  Input,
+  NgZone,
+  OnChanges,
+  OnDestroy,
+  OnInit,
+  Output,
+  TemplateRef,
+  ViewChild
+} from &#x27;@angular/core&#x27;;
+
+import {
+  DatatableComponent,
+  SortDirection,
+  SortPropDir,
+  TableColumnProp
+} from &#x27;@swimlane/ngx-datatable&#x27;;
+import * as _ from &#x27;lodash&#x27;;
+import { Observable, timer as observableTimer } from &#x27;rxjs&#x27;;
+
+import { CellTemplate } from &#x27;../../enum/cell-template.enum&#x27;;
+import { CdTableColumn } from &#x27;../../models/cd-table-column&#x27;;
+import { CdTableFetchDataContext } from &#x27;../../models/cd-table-fetch-data-context&#x27;;
+import { CdTableSelection } from &#x27;../../models/cd-table-selection&#x27;;
+import { CdUserConfig } from &#x27;../../models/cd-user-config&#x27;;
+
+@Component({
+  selector: &#x27;cd-table&#x27;,
+  templateUrl: &#x27;./table.component.html&#x27;,
+  styleUrls: [&#x27;./table.component.scss&#x27;]
+})
+export class TableComponent implements AfterContentChecked, OnInit, OnChanges, OnDestroy {
+  @ViewChild(DatatableComponent)
+  table: DatatableComponent;
+  @ViewChild(&#x27;tableCellBoldTpl&#x27;)
+  tableCellBoldTpl: TemplateRef&lt;any&gt;;
+  @ViewChild(&#x27;sparklineTpl&#x27;)
+  sparklineTpl: TemplateRef&lt;any&gt;;
+  @ViewChild(&#x27;routerLinkTpl&#x27;)
+  routerLinkTpl: TemplateRef&lt;any&gt;;
+  @ViewChild(&#x27;checkIconTpl&#x27;)
+  checkIconTpl: TemplateRef&lt;any&gt;;
+  @ViewChild(&#x27;perSecondTpl&#x27;)
+  perSecondTpl: TemplateRef&lt;any&gt;;
+  @ViewChild(&#x27;executingTpl&#x27;)
+  executingTpl: TemplateRef&lt;any&gt;;
+  @ViewChild(&#x27;classAddingTpl&#x27;)
+  classAddingTpl: TemplateRef&lt;any&gt;;
+
+  // This is the array with the items to be shown.
+  @Input()
+  data: any[];
+  // Each item -&gt; { prop: &#x27;attribute name&#x27;, name: &#x27;display name&#x27; }
+  @Input()
+  columns: CdTableColumn[];
+  // Each item -&gt; { prop: &#x27;attribute name&#x27;, dir: &#x27;asc&#x27;||&#x27;desc&#x27;}
+  @Input()
+  sorts?: SortPropDir[];
+  // Method used for setting column widths.
+  @Input()
+  columnMode? &#x3D; &#x27;flex&#x27;;
+  // Display the tool header, including reload button, pagination and search fields?
+  @Input()
+  toolHeader? &#x3D; true;
+  // Display the table header?
+  @Input()
+  header? &#x3D; true;
+  // Display the table footer?
+  @Input()
+  footer? &#x3D; true;
+  // Page size to show. Set to 0 to show unlimited number of rows.
+  @Input()
+  limit? &#x3D; 10;
+
+  /**
+   * Auto reload time in ms - per default every 5s
+   * You can set it to 0, undefined or false to disable the auto reload feature in order to
+   * trigger &#x27;fetchData&#x27; if the reload button is clicked.
+   */
+  @Input()
+  autoReload: any &#x3D; 5000;
+
+  // Which row property is unique for a row. If the identifier is not specified in any
+  // column, then the property name of the first column is used. Defaults to &#x27;id&#x27;.
+  @Input()
+  identifier &#x3D; &#x27;id&#x27;;
+  // If &#x27;true&#x27;, then the specified identifier is used anyway, although it is not specified
+  // in any column. Defaults to &#x27;false&#x27;.
+  @Input()
+  forceIdentifier &#x3D; false;
+  // Allows other components to specify which type of selection they want,
+  // e.g. &#x27;single&#x27; or &#x27;multi&#x27;.
+  @Input()
+  selectionType: string &#x3D; undefined;
+  // By default selected item details will be updated on table refresh, if data has changed
+  @Input()
+  updateSelectionOnRefresh: &#x27;always&#x27; | &#x27;never&#x27; | &#x27;onChange&#x27; &#x3D; &#x27;onChange&#x27;;
+
+  @Input()
+  autoSave &#x3D; true;
+
+  // Only needed to set if the classAddingTpl is used
+  @Input()
+  customCss?: { [css: string]: number | string | ((any) &#x3D;&gt; boolean) };
+
+  /**
+   * Should be a function to update the input data if undefined nothing will be triggered
+   *
+   * Sometimes it&#x27;s useful to only define fetchData once.
+   * Example:
+   * Usage of multiple tables with data which is updated by the same function
+   * What happens:
+   * The function is triggered through one table and all tables will update
+   */
+  @Output()
+  fetchData &#x3D; new EventEmitter();
+
+  /**
+   * This should be defined if you need access to the selection object.
+   *
+   * Each time the table selection changes, this will be triggered and
+   * the new selection object will be sent.
+   *
+   * @memberof TableComponent
+   */
+  @Output()
+  updateSelection &#x3D; new EventEmitter();
+
+  /**
+   * Use this variable to access the selected row(s).
+   */
+  selection &#x3D; new CdTableSelection();
+
+  tableColumns: CdTableColumn[];
+  cellTemplates: {
+    [key: string]: TemplateRef&lt;any&gt;;
+  } &#x3D; {};
+  search &#x3D; &#x27;&#x27;;
+  rows &#x3D; [];
+  loadingIndicator &#x3D; true;
+  loadingError &#x3D; false;
+  paginationClasses &#x3D; {
+    pagerLeftArrow: &#x27;i fa fa-angle-double-left&#x27;,
+    pagerRightArrow: &#x27;i fa fa-angle-double-right&#x27;,
+    pagerPrevious: &#x27;i fa fa-angle-left&#x27;,
+    pagerNext: &#x27;i fa fa-angle-right&#x27;
+  };
+  userConfig: CdUserConfig &#x3D; {};
+  tableName: string;
+  localStorage &#x3D; window.localStorage;
+  private saveSubscriber;
+  private reloadSubscriber;
+  private updating &#x3D; false;
+
+  // Internal variable to check if it is necessary to recalculate the
+  // table columns after the browser window has been resized.
+  private currentWidth: number;
+
+  constructor(private ngZone: NgZone, private cdRef: ChangeDetectorRef) {}
+
+  ngOnInit() {
+    this._addTemplates();
+    if (!this.sorts) {
+      // Check whether the specified identifier exists.
+      const exists &#x3D; _.findIndex(this.columns, [&#x27;prop&#x27;, this.identifier]) !&#x3D;&#x3D; -1;
+      // Auto-build the sorting configuration. If the specified identifier doesn&#x27;t exist,
+      // then use the property of the first column.
+      this.sorts &#x3D; this.createSortingDefinition(
+        exists ? this.identifier : this.columns[0].prop + &#x27;&#x27;
+      );
+      // If the specified identifier doesn&#x27;t exist and it is not forced to use it anyway,
+      // then use the property of the first column.
+      if (!exists &amp;&amp; !this.forceIdentifier) {
+        this.identifier &#x3D; this.columns[0].prop + &#x27;&#x27;;
+      }
+    }
+    this.initUserConfig();
+    this.columns.forEach((c) &#x3D;&gt; {
+      if (c.cellTransformation) {
+        c.cellTemplate &#x3D; this.cellTemplates[c.cellTransformation];
+      }
+      if (!c.flexGrow) {
+        c.flexGrow &#x3D; c.prop + &#x27;&#x27; &#x3D;&#x3D;&#x3D; this.identifier ? 1 : 2;
+      }
+      if (!c.resizeable) {
+        c.resizeable &#x3D; false;
+      }
+    });
+    this.filterHiddenColumns();
+    // Load the data table content every N ms or at least once.
+    // Force showing the loading indicator if there are subscribers to the fetchData
+    // event. This is necessary because it has been set to False in useData() when
+    // this method was triggered by ngOnChanges().
+    if (this.fetchData.observers.length &gt; 0) {
+      this.loadingIndicator &#x3D; true;
+    }
+    if (_.isInteger(this.autoReload) &amp;&amp; this.autoReload &gt; 0) {
+      this.ngZone.runOutsideAngular(() &#x3D;&gt; {
+        this.reloadSubscriber &#x3D; observableTimer(0, this.autoReload).subscribe(() &#x3D;&gt; {
+          this.ngZone.run(() &#x3D;&gt; {
+            return this.reloadData();
+          });
+        });
+      });
+    } else {
+      this.reloadData();
+    }
+  }
+
+  initUserConfig() {
+    if (this.autoSave) {
+      this.tableName &#x3D; this._calculateUniqueTableName(this.columns);
+      this._loadUserConfig();
+      this._initUserConfigAutoSave();
+    }
+    if (!this.userConfig.limit) {
+      this.userConfig.limit &#x3D; this.limit;
+    }
+    if (!this.userConfig.sorts) {
+      this.userConfig.sorts &#x3D; this.sorts;
+    }
+    if (!this.userConfig.columns) {
+      this.updateUserColumns();
+    } else {
+      this.columns.forEach((c, i) &#x3D;&gt; {
+        c.isHidden &#x3D; this.userConfig.columns[i].isHidden;
+      });
+    }
+  }
+
+  _calculateUniqueTableName(columns) {
+    const stringToNumber &#x3D; (s) &#x3D;&gt; {
+      if (!_.isString(s)) {
+        return 0;
+      }
+      let result &#x3D; 0;
+      for (let i &#x3D; 0; i &lt; s.length; i++) {
+        result +&#x3D; s.charCodeAt(i) * i;
+      }
+      return result;
+    };
+    return columns
+      .reduce(
+        (result, value, index) &#x3D;&gt;
+          (stringToNumber(value.prop) + stringToNumber(value.name)) * (index + 1) + result,
+        0
+      )
+      .toString();
+  }
+
+  _loadUserConfig() {
+    const loaded &#x3D; this.localStorage.getItem(this.tableName);
+    if (loaded) {
+      this.userConfig &#x3D; JSON.parse(loaded);
+    }
+  }
+
+  _initUserConfigAutoSave() {
+    const source &#x3D; Observable.create(this._initUserConfigProxy.bind(this));
+    this.saveSubscriber &#x3D; source.subscribe(this._saveUserConfig.bind(this));
+  }
+
+  _initUserConfigProxy(observer) {
+    this.userConfig &#x3D; new Proxy(this.userConfig, {
+      set(config, prop, value) {
+        config[prop] &#x3D; value;
+        observer.next(config);
+        return true;
+      }
+    });
+  }
+
+  _saveUserConfig(config) {
+    this.localStorage.setItem(this.tableName, JSON.stringify(config));
+  }
+
+  updateUserColumns() {
+    this.userConfig.columns &#x3D; this.columns.map((c) &#x3D;&gt; ({
+      prop: c.prop,
+      name: c.name,
+      isHidden: !!c.isHidden
+    }));
+  }
+
+  filterHiddenColumns() {
+    this.tableColumns &#x3D; this.columns.filter((c) &#x3D;&gt; !c.isHidden);
+  }
+
+  ngOnDestroy() {
+    if (this.reloadSubscriber) {
+      this.reloadSubscriber.unsubscribe();
+    }
+    if (this.saveSubscriber) {
+      this.saveSubscriber.unsubscribe();
+    }
+  }
+
+  ngAfterContentChecked() {
+    // If the data table is not visible, e.g. another tab is active, and the
+    // browser window gets resized, the table and its columns won&#x27;t get resized
+    // automatically if the tab gets visible again.
+    // https://github.com/swimlane/ngx-datatable/issues/193
+    // https://github.com/swimlane/ngx-datatable/issues/193#issuecomment-329144543
+    if (this.table &amp;&amp; this.table.element.clientWidth !&#x3D;&#x3D; this.currentWidth) {
+      this.currentWidth &#x3D; this.table.element.clientWidth;
+      this.table.recalculate();
+    }
+  }
+
+  _addTemplates() {
+    this.cellTemplates.bold &#x3D; this.tableCellBoldTpl;
+    this.cellTemplates.checkIcon &#x3D; this.checkIconTpl;
+    this.cellTemplates.sparkline &#x3D; this.sparklineTpl;
+    this.cellTemplates.routerLink &#x3D; this.routerLinkTpl;
+    this.cellTemplates.perSecond &#x3D; this.perSecondTpl;
+    this.cellTemplates.executing &#x3D; this.executingTpl;
+    this.cellTemplates.classAdding &#x3D; this.classAddingTpl;
+  }
+
+  useCustomClass(value: any): string {
+    if (!this.customCss) {
+      throw new Error(&#x27;Custom classes are not set!&#x27;);
+    }
+    const classes &#x3D; Object.keys(this.customCss);
+    const css &#x3D; Object.values(this.customCss)
+      .map((v, i) &#x3D;&gt; ((_.isFunction(v) &amp;&amp; v(value)) || v &#x3D;&#x3D;&#x3D; value) &amp;&amp; classes[i])
+      .filter((x) &#x3D;&gt; x)
+      .join(&#x27; &#x27;);
+    return _.isEmpty(css) ? undefined : css;
+  }
+
+  ngOnChanges() {
+    this.useData();
+  }
+
+  setLimit(e) {
+    const value &#x3D; parseInt(e.target.value, 10);
+    if (value &gt; 0) {
+      this.userConfig.limit &#x3D; value;
+    }
+  }
+
+  reloadData() {
+    if (!this.updating) {
+      this.loadingError &#x3D; false;
+      const context &#x3D; new CdTableFetchDataContext(() &#x3D;&gt; {
+        // Do we have to display the error panel?
+        this.loadingError &#x3D; context.errorConfig.displayError;
+        // Force data table to show no data?
+        if (context.errorConfig.resetData) {
+          this.data &#x3D; [];
+        }
+        // Stop the loading indicator and reset the data table
+        // to the correct state.
+        this.useData();
+      });
+      this.fetchData.emit(context);
+      this.updating &#x3D; true;
+    }
+  }
+
+  refreshBtn() {
+    this.loadingIndicator &#x3D; true;
+    this.reloadData();
+  }
+
+  rowIdentity() {
+    return (row) &#x3D;&gt; {
+      const id &#x3D; row[this.identifier];
+      if (_.isUndefined(id)) {
+        throw new Error(&#x60;Wrong identifier &quot;${this.identifier}&quot; -&gt; &quot;${id}&quot;&#x60;);
+      }
+      return id;
+    };
+  }
+
+  useData() {
+    if (!this.data) {
+      return; // Wait for data
+    }
+    this.rows &#x3D; [...this.data];
+    if (this.search.length &gt; 0) {
+      this.updateFilter();
+    }
+    this.reset();
+    this.updateSelected();
+  }
+
+  /**
+   * Reset the data table to correct state. This includes:
+   * - Disable loading indicator
+   * - Reset &#x27;Updating&#x27; flag
+   */
+  reset() {
+    this.loadingIndicator &#x3D; false;
+    this.updating &#x3D; false;
+  }
+
+  /**
+   * After updating the data, we have to update the selected items
+   * because details may have changed,
+   * or some selected items may have been removed.
+   */
+  updateSelected() {
+    if (this.updateSelectionOnRefresh &#x3D;&#x3D;&#x3D; &#x27;never&#x27;) {
+      return;
+    }
+    const newSelected &#x3D; [];
+    this.selection.selected.forEach((selectedItem) &#x3D;&gt; {
+      for (const row of this.data) {
+        if (selectedItem[this.identifier] &#x3D;&#x3D;&#x3D; row[this.identifier]) {
+          newSelected.push(row);
+        }
+      }
+    });
+    if (
+      this.updateSelectionOnRefresh &#x3D;&#x3D;&#x3D; &#x27;onChange&#x27; &amp;&amp;
+      _.isEqual(this.selection.selected, newSelected)
+    ) {
+      return;
+    }
+    this.selection.selected &#x3D; newSelected;
+    this.onSelect();
+  }
+
+  onSelect() {
+    this.selection.update();
+    this.updateSelection.emit(_.clone(this.selection));
+  }
+
+  toggleColumn($event: any) {
+    const prop: TableColumnProp &#x3D; $event.target.name;
+    const hide &#x3D; !$event.target.checked;
+    if (hide &amp;&amp; this.tableColumns.length &#x3D;&#x3D;&#x3D; 1) {
+      $event.target.checked &#x3D; true;
+      return;
+    }
+    _.find(this.columns, (c: CdTableColumn) &#x3D;&gt; c.prop &#x3D;&#x3D;&#x3D; prop).isHidden &#x3D; hide;
+    this.updateColumns();
+  }
+
+  updateColumns() {
+    this.updateUserColumns();
+    this.filterHiddenColumns();
+    const sortProp &#x3D; this.userConfig.sorts[0].prop;
+    if (!_.find(this.tableColumns, (c: CdTableColumn) &#x3D;&gt; c.prop &#x3D;&#x3D;&#x3D; sortProp)) {
+      this.userConfig.sorts &#x3D; this.createSortingDefinition(this.tableColumns[0].prop);
+      this.table.onColumnSort({ sorts: this.userConfig.sorts });
+    }
+    this.table.recalculate();
+    this.cdRef.detectChanges();
+  }
+
+  createSortingDefinition(prop: TableColumnProp): SortPropDir[] {
+    return [
+      {
+        prop: prop,
+        dir: SortDirection.asc
+      }
+    ];
+  }
+
+  changeSorting({ sorts }) {
+    this.userConfig.sorts &#x3D; sorts;
+  }
+
+  updateFilter(clearSearch &#x3D; false) {
+    if (clearSearch) {
+      this.search &#x3D; &#x27;&#x27;;
+    }
+    // prepare search strings
+    let search &#x3D; this.search.toLowerCase().replace(/,/g, &#x27;&#x27;);
+    const columns &#x3D; this.columns.filter((c) &#x3D;&gt; c.cellTransformation !&#x3D;&#x3D; CellTemplate.sparkline);
+    if (search.match(/[&#x27;&quot;][^&#x27;&quot;]+[&#x27;&quot;]/)) {
+      search &#x3D; search.replace(/[&#x27;&quot;][^&#x27;&quot;]+[&#x27;&quot;]/g, (match: string) &#x3D;&gt; {
+        return match.replace(/([&#x27;&quot;])([^&#x27;&quot;]+)([&#x27;&quot;])/g, &#x27;$2&#x27;).replace(/ /g, &#x27;+&#x27;);
+      });
+    }
+    // update the rows
+    this.rows &#x3D; this.subSearch(this.data, search.split(&#x27; &#x27;).filter((s) &#x3D;&gt; s.length &gt; 0), columns);
+    // Whenever the filter changes, always go back to the first page
+    this.table.offset &#x3D; 0;
+  }
+
+  subSearch(data: any[], currentSearch: string[], columns: CdTableColumn[]) {
+    if (currentSearch.length &#x3D;&#x3D;&#x3D; 0 || data.length &#x3D;&#x3D;&#x3D; 0) {
+      return data;
+    }
+    const searchTerms: string[] &#x3D; currentSearch
+      .pop()
+      .replace(&#x27;+&#x27;, &#x27; &#x27;)
+      .split(&#x27;:&#x27;);
+    const columnsClone &#x3D; [...columns];
+    const dataClone &#x3D; [...data];
+    const filterColumns &#x3D; (columnName: string) &#x3D;&gt;
+      columnsClone.filter((c) &#x3D;&gt; c.name.toLowerCase().indexOf(columnName) !&#x3D;&#x3D; -1);
+    if (searchTerms.length &#x3D;&#x3D;&#x3D; 2) {
+      columns &#x3D; filterColumns(searchTerms[0]);
+    }
+    const searchTerm: string &#x3D; _.last(searchTerms);
+    data &#x3D; this.basicDataSearch(searchTerm, data, columns);
+    // Checks if user searches for column but he is still typing
+    if (data.length &#x3D;&#x3D;&#x3D; 0 &amp;&amp; searchTerms.length &#x3D;&#x3D;&#x3D; 1 &amp;&amp; filterColumns(searchTerm).length &gt; 0) {
+      data &#x3D; dataClone;
+    }
+    return this.subSearch(data, currentSearch, columnsClone);
+  }
+
+  basicDataSearch(searchTerm: string, rows: any[], columns: CdTableColumn[]) {
+    if (searchTerm.length &#x3D;&#x3D;&#x3D; 0) {
+      return rows;
+    }
+    return rows.filter((row) &#x3D;&gt; {
+      return (
+        columns.filter((col) &#x3D;&gt; {
+          let cellValue: any &#x3D; _.get(row, col.prop);
+
+          if (!_.isUndefined(col.pipe)) {
+            cellValue &#x3D; col.pipe.transform(cellValue);
+          }
+          if (_.isUndefined(cellValue) || _.isNull(cellValue)) {
+            return false;
+          }
+
+          if (_.isArray(cellValue)) {
+            cellValue &#x3D; cellValue.join(&#x27; &#x27;);
+          } else if (_.isNumber(cellValue) || _.isBoolean(cellValue)) {
+            cellValue &#x3D; cellValue.toString();
+          }
+          return cellValue.toLowerCase().indexOf(searchTerm) !&#x3D;&#x3D; -1;
+        }).length &gt; 0
+      );
+    });
+  }
+
+  getRowClass() {
+    // Return the function used to populate a row&#x27;s CSS classes.
+    return () &#x3D;&gt; {
+      return {
+        clickable: !_.isUndefined(this.selectionType)
+      };
+    };
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;cd-error-panel *ngIf&#x3D;&quot;loadingError&quot;
+                i18n&gt;Failed to load data.&lt;/cd-error-panel&gt;
+
+&lt;div class&#x3D;&quot;dataTables_wrapper&quot;&gt;
+  &lt;div class&#x3D;&quot;dataTables_header clearfix form-inline&quot;
+       *ngIf&#x3D;&quot;toolHeader&quot;&gt;
+    &lt;!-- actions --&gt;
+    &lt;div class&#x3D;&quot;oadatatableactions&quot;&gt;
+      &lt;ng-content select&#x3D;&quot;.table-actions&quot;&gt;&lt;/ng-content&gt;
+    &lt;/div&gt;
+    &lt;!-- end actions --&gt;
+
+    &lt;!-- filters --&gt;
+    &lt;ng-content select&#x3D;&quot;.table-filters&quot;&gt;&lt;/ng-content&gt;
+    &lt;!-- end filters --&gt;
+
+    &lt;!-- search --&gt;
+    &lt;div class&#x3D;&quot;input-group&quot;&gt;
+      &lt;span class&#x3D;&quot;input-group-addon&quot;&gt;
+        &lt;i class&#x3D;&quot;glyphicon glyphicon-search&quot;&gt;&lt;/i&gt;
+      &lt;/span&gt;
+      &lt;input class&#x3D;&quot;form-control&quot;
+             type&#x3D;&quot;text&quot;
+             [(ngModel)]&#x3D;&quot;search&quot;
+             (keyup)&#x3D;&quot;updateFilter()&quot;&gt;
+      &lt;span class&#x3D;&quot;input-group-btn&quot;&gt;
+        &lt;button type&#x3D;&quot;button&quot;
+                class&#x3D;&quot;btn btn-default clear-input tc_clearInputBtn&quot;
+                (click)&#x3D;&quot;updateFilter(true)&quot;&gt;
+          &lt;i class&#x3D;&quot;icon-prepend fa fa-remove&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+      &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;!-- end search --&gt;
+
+    &lt;!-- pagination limit --&gt;
+    &lt;div class&#x3D;&quot;input-group dataTables_paginate&quot;&gt;
+      &lt;input class&#x3D;&quot;form-control&quot;
+             type&#x3D;&quot;number&quot;
+             min&#x3D;&quot;1&quot;
+             max&#x3D;&quot;9999&quot;
+             [value]&#x3D;&quot;userConfig.limit&quot;
+             (click)&#x3D;&quot;setLimit($event)&quot;
+             (keyup)&#x3D;&quot;setLimit($event)&quot;
+             (blur)&#x3D;&quot;setLimit($event)&quot;&gt;
+    &lt;/div&gt;
+    &lt;!-- end pagination limit--&gt;
+
+    &lt;!-- show hide columns --&gt;
+    &lt;div class&#x3D;&quot;widget-toolbar&quot;&gt;
+      &lt;div dropdown
+           class&#x3D;&quot;dropdown tc_menuitem tc_menuitem_cluster&quot;&gt;
+        &lt;a dropdownToggle
+           class&#x3D;&quot;btn btn-sm btn-default dropdown-toggle tc_columnBtn&quot;
+           data-toggle&#x3D;&quot;dropdown&quot;&gt;
+          &lt;i class&#x3D;&quot;fa fa-lg fa-table&quot;&gt;&lt;/i&gt;
+        &lt;/a&gt;
+        &lt;ul *dropdownMenu
+            class&#x3D;&quot;dropdown-menu&quot;&gt;
+          &lt;li *ngFor&#x3D;&quot;let column of columns&quot;&gt;
+            &lt;label&gt;
+              &lt;input type&#x3D;&quot;checkbox&quot;
+                     (change)&#x3D;&quot;toggleColumn($event)&quot;
+                     [name]&#x3D;&quot;column.prop&quot;
+                     [checked]&#x3D;&quot;!column.isHidden&quot;&gt;
+              &lt;span&gt;{{ column.name }}&lt;/span&gt;
+            &lt;/label&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- end show hide columns --&gt;
+
+    &lt;!-- refresh button --&gt;
+    &lt;div class&#x3D;&quot;widget-toolbar tc_refreshBtn&quot;
+         *ngIf&#x3D;&quot;fetchData.observers.length &gt; 0&quot;&gt;
+      &lt;a (click)&#x3D;&quot;refreshBtn()&quot;&gt;
+        &lt;i class&#x3D;&quot;fa fa-lg fa-refresh&quot;
+           [class.fa-spin]&#x3D;&quot;updating || loadingIndicator&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;!-- end refresh button --&gt;
+  &lt;/div&gt;
+  &lt;ngx-datatable #table
+                 class&#x3D;&quot;bootstrap oadatatable&quot;
+                 [cssClasses]&#x3D;&quot;paginationClasses&quot;
+                 [selectionType]&#x3D;&quot;selectionType&quot;
+                 [selected]&#x3D;&quot;selection.selected&quot;
+                 (select)&#x3D;&quot;onSelect()&quot;
+                 [sorts]&#x3D;&quot;userConfig.sorts&quot;
+                 (sort)&#x3D;&quot;changeSorting($event)&quot;
+                 [columns]&#x3D;&quot;tableColumns&quot;
+                 [columnMode]&#x3D;&quot;columnMode&quot;
+                 [rows]&#x3D;&quot;rows&quot;
+                 [rowClass]&#x3D;&quot;getRowClass()&quot;
+                 [headerHeight]&#x3D;&quot;header ? &#x27;auto&#x27; : 0&quot;
+                 [footerHeight]&#x3D;&quot;footer ? &#x27;auto&#x27; : 0&quot;
+                 [limit]&#x3D;&quot;userConfig.limit &gt; 0 ? userConfig.limit : undefined&quot;
+                 [loadingIndicator]&#x3D;&quot;loadingIndicator&quot;
+                 [rowIdentity]&#x3D;&quot;rowIdentity()&quot;
+                 [rowHeight]&#x3D;&quot;&#x27;auto&#x27;&quot;&gt;
+    &lt;ngx-datatable-footer&gt;
+      &lt;ng-template ngx-datatable-footer-template
+                   let-rowCount&#x3D;&quot;rowCount&quot;
+                   let-pageSize&#x3D;&quot;pageSize&quot;
+                   let-selectedCount&#x3D;&quot;selectedCount&quot;
+                   let-curPage&#x3D;&quot;curPage&quot;
+                   let-offset&#x3D;&quot;offset&quot;
+                   let-isVisible&#x3D;&quot;isVisible&quot;&gt;
+        &lt;div class&#x3D;&quot;page-count&quot;&gt;
+          &lt;span *ngIf&#x3D;&quot;selectionType&quot;&gt;
+            {{ selectedCount }} &lt;ng-container i18n&#x3D;&quot;X selected&quot;&gt;selected&lt;/ng-container&gt; /
+          &lt;/span&gt;
+          &lt;span *ngIf&#x3D;&quot;rowCount !&#x3D; data?.length&quot;&gt;
+            {{ rowCount }} &lt;ng-container i18n&#x3D;&quot;X found&quot;&gt;found&lt;/ng-container&gt; /
+          &lt;/span&gt;
+          &lt;span&gt;
+            {{ data?.length || 0 }} &lt;ng-container i18n&#x3D;&quot;X total&quot;&gt;total&lt;/ng-container&gt;
+          &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;datatable-pager [pagerLeftArrowIcon]&#x3D;&quot;paginationClasses.pagerLeftArrow&quot;
+                         [pagerRightArrowIcon]&#x3D;&quot;paginationClasses.pagerRightArrow&quot;
+                         [pagerPreviousIcon]&#x3D;&quot;paginationClasses.pagerPrevious&quot;
+                         [pagerNextIcon]&#x3D;&quot;paginationClasses.pagerNext&quot;
+                         [page]&#x3D;&quot;curPage&quot;
+                         [size]&#x3D;&quot;pageSize&quot;
+                         [count]&#x3D;&quot;rowCount&quot;
+                         [hidden]&#x3D;&quot;!((rowCount / pageSize) &gt; 1)&quot;
+                         (change)&#x3D;&quot;table.onFooterPage($event)&quot;&gt;
+        &lt;/datatable-pager&gt;
+      &lt;/ng-template&gt;
+    &lt;/ngx-datatable-footer&gt;
+  &lt;/ngx-datatable&gt;
+&lt;/div&gt;
+
+&lt;!-- Table Details --&gt;
+&lt;ng-content select&#x3D;&quot;[cdTableDetail]&quot;&gt;&lt;/ng-content&gt;
+
+&lt;!-- cell templates that can be accessed from outside --&gt;
+&lt;ng-template #tableCellBoldTpl
+             let-value&#x3D;&quot;value&quot;&gt;
+  &lt;strong&gt;{{ value }}&lt;/strong&gt;
+&lt;/ng-template&gt;
+
+&lt;ng-template #sparklineTpl
+             let-row&#x3D;&quot;row&quot;
+             let-value&#x3D;&quot;value&quot;&gt;
+  &lt;cd-sparkline [data]&#x3D;&quot;value&quot;
+                [isBinary]&#x3D;&quot;row.cdIsBinary&quot;&gt;&lt;/cd-sparkline&gt;
+&lt;/ng-template&gt;
+
+&lt;ng-template #routerLinkTpl
+             let-row&#x3D;&quot;row&quot;
+             let-value&#x3D;&quot;value&quot;&gt;
+  &lt;a [routerLink]&#x3D;&quot;[row.cdLink]&quot;
+     [queryParams]&#x3D;&quot;row.cdParams&quot;&gt;{{ value }}&lt;/a&gt;
+&lt;/ng-template&gt;
+
+&lt;ng-template #checkIconTpl
+             let-value&#x3D;&quot;value&quot;&gt;
+  &lt;i class&#x3D;&quot;fa fa-check fa-fw&quot;
+     [hidden]&#x3D;&quot;!value&quot;&gt;&lt;/i&gt;
+&lt;/ng-template&gt;
+
+&lt;ng-template #perSecondTpl
+             let-row&#x3D;&quot;row&quot;
+             let-value&#x3D;&quot;value&quot;&gt;
+  {{ value }} /s
+&lt;/ng-template&gt;
+
+&lt;ng-template #executingTpl
+             let-row&#x3D;&quot;row&quot;
+             let-value&#x3D;&quot;value&quot;&gt;
+  &lt;i class&#x3D;&quot;fa fa-spinner fa-spin fa-fw&quot;
+     *ngIf&#x3D;&quot;row.cdExecuting&quot;&gt;&lt;/i&gt;
+  {{ value }}
+  &lt;span *ngIf&#x3D;&quot;row.cdExecuting&quot;
+        class&#x3D;&quot;text-muted italic&quot;&gt;({{ row.cdExecuting }}... )&lt;/span&gt;
+&lt;/ng-template&gt;
+
+&lt;ng-template #classAddingTpl
+             let-value&#x3D;&quot;value&quot;&gt;
+  &lt;span class&#x3D;&quot;{{useCustomClass(value)}}&quot;&gt;{{ value }}&lt;/span&gt;
+&lt;/ng-template&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./table.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;../../../../defaults&#x27;;
+
+.dataTables_wrapper {
+  margin-bottom: 25px;
+  .separator {
+    height: 30px;
+    border-left: 1px solid $color-table-seperator-border;
+    padding-left: 5px;
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .widget-toolbar {
+    display: inline-block;
+    float: right;
+    width: auto;
+    height: 30px;
+    line-height: 28px;
+    position: relative;
+    border-left: 1px solid $color-table-seperator-border;
+    cursor: pointer;
+    padding: 0 8px;
+    text-align: center;
+  }
+  .dropdown-menu {
+    white-space: nowrap;
+    &amp; &gt; li {
+      cursor: pointer;
+      &amp; &gt; label {
+        width: 100%;
+        margin-bottom: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        cursor: pointer;
+        &amp;:hover {
+          background-color: $color-table-dropdown-bg;
+        }
+        &amp; &gt; input {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  th.oadatatablecheckbox {
+    width: 16px;
+  }
+  .dataTables_length &gt; input {
+    line-height: 25px;
+    text-align: right;
+  }
+}
+.dataTables_header {
+  background-color: $color-table-header-bg;
+  border: 1px solid $color-table-header-border;
+  border-bottom: none;
+  padding: 5px;
+  position: relative;
+  .oadatatableactions {
+    float: left;
+  }
+  ::ng-deep .table-filters {
+    float: right;
+    border-left: 1px solid $color-table-seperator-border;
+    padding-left: 8px;
+  }
+  ::ng-deep .table-filters label {
+    margin-right: 4px;
+  }
+  .form-group {
+    padding-left: 8px;
+  }
+  .input-group {
+    float: right;
+    border-left: 1px solid $color-table-input-border;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 40%;
+    max-width: 250px;
+    .form-control {
+      height: 30px;
+    }
+    .clear-input {
+      height: 30px;
+      i {
+        vertical-align: text-top;
+      }
+    }
+  }
+  .input-group.dataTables_paginate {
+    width: 8%;
+    min-width: 85px;
+    padding-right: 8px;
+  }
+}
+
+::ng-deep .oadatatable {
+  border: 1px solid $color-table-header-border;
+  margin-bottom: 0;
+  max-width: none !important;
+  .progress-linear {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    padding: 0;
+    margin: 0;
+    .container {
+      background-color: $color-table-active-row;
+      .bar {
+        left: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        overflow: hidden;
+        background-color: $color-table-active-row;
+      }
+      .bar:before {
+        display: block;
+        position: absolute;
+        content: &#x27;&#x27;;
+        left: -200px;
+        width: 200px;
+        height: 100%;
+        background-color: $color-table-progress-bar-active;
+        animation: progress-loading 3s linear infinite;
+      }
+    }
+  }
+  .datatable-header {
+    background-clip: padding-box;
+    background-color: $color-table-datatable-header;
+    background-image: -webkit-linear-gradient(
+      top,
+      $color-table-gradient-1 0,
+      $color-table-gradient-2 100%
+    );
+    background-image: -o-linear-gradient(
+      top,
+      $color-table-gradient-1 0,
+      $color-table-gradient-2 100%
+    );
+    background-image: linear-gradient(
+      to bottom,
+      $color-table-gradient-1 0,
+      $color-table-gradient-2 100%
+    );
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr&#x3D;&#x27;#fffafafa&#x27;, endColorstr&#x3D;&#x27;#ffededed&#x27;, GradientType&#x3D;0);
+    .sort-asc,
+    .sort-desc {
+      color: $color-table-sort;
+    }
+    .datatable-header-cell {
+      @include table-cell;
+      text-align: left;
+      font-weight: bold;
+      .datatable-header-cell-label {
+        &amp;:after {
+          font-family: ForkAwesome;
+          font-weight: 400;
+          height: 9px;
+          left: 10px;
+          line-height: 12px;
+          position: relative;
+          vertical-align: baseline;
+          width: 12px;
+        }
+      }
+      &amp;.sortable {
+        .datatable-header-cell-label:after {
+          content: &#x27; \f0dc&#x27;;
+        }
+        &amp;.sort-active {
+          &amp;.sort-asc .datatable-header-cell-label:after {
+            content: &#x27; \f160&#x27;;
+          }
+          &amp;.sort-desc .datatable-header-cell-label:after {
+            content: &#x27; \f161&#x27;;
+          }
+        }
+      }
+      &amp;:first-child {
+        border-left: none;
+      }
+    }
+  }
+  .datatable-body {
+    .empty-row {
+      background-color: $color-table-empty-row;
+      text-align: center;
+      font-weight: bold;
+      font-style: italic;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    .datatable-body-row {
+      .label {
+        font-size: 0.9em;
+      }
+      &amp;.clickable:hover .datatable-row-group {
+        background-color: $color-table-hover-row;
+        transition-property: background;
+        transition-duration: 0.3s;
+        transition-timing-function: linear;
+      }
+      &amp;.datatable-row-even {
+        background-color: $color-table-even-row-bg;
+      }
+      &amp;.datatable-row-odd {
+        background-color: $color-table-odd-row-bg;
+      }
+      &amp;.active,
+      &amp;.active:hover {
+        background-color: $color-table-active-row-hover;
+      }
+      .datatable-body-cell {
+        @include table-cell;
+        &amp;:first-child {
+          border-left: none;
+        }
+        .datatable-body-cell-label {
+          display: block;
+        }
+      }
+    }
+  }
+  .datatable-footer {
+    .selected-count,
+    .page-count {
+      font-style: italic;
+      padding-left: 5px;
+    }
+    .datatable-pager .pager {
+      margin-right: 5px !important;
+      &amp; li:not(:first-child) {
+        /** Add space between buttons */
+        margin-left: 3px;
+      }
+      &amp; li &gt; a,
+      &amp; li &gt; span {
+        border-radius: 3px;
+      }
+      .pages {
+        &amp; &gt; a,
+        &amp; &gt; span {
+          display: inline-block;
+          padding: 5px 10px;
+          margin-bottom: 5px;
+          border: none;
+        }
+        a:hover {
+          background-color: $color-table-active-row;
+        }
+        &amp;.active &gt; a {
+          background-color: $color-table-active-row-hover;
+        }
+      }
+    }
+  }
+}
+
+@keyframes progress-loading {
+  from {
+    left: -200px;
+    width: 15%;
+  }
+  50% {
+    width: 30%;
+  }
+  70% {
+    width: 70%;
+  }
+  80% {
+    left: 50%;
+  }
+  95% {
+    left: 120%;
+  }
+  to {
+    left: 100%;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><cd-error-panel *ngIf="loadingError"                i18n>Failed to load data.</cd-error-panel><div class="dataTables_wrapper">  <div class="dataTables_header clearfix form-inline"       *ngIf="toolHeader">    <!-- actions -->    <div class="oadatatableactions">      <ng-content select=".table-actions"></ng-content>    </div>    <!-- end actions -->    <!-- filters -->    <ng-content select=".table-filters"></ng-content>    <!-- end filters -->    <!-- search -->    <div class="input-group">      <span class="input-group-addon">        <i class="glyphicon glyphicon-search"></i>      </span>      <input class="form-control"             type="text"             [(ngModel)]="search"             (keyup)="updateFilter()">      <span class="input-group-btn">        <button type="button"                class="btn btn-default clear-input tc_clearInputBtn"                (click)="updateFilter(true)">          <i class="icon-prepend fa fa-remove"></i>        </button>      </span>    </div>    <!-- end search -->    <!-- pagination limit -->    <div class="input-group dataTables_paginate">      <input class="form-control"             type="number"             min="1"             max="9999"             [value]="userConfig.limit"             (click)="setLimit($event)"             (keyup)="setLimit($event)"             (blur)="setLimit($event)">    </div>    <!-- end pagination limit-->    <!-- show hide columns -->    <div class="widget-toolbar">      <div dropdown           class="dropdown tc_menuitem tc_menuitem_cluster">        <a dropdownToggle           class="btn btn-sm btn-default dropdown-toggle tc_columnBtn"           data-toggle="dropdown">          <i class="fa fa-lg fa-table"></i>        </a>        <ul *dropdownMenu            class="dropdown-menu">          <li *ngFor="let column of columns">            <label>              <input type="checkbox"                     (change)="toggleColumn($event)"                     [name]="column.prop"                     [checked]="!column.isHidden">              <span>{{ column.name }}</span>            </label>          </li>        </ul>      </div>    </div>    <!-- end show hide columns -->    <!-- refresh button -->    <div class="widget-toolbar tc_refreshBtn"         *ngIf="fetchData.observers.length > 0">      <a (click)="refreshBtn()">        <i class="fa fa-lg fa-refresh"           [class.fa-spin]="updating || loadingIndicator"></i>      </a>    </div>    <!-- end refresh button -->  </div>  <ngx-datatable #table                 class="bootstrap oadatatable"                 [cssClasses]="paginationClasses"                 [selectionType]="selectionType"                 [selected]="selection.selected"                 (select)="onSelect()"                 [sorts]="userConfig.sorts"                 (sort)="changeSorting($event)"                 [columns]="tableColumns"                 [columnMode]="columnMode"                 [rows]="rows"                 [rowClass]="getRowClass()"                 [headerHeight]="header ? \'auto\' : 0"                 [footerHeight]="footer ? \'auto\' : 0"                 [limit]="userConfig.limit > 0 ? userConfig.limit : undefined"                 [loadingIndicator]="loadingIndicator"                 [rowIdentity]="rowIdentity()"                 [rowHeight]="\'auto\'">    <ngx-datatable-footer>      <ng-template ngx-datatable-footer-template                   let-rowCount="rowCount"                   let-pageSize="pageSize"                   let-selectedCount="selectedCount"                   let-curPage="curPage"                   let-offset="offset"                   let-isVisible="isVisible">        <div class="page-count">          <span *ngIf="selectionType">            {{ selectedCount }} <ng-container i18n="X selected">selected</ng-container> /          </span>          <span *ngIf="rowCount != data?.length">            {{ rowCount }} <ng-container i18n="X found">found</ng-container> /          </span>          <span>            {{ data?.length || 0 }} <ng-container i18n="X total">total</ng-container>          </span>        </div>        <datatable-pager [pagerLeftArrowIcon]="paginationClasses.pagerLeftArrow"                         [pagerRightArrowIcon]="paginationClasses.pagerRightArrow"                         [pagerPreviousIcon]="paginationClasses.pagerPrevious"                         [pagerNextIcon]="paginationClasses.pagerNext"                         [page]="curPage"                         [size]="pageSize"                         [count]="rowCount"                         [hidden]="!((rowCount / pageSize) > 1)"                         (change)="table.onFooterPage($event)">        </datatable-pager>      </ng-template>    </ngx-datatable-footer>  </ngx-datatable></div><!-- Table Details --><ng-content select="[cdTableDetail]"></ng-content><!-- cell templates that can be accessed from outside --><ng-template #tableCellBoldTpl             let-value="value">  <strong>{{ value }}</strong></ng-template><ng-template #sparklineTpl             let-row="row"             let-value="value">  <cd-sparkline [data]="value"                [isBinary]="row.cdIsBinary"></cd-sparkline></ng-template><ng-template #routerLinkTpl             let-row="row"             let-value="value">  <a [routerLink]="[row.cdLink]"     [queryParams]="row.cdParams">{{ value }}</a></ng-template><ng-template #checkIconTpl             let-value="value">  <i class="fa fa-check fa-fw"     [hidden]="!value"></i></ng-template><ng-template #perSecondTpl             let-row="row"             let-value="value">  {{ value }} /s</ng-template><ng-template #executingTpl             let-row="row"             let-value="value">  <i class="fa fa-spinner fa-spin fa-fw"     *ngIf="row.cdExecuting"></i>  {{ value }}  <span *ngIf="row.cdExecuting"        class="text-muted italic">({{ row.cdExecuting }}... )</span></ng-template><ng-template #classAddingTpl             let-value="value">  <span class="{{useCustomClass(value)}}">{{ value }}</span></ng-template></div>'
+    var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'cd-about'},{'name': 'AdministrationComponent', 'selector': 'cd-administration'},{'name': 'AppComponent', 'selector': 'cd-root'},{'name': 'BackButtonComponent', 'selector': 'cd-back-button'},{'name': 'BreadcrumbsComponent', 'selector': 'cd-breadcrumbs'},{'name': 'CephfsChartComponent', 'selector': 'cd-cephfs-chart'},{'name': 'CephfsClientsComponent', 'selector': 'cd-cephfs-clients'},{'name': 'CephfsDetailComponent', 'selector': 'cd-cephfs-detail'},{'name': 'CephfsListComponent', 'selector': 'cd-cephfs-list'},{'name': 'ConfigurationComponent', 'selector': 'cd-configuration'},{'name': 'ConfigurationDetailsComponent', 'selector': 'cd-configuration-details'},{'name': 'ConfigurationFormComponent', 'selector': 'cd-configuration-form'},{'name': 'ConfirmationModalComponent', 'selector': 'cd-confirmation-modal'},{'name': 'CriticalConfirmationModalComponent', 'selector': 'cd-deletion-modal'},{'name': 'CrushmapComponent', 'selector': 'cd-crushmap'},{'name': 'DaemonListComponent', 'selector': 'cd-mirroring-daemons'},{'name': 'DashboardComponent', 'selector': 'cd-dashboard'},{'name': 'DashboardHelpComponent', 'selector': 'cd-dashboard-help'},{'name': 'ErasureCodeProfileFormComponent', 'selector': 'cd-erasure-code-profile-form'},{'name': 'ErrorPanelComponent', 'selector': 'cd-error-panel'},{'name': 'ForbiddenComponent', 'selector': 'cd-forbidden'},{'name': 'GrafanaComponent', 'selector': 'cd-grafana'},{'name': 'HealthComponent', 'selector': 'cd-health'},{'name': 'HealthPieComponent', 'selector': 'cd-health-pie'},{'name': 'HelperComponent', 'selector': 'cd-helper'},{'name': 'HostDetailsComponent', 'selector': 'cd-host-details'},{'name': 'HostsComponent', 'selector': 'cd-hosts'},{'name': 'IdentityComponent', 'selector': 'cd-identity'},{'name': 'ImageListComponent', 'selector': 'cd-mirroring-images'},{'name': 'InfoCardComponent', 'selector': 'cd-info-card'},{'name': 'InfoGroupComponent', 'selector': 'cd-info-group'},{'name': 'InfoPanelComponent', 'selector': 'cd-info-panel'},{'name': 'IscsiComponent', 'selector': 'cd-iscsi'},{'name': 'IscsiTabsComponent', 'selector': 'cd-iscsi-tabs'},{'name': 'IscsiTargetDetailsComponent', 'selector': 'cd-iscsi-target-details'},{'name': 'IscsiTargetDiscoveryModalComponent', 'selector': 'cd-iscsi-target-discovery-modal'},{'name': 'IscsiTargetFormComponent', 'selector': 'cd-iscsi-target-form'},{'name': 'IscsiTargetImageSettingsModalComponent', 'selector': 'cd-iscsi-target-image-settings-modal'},{'name': 'IscsiTargetIqnSettingsModalComponent', 'selector': 'cd-iscsi-target-iqn-settings-modal'},{'name': 'IscsiTargetListComponent', 'selector': 'cd-iscsi-target-list'},{'name': 'LanguageSelectorComponent', 'selector': 'cd-language-selector'},{'name': 'LoadingPanelComponent', 'selector': 'cd-loading-panel'},{'name': 'LoginComponent', 'selector': 'cd-login'},{'name': 'LogsComponent', 'selector': 'cd-logs'},{'name': 'MgrModuleDetailsComponent', 'selector': 'cd-mgr-module-details'},{'name': 'MgrModuleFormComponent', 'selector': 'cd-mgr-module-form'},{'name': 'MgrModuleListComponent', 'selector': 'cd-mgr-module-list'},{'name': 'ModalComponent', 'selector': 'cd-modal'},{'name': 'MonitorComponent', 'selector': 'cd-monitor'},{'name': 'NavigationComponent', 'selector': 'cd-navigation'},{'name': 'Nfs501Component', 'selector': 'cd-nfs-501'},{'name': 'NfsDetailsComponent', 'selector': 'cd-nfs-details'},{'name': 'NfsFormClientComponent', 'selector': 'cd-nfs-form-client'},{'name': 'NfsFormComponent', 'selector': 'cd-nfs-form'},{'name': 'NfsListComponent', 'selector': 'cd-nfs-list'},{'name': 'NotFoundComponent', 'selector': 'cd-not-found'},{'name': 'NotificationsComponent', 'selector': 'cd-notifications'},{'name': 'OsdDetailsComponent', 'selector': 'cd-osd-details'},{'name': 'OsdFlagsModalComponent', 'selector': 'cd-osd-flags-modal'},{'name': 'OsdListComponent', 'selector': 'cd-osd-list'},{'name': 'OsdPerformanceHistogramComponent', 'selector': 'cd-osd-performance-histogram'},{'name': 'OsdRecvSpeedModalComponent', 'selector': 'cd-osd-recv-speed-modal'},{'name': 'OsdReweightModalComponent', 'selector': 'cd-osd-reweight-modal'},{'name': 'OsdScrubModalComponent', 'selector': 'cd-osd-scrub-modal'},{'name': 'OverviewComponent', 'selector': 'cd-mirroring'},{'name': 'PerformanceCounterComponent', 'selector': 'cd-performance-counter'},{'name': 'PoolDetailsComponent', 'selector': 'cd-pool-details'},{'name': 'PoolEditModeModalComponent', 'selector': 'cd-pool-edit-mode-modal'},{'name': 'PoolEditPeerModalComponent', 'selector': 'cd-pool-edit-peer-modal'},{'name': 'PoolFormComponent', 'selector': 'cd-pool-form'},{'name': 'PoolListComponent', 'selector': 'cd-pool-list'},{'name': 'PoolListComponent', 'selector': 'cd-mirroring-pools'},{'name': 'PrometheusListComponent', 'selector': 'cd-prometheus-list'},{'name': 'RbdConfigurationFormComponent', 'selector': 'cd-rbd-configuration-form'},{'name': 'RbdConfigurationListComponent', 'selector': 'cd-rbd-configuration-table'},{'name': 'RbdDetailsComponent', 'selector': 'cd-rbd-details'},{'name': 'RbdFormComponent', 'selector': 'cd-rbd-form'},{'name': 'RbdImagesComponent', 'selector': 'cd-rbd-images'},{'name': 'RbdListComponent', 'selector': 'cd-rbd-list'},{'name': 'RbdSnapshotFormComponent', 'selector': 'cd-rbd-snapshot-form'},{'name': 'RbdSnapshotListComponent', 'selector': 'cd-rbd-snapshot-list'},{'name': 'RbdTrashListComponent', 'selector': 'cd-rbd-trash-list'},{'name': 'RbdTrashMoveModalComponent', 'selector': 'cd-rbd-trash-move-modal'},{'name': 'RbdTrashPurgeModalComponent', 'selector': 'cd-rbd-trash-purge-modal'},{'name': 'RbdTrashRestoreModalComponent', 'selector': 'cd-rbd-trash-restore-modal'},{'name': 'RefreshSelectorComponent', 'selector': 'cd-refresh-selector'},{'name': 'Rgw501Component', 'selector': 'cd-rgw-501'},{'name': 'RgwBucketDetailsComponent', 'selector': 'cd-rgw-bucket-details'},{'name': 'RgwBucketFormComponent', 'selector': 'cd-rgw-bucket-form'},{'name': 'RgwBucketListComponent', 'selector': 'cd-rgw-bucket-list'},{'name': 'RgwDaemonDetailsComponent', 'selector': 'cd-rgw-daemon-details'},{'name': 'RgwDaemonListComponent', 'selector': 'cd-rgw-daemon-list'},{'name': 'RgwUserCapabilityModalComponent', 'selector': 'cd-rgw-user-capability-modal'},{'name': 'RgwUserDetailsComponent', 'selector': 'cd-rgw-user-details'},{'name': 'RgwUserFormComponent', 'selector': 'cd-rgw-user-form'},{'name': 'RgwUserListComponent', 'selector': 'cd-rgw-user-list'},{'name': 'RgwUserS3KeyModalComponent', 'selector': 'cd-rgw-user-s3-key-modal'},{'name': 'RgwUserSubuserModalComponent', 'selector': 'cd-rgw-user-subuser-modal'},{'name': 'RgwUserSwiftKeyModalComponent', 'selector': 'cd-rgw-user-swift-key-modal'},{'name': 'RoleDetailsComponent', 'selector': 'cd-role-details'},{'name': 'RoleFormComponent', 'selector': 'cd-role-form'},{'name': 'RoleListComponent', 'selector': 'cd-role-list'},{'name': 'SelectBadgesComponent', 'selector': 'cd-select-badges'},{'name': 'SelectComponent', 'selector': 'cd-select'},{'name': 'SparklineComponent', 'selector': 'cd-sparkline'},{'name': 'SsoNotFoundComponent', 'selector': 'cd-sso-not-found'},{'name': 'SubmitButtonComponent', 'selector': 'cd-submit-button'},{'name': 'TableActionsComponent', 'selector': 'cd-table-actions'},{'name': 'TableComponent', 'selector': 'cd-table'},{'name': 'TableKeyValueComponent', 'selector': 'cd-table-key-value'},{'name': 'TablePerformanceCounterComponent', 'selector': 'cd-table-performance-counter'},{'name': 'TaskManagerComponent', 'selector': 'cd-task-manager'},{'name': 'UsageBarComponent', 'selector': 'cd-usage-bar'},{'name': 'UserFormComponent', 'selector': 'cd-user-form'},{'name': 'UserListComponent', 'selector': 'cd-user-list'},{'name': 'UserTabsComponent', 'selector': 'cd-user-tabs'},{'name': 'ViewCacheComponent', 'selector': 'cd-view-cache'},{'name': 'WarningPanelComponent', 'selector': 'cd-warning-panel'}];
+    var DIRECTIVES = [{'name': 'AutofocusDirective', 'selector': '[autofocus]'},{'name': 'Copy2ClipboardButtonDirective', 'selector': '[cdCopy2ClipboardButton]'},{'name': 'DimlessBinaryDirective', 'selector': '[cdDimlessBinary]'},{'name': 'DimlessBinaryPerSecondDirective', 'selector': '[cdDimlessBinaryPerSecond]'},{'name': 'IopsDirective', 'selector': '[cdIops]'},{'name': 'MillisecondsDirective', 'selector': '[cdMilliseconds]'},{'name': 'PasswordButtonDirective', 'selector': '[cdPasswordButton]'}];
+    var ACTUAL_COMPONENT = {'name': 'TableComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'TableComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

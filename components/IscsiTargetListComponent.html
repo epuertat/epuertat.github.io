@@ -1,0 +1,1586 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ceph-dashboard documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ceph-dashboard documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>IscsiTargetListComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/ceph/block/iscsi-target-list/iscsi-target-list.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">providers</td>
+                <td class="col-md-9">
+                                <code><a href="../injectables/TaskListService.html" target="_self" >TaskListService</a></code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>cd-iscsi-target-list</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./iscsi-target-list.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./iscsi-target-list.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#available">available</a>
+                            </li>
+                            <li>
+                                <a href="#builders">builders</a>
+                            </li>
+                            <li>
+                                <a href="#columns">columns</a>
+                            </li>
+                            <li>
+                                <a href="#docsUrl">docsUrl</a>
+                            </li>
+                            <li>
+                                <a href="#modalRef">modalRef</a>
+                            </li>
+                            <li>
+                                <a href="#permissions">permissions</a>
+                            </li>
+                            <li>
+                                <a href="#selection">selection</a>
+                            </li>
+                            <li>
+                                <a href="#settings">settings</a>
+                            </li>
+                            <li>
+                                <a href="#status">status</a>
+                            </li>
+                            <li>
+                                <a href="#summaryDataSubscription">summaryDataSubscription</a>
+                            </li>
+                            <li>
+                                <a href="#table">table</a>
+                            </li>
+                            <li>
+                                <a href="#tableActions">tableActions</a>
+                            </li>
+                            <li>
+                                <a href="#targets">targets</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#configureDiscoveryAuth">configureDiscoveryAuth</a>
+                            </li>
+                            <li>
+                                <a href="#deleteIscsiTargetModal">deleteIscsiTargetModal</a>
+                            </li>
+                            <li>
+                                <a href="#itemFilter">itemFilter</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy">ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onFetchError">onFetchError</a>
+                            </li>
+                            <li>
+                                <a href="#prepareResponse">prepareResponse</a>
+                            </li>
+                            <li>
+                                <a href="#taskFilter">taskFilter</a>
+                            </li>
+                            <li>
+                                <a href="#updateSelection">updateSelection</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(authStorageService: <a href="../injectables/AuthStorageService.html">AuthStorageService</a>, i18n: I18n, iscsiService: <a href="../injectables/IscsiService.html">IscsiService</a>, taskListService: <a href="../injectables/TaskListService.html">TaskListService</a>, cephReleaseNamePipe: CephReleaseNamePipe, summaryservice: <a href="../injectables/SummaryService.html">SummaryService</a>, modalService: BsModalService, taskWrapper: <a href="../injectables/TaskWrapperService.html">TaskWrapperService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/ceph/block/iscsi-target-list/iscsi-target-list.component.ts:51</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>authStorageService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthStorageService.html" target="_self" >AuthStorageService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>i18n</td>
+                                                  
+                                                        <td>
+                                                                    <code>I18n</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>iscsiService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/IscsiService.html" target="_self" >IscsiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>taskListService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TaskListService.html" target="_self" >TaskListService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>cephReleaseNamePipe</td>
+                                                  
+                                                        <td>
+                                                                    <code>CephReleaseNamePipe</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>summaryservice</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SummaryService.html" target="_self" >SummaryService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>modalService</td>
+                                                  
+                                                        <td>
+                                                                    <code>BsModalService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>taskWrapper</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TaskWrapperService.html" target="_self" >TaskWrapperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="configureDiscoveryAuth"></a>
+                    <span class="name">
+                        <b>
+                            configureDiscoveryAuth
+                        </b>
+                        <a href="#configureDiscoveryAuth"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>configureDiscoveryAuth()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="181"
+                            class="link-to-prism">src/app/ceph/block/iscsi-target-list/iscsi-target-list.component.ts:181</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteIscsiTargetModal"></a>
+                    <span class="name">
+                        <b>
+                            deleteIscsiTargetModal
+                        </b>
+                        <a href="#deleteIscsiTargetModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteIscsiTargetModal()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="164"
+                            class="link-to-prism">src/app/ceph/block/iscsi-target-list/iscsi-target-list.component.ts:164</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="itemFilter"></a>
+                    <span class="name">
+                        <b>
+                            itemFilter
+                        </b>
+                        <a href="#itemFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>itemFilter(entry, task)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="152"
+                            class="link-to-prism">src/app/ceph/block/iscsi-target-list/iscsi-target-list.component.ts:152</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>entry</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>task</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <b>
+                            ngOnDestroy
+                        </b>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="133"
+                            class="link-to-prism">src/app/ceph/block/iscsi-target-list/iscsi-target-list.component.ts:133</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="87"
+                            class="link-to-prism">src/app/ceph/block/iscsi-target-list/iscsi-target-list.component.ts:87</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onFetchError"></a>
+                    <span class="name">
+                        <b>
+                            onFetchError
+                        </b>
+                        <a href="#onFetchError"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onFetchError()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="148"
+                            class="link-to-prism">src/app/ceph/block/iscsi-target-list/iscsi-target-list.component.ts:148</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="prepareResponse"></a>
+                    <span class="name">
+                        <b>
+                            prepareResponse
+                        </b>
+                        <a href="#prepareResponse"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>prepareResponse(resp: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="139"
+                            class="link-to-prism">src/app/ceph/block/iscsi-target-list/iscsi-target-list.component.ts:139</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>resp</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>any[]</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="taskFilter"></a>
+                    <span class="name">
+                        <b>
+                            taskFilter
+                        </b>
+                        <a href="#taskFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>taskFilter(task)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="156"
+                            class="link-to-prism">src/app/ceph/block/iscsi-target-list/iscsi-target-list.component.ts:156</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>task</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateSelection"></a>
+                    <span class="name">
+                        <b>
+                            updateSelection
+                        </b>
+                        <a href="#updateSelection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateSelection(selection: <a href="../classes/CdTableSelection.html">CdTableSelection</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="160"
+                            class="link-to-prism">src/app/ceph/block/iscsi-target-list/iscsi-target-list.component.ts:160</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>selection</td>
+                                    <td>
+                                                <code><a href="../classes/CdTableSelection.html" target="_self" >CdTableSelection</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="available"></a>
+                        <span class="name">
+                            <b>
+                            available</b>
+                            <a href="#available"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>undefined</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/ceph/block/iscsi-target-list/iscsi-target-list.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="builders"></a>
+                        <span class="name">
+                            <b>
+                            builders</b>
+                            <a href="#builders"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    &#x27;iscsi/target/create&#x27;: (metadata) &#x3D;&gt; {
+      return {
+        target_iqn: metadata[&#x27;target_iqn&#x27;]
+      };
+    }
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/ceph/block/iscsi-target-list/iscsi-target-list.component.ts:45</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="columns"></a>
+                        <span class="name">
+                            <b>
+                            columns</b>
+                            <a href="#columns"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/CdTableColumn.html" target="_self" >CdTableColumn[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/ceph/block/iscsi-target-list/iscsi-target-list.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="docsUrl"></a>
+                        <span class="name">
+                            <b>
+                            docsUrl</b>
+                            <a href="#docsUrl"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/ceph/block/iscsi-target-list/iscsi-target-list.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="modalRef"></a>
+                        <span class="name">
+                            <b>
+                            modalRef</b>
+                            <a href="#modalRef"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>BsModalRef</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/ceph/block/iscsi-target-list/iscsi-target-list.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="permissions"></a>
+                        <span class="name">
+                            <b>
+                            permissions</b>
+                            <a href="#permissions"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Permissions.html" target="_self" >Permissions</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/ceph/block/iscsi-target-list/iscsi-target-list.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selection"></a>
+                        <span class="name">
+                            <b>
+                            selection</b>
+                            <a href="#selection"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new CdTableSelection()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/ceph/block/iscsi-target-list/iscsi-target-list.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="settings"></a>
+                        <span class="name">
+                            <b>
+                            settings</b>
+                            <a href="#settings"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/ceph/block/iscsi-target-list/iscsi-target-list.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="status"></a>
+                        <span class="name">
+                            <b>
+                            status</b>
+                            <a href="#status"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/ceph/block/iscsi-target-list/iscsi-target-list.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="summaryDataSubscription"></a>
+                        <span class="name">
+                            <b>
+                            summaryDataSubscription</b>
+                            <a href="#summaryDataSubscription"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Subscription</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/ceph/block/iscsi-target-list/iscsi-target-list.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="table"></a>
+                        <span class="name">
+                            <b>
+                            table</b>
+                            <a href="#table"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../components/TableComponent.html" target="_self" >TableComponent</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(TableComponent)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/ceph/block/iscsi-target-list/iscsi-target-list.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tableActions"></a>
+                        <span class="name">
+                            <b>
+                            tableActions</b>
+                            <a href="#tableActions"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/CdTableAction.html" target="_self" >CdTableAction[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/ceph/block/iscsi-target-list/iscsi-target-list.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="targets"></a>
+                        <span class="name">
+                            <b>
+                            targets</b>
+                            <a href="#targets"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/ceph/block/iscsi-target-list/iscsi-target-list.component.ts:43</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnDestroy, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
+
+import { I18n } from &#x27;@ngx-translate/i18n-polyfill&#x27;;
+import { BsModalRef, BsModalService } from &#x27;ngx-bootstrap/modal&#x27;;
+import { Subscription } from &#x27;rxjs&#x27;;
+
+import { IscsiService } from &#x27;../../../shared/api/iscsi.service&#x27;;
+import { CriticalConfirmationModalComponent } from &#x27;../../../shared/components/critical-confirmation-modal/critical-confirmation-modal.component&#x27;;
+import { TableComponent } from &#x27;../../../shared/datatable/table/table.component&#x27;;
+import { CellTemplate } from &#x27;../../../shared/enum/cell-template.enum&#x27;;
+import { CdTableAction } from &#x27;../../../shared/models/cd-table-action&#x27;;
+import { CdTableColumn } from &#x27;../../../shared/models/cd-table-column&#x27;;
+import { CdTableSelection } from &#x27;../../../shared/models/cd-table-selection&#x27;;
+import { FinishedTask } from &#x27;../../../shared/models/finished-task&#x27;;
+import { Permissions } from &#x27;../../../shared/models/permissions&#x27;;
+import { CephReleaseNamePipe } from &#x27;../../../shared/pipes/ceph-release-name.pipe&#x27;;
+import { AuthStorageService } from &#x27;../../../shared/services/auth-storage.service&#x27;;
+import { SummaryService } from &#x27;../../../shared/services/summary.service&#x27;;
+import { TaskListService } from &#x27;../../../shared/services/task-list.service&#x27;;
+import { TaskWrapperService } from &#x27;../../../shared/services/task-wrapper.service&#x27;;
+import { IscsiTargetDiscoveryModalComponent } from &#x27;../iscsi-target-discovery-modal/iscsi-target-discovery-modal.component&#x27;;
+
+@Component({
+  selector: &#x27;cd-iscsi-target-list&#x27;,
+  templateUrl: &#x27;./iscsi-target-list.component.html&#x27;,
+  styleUrls: [&#x27;./iscsi-target-list.component.scss&#x27;],
+  providers: [TaskListService]
+})
+export class IscsiTargetListComponent implements OnInit, OnDestroy {
+  @ViewChild(TableComponent)
+  table: TableComponent;
+
+  available: boolean &#x3D; undefined;
+  columns: CdTableColumn[];
+  docsUrl: string;
+  modalRef: BsModalRef;
+  permissions: Permissions;
+  selection &#x3D; new CdTableSelection();
+  settings: any;
+  status: string;
+  summaryDataSubscription: Subscription;
+  tableActions: CdTableAction[];
+  targets &#x3D; [];
+
+  builders &#x3D; {
+    &#x27;iscsi/target/create&#x27;: (metadata) &#x3D;&gt; {
+      return {
+        target_iqn: metadata[&#x27;target_iqn&#x27;]
+      };
+    }
+  };
+
+  constructor(
+    private authStorageService: AuthStorageService,
+    private i18n: I18n,
+    private iscsiService: IscsiService,
+    private taskListService: TaskListService,
+    private cephReleaseNamePipe: CephReleaseNamePipe,
+    private summaryservice: SummaryService,
+    private modalService: BsModalService,
+    private taskWrapper: TaskWrapperService
+  ) {
+    this.permissions &#x3D; this.authStorageService.getPermissions();
+
+    this.tableActions &#x3D; [
+      {
+        permission: &#x27;create&#x27;,
+        icon: &#x27;fa-plus&#x27;,
+        routerLink: () &#x3D;&gt; &#x27;/block/iscsi/targets/add&#x27;,
+        name: this.i18n(&#x27;Add&#x27;)
+      },
+      {
+        permission: &#x27;update&#x27;,
+        icon: &#x27;fa-pencil&#x27;,
+        routerLink: () &#x3D;&gt; &#x60;/block/iscsi/targets/edit/${this.selection.first().target_iqn}&#x60;,
+        name: this.i18n(&#x27;Edit&#x27;)
+      },
+      {
+        permission: &#x27;delete&#x27;,
+        icon: &#x27;fa-times&#x27;,
+        click: () &#x3D;&gt; this.deleteIscsiTargetModal(),
+        name: this.i18n(&#x27;Delete&#x27;)
+      }
+    ];
+  }
+
+  ngOnInit() {
+    this.columns &#x3D; [
+      {
+        name: this.i18n(&#x27;Target&#x27;),
+        prop: &#x27;target_iqn&#x27;,
+        flexGrow: 2,
+        cellTransformation: CellTemplate.executing
+      },
+      {
+        name: this.i18n(&#x27;Portals&#x27;),
+        prop: &#x27;cdPortals&#x27;,
+        flexGrow: 2
+      },
+      {
+        name: this.i18n(&#x27;Images&#x27;),
+        prop: &#x27;cdImages&#x27;,
+        flexGrow: 2
+      }
+    ];
+
+    this.iscsiService.status().subscribe((result: any) &#x3D;&gt; {
+      this.available &#x3D; result.available;
+
+      if (result.available) {
+        this.taskListService.init(
+          () &#x3D;&gt; this.iscsiService.listTargets(),
+          (resp) &#x3D;&gt; this.prepareResponse(resp),
+          (targets) &#x3D;&gt; (this.targets &#x3D; targets),
+          () &#x3D;&gt; this.onFetchError(),
+          this.taskFilter,
+          this.itemFilter,
+          this.builders
+        );
+
+        this.iscsiService.settings().subscribe((settings: any) &#x3D;&gt; {
+          this.settings &#x3D; settings;
+        });
+      } else {
+        const summary &#x3D; this.summaryservice.getCurrentSummary();
+        const releaseName &#x3D; this.cephReleaseNamePipe.transform(summary.version);
+        this.docsUrl &#x3D; &#x60;http://docs.ceph.com/docs/${releaseName}/mgr/dashboard/#enabling-iscsi-management&#x60;;
+        this.status &#x3D; result.message;
+      }
+    });
+  }
+
+  ngOnDestroy() {
+    if (this.summaryDataSubscription) {
+      this.summaryDataSubscription.unsubscribe();
+    }
+  }
+
+  prepareResponse(resp: any): any[] {
+    resp.forEach((element) &#x3D;&gt; {
+      element.cdPortals &#x3D; element.portals.map((portal) &#x3D;&gt; &#x60;${portal.host}:${portal.ip}&#x60;);
+      element.cdImages &#x3D; element.disks.map((disk) &#x3D;&gt; &#x60;${disk.pool}/${disk.image}&#x60;);
+    });
+
+    return resp;
+  }
+
+  onFetchError() {
+    this.table.reset(); // Disable loading indicator.
+  }
+
+  itemFilter(entry, task) {
+    return entry.target_iqn &#x3D;&#x3D;&#x3D; task.metadata[&#x27;target_iqn&#x27;];
+  }
+
+  taskFilter(task) {
+    return [&#x27;iscsi/target/create&#x27;, &#x27;iscsi/target/edit&#x27;, &#x27;iscsi/target/delete&#x27;].includes(task.name);
+  }
+
+  updateSelection(selection: CdTableSelection) {
+    this.selection &#x3D; selection;
+  }
+
+  deleteIscsiTargetModal() {
+    const target_iqn &#x3D; this.selection.first().target_iqn;
+
+    this.modalRef &#x3D; this.modalService.show(CriticalConfirmationModalComponent, {
+      initialState: {
+        itemDescription: this.i18n(&#x27;iSCSI&#x27;),
+        submitActionObservable: () &#x3D;&gt;
+          this.taskWrapper.wrapTaskAroundCall({
+            task: new FinishedTask(&#x27;iscsi/target/delete&#x27;, {
+              target_iqn: target_iqn
+            }),
+            call: this.iscsiService.deleteTarget(target_iqn)
+          })
+      }
+    });
+  }
+
+  configureDiscoveryAuth() {
+    this.modalService.show(IscsiTargetDiscoveryModalComponent, {});
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;cd-iscsi-tabs&gt;&lt;/cd-iscsi-tabs&gt;
+
+&lt;cd-info-panel *ngIf&#x3D;&quot;available &#x3D;&#x3D;&#x3D; false&quot;
+               title&#x3D;&quot;iSCSI Targets not available&quot;
+               i18n-title&gt;
+  &lt;ng-container i18n&gt;Please consult the &lt;a href&#x3D;&quot;{{docsUrl}}&quot;
+       target&#x3D;&quot;_blank&quot;&gt;documentation&lt;/a&gt;
+    on how to configure and enable the iSCSI Targets management functionality.&lt;/ng-container&gt;
+
+  &lt;ng-container *ngIf&#x3D;&quot;status&quot;&gt;
+    &lt;br&gt;
+    &lt;span i18n&gt;Available information:&lt;/span&gt;
+    &lt;pre&gt;{{ status }}&lt;/pre&gt;
+  &lt;/ng-container&gt;
+&lt;/cd-info-panel&gt;
+
+&lt;cd-table #table
+          *ngIf&#x3D;&quot;available &#x3D;&#x3D;&#x3D; true&quot;
+          [data]&#x3D;&quot;targets&quot;
+          columnMode&#x3D;&quot;flex&quot;
+          [columns]&#x3D;&quot;columns&quot;
+          identifier&#x3D;&quot;target_iqn&quot;
+          forceIdentifier&#x3D;&quot;true&quot;
+          selectionType&#x3D;&quot;single&quot;
+          (updateSelection)&#x3D;&quot;updateSelection($event)&quot;&gt;
+  &lt;div class&#x3D;&quot;table-actions btn-toolbar&quot;&gt;
+    &lt;cd-table-actions class&#x3D;&quot;btn-group&quot;
+                      [permission]&#x3D;&quot;permissions.iscsi&quot;
+                      [selection]&#x3D;&quot;selection&quot;
+                      [tableActions]&#x3D;&quot;tableActions&quot;&gt;
+    &lt;/cd-table-actions&gt;
+
+    &lt;button class&#x3D;&quot;btn btn-sm btn-default btn-label&quot;
+            type&#x3D;&quot;button&quot;
+            (click)&#x3D;&quot;configureDiscoveryAuth()&quot;&gt;
+      &lt;i class&#x3D;&quot;fa fa-fw fa-key-modern&quot;
+         aria-hidden&#x3D;&quot;true&quot;&gt;
+      &lt;/i&gt;
+      &lt;ng-container i18n&gt;Set discovery authentication&lt;/ng-container&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;cd-iscsi-target-details cdTableDetail
+                           *ngIf&#x3D;&quot;selection.hasSingleSelection&quot;
+                           [selection]&#x3D;&quot;selection&quot;
+                           [settings]&#x3D;&quot;settings&quot;&gt;&lt;/cd-iscsi-target-details&gt;
+&lt;/cd-table&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./iscsi-target-list.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">::ng-deep tabset.tabset &gt; ul {
+  border-bottom: 1px solid #ddd;
+  float: left;
+  display: block;
+  margin-right: 20px;
+  border-bottom: 0;
+  border-right: 1px solid #ddd;
+  padding-right: 15px;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><cd-iscsi-tabs></cd-iscsi-tabs><cd-info-panel *ngIf="available === false"               title="iSCSI Targets not available"               i18n-title>  <ng-container i18n>Please consult the <a href="{{docsUrl}}"       target="_blank">documentation</a>    on how to configure and enable the iSCSI Targets management functionality.</ng-container>  <ng-container *ngIf="status">    <br>    <span i18n>Available information:</span>    <pre>{{ status }}</pre>  </ng-container></cd-info-panel><cd-table #table          *ngIf="available === true"          [data]="targets"          columnMode="flex"          [columns]="columns"          identifier="target_iqn"          forceIdentifier="true"          selectionType="single"          (updateSelection)="updateSelection($event)">  <div class="table-actions btn-toolbar">    <cd-table-actions class="btn-group"                      [permission]="permissions.iscsi"                      [selection]="selection"                      [tableActions]="tableActions">    </cd-table-actions>    <button class="btn btn-sm btn-default btn-label"            type="button"            (click)="configureDiscoveryAuth()">      <i class="fa fa-fw fa-key-modern"         aria-hidden="true">      </i>      <ng-container i18n>Set discovery authentication</ng-container>    </button>  </div>  <cd-iscsi-target-details cdTableDetail                           *ngIf="selection.hasSingleSelection"                           [selection]="selection"                           [settings]="settings"></cd-iscsi-target-details></cd-table></div>'
+    var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'cd-about'},{'name': 'AdministrationComponent', 'selector': 'cd-administration'},{'name': 'AppComponent', 'selector': 'cd-root'},{'name': 'BackButtonComponent', 'selector': 'cd-back-button'},{'name': 'BreadcrumbsComponent', 'selector': 'cd-breadcrumbs'},{'name': 'CephfsChartComponent', 'selector': 'cd-cephfs-chart'},{'name': 'CephfsClientsComponent', 'selector': 'cd-cephfs-clients'},{'name': 'CephfsDetailComponent', 'selector': 'cd-cephfs-detail'},{'name': 'CephfsListComponent', 'selector': 'cd-cephfs-list'},{'name': 'ConfigurationComponent', 'selector': 'cd-configuration'},{'name': 'ConfigurationDetailsComponent', 'selector': 'cd-configuration-details'},{'name': 'ConfigurationFormComponent', 'selector': 'cd-configuration-form'},{'name': 'ConfirmationModalComponent', 'selector': 'cd-confirmation-modal'},{'name': 'CriticalConfirmationModalComponent', 'selector': 'cd-deletion-modal'},{'name': 'CrushmapComponent', 'selector': 'cd-crushmap'},{'name': 'DaemonListComponent', 'selector': 'cd-mirroring-daemons'},{'name': 'DashboardComponent', 'selector': 'cd-dashboard'},{'name': 'DashboardHelpComponent', 'selector': 'cd-dashboard-help'},{'name': 'ErasureCodeProfileFormComponent', 'selector': 'cd-erasure-code-profile-form'},{'name': 'ErrorPanelComponent', 'selector': 'cd-error-panel'},{'name': 'ForbiddenComponent', 'selector': 'cd-forbidden'},{'name': 'GrafanaComponent', 'selector': 'cd-grafana'},{'name': 'HealthComponent', 'selector': 'cd-health'},{'name': 'HealthPieComponent', 'selector': 'cd-health-pie'},{'name': 'HelperComponent', 'selector': 'cd-helper'},{'name': 'HostDetailsComponent', 'selector': 'cd-host-details'},{'name': 'HostsComponent', 'selector': 'cd-hosts'},{'name': 'IdentityComponent', 'selector': 'cd-identity'},{'name': 'ImageListComponent', 'selector': 'cd-mirroring-images'},{'name': 'InfoCardComponent', 'selector': 'cd-info-card'},{'name': 'InfoGroupComponent', 'selector': 'cd-info-group'},{'name': 'InfoPanelComponent', 'selector': 'cd-info-panel'},{'name': 'IscsiComponent', 'selector': 'cd-iscsi'},{'name': 'IscsiTabsComponent', 'selector': 'cd-iscsi-tabs'},{'name': 'IscsiTargetDetailsComponent', 'selector': 'cd-iscsi-target-details'},{'name': 'IscsiTargetDiscoveryModalComponent', 'selector': 'cd-iscsi-target-discovery-modal'},{'name': 'IscsiTargetFormComponent', 'selector': 'cd-iscsi-target-form'},{'name': 'IscsiTargetImageSettingsModalComponent', 'selector': 'cd-iscsi-target-image-settings-modal'},{'name': 'IscsiTargetIqnSettingsModalComponent', 'selector': 'cd-iscsi-target-iqn-settings-modal'},{'name': 'IscsiTargetListComponent', 'selector': 'cd-iscsi-target-list'},{'name': 'LanguageSelectorComponent', 'selector': 'cd-language-selector'},{'name': 'LoadingPanelComponent', 'selector': 'cd-loading-panel'},{'name': 'LoginComponent', 'selector': 'cd-login'},{'name': 'LogsComponent', 'selector': 'cd-logs'},{'name': 'MgrModuleDetailsComponent', 'selector': 'cd-mgr-module-details'},{'name': 'MgrModuleFormComponent', 'selector': 'cd-mgr-module-form'},{'name': 'MgrModuleListComponent', 'selector': 'cd-mgr-module-list'},{'name': 'ModalComponent', 'selector': 'cd-modal'},{'name': 'MonitorComponent', 'selector': 'cd-monitor'},{'name': 'NavigationComponent', 'selector': 'cd-navigation'},{'name': 'Nfs501Component', 'selector': 'cd-nfs-501'},{'name': 'NfsDetailsComponent', 'selector': 'cd-nfs-details'},{'name': 'NfsFormClientComponent', 'selector': 'cd-nfs-form-client'},{'name': 'NfsFormComponent', 'selector': 'cd-nfs-form'},{'name': 'NfsListComponent', 'selector': 'cd-nfs-list'},{'name': 'NotFoundComponent', 'selector': 'cd-not-found'},{'name': 'NotificationsComponent', 'selector': 'cd-notifications'},{'name': 'OsdDetailsComponent', 'selector': 'cd-osd-details'},{'name': 'OsdFlagsModalComponent', 'selector': 'cd-osd-flags-modal'},{'name': 'OsdListComponent', 'selector': 'cd-osd-list'},{'name': 'OsdPerformanceHistogramComponent', 'selector': 'cd-osd-performance-histogram'},{'name': 'OsdRecvSpeedModalComponent', 'selector': 'cd-osd-recv-speed-modal'},{'name': 'OsdReweightModalComponent', 'selector': 'cd-osd-reweight-modal'},{'name': 'OsdScrubModalComponent', 'selector': 'cd-osd-scrub-modal'},{'name': 'OverviewComponent', 'selector': 'cd-mirroring'},{'name': 'PerformanceCounterComponent', 'selector': 'cd-performance-counter'},{'name': 'PoolDetailsComponent', 'selector': 'cd-pool-details'},{'name': 'PoolEditModeModalComponent', 'selector': 'cd-pool-edit-mode-modal'},{'name': 'PoolEditPeerModalComponent', 'selector': 'cd-pool-edit-peer-modal'},{'name': 'PoolFormComponent', 'selector': 'cd-pool-form'},{'name': 'PoolListComponent', 'selector': 'cd-pool-list'},{'name': 'PoolListComponent', 'selector': 'cd-mirroring-pools'},{'name': 'PrometheusListComponent', 'selector': 'cd-prometheus-list'},{'name': 'RbdConfigurationFormComponent', 'selector': 'cd-rbd-configuration-form'},{'name': 'RbdConfigurationListComponent', 'selector': 'cd-rbd-configuration-table'},{'name': 'RbdDetailsComponent', 'selector': 'cd-rbd-details'},{'name': 'RbdFormComponent', 'selector': 'cd-rbd-form'},{'name': 'RbdImagesComponent', 'selector': 'cd-rbd-images'},{'name': 'RbdListComponent', 'selector': 'cd-rbd-list'},{'name': 'RbdSnapshotFormComponent', 'selector': 'cd-rbd-snapshot-form'},{'name': 'RbdSnapshotListComponent', 'selector': 'cd-rbd-snapshot-list'},{'name': 'RbdTrashListComponent', 'selector': 'cd-rbd-trash-list'},{'name': 'RbdTrashMoveModalComponent', 'selector': 'cd-rbd-trash-move-modal'},{'name': 'RbdTrashPurgeModalComponent', 'selector': 'cd-rbd-trash-purge-modal'},{'name': 'RbdTrashRestoreModalComponent', 'selector': 'cd-rbd-trash-restore-modal'},{'name': 'RefreshSelectorComponent', 'selector': 'cd-refresh-selector'},{'name': 'Rgw501Component', 'selector': 'cd-rgw-501'},{'name': 'RgwBucketDetailsComponent', 'selector': 'cd-rgw-bucket-details'},{'name': 'RgwBucketFormComponent', 'selector': 'cd-rgw-bucket-form'},{'name': 'RgwBucketListComponent', 'selector': 'cd-rgw-bucket-list'},{'name': 'RgwDaemonDetailsComponent', 'selector': 'cd-rgw-daemon-details'},{'name': 'RgwDaemonListComponent', 'selector': 'cd-rgw-daemon-list'},{'name': 'RgwUserCapabilityModalComponent', 'selector': 'cd-rgw-user-capability-modal'},{'name': 'RgwUserDetailsComponent', 'selector': 'cd-rgw-user-details'},{'name': 'RgwUserFormComponent', 'selector': 'cd-rgw-user-form'},{'name': 'RgwUserListComponent', 'selector': 'cd-rgw-user-list'},{'name': 'RgwUserS3KeyModalComponent', 'selector': 'cd-rgw-user-s3-key-modal'},{'name': 'RgwUserSubuserModalComponent', 'selector': 'cd-rgw-user-subuser-modal'},{'name': 'RgwUserSwiftKeyModalComponent', 'selector': 'cd-rgw-user-swift-key-modal'},{'name': 'RoleDetailsComponent', 'selector': 'cd-role-details'},{'name': 'RoleFormComponent', 'selector': 'cd-role-form'},{'name': 'RoleListComponent', 'selector': 'cd-role-list'},{'name': 'SelectBadgesComponent', 'selector': 'cd-select-badges'},{'name': 'SelectComponent', 'selector': 'cd-select'},{'name': 'SparklineComponent', 'selector': 'cd-sparkline'},{'name': 'SsoNotFoundComponent', 'selector': 'cd-sso-not-found'},{'name': 'SubmitButtonComponent', 'selector': 'cd-submit-button'},{'name': 'TableActionsComponent', 'selector': 'cd-table-actions'},{'name': 'TableComponent', 'selector': 'cd-table'},{'name': 'TableKeyValueComponent', 'selector': 'cd-table-key-value'},{'name': 'TablePerformanceCounterComponent', 'selector': 'cd-table-performance-counter'},{'name': 'TaskManagerComponent', 'selector': 'cd-task-manager'},{'name': 'UsageBarComponent', 'selector': 'cd-usage-bar'},{'name': 'UserFormComponent', 'selector': 'cd-user-form'},{'name': 'UserListComponent', 'selector': 'cd-user-list'},{'name': 'UserTabsComponent', 'selector': 'cd-user-tabs'},{'name': 'ViewCacheComponent', 'selector': 'cd-view-cache'},{'name': 'WarningPanelComponent', 'selector': 'cd-warning-panel'}];
+    var DIRECTIVES = [{'name': 'AutofocusDirective', 'selector': '[autofocus]'},{'name': 'Copy2ClipboardButtonDirective', 'selector': '[cdCopy2ClipboardButton]'},{'name': 'DimlessBinaryDirective', 'selector': '[cdDimlessBinary]'},{'name': 'DimlessBinaryPerSecondDirective', 'selector': '[cdDimlessBinaryPerSecond]'},{'name': 'IopsDirective', 'selector': '[cdIops]'},{'name': 'MillisecondsDirective', 'selector': '[cdMilliseconds]'},{'name': 'PasswordButtonDirective', 'selector': '[cdPasswordButton]'}];
+    var ACTUAL_COMPONENT = {'name': 'IscsiTargetListComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'IscsiTargetListComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

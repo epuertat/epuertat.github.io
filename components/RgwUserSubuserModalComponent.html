@@ -1,0 +1,1404 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ceph-dashboard documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ceph-dashboard documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>RgwUserSubuserModalComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/ceph/rgw/rgw-user-subuser-modal/rgw-user-subuser-modal.component.ts</code>
+</p>
+
+
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>cd-rgw-user-subuser-modal</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./rgw-user-subuser-modal.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./rgw-user-subuser-modal.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#action">action</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#bsModalRef">bsModalRef</a>
+                            </li>
+                            <li>
+                                <a href="#editing">editing</a>
+                            </li>
+                            <li>
+                                <a href="#formGroup">formGroup</a>
+                            </li>
+                            <li>
+                                <a href="#resource">resource</a>
+                            </li>
+                            <li>
+                                <a href="#subusers">subusers</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#createForm">createForm</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getSubuserName">getSubuserName</a>
+                            </li>
+                            <li>
+                                <a href="#listenToChanges">listenToChanges</a>
+                            </li>
+                            <li>
+                                <a href="#onSubmit">onSubmit</a>
+                            </li>
+                            <li>
+                                <a href="#setEditing">setEditing</a>
+                            </li>
+                            <li>
+                                <a href="#setSubusers">setSubusers</a>
+                            </li>
+                            <li>
+                                <a href="#setValues">setValues</a>
+                            </li>
+                            <li>
+                                <a href="#subuserValidator">subuserValidator</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#submitAction">submitAction</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(formBuilder: <a href="../injectables/CdFormBuilder.html">CdFormBuilder</a>, bsModalRef: BsModalRef, i18n: I18n, actionLabels: <a href="../injectables/ActionLabelsI18n.html">ActionLabelsI18n</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/ceph/rgw/rgw-user-subuser-modal/rgw-user-subuser-modal.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>formBuilder</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CdFormBuilder.html" target="_self" >CdFormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>bsModalRef</td>
+                                                  
+                                                        <td>
+                                                                    <code>BsModalRef</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>i18n</td>
+                                                  
+                                                        <td>
+                                                                    <code>I18n</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>actionLabels</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ActionLabelsI18n.html" target="_self" >ActionLabelsI18n</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="submitAction"></a>
+                        <b>submitAction</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/ceph/rgw/rgw-user-subuser-modal/rgw-user-subuser-modal.component.ts:25</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The event that is triggered when the &#39;Add&#39; or &#39;Update&#39; button
+has been pressed.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createForm"></a>
+                    <span class="name">
+                        <b>
+                            createForm
+                        </b>
+                        <a href="#createForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="44"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-subuser-modal/rgw-user-subuser-modal.component.ts:44</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSubuserName"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            getSubuserName
+                        </b>
+                        <a href="#getSubuserName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getSubuserName(value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="93"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-subuser-modal/rgw-user-subuser-modal.component.ts:93</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get the subuser name.
+Examples:
+   &#39;johndoe&#39; =&gt; &#39;johndoe&#39;
+   &#39;janedoe:xyz&#39; =&gt; &#39;xyz&#39;</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>value</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The value to process.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Returns the user ID.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listenToChanges"></a>
+                    <span class="name">
+                        <b>
+                            listenToChanges
+                        </b>
+                        <a href="#listenToChanges"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listenToChanges()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="55"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-subuser-modal/rgw-user-subuser-modal.component.ts:55</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSubmit"></a>
+                    <span class="name">
+                        <b>
+                            onSubmit
+                        </b>
+                        <a href="#onSubmit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSubmit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="132"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-subuser-modal/rgw-user-subuser-modal.component.ts:132</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setEditing"></a>
+                    <span class="name">
+                        <b>
+                            setEditing
+                        </b>
+                        <a href="#setEditing"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setEditing(editing: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="107"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-subuser-modal/rgw-user-subuser-modal.component.ts:107</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Set the &#39;editing&#39; flag. If set to TRUE, the modal dialog is in &#39;Edit&#39; mode,
+otherwise in &#39;Add&#39; mode. According to the mode the dialog and its controls
+behave different.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>editing</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>true</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setSubusers"></a>
+                    <span class="name">
+                        <b>
+                            setSubusers
+                        </b>
+                        <a href="#setSubusers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setSubusers(subusers: <a href="../classes/RgwUserSubuser.html">RgwUserSubuser[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="128"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-subuser-modal/rgw-user-subuser-modal.component.ts:128</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Set the current capabilities of the user.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>subusers</td>
+                                    <td>
+                                                <code><a href="../classes/RgwUserSubuser.html" target="_self" >RgwUserSubuser[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setValues"></a>
+                    <span class="name">
+                        <b>
+                            setValues
+                        </b>
+                        <a href="#setValues"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setValues(uid: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, subuser: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, permissions: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="115"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-subuser-modal/rgw-user-subuser-modal.component.ts:115</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Set the values displayed in the dialog.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>uid</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>subuser</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>&#x27;&#x27;</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>permissions</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>&#x27;&#x27;</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="subuserValidator"></a>
+                    <span class="name">
+                        <b>
+                            subuserValidator
+                        </b>
+                        <a href="#subuserValidator"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>subuserValidator()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="69"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-subuser-modal/rgw-user-subuser-modal.component.ts:69</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Validates whether the subuser already exists.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://angular.io/api/forms/ValidatorFn" target="_blank" >ValidatorFn</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="action"></a>
+                        <span class="name">
+                            <b>
+                            action</b>
+                            <a href="#action"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/ceph/rgw/rgw-user-subuser-modal/rgw-user-subuser-modal.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bsModalRef"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            bsModalRef</b>
+                            <a href="#bsModalRef"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>BsModalRef</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/ceph/rgw/rgw-user-subuser-modal/rgw-user-subuser-modal.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="editing"></a>
+                        <span class="name">
+                            <b>
+                            editing</b>
+                            <a href="#editing"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>true</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/ceph/rgw/rgw-user-subuser-modal/rgw-user-subuser-modal.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="formGroup"></a>
+                        <span class="name">
+                            <b>
+                            formGroup</b>
+                            <a href="#formGroup"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/CdFormGroup.html" target="_self" >CdFormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/ceph/rgw/rgw-user-subuser-modal/rgw-user-subuser-modal.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="resource"></a>
+                        <span class="name">
+                            <b>
+                            resource</b>
+                            <a href="#resource"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/ceph/rgw/rgw-user-subuser-modal/rgw-user-subuser-modal.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="subusers"></a>
+                        <span class="name">
+                            <b>
+                            subusers</b>
+                            <a href="#subusers"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/RgwUserSubuser.html" target="_self" >RgwUserSubuser[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/ceph/rgw/rgw-user-subuser-modal/rgw-user-subuser-modal.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, EventEmitter, Output } from &#x27;@angular/core&#x27;;
+import { AbstractControl, ValidationErrors, ValidatorFn, Validators } from &#x27;@angular/forms&#x27;;
+
+import * as _ from &#x27;lodash&#x27;;
+import { BsModalRef } from &#x27;ngx-bootstrap/modal&#x27;;
+
+import { I18n } from &#x27;@ngx-translate/i18n-polyfill&#x27;;
+import { ActionLabelsI18n } from &#x27;../../../shared/constants/app.constants&#x27;;
+import { CdFormBuilder } from &#x27;../../../shared/forms/cd-form-builder&#x27;;
+import { CdFormGroup } from &#x27;../../../shared/forms/cd-form-group&#x27;;
+import { CdValidators, isEmptyInputValue } from &#x27;../../../shared/forms/cd-validators&#x27;;
+import { RgwUserSubuser } from &#x27;../models/rgw-user-subuser&#x27;;
+
+@Component({
+  selector: &#x27;cd-rgw-user-subuser-modal&#x27;,
+  templateUrl: &#x27;./rgw-user-subuser-modal.component.html&#x27;,
+  styleUrls: [&#x27;./rgw-user-subuser-modal.component.scss&#x27;]
+})
+export class RgwUserSubuserModalComponent {
+  /**
+   * The event that is triggered when the &#x27;Add&#x27; or &#x27;Update&#x27; button
+   * has been pressed.
+   */
+  @Output()
+  submitAction &#x3D; new EventEmitter();
+
+  formGroup: CdFormGroup;
+  editing &#x3D; true;
+  subusers: RgwUserSubuser[] &#x3D; [];
+  resource: string;
+  action: string;
+
+  constructor(
+    private formBuilder: CdFormBuilder,
+    public bsModalRef: BsModalRef,
+    private i18n: I18n,
+    private actionLabels: ActionLabelsI18n
+  ) {
+    this.resource &#x3D; this.i18n(&#x27;Subuser&#x27;);
+    this.createForm();
+    this.listenToChanges();
+  }
+
+  createForm() {
+    this.formGroup &#x3D; this.formBuilder.group({
+      uid: [null],
+      subuid: [null, [Validators.required, this.subuserValidator()]],
+      perm: [null, [Validators.required]],
+      // Swift key
+      generate_secret: [true],
+      secret_key: [null, [CdValidators.requiredIf({ generate_secret: false })]]
+    });
+  }
+
+  listenToChanges() {
+    // Reset the validation status of various controls, especially those that are using
+    // the &#x27;requiredIf&#x27; validator. This is necessary because the controls itself are not
+    // validated again if the status of their prerequisites have been changed.
+    this.formGroup.get(&#x27;generate_secret&#x27;).valueChanges.subscribe(() &#x3D;&gt; {
+      [&#x27;secret_key&#x27;].forEach((path) &#x3D;&gt; {
+        this.formGroup.get(path).updateValueAndValidity({ onlySelf: true });
+      });
+    });
+  }
+
+  /**
+   * Validates whether the subuser already exists.
+   */
+  subuserValidator(): ValidatorFn {
+    const self &#x3D; this;
+    return (control: AbstractControl): ValidationErrors | null &#x3D;&gt; {
+      if (self.editing) {
+        return null;
+      }
+      if (isEmptyInputValue(control.value)) {
+        return null;
+      }
+      const found &#x3D; self.subusers.some((subuser) &#x3D;&gt; {
+        return _.isEqual(self.getSubuserName(subuser.id), control.value);
+      });
+      return found ? { subuserIdExists: true } : null;
+    };
+  }
+
+  /**
+   * Get the subuser name.
+   * Examples:
+   *   &#x27;johndoe&#x27; &#x3D;&gt; &#x27;johndoe&#x27;
+   *   &#x27;janedoe:xyz&#x27; &#x3D;&gt; &#x27;xyz&#x27;
+   * @param {string} value The value to process.
+   * @returns {string} Returns the user ID.
+   */
+  private getSubuserName(value: string) {
+    if (_.isEmpty(value)) {
+      return value;
+    }
+    const matches &#x3D; value.match(/([^:]+)(:(.+))?/);
+    return _.isUndefined(matches[3]) ? matches[1] : matches[3];
+  }
+
+  /**
+   * Set the &#x27;editing&#x27; flag. If set to TRUE, the modal dialog is in &#x27;Edit&#x27; mode,
+   * otherwise in &#x27;Add&#x27; mode. According to the mode the dialog and its controls
+   * behave different.
+   * @param {boolean} viewing
+   */
+  setEditing(editing: boolean &#x3D; true) {
+    this.editing &#x3D; editing;
+    this.action &#x3D; this.editing ? this.actionLabels.EDIT : this.actionLabels.CREATE;
+  }
+
+  /**
+   * Set the values displayed in the dialog.
+   */
+  setValues(uid: string, subuser: string &#x3D; &#x27;&#x27;, permissions: string &#x3D; &#x27;&#x27;) {
+    this.formGroup.setValue({
+      uid: uid,
+      subuid: this.getSubuserName(subuser),
+      perm: permissions,
+      generate_secret: true,
+      secret_key: null
+    });
+  }
+
+  /**
+   * Set the current capabilities of the user.
+   */
+  setSubusers(subusers: RgwUserSubuser[]) {
+    this.subusers &#x3D; subusers;
+  }
+
+  onSubmit() {
+    // Get the values from the form and create an object that is sent
+    // by the triggered submit action event.
+    const values &#x3D; this.formGroup.value;
+    const subuser &#x3D; new RgwUserSubuser();
+    subuser.id &#x3D; &#x60;${values.uid}:${values.subuid}&#x60;;
+    subuser.permissions &#x3D; values.perm;
+    subuser.generate_secret &#x3D; values.generate_secret;
+    subuser.secret_key &#x3D; values.secret_key;
+    this.submitAction.emit(subuser);
+    this.bsModalRef.hide();
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;modal-header&quot;&gt;
+  &lt;h4 i18n&#x3D;&quot;form title|Example: Create Pool@@formTitle&quot;
+      class&#x3D;&quot;modal-title pull-left&quot;&gt;{{ action | titlecase }} {{ resource | upperFirst }}&lt;/h4&gt;
+  &lt;button type&#x3D;&quot;button&quot;
+          class&#x3D;&quot;close pull-right&quot;
+          aria-label&#x3D;&quot;Close&quot;
+          (click)&#x3D;&quot;bsModalRef.hide()&quot;&gt;
+    &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;form class&#x3D;&quot;form-horizontal&quot;
+      #frm&#x3D;&quot;ngForm&quot;
+      [formGroup]&#x3D;&quot;formGroup&quot;
+      novalidate&gt;
+  &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+
+    &lt;!-- Username --&gt;
+    &lt;div class&#x3D;&quot;form-group&quot;
+         [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: formGroup.showError(&#x27;uid&#x27;, frm)}&quot;&gt;
+      &lt;label class&#x3D;&quot;control-label col-sm-3&quot;
+             for&#x3D;&quot;uid&quot;
+             i18n&gt;Username&lt;/label&gt;
+      &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+        &lt;input id&#x3D;&quot;uid&quot;
+               class&#x3D;&quot;form-control&quot;
+               type&#x3D;&quot;text&quot;
+               formControlName&#x3D;&quot;uid&quot;
+               [readonly]&#x3D;&quot;true&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Subuser --&gt;
+    &lt;div class&#x3D;&quot;form-group&quot;
+         [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: formGroup.showError(&#x27;subuid&#x27;, frm)}&quot;&gt;
+      &lt;label class&#x3D;&quot;control-label col-sm-3&quot;
+             for&#x3D;&quot;subuid&quot;&gt;
+        &lt;ng-container i18n&gt;Subuser&lt;/ng-container&gt;
+        &lt;span class&#x3D;&quot;required&quot;
+              *ngIf&#x3D;&quot;!editing&quot;&gt;
+        &lt;/span&gt;
+      &lt;/label&gt;
+      &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+        &lt;input id&#x3D;&quot;subuid&quot;
+               class&#x3D;&quot;form-control&quot;
+               type&#x3D;&quot;text&quot;
+               formControlName&#x3D;&quot;subuid&quot;
+               [readonly]&#x3D;&quot;editing&quot;
+               autofocus&gt;
+        &lt;span class&#x3D;&quot;help-block&quot;
+              *ngIf&#x3D;&quot;formGroup.showError(&#x27;subuid&#x27;, frm, &#x27;required&#x27;)&quot;
+              i18n&gt;This field is required.&lt;/span&gt;
+        &lt;span class&#x3D;&quot;help-block&quot;
+              *ngIf&#x3D;&quot;formGroup.showError(&#x27;subuid&#x27;, frm, &#x27;subuserIdExists&#x27;)&quot;
+              i18n&gt;The chosen subuser ID is already in use.&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Permission --&gt;
+    &lt;div class&#x3D;&quot;form-group&quot;
+         [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: formGroup.showError(&#x27;perm&#x27;, frm)}&quot;&gt;
+      &lt;label class&#x3D;&quot;control-label col-sm-3&quot;
+             for&#x3D;&quot;perm&quot;&gt;
+        &lt;ng-container i18n&gt;Permission&lt;/ng-container&gt;
+        &lt;span class&#x3D;&quot;required&quot;&gt;&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+        &lt;select id&#x3D;&quot;perm&quot;
+                class&#x3D;&quot;form-control&quot;
+                formControlName&#x3D;&quot;perm&quot;&gt;
+          &lt;option i18n
+                  [ngValue]&#x3D;&quot;null&quot;&gt;-- Select a permission --&lt;/option&gt;
+          &lt;option *ngFor&#x3D;&quot;let perm of [&#x27;read&#x27;, &#x27;write&#x27;]&quot;
+                  [value]&#x3D;&quot;perm&quot;&gt;
+            {{ perm }}
+          &lt;/option&gt;
+          &lt;option i18n
+                  value&#x3D;&quot;read-write&quot;&gt;read, write&lt;/option&gt;
+          &lt;option i18n
+                  value&#x3D;&quot;full-control&quot;&gt;full&lt;/option&gt;
+        &lt;/select&gt;
+        &lt;span class&#x3D;&quot;help-block&quot;
+              *ngIf&#x3D;&quot;formGroup.showError(&#x27;perm&#x27;, frm, &#x27;required&#x27;)&quot;
+              i18n&gt;This field is required.&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Swift key --&gt;
+    &lt;fieldset *ngIf&#x3D;&quot;!editing&quot;&gt;
+      &lt;legend i18n&gt;Swift key&lt;/legend&gt;
+
+      &lt;!-- Auto-generate key --&gt;
+      &lt;div class&#x3D;&quot;form-group&quot;&gt;
+        &lt;div class&#x3D;&quot;col-sm-offset-3 col-sm-9&quot;&gt;
+          &lt;div class&#x3D;&quot;checkbox checkbox-primary&quot;&gt;
+            &lt;input id&#x3D;&quot;generate_secret&quot;
+                   type&#x3D;&quot;checkbox&quot;
+                   formControlName&#x3D;&quot;generate_secret&quot;&gt;
+            &lt;label for&#x3D;&quot;generate_secret&quot;
+                   i18n&gt;Auto-generate secret&lt;/label&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Secret key --&gt;
+      &lt;div class&#x3D;&quot;form-group&quot;
+           [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: formGroup.showError(&#x27;secret_key&#x27;, frm)}&quot;
+           *ngIf&#x3D;&quot;!editing &amp;&amp; !formGroup.getValue(&#x27;generate_secret&#x27;)&quot;&gt;
+        &lt;label class&#x3D;&quot;control-label col-sm-3&quot;
+               for&#x3D;&quot;secret_key&quot;&gt;
+          &lt;ng-container i18n&gt;Secret key&lt;/ng-container&gt;
+          &lt;span class&#x3D;&quot;required&quot;&gt;&lt;/span&gt;
+        &lt;/label&gt;
+        &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+          &lt;div class&#x3D;&quot;input-group&quot;&gt;
+            &lt;input id&#x3D;&quot;secret_key&quot;
+                   class&#x3D;&quot;form-control&quot;
+                   type&#x3D;&quot;password&quot;
+                   formControlName&#x3D;&quot;secret_key&quot;&gt;
+            &lt;span class&#x3D;&quot;input-group-btn&quot;&gt;
+              &lt;button type&#x3D;&quot;button&quot;
+                      class&#x3D;&quot;btn btn-default&quot;
+                      cdPasswordButton&#x3D;&quot;secret_key&quot;&gt;
+              &lt;/button&gt;
+              &lt;button type&#x3D;&quot;button&quot;
+                      class&#x3D;&quot;btn btn-default&quot;
+                      cdCopy2ClipboardButton&#x3D;&quot;secret_key&quot;&gt;
+              &lt;/button&gt;
+            &lt;/span&gt;
+          &lt;/div&gt;
+          &lt;span class&#x3D;&quot;help-block&quot;
+                *ngIf&#x3D;&quot;formGroup.showError(&#x27;secret_key&#x27;, frm, &#x27;required&#x27;)&quot;
+                i18n&gt;This field is required.&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+    &lt;/fieldset&gt;
+
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+    &lt;cd-submit-button
+      (submitAction)&#x3D;&quot;onSubmit()&quot;
+      i18n&#x3D;&quot;form action button|Example: Create Pool@@formActionButton&quot;
+      [form]&#x3D;&quot;formGroup&quot;&gt;{{ action | titlecase }} {{ resource | upperFirst }}&lt;/cd-submit-button&gt;
+    &lt;cd-back-button [back]&#x3D;&quot;bsModalRef.hide&quot;&gt;&lt;/cd-back-button&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./rgw-user-subuser-modal.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="modal-header">  <h4 i18n="form title|Example: Create Pool@@formTitle"      class="modal-title pull-left">{{ action | titlecase }} {{ resource | upperFirst }}</h4>  <button type="button"          class="close pull-right"          aria-label="Close"          (click)="bsModalRef.hide()">    <span aria-hidden="true">&times;</span>  </button></div><form class="form-horizontal"      #frm="ngForm"      [formGroup]="formGroup"      novalidate>  <div class="modal-body">    <!-- Username -->    <div class="form-group"         [ngClass]="{\'has-error\': formGroup.showError(\'uid\', frm)}">      <label class="control-label col-sm-3"             for="uid"             i18n>Username</label>      <div class="col-sm-9">        <input id="uid"               class="form-control"               type="text"               formControlName="uid"               [readonly]="true">      </div>    </div>    <!-- Subuser -->    <div class="form-group"         [ngClass]="{\'has-error\': formGroup.showError(\'subuid\', frm)}">      <label class="control-label col-sm-3"             for="subuid">        <ng-container i18n>Subuser</ng-container>        <span class="required"              *ngIf="!editing">        </span>      </label>      <div class="col-sm-9">        <input id="subuid"               class="form-control"               type="text"               formControlName="subuid"               [readonly]="editing"               autofocus>        <span class="help-block"              *ngIf="formGroup.showError(\'subuid\', frm, \'required\')"              i18n>This field is required.</span>        <span class="help-block"              *ngIf="formGroup.showError(\'subuid\', frm, \'subuserIdExists\')"              i18n>The chosen subuser ID is already in use.</span>      </div>    </div>    <!-- Permission -->    <div class="form-group"         [ngClass]="{\'has-error\': formGroup.showError(\'perm\', frm)}">      <label class="control-label col-sm-3"             for="perm">        <ng-container i18n>Permission</ng-container>        <span class="required"></span>      </label>      <div class="col-sm-9">        <select id="perm"                class="form-control"                formControlName="perm">          <option i18n                  [ngValue]="null">-- Select a permission --</option>          <option *ngFor="let perm of [\'read\', \'write\']"                  [value]="perm">            {{ perm }}          </option>          <option i18n                  value="read-write">read, write</option>          <option i18n                  value="full-control">full</option>        </select>        <span class="help-block"              *ngIf="formGroup.showError(\'perm\', frm, \'required\')"              i18n>This field is required.</span>      </div>    </div>    <!-- Swift key -->    <fieldset *ngIf="!editing">      <legend i18n>Swift key</legend>      <!-- Auto-generate key -->      <div class="form-group">        <div class="col-sm-offset-3 col-sm-9">          <div class="checkbox checkbox-primary">            <input id="generate_secret"                   type="checkbox"                   formControlName="generate_secret">            <label for="generate_secret"                   i18n>Auto-generate secret</label>          </div>        </div>      </div>      <!-- Secret key -->      <div class="form-group"           [ngClass]="{\'has-error\': formGroup.showError(\'secret_key\', frm)}"           *ngIf="!editing && !formGroup.getValue(\'generate_secret\')">        <label class="control-label col-sm-3"               for="secret_key">          <ng-container i18n>Secret key</ng-container>          <span class="required"></span>        </label>        <div class="col-sm-9">          <div class="input-group">            <input id="secret_key"                   class="form-control"                   type="password"                   formControlName="secret_key">            <span class="input-group-btn">              <button type="button"                      class="btn btn-default"                      cdPasswordButton="secret_key">              </button>              <button type="button"                      class="btn btn-default"                      cdCopy2ClipboardButton="secret_key">              </button>            </span>          </div>          <span class="help-block"                *ngIf="formGroup.showError(\'secret_key\', frm, \'required\')"                i18n>This field is required.</span>        </div>      </div>    </fieldset>  </div>  <div class="modal-footer">    <cd-submit-button      (submitAction)="onSubmit()"      i18n="form action button|Example: Create Pool@@formActionButton"      [form]="formGroup">{{ action | titlecase }} {{ resource | upperFirst }}</cd-submit-button>    <cd-back-button [back]="bsModalRef.hide"></cd-back-button>  </div></form></div>'
+    var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'cd-about'},{'name': 'AdministrationComponent', 'selector': 'cd-administration'},{'name': 'AppComponent', 'selector': 'cd-root'},{'name': 'BackButtonComponent', 'selector': 'cd-back-button'},{'name': 'BreadcrumbsComponent', 'selector': 'cd-breadcrumbs'},{'name': 'CephfsChartComponent', 'selector': 'cd-cephfs-chart'},{'name': 'CephfsClientsComponent', 'selector': 'cd-cephfs-clients'},{'name': 'CephfsDetailComponent', 'selector': 'cd-cephfs-detail'},{'name': 'CephfsListComponent', 'selector': 'cd-cephfs-list'},{'name': 'ConfigurationComponent', 'selector': 'cd-configuration'},{'name': 'ConfigurationDetailsComponent', 'selector': 'cd-configuration-details'},{'name': 'ConfigurationFormComponent', 'selector': 'cd-configuration-form'},{'name': 'ConfirmationModalComponent', 'selector': 'cd-confirmation-modal'},{'name': 'CriticalConfirmationModalComponent', 'selector': 'cd-deletion-modal'},{'name': 'CrushmapComponent', 'selector': 'cd-crushmap'},{'name': 'DaemonListComponent', 'selector': 'cd-mirroring-daemons'},{'name': 'DashboardComponent', 'selector': 'cd-dashboard'},{'name': 'DashboardHelpComponent', 'selector': 'cd-dashboard-help'},{'name': 'ErasureCodeProfileFormComponent', 'selector': 'cd-erasure-code-profile-form'},{'name': 'ErrorPanelComponent', 'selector': 'cd-error-panel'},{'name': 'ForbiddenComponent', 'selector': 'cd-forbidden'},{'name': 'GrafanaComponent', 'selector': 'cd-grafana'},{'name': 'HealthComponent', 'selector': 'cd-health'},{'name': 'HealthPieComponent', 'selector': 'cd-health-pie'},{'name': 'HelperComponent', 'selector': 'cd-helper'},{'name': 'HostDetailsComponent', 'selector': 'cd-host-details'},{'name': 'HostsComponent', 'selector': 'cd-hosts'},{'name': 'IdentityComponent', 'selector': 'cd-identity'},{'name': 'ImageListComponent', 'selector': 'cd-mirroring-images'},{'name': 'InfoCardComponent', 'selector': 'cd-info-card'},{'name': 'InfoGroupComponent', 'selector': 'cd-info-group'},{'name': 'InfoPanelComponent', 'selector': 'cd-info-panel'},{'name': 'IscsiComponent', 'selector': 'cd-iscsi'},{'name': 'IscsiTabsComponent', 'selector': 'cd-iscsi-tabs'},{'name': 'IscsiTargetDetailsComponent', 'selector': 'cd-iscsi-target-details'},{'name': 'IscsiTargetDiscoveryModalComponent', 'selector': 'cd-iscsi-target-discovery-modal'},{'name': 'IscsiTargetFormComponent', 'selector': 'cd-iscsi-target-form'},{'name': 'IscsiTargetImageSettingsModalComponent', 'selector': 'cd-iscsi-target-image-settings-modal'},{'name': 'IscsiTargetIqnSettingsModalComponent', 'selector': 'cd-iscsi-target-iqn-settings-modal'},{'name': 'IscsiTargetListComponent', 'selector': 'cd-iscsi-target-list'},{'name': 'LanguageSelectorComponent', 'selector': 'cd-language-selector'},{'name': 'LoadingPanelComponent', 'selector': 'cd-loading-panel'},{'name': 'LoginComponent', 'selector': 'cd-login'},{'name': 'LogsComponent', 'selector': 'cd-logs'},{'name': 'MgrModuleDetailsComponent', 'selector': 'cd-mgr-module-details'},{'name': 'MgrModuleFormComponent', 'selector': 'cd-mgr-module-form'},{'name': 'MgrModuleListComponent', 'selector': 'cd-mgr-module-list'},{'name': 'ModalComponent', 'selector': 'cd-modal'},{'name': 'MonitorComponent', 'selector': 'cd-monitor'},{'name': 'NavigationComponent', 'selector': 'cd-navigation'},{'name': 'Nfs501Component', 'selector': 'cd-nfs-501'},{'name': 'NfsDetailsComponent', 'selector': 'cd-nfs-details'},{'name': 'NfsFormClientComponent', 'selector': 'cd-nfs-form-client'},{'name': 'NfsFormComponent', 'selector': 'cd-nfs-form'},{'name': 'NfsListComponent', 'selector': 'cd-nfs-list'},{'name': 'NotFoundComponent', 'selector': 'cd-not-found'},{'name': 'NotificationsComponent', 'selector': 'cd-notifications'},{'name': 'OsdDetailsComponent', 'selector': 'cd-osd-details'},{'name': 'OsdFlagsModalComponent', 'selector': 'cd-osd-flags-modal'},{'name': 'OsdListComponent', 'selector': 'cd-osd-list'},{'name': 'OsdPerformanceHistogramComponent', 'selector': 'cd-osd-performance-histogram'},{'name': 'OsdRecvSpeedModalComponent', 'selector': 'cd-osd-recv-speed-modal'},{'name': 'OsdReweightModalComponent', 'selector': 'cd-osd-reweight-modal'},{'name': 'OsdScrubModalComponent', 'selector': 'cd-osd-scrub-modal'},{'name': 'OverviewComponent', 'selector': 'cd-mirroring'},{'name': 'PerformanceCounterComponent', 'selector': 'cd-performance-counter'},{'name': 'PoolDetailsComponent', 'selector': 'cd-pool-details'},{'name': 'PoolEditModeModalComponent', 'selector': 'cd-pool-edit-mode-modal'},{'name': 'PoolEditPeerModalComponent', 'selector': 'cd-pool-edit-peer-modal'},{'name': 'PoolFormComponent', 'selector': 'cd-pool-form'},{'name': 'PoolListComponent', 'selector': 'cd-pool-list'},{'name': 'PoolListComponent', 'selector': 'cd-mirroring-pools'},{'name': 'PrometheusListComponent', 'selector': 'cd-prometheus-list'},{'name': 'RbdConfigurationFormComponent', 'selector': 'cd-rbd-configuration-form'},{'name': 'RbdConfigurationListComponent', 'selector': 'cd-rbd-configuration-table'},{'name': 'RbdDetailsComponent', 'selector': 'cd-rbd-details'},{'name': 'RbdFormComponent', 'selector': 'cd-rbd-form'},{'name': 'RbdImagesComponent', 'selector': 'cd-rbd-images'},{'name': 'RbdListComponent', 'selector': 'cd-rbd-list'},{'name': 'RbdSnapshotFormComponent', 'selector': 'cd-rbd-snapshot-form'},{'name': 'RbdSnapshotListComponent', 'selector': 'cd-rbd-snapshot-list'},{'name': 'RbdTrashListComponent', 'selector': 'cd-rbd-trash-list'},{'name': 'RbdTrashMoveModalComponent', 'selector': 'cd-rbd-trash-move-modal'},{'name': 'RbdTrashPurgeModalComponent', 'selector': 'cd-rbd-trash-purge-modal'},{'name': 'RbdTrashRestoreModalComponent', 'selector': 'cd-rbd-trash-restore-modal'},{'name': 'RefreshSelectorComponent', 'selector': 'cd-refresh-selector'},{'name': 'Rgw501Component', 'selector': 'cd-rgw-501'},{'name': 'RgwBucketDetailsComponent', 'selector': 'cd-rgw-bucket-details'},{'name': 'RgwBucketFormComponent', 'selector': 'cd-rgw-bucket-form'},{'name': 'RgwBucketListComponent', 'selector': 'cd-rgw-bucket-list'},{'name': 'RgwDaemonDetailsComponent', 'selector': 'cd-rgw-daemon-details'},{'name': 'RgwDaemonListComponent', 'selector': 'cd-rgw-daemon-list'},{'name': 'RgwUserCapabilityModalComponent', 'selector': 'cd-rgw-user-capability-modal'},{'name': 'RgwUserDetailsComponent', 'selector': 'cd-rgw-user-details'},{'name': 'RgwUserFormComponent', 'selector': 'cd-rgw-user-form'},{'name': 'RgwUserListComponent', 'selector': 'cd-rgw-user-list'},{'name': 'RgwUserS3KeyModalComponent', 'selector': 'cd-rgw-user-s3-key-modal'},{'name': 'RgwUserSubuserModalComponent', 'selector': 'cd-rgw-user-subuser-modal'},{'name': 'RgwUserSwiftKeyModalComponent', 'selector': 'cd-rgw-user-swift-key-modal'},{'name': 'RoleDetailsComponent', 'selector': 'cd-role-details'},{'name': 'RoleFormComponent', 'selector': 'cd-role-form'},{'name': 'RoleListComponent', 'selector': 'cd-role-list'},{'name': 'SelectBadgesComponent', 'selector': 'cd-select-badges'},{'name': 'SelectComponent', 'selector': 'cd-select'},{'name': 'SparklineComponent', 'selector': 'cd-sparkline'},{'name': 'SsoNotFoundComponent', 'selector': 'cd-sso-not-found'},{'name': 'SubmitButtonComponent', 'selector': 'cd-submit-button'},{'name': 'TableActionsComponent', 'selector': 'cd-table-actions'},{'name': 'TableComponent', 'selector': 'cd-table'},{'name': 'TableKeyValueComponent', 'selector': 'cd-table-key-value'},{'name': 'TablePerformanceCounterComponent', 'selector': 'cd-table-performance-counter'},{'name': 'TaskManagerComponent', 'selector': 'cd-task-manager'},{'name': 'UsageBarComponent', 'selector': 'cd-usage-bar'},{'name': 'UserFormComponent', 'selector': 'cd-user-form'},{'name': 'UserListComponent', 'selector': 'cd-user-list'},{'name': 'UserTabsComponent', 'selector': 'cd-user-tabs'},{'name': 'ViewCacheComponent', 'selector': 'cd-view-cache'},{'name': 'WarningPanelComponent', 'selector': 'cd-warning-panel'}];
+    var DIRECTIVES = [{'name': 'AutofocusDirective', 'selector': '[autofocus]'},{'name': 'Copy2ClipboardButtonDirective', 'selector': '[cdCopy2ClipboardButton]'},{'name': 'DimlessBinaryDirective', 'selector': '[cdDimlessBinary]'},{'name': 'DimlessBinaryPerSecondDirective', 'selector': '[cdDimlessBinaryPerSecond]'},{'name': 'IopsDirective', 'selector': '[cdIops]'},{'name': 'MillisecondsDirective', 'selector': '[cdMilliseconds]'},{'name': 'PasswordButtonDirective', 'selector': '[cdPasswordButton]'}];
+    var ACTUAL_COMPONENT = {'name': 'RgwUserSubuserModalComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'RgwUserSubuserModalComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

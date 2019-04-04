@@ -1,0 +1,1346 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ceph-dashboard documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ceph-dashboard documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>PoolEditPeerModalComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/ceph/block/mirroring/pool-edit-peer-modal/pool-edit-peer-modal.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>cd-pool-edit-peer-modal</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./pool-edit-peer-modal.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./pool-edit-peer-modal.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#bsConfig">bsConfig</a>
+                            </li>
+                            <li>
+                                <a href="#editPeerForm">editPeerForm</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#modalRef">modalRef</a>
+                            </li>
+                            <li>
+                                <a href="#mode">mode</a>
+                            </li>
+                            <li>
+                                <a href="#pattern">pattern</a>
+                            </li>
+                            <li>
+                                <a href="#peerUUID">peerUUID</a>
+                            </li>
+                            <li>
+                                <a href="#poolName">poolName</a>
+                            </li>
+                            <li>
+                                <a href="#response">response</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#createForm">createForm</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#setResponse">setResponse</a>
+                            </li>
+                            <li>
+                                <a href="#update">update</a>
+                            </li>
+                            <li>
+                                <a href="#validateClientID">validateClientID</a>
+                            </li>
+                            <li>
+                                <a href="#validateClusterName">validateClusterName</a>
+                            </li>
+                            <li>
+                                <a href="#validateKey">validateKey</a>
+                            </li>
+                            <li>
+                                <a href="#validateMonAddr">validateMonAddr</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(modalRef: BsModalRef, rbdMirroringService: <a href="../injectables/RbdMirroringService.html">RbdMirroringService</a>, taskWrapper: <a href="../injectables/TaskWrapperService.html">TaskWrapperService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/ceph/block/mirroring/pool-edit-peer-modal/pool-edit-peer-modal.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>modalRef</td>
+                                                  
+                                                        <td>
+                                                                    <code>BsModalRef</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>rbdMirroringService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RbdMirroringService.html" target="_self" >RbdMirroringService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>taskWrapper</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TaskWrapperService.html" target="_self" >TaskWrapperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createForm"></a>
+                    <span class="name">
+                        <b>
+                            createForm
+                        </b>
+                        <a href="#createForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="38"
+                            class="link-to-prism">src/app/ceph/block/mirroring/pool-edit-peer-modal/pool-edit-peer-modal.component.ts:38</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="55"
+                            class="link-to-prism">src/app/ceph/block/mirroring/pool-edit-peer-modal/pool-edit-peer-modal.component.ts:55</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setResponse"></a>
+                    <span class="name">
+                        <b>
+                            setResponse
+                        </b>
+                        <a href="#setResponse"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setResponse(response: <a href="../classes/PoolEditPeerResponseModel.html">PoolEditPeerResponseModel</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="93"
+                            class="link-to-prism">src/app/ceph/block/mirroring/pool-edit-peer-modal/pool-edit-peer-modal.component.ts:93</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>response</td>
+                                    <td>
+                                                <code><a href="../classes/PoolEditPeerResponseModel.html" target="_self" >PoolEditPeerResponseModel</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="update"></a>
+                    <span class="name">
+                        <b>
+                            update
+                        </b>
+                        <a href="#update"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>update()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="101"
+                            class="link-to-prism">src/app/ceph/block/mirroring/pool-edit-peer-modal/pool-edit-peer-modal.component.ts:101</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="validateClientID"></a>
+                    <span class="name">
+                        <b>
+                            validateClientID
+                        </b>
+                        <a href="#validateClientID"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>validateClientID(control: <a href="https://angular.io/api/forms/AbstractControl" target="_blank">AbstractControl</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="72"
+                            class="link-to-prism">src/app/ceph/block/mirroring/pool-edit-peer-modal/pool-edit-peer-modal.component.ts:72</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>control</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/forms/AbstractControl" target="_blank" >AbstractControl</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{ invalidClientID: { value: any; }; }</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="validateClusterName"></a>
+                    <span class="name">
+                        <b>
+                            validateClusterName
+                        </b>
+                        <a href="#validateClusterName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>validateClusterName(control: <a href="https://angular.io/api/forms/AbstractControl" target="_blank">AbstractControl</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="66"
+                            class="link-to-prism">src/app/ceph/block/mirroring/pool-edit-peer-modal/pool-edit-peer-modal.component.ts:66</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>control</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/forms/AbstractControl" target="_blank" >AbstractControl</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{ invalidClusterName: { value: any; }; }</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="validateKey"></a>
+                    <span class="name">
+                        <b>
+                            validateKey
+                        </b>
+                        <a href="#validateKey"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>validateKey(control: <a href="https://angular.io/api/forms/AbstractControl" target="_blank">AbstractControl</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="84"
+                            class="link-to-prism">src/app/ceph/block/mirroring/pool-edit-peer-modal/pool-edit-peer-modal.component.ts:84</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>control</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/forms/AbstractControl" target="_blank" >AbstractControl</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{ invalidKey: { value: any; }; }</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="validateMonAddr"></a>
+                    <span class="name">
+                        <b>
+                            validateMonAddr
+                        </b>
+                        <a href="#validateMonAddr"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>validateMonAddr(control: <a href="https://angular.io/api/forms/AbstractControl" target="_blank">AbstractControl</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="78"
+                            class="link-to-prism">src/app/ceph/block/mirroring/pool-edit-peer-modal/pool-edit-peer-modal.component.ts:78</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>control</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/forms/AbstractControl" target="_blank" >AbstractControl</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{ invalidMonAddr: { value: any; }; }</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bsConfig"></a>
+                        <span class="name">
+                            <b>
+                            bsConfig</b>
+                            <a href="#bsConfig"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    containerClass: &#x27;theme-default&#x27;
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/ceph/block/mirroring/pool-edit-peer-modal/pool-edit-peer-modal.component.ts:23</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="editPeerForm"></a>
+                        <span class="name">
+                            <b>
+                            editPeerForm</b>
+                            <a href="#editPeerForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/CdFormGroup.html" target="_self" >CdFormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/ceph/block/mirroring/pool-edit-peer-modal/pool-edit-peer-modal.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="modalRef"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            modalRef</b>
+                            <a href="#modalRef"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>BsModalRef</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/ceph/block/mirroring/pool-edit-peer-modal/pool-edit-peer-modal.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="mode"></a>
+                        <span class="name">
+                            <b>
+                            mode</b>
+                            <a href="#mode"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/ceph/block/mirroring/pool-edit-peer-modal/pool-edit-peer-modal.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pattern"></a>
+                        <span class="name">
+                            <b>
+                            pattern</b>
+                            <a href="#pattern"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/ceph/block/mirroring/pool-edit-peer-modal/pool-edit-peer-modal.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="peerUUID"></a>
+                        <span class="name">
+                            <b>
+                            peerUUID</b>
+                            <a href="#peerUUID"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/ceph/block/mirroring/pool-edit-peer-modal/pool-edit-peer-modal.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="poolName"></a>
+                        <span class="name">
+                            <b>
+                            poolName</b>
+                            <a href="#poolName"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/ceph/block/mirroring/pool-edit-peer-modal/pool-edit-peer-modal.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="response"></a>
+                        <span class="name">
+                            <b>
+                            response</b>
+                            <a href="#response"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/PoolEditPeerResponseModel.html" target="_self" >PoolEditPeerResponseModel</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/ceph/block/mirroring/pool-edit-peer-modal/pool-edit-peer-modal.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { AbstractControl, FormControl, Validators } from &#x27;@angular/forms&#x27;;
+
+import { BsModalRef } from &#x27;ngx-bootstrap/modal&#x27;;
+
+import { RbdMirroringService } from &#x27;../../../../shared/api/rbd-mirroring.service&#x27;;
+import { CdFormGroup } from &#x27;../../../../shared/forms/cd-form-group&#x27;;
+import { FinishedTask } from &#x27;../../../../shared/models/finished-task&#x27;;
+import { TaskWrapperService } from &#x27;../../../../shared/services/task-wrapper.service&#x27;;
+import { PoolEditPeerResponseModel } from &#x27;./pool-edit-peer-response.model&#x27;;
+
+@Component({
+  selector: &#x27;cd-pool-edit-peer-modal&#x27;,
+  templateUrl: &#x27;./pool-edit-peer-modal.component.html&#x27;,
+  styleUrls: [&#x27;./pool-edit-peer-modal.component.scss&#x27;]
+})
+export class PoolEditPeerModalComponent implements OnInit {
+  mode: string;
+  poolName: string;
+  peerUUID: string;
+
+  editPeerForm: CdFormGroup;
+  bsConfig &#x3D; {
+    containerClass: &#x27;theme-default&#x27;
+  };
+  pattern: string;
+
+  response: PoolEditPeerResponseModel;
+
+  constructor(
+    public modalRef: BsModalRef,
+    private rbdMirroringService: RbdMirroringService,
+    private taskWrapper: TaskWrapperService
+  ) {
+    this.createForm();
+  }
+
+  createForm() {
+    this.editPeerForm &#x3D; new CdFormGroup({
+      clusterName: new FormControl(&#x27;&#x27;, {
+        validators: [Validators.required, this.validateClusterName]
+      }),
+      clientID: new FormControl(&#x27;&#x27;, {
+        validators: [Validators.required, this.validateClientID]
+      }),
+      monAddr: new FormControl(&#x27;&#x27;, {
+        validators: [this.validateMonAddr]
+      }),
+      key: new FormControl(&#x27;&#x27;, {
+        validators: [this.validateKey]
+      })
+    });
+  }
+
+  ngOnInit() {
+    this.pattern &#x3D; &#x60;${this.poolName}/${this.peerUUID}&#x60;;
+    if (this.mode &#x3D;&#x3D;&#x3D; &#x27;edit&#x27;) {
+      this.rbdMirroringService
+        .getPeer(this.poolName, this.peerUUID)
+        .subscribe((resp: PoolEditPeerResponseModel) &#x3D;&gt; {
+          this.setResponse(resp);
+        });
+    }
+  }
+
+  validateClusterName(control: AbstractControl) {
+    if (!control.value.match(/^[\w\-_]*$/)) {
+      return { invalidClusterName: { value: control.value } };
+    }
+  }
+
+  validateClientID(control: AbstractControl) {
+    if (!control.value.match(/^(?!client\.)[\w\-_.]*$/)) {
+      return { invalidClientID: { value: control.value } };
+    }
+  }
+
+  validateMonAddr(control: AbstractControl) {
+    if (!control.value.match(/^[,; ]*([\w.\-_\[\]]+(:[\d]+)?[,; ]*)*$/)) {
+      return { invalidMonAddr: { value: control.value } };
+    }
+  }
+
+  validateKey(control: AbstractControl) {
+    try {
+      if (control.value &#x3D;&#x3D;&#x3D; &#x27;&#x27; || !!atob(control.value)) {
+        return null;
+      }
+    } catch (error) {}
+    return { invalidKey: { value: control.value } };
+  }
+
+  setResponse(response: PoolEditPeerResponseModel) {
+    this.response &#x3D; response;
+    this.editPeerForm.get(&#x27;clusterName&#x27;).setValue(response.cluster_name);
+    this.editPeerForm.get(&#x27;clientID&#x27;).setValue(response.client_id);
+    this.editPeerForm.get(&#x27;monAddr&#x27;).setValue(response.mon_host);
+    this.editPeerForm.get(&#x27;key&#x27;).setValue(response.key);
+  }
+
+  update() {
+    const request &#x3D; new PoolEditPeerResponseModel();
+    request.cluster_name &#x3D; this.editPeerForm.getValue(&#x27;clusterName&#x27;);
+    request.client_id &#x3D; this.editPeerForm.getValue(&#x27;clientID&#x27;);
+    request.mon_host &#x3D; this.editPeerForm.getValue(&#x27;monAddr&#x27;);
+    request.key &#x3D; this.editPeerForm.getValue(&#x27;key&#x27;);
+
+    let action;
+    if (this.mode &#x3D;&#x3D;&#x3D; &#x27;edit&#x27;) {
+      action &#x3D; this.taskWrapper.wrapTaskAroundCall({
+        task: new FinishedTask(&#x27;rbd/mirroring/peer/edit&#x27;, {
+          pool_name: this.poolName
+        }),
+        call: this.rbdMirroringService.updatePeer(this.poolName, this.peerUUID, request)
+      });
+    } else {
+      action &#x3D; this.taskWrapper.wrapTaskAroundCall({
+        task: new FinishedTask(&#x27;rbd/mirroring/peer/add&#x27;, {
+          pool_name: this.poolName
+        }),
+        call: this.rbdMirroringService.addPeer(this.poolName, request)
+      });
+    }
+
+    action.subscribe(
+      undefined,
+      () &#x3D;&gt; this.editPeerForm.setErrors({ cdSubmitButton: true }),
+      () &#x3D;&gt; {
+        this.rbdMirroringService.refresh();
+        this.modalRef.hide();
+      }
+    );
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;cd-modal&gt;
+  &lt;ng-container class&#x3D;&quot;modal-title&quot;
+                i18n&gt;{mode, select, edit {Edit} other {Add}}
+  pool mirror peer&lt;/ng-container&gt;
+
+  &lt;ng-container class&#x3D;&quot;modal-content&quot;&gt;
+    &lt;form name&#x3D;&quot;editPeerForm&quot;
+          class&#x3D;&quot;form&quot;
+          #formDir&#x3D;&quot;ngForm&quot;
+          [formGroup]&#x3D;&quot;editPeerForm&quot;
+          novalidate&gt;
+      &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+        &lt;p&gt;
+          &lt;ng-container i18n&gt;{mode, select, edit {Edit} other {Add}} the pool
+          mirror peer attributes for pool &lt;kbd&gt;{{ poolName }}&lt;/kbd&gt; and click 
+          &lt;kbd&gt;Submit&lt;/kbd&gt;.&lt;/ng-container&gt;
+        &lt;/p&gt;
+
+        &lt;div class&#x3D;&quot;form-group&quot;
+             [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: editPeerForm.showError(&#x27;clusterName&#x27;, formDir)}&quot;&gt;
+          &lt;label class&#x3D;&quot;control-label&quot;
+                 for&#x3D;&quot;clusterName&quot;&gt;
+            &lt;span i18n&gt;Cluster Name&lt;/span&gt;
+            &lt;span class&#x3D;&quot;required&quot;&gt;&lt;/span&gt;
+          &lt;/label&gt;
+          &lt;input class&#x3D;&quot;form-control&quot;
+                 type&#x3D;&quot;text&quot;
+                 placeholder&#x3D;&quot;Name...&quot;
+                 i18n-placeholder
+                 id&#x3D;&quot;clusterName&quot;
+                 name&#x3D;&quot;clusterName&quot;
+                 formControlName&#x3D;&quot;clusterName&quot;
+                 autofocus&gt;
+          &lt;span class&#x3D;&quot;help-block&quot;
+                *ngIf&#x3D;&quot;editPeerForm.showError(&#x27;clusterName&#x27;, formDir, &#x27;required&#x27;)&quot;
+                i18n&gt;This field is required.&lt;/span&gt;
+          &lt;span class&#x3D;&quot;help-block&quot;
+                *ngIf&#x3D;&quot;editPeerForm.showError(&#x27;clusterName&#x27;, formDir, &#x27;invalidClusterName&#x27;)&quot;
+                i18n&gt;The cluster name is not valid.&lt;/span&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;form-group&quot;
+             [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: editPeerForm.showError(&#x27;clientID&#x27;, formDir)}&quot;&gt;
+          &lt;label class&#x3D;&quot;control-label&quot;
+                 for&#x3D;&quot;clientID&quot;&gt;
+            &lt;span i18n&gt;CephX ID&lt;/span&gt;
+            &lt;span class&#x3D;&quot;required&quot;&gt;&lt;/span&gt;
+          &lt;/label&gt;
+          &lt;input class&#x3D;&quot;form-control&quot;
+                 type&#x3D;&quot;text&quot;
+                 placeholder&#x3D;&quot;CephX ID...&quot;
+                 i18n-placeholder
+                 id&#x3D;&quot;clientID&quot;
+                 name&#x3D;&quot;clientID&quot;
+                 formControlName&#x3D;&quot;clientID&quot;&gt;
+          &lt;span class&#x3D;&quot;help-block&quot;
+                *ngIf&#x3D;&quot;editPeerForm.showError(&#x27;clientID&#x27;, formDir, &#x27;required&#x27;)&quot;
+                i18n&gt;This field is required.&lt;/span&gt;
+          &lt;span class&#x3D;&quot;help-block&quot;
+                *ngIf&#x3D;&quot;editPeerForm.showError(&#x27;clientID&#x27;, formDir, &#x27;invalidClientID&#x27;)&quot;
+                i18n&gt;The CephX ID is not valid.&lt;/span&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;form-group&quot;
+             [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: editPeerForm.showError(&#x27;monAddr&#x27;, formDir)}&quot;&gt;
+          &lt;label class&#x3D;&quot;control-label&quot;
+                 for&#x3D;&quot;monAddr&quot;&gt;
+            &lt;span i18n&gt;Monitor Addresses&lt;/span&gt;
+          &lt;/label&gt;
+          &lt;input class&#x3D;&quot;form-control&quot;
+                 type&#x3D;&quot;text&quot;
+                 placeholder&#x3D;&quot;Comma-delimited addresses...&quot;
+                 i18n-placeholder
+                 id&#x3D;&quot;monAddr&quot;
+                 name&#x3D;&quot;monAddr&quot;
+                 formControlName&#x3D;&quot;monAddr&quot;&gt;
+          &lt;span class&#x3D;&quot;help-block&quot;
+                *ngIf&#x3D;&quot;editPeerForm.showError(&#x27;monAddr&#x27;, formDir, &#x27;invalidMonAddr&#x27;)&quot;
+                i18n&gt;The monitory address is not valid.&lt;/span&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;form-group&quot;
+             [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: editPeerForm.showError(&#x27;key&#x27;, formDir)}&quot;&gt;
+          &lt;label class&#x3D;&quot;control-label&quot;
+                 for&#x3D;&quot;key&quot;&gt;
+            &lt;span i18n&gt;CephX Key&lt;/span&gt;
+          &lt;/label&gt;
+          &lt;input class&#x3D;&quot;form-control&quot;
+                 type&#x3D;&quot;text&quot;
+                 placeholder&#x3D;&quot;Base64-encoded key...&quot;
+                 i18n-placeholder
+                 id&#x3D;&quot;key&quot;
+                 name&#x3D;&quot;key&quot;
+                 formControlName&#x3D;&quot;key&quot;&gt;
+          &lt;span class&#x3D;&quot;help-block&quot;
+                *ngIf&#x3D;&quot;editPeerForm.showError(&#x27;key&#x27;, formDir, &#x27;invalidKey&#x27;)&quot;
+                i18n&gt;CephX key must be base64 encoded.&lt;/span&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+        &lt;div class&#x3D;&quot;button-group text-right&quot;&gt;
+          &lt;cd-submit-button i18n
+                            [form]&#x3D;&quot;editPeerForm&quot;
+                            (submitAction)&#x3D;&quot;update()&quot;&gt;Submit&lt;/cd-submit-button&gt;
+          &lt;cd-back-button [back]&#x3D;&quot;modalRef.hide&quot;
+                          name&#x3D;&quot;Cancel&quot;
+                          i18n-name&gt;
+          &lt;/cd-back-button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;
+  &lt;/ng-container&gt;
+&lt;/cd-modal&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./pool-edit-peer-modal.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><cd-modal>  <ng-container class="modal-title"                i18n>{mode, select, edit {Edit} other {Add}}  pool mirror peer</ng-container>  <ng-container class="modal-content">    <form name="editPeerForm"          class="form"          #formDir="ngForm"          [formGroup]="editPeerForm"          novalidate>      <div class="modal-body">        <p>          <ng-container i18n>{mode, select, edit {Edit} other {Add}} the pool          mirror peer attributes for pool <kbd>{{ poolName }}</kbd> and click           <kbd>Submit</kbd>.</ng-container>        </p>        <div class="form-group"             [ngClass]="{\'has-error\': editPeerForm.showError(\'clusterName\', formDir)}">          <label class="control-label"                 for="clusterName">            <span i18n>Cluster Name</span>            <span class="required"></span>          </label>          <input class="form-control"                 type="text"                 placeholder="Name..."                 i18n-placeholder                 id="clusterName"                 name="clusterName"                 formControlName="clusterName"                 autofocus>          <span class="help-block"                *ngIf="editPeerForm.showError(\'clusterName\', formDir, \'required\')"                i18n>This field is required.</span>          <span class="help-block"                *ngIf="editPeerForm.showError(\'clusterName\', formDir, \'invalidClusterName\')"                i18n>The cluster name is not valid.</span>        </div>        <div class="form-group"             [ngClass]="{\'has-error\': editPeerForm.showError(\'clientID\', formDir)}">          <label class="control-label"                 for="clientID">            <span i18n>CephX ID</span>            <span class="required"></span>          </label>          <input class="form-control"                 type="text"                 placeholder="CephX ID..."                 i18n-placeholder                 id="clientID"                 name="clientID"                 formControlName="clientID">          <span class="help-block"                *ngIf="editPeerForm.showError(\'clientID\', formDir, \'required\')"                i18n>This field is required.</span>          <span class="help-block"                *ngIf="editPeerForm.showError(\'clientID\', formDir, \'invalidClientID\')"                i18n>The CephX ID is not valid.</span>        </div>        <div class="form-group"             [ngClass]="{\'has-error\': editPeerForm.showError(\'monAddr\', formDir)}">          <label class="control-label"                 for="monAddr">            <span i18n>Monitor Addresses</span>          </label>          <input class="form-control"                 type="text"                 placeholder="Comma-delimited addresses..."                 i18n-placeholder                 id="monAddr"                 name="monAddr"                 formControlName="monAddr">          <span class="help-block"                *ngIf="editPeerForm.showError(\'monAddr\', formDir, \'invalidMonAddr\')"                i18n>The monitory address is not valid.</span>        </div>        <div class="form-group"             [ngClass]="{\'has-error\': editPeerForm.showError(\'key\', formDir)}">          <label class="control-label"                 for="key">            <span i18n>CephX Key</span>          </label>          <input class="form-control"                 type="text"                 placeholder="Base64-encoded key..."                 i18n-placeholder                 id="key"                 name="key"                 formControlName="key">          <span class="help-block"                *ngIf="editPeerForm.showError(\'key\', formDir, \'invalidKey\')"                i18n>CephX key must be base64 encoded.</span>        </div>      </div>      <div class="modal-footer">        <div class="button-group text-right">          <cd-submit-button i18n                            [form]="editPeerForm"                            (submitAction)="update()">Submit</cd-submit-button>          <cd-back-button [back]="modalRef.hide"                          name="Cancel"                          i18n-name>          </cd-back-button>        </div>      </div>    </form>  </ng-container></cd-modal></div>'
+    var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'cd-about'},{'name': 'AdministrationComponent', 'selector': 'cd-administration'},{'name': 'AppComponent', 'selector': 'cd-root'},{'name': 'BackButtonComponent', 'selector': 'cd-back-button'},{'name': 'BreadcrumbsComponent', 'selector': 'cd-breadcrumbs'},{'name': 'CephfsChartComponent', 'selector': 'cd-cephfs-chart'},{'name': 'CephfsClientsComponent', 'selector': 'cd-cephfs-clients'},{'name': 'CephfsDetailComponent', 'selector': 'cd-cephfs-detail'},{'name': 'CephfsListComponent', 'selector': 'cd-cephfs-list'},{'name': 'ConfigurationComponent', 'selector': 'cd-configuration'},{'name': 'ConfigurationDetailsComponent', 'selector': 'cd-configuration-details'},{'name': 'ConfigurationFormComponent', 'selector': 'cd-configuration-form'},{'name': 'ConfirmationModalComponent', 'selector': 'cd-confirmation-modal'},{'name': 'CriticalConfirmationModalComponent', 'selector': 'cd-deletion-modal'},{'name': 'CrushmapComponent', 'selector': 'cd-crushmap'},{'name': 'DaemonListComponent', 'selector': 'cd-mirroring-daemons'},{'name': 'DashboardComponent', 'selector': 'cd-dashboard'},{'name': 'DashboardHelpComponent', 'selector': 'cd-dashboard-help'},{'name': 'ErasureCodeProfileFormComponent', 'selector': 'cd-erasure-code-profile-form'},{'name': 'ErrorPanelComponent', 'selector': 'cd-error-panel'},{'name': 'ForbiddenComponent', 'selector': 'cd-forbidden'},{'name': 'GrafanaComponent', 'selector': 'cd-grafana'},{'name': 'HealthComponent', 'selector': 'cd-health'},{'name': 'HealthPieComponent', 'selector': 'cd-health-pie'},{'name': 'HelperComponent', 'selector': 'cd-helper'},{'name': 'HostDetailsComponent', 'selector': 'cd-host-details'},{'name': 'HostsComponent', 'selector': 'cd-hosts'},{'name': 'IdentityComponent', 'selector': 'cd-identity'},{'name': 'ImageListComponent', 'selector': 'cd-mirroring-images'},{'name': 'InfoCardComponent', 'selector': 'cd-info-card'},{'name': 'InfoGroupComponent', 'selector': 'cd-info-group'},{'name': 'InfoPanelComponent', 'selector': 'cd-info-panel'},{'name': 'IscsiComponent', 'selector': 'cd-iscsi'},{'name': 'IscsiTabsComponent', 'selector': 'cd-iscsi-tabs'},{'name': 'IscsiTargetDetailsComponent', 'selector': 'cd-iscsi-target-details'},{'name': 'IscsiTargetDiscoveryModalComponent', 'selector': 'cd-iscsi-target-discovery-modal'},{'name': 'IscsiTargetFormComponent', 'selector': 'cd-iscsi-target-form'},{'name': 'IscsiTargetImageSettingsModalComponent', 'selector': 'cd-iscsi-target-image-settings-modal'},{'name': 'IscsiTargetIqnSettingsModalComponent', 'selector': 'cd-iscsi-target-iqn-settings-modal'},{'name': 'IscsiTargetListComponent', 'selector': 'cd-iscsi-target-list'},{'name': 'LanguageSelectorComponent', 'selector': 'cd-language-selector'},{'name': 'LoadingPanelComponent', 'selector': 'cd-loading-panel'},{'name': 'LoginComponent', 'selector': 'cd-login'},{'name': 'LogsComponent', 'selector': 'cd-logs'},{'name': 'MgrModuleDetailsComponent', 'selector': 'cd-mgr-module-details'},{'name': 'MgrModuleFormComponent', 'selector': 'cd-mgr-module-form'},{'name': 'MgrModuleListComponent', 'selector': 'cd-mgr-module-list'},{'name': 'ModalComponent', 'selector': 'cd-modal'},{'name': 'MonitorComponent', 'selector': 'cd-monitor'},{'name': 'NavigationComponent', 'selector': 'cd-navigation'},{'name': 'Nfs501Component', 'selector': 'cd-nfs-501'},{'name': 'NfsDetailsComponent', 'selector': 'cd-nfs-details'},{'name': 'NfsFormClientComponent', 'selector': 'cd-nfs-form-client'},{'name': 'NfsFormComponent', 'selector': 'cd-nfs-form'},{'name': 'NfsListComponent', 'selector': 'cd-nfs-list'},{'name': 'NotFoundComponent', 'selector': 'cd-not-found'},{'name': 'NotificationsComponent', 'selector': 'cd-notifications'},{'name': 'OsdDetailsComponent', 'selector': 'cd-osd-details'},{'name': 'OsdFlagsModalComponent', 'selector': 'cd-osd-flags-modal'},{'name': 'OsdListComponent', 'selector': 'cd-osd-list'},{'name': 'OsdPerformanceHistogramComponent', 'selector': 'cd-osd-performance-histogram'},{'name': 'OsdRecvSpeedModalComponent', 'selector': 'cd-osd-recv-speed-modal'},{'name': 'OsdReweightModalComponent', 'selector': 'cd-osd-reweight-modal'},{'name': 'OsdScrubModalComponent', 'selector': 'cd-osd-scrub-modal'},{'name': 'OverviewComponent', 'selector': 'cd-mirroring'},{'name': 'PerformanceCounterComponent', 'selector': 'cd-performance-counter'},{'name': 'PoolDetailsComponent', 'selector': 'cd-pool-details'},{'name': 'PoolEditModeModalComponent', 'selector': 'cd-pool-edit-mode-modal'},{'name': 'PoolEditPeerModalComponent', 'selector': 'cd-pool-edit-peer-modal'},{'name': 'PoolFormComponent', 'selector': 'cd-pool-form'},{'name': 'PoolListComponent', 'selector': 'cd-pool-list'},{'name': 'PoolListComponent', 'selector': 'cd-mirroring-pools'},{'name': 'PrometheusListComponent', 'selector': 'cd-prometheus-list'},{'name': 'RbdConfigurationFormComponent', 'selector': 'cd-rbd-configuration-form'},{'name': 'RbdConfigurationListComponent', 'selector': 'cd-rbd-configuration-table'},{'name': 'RbdDetailsComponent', 'selector': 'cd-rbd-details'},{'name': 'RbdFormComponent', 'selector': 'cd-rbd-form'},{'name': 'RbdImagesComponent', 'selector': 'cd-rbd-images'},{'name': 'RbdListComponent', 'selector': 'cd-rbd-list'},{'name': 'RbdSnapshotFormComponent', 'selector': 'cd-rbd-snapshot-form'},{'name': 'RbdSnapshotListComponent', 'selector': 'cd-rbd-snapshot-list'},{'name': 'RbdTrashListComponent', 'selector': 'cd-rbd-trash-list'},{'name': 'RbdTrashMoveModalComponent', 'selector': 'cd-rbd-trash-move-modal'},{'name': 'RbdTrashPurgeModalComponent', 'selector': 'cd-rbd-trash-purge-modal'},{'name': 'RbdTrashRestoreModalComponent', 'selector': 'cd-rbd-trash-restore-modal'},{'name': 'RefreshSelectorComponent', 'selector': 'cd-refresh-selector'},{'name': 'Rgw501Component', 'selector': 'cd-rgw-501'},{'name': 'RgwBucketDetailsComponent', 'selector': 'cd-rgw-bucket-details'},{'name': 'RgwBucketFormComponent', 'selector': 'cd-rgw-bucket-form'},{'name': 'RgwBucketListComponent', 'selector': 'cd-rgw-bucket-list'},{'name': 'RgwDaemonDetailsComponent', 'selector': 'cd-rgw-daemon-details'},{'name': 'RgwDaemonListComponent', 'selector': 'cd-rgw-daemon-list'},{'name': 'RgwUserCapabilityModalComponent', 'selector': 'cd-rgw-user-capability-modal'},{'name': 'RgwUserDetailsComponent', 'selector': 'cd-rgw-user-details'},{'name': 'RgwUserFormComponent', 'selector': 'cd-rgw-user-form'},{'name': 'RgwUserListComponent', 'selector': 'cd-rgw-user-list'},{'name': 'RgwUserS3KeyModalComponent', 'selector': 'cd-rgw-user-s3-key-modal'},{'name': 'RgwUserSubuserModalComponent', 'selector': 'cd-rgw-user-subuser-modal'},{'name': 'RgwUserSwiftKeyModalComponent', 'selector': 'cd-rgw-user-swift-key-modal'},{'name': 'RoleDetailsComponent', 'selector': 'cd-role-details'},{'name': 'RoleFormComponent', 'selector': 'cd-role-form'},{'name': 'RoleListComponent', 'selector': 'cd-role-list'},{'name': 'SelectBadgesComponent', 'selector': 'cd-select-badges'},{'name': 'SelectComponent', 'selector': 'cd-select'},{'name': 'SparklineComponent', 'selector': 'cd-sparkline'},{'name': 'SsoNotFoundComponent', 'selector': 'cd-sso-not-found'},{'name': 'SubmitButtonComponent', 'selector': 'cd-submit-button'},{'name': 'TableActionsComponent', 'selector': 'cd-table-actions'},{'name': 'TableComponent', 'selector': 'cd-table'},{'name': 'TableKeyValueComponent', 'selector': 'cd-table-key-value'},{'name': 'TablePerformanceCounterComponent', 'selector': 'cd-table-performance-counter'},{'name': 'TaskManagerComponent', 'selector': 'cd-task-manager'},{'name': 'UsageBarComponent', 'selector': 'cd-usage-bar'},{'name': 'UserFormComponent', 'selector': 'cd-user-form'},{'name': 'UserListComponent', 'selector': 'cd-user-list'},{'name': 'UserTabsComponent', 'selector': 'cd-user-tabs'},{'name': 'ViewCacheComponent', 'selector': 'cd-view-cache'},{'name': 'WarningPanelComponent', 'selector': 'cd-warning-panel'}];
+    var DIRECTIVES = [{'name': 'AutofocusDirective', 'selector': '[autofocus]'},{'name': 'Copy2ClipboardButtonDirective', 'selector': '[cdCopy2ClipboardButton]'},{'name': 'DimlessBinaryDirective', 'selector': '[cdDimlessBinary]'},{'name': 'DimlessBinaryPerSecondDirective', 'selector': '[cdDimlessBinaryPerSecond]'},{'name': 'IopsDirective', 'selector': '[cdIops]'},{'name': 'MillisecondsDirective', 'selector': '[cdMilliseconds]'},{'name': 'PasswordButtonDirective', 'selector': '[cdPasswordButton]'}];
+    var ACTUAL_COMPONENT = {'name': 'PoolEditPeerModalComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'PoolEditPeerModalComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

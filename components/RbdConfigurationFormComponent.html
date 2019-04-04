@@ -1,0 +1,1261 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ceph-dashboard documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ceph-dashboard documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>RbdConfigurationFormComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/ceph/block/rbd-configuration-form/rbd-configuration-form.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>cd-rbd-configuration-form</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./rbd-configuration-form.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./rbd-configuration-form.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#configurationType">configurationType</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#formatterService">formatterService</a>
+                            </li>
+                            <li>
+                                <a href="#initialData">initialData</a>
+                            </li>
+                            <li>
+                                <a href="#ngDataReady">ngDataReady</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#rbdConfigurationService">rbdConfigurationService</a>
+                            </li>
+                            <li>
+                                <a href="#sectionVisibility">sectionVisibility</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#createConfigurationFormGroup">createConfigurationFormGroup</a>
+                            </li>
+                            <li>
+                                <a href="#getDirtyValues">getDirtyValues</a>
+                            </li>
+                            <li>
+                                <a href="#isDisabled">isDisabled</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#reset">reset</a>
+                            </li>
+                            <li>
+                                <a href="#toggleSectionVisibility">toggleSectionVisibility</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#form">form</a>
+                            </li>
+                            <li>
+                                <a href="#initializeData">initializeData</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#changes">changes</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(formatterService: <a href="../injectables/FormatterService.html">FormatterService</a>, rbdConfigurationService: <a href="../injectables/RbdConfigurationService.html">RbdConfigurationService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/ceph/block/rbd-configuration-form/rbd-configuration-form.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>formatterService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FormatterService.html" target="_self" >FormatterService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>rbdConfigurationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RbdConfigurationService.html" target="_self" >RbdConfigurationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="form"></a>
+                        <b>form</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/CdFormGroup.html" target="_self" >CdFormGroup</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/ceph/block/rbd-configuration-form/rbd-configuration-form.component.ts:20</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="initializeData"></a>
+                        <b>initializeData</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>EventEmitter&lt;literal type&gt;</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/ceph/block/rbd-configuration-form/rbd-configuration-form.component.ts:22</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="changes"></a>
+                        <b>changes</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/ceph/block/rbd-configuration-form/rbd-configuration-form.component.ts:27</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createConfigurationFormGroup"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            createConfigurationFormGroup
+                        </b>
+                        <a href="#createConfigurationFormGroup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createConfigurationFormGroup()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="104"
+                            class="link-to-prism">src/app/ceph/block/rbd-configuration-form/rbd-configuration-form.component.ts:104</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Dynamically create form controls.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDirtyValues"></a>
+                    <span class="name">
+                        <b>
+                            getDirtyValues
+                        </b>
+                        <a href="#getDirtyValues"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getDirtyValues(includeLocalValues, localFieldType?: <a href="../undefineds/RbdConfigurationSourceField.html">RbdConfigurationSourceField</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="67"
+                            class="link-to-prism">src/app/ceph/block/rbd-configuration-form/rbd-configuration-form.component.ts:67</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>includeLocalValues</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>false</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>localFieldType</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/enumerations.html#RbdConfigurationSourceField" target="_self" >RbdConfigurationSourceField</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{}</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isDisabled"></a>
+                    <span class="name">
+                        <b>
+                            isDisabled
+                        </b>
+                        <a href="#isDisabled"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isDisabled(optionName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="145"
+                            class="link-to-prism">src/app/ceph/block/rbd-configuration-form/rbd-configuration-form.component.ts:145</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>optionName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="38"
+                            class="link-to-prism">src/app/ceph/block/rbd-configuration-form/rbd-configuration-form.component.ts:38</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="reset"></a>
+                    <span class="name">
+                        <b>
+                            reset
+                        </b>
+                        <a href="#reset"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>reset(optionName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="129"
+                            class="link-to-prism">src/app/ceph/block/rbd-configuration-form/rbd-configuration-form.component.ts:129</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Reset the value. The inherited value will be used instead.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>optionName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleSectionVisibility"></a>
+                    <span class="name">
+                        <b>
+                            toggleSectionVisibility
+                        </b>
+                        <a href="#toggleSectionVisibility"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleSectionVisibility(className)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="149"
+                            class="link-to-prism">src/app/ceph/block/rbd-configuration-form/rbd-configuration-form.component.ts:149</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>className</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="configurationType"></a>
+                        <span class="name">
+                            <b>
+                            configurationType</b>
+                            <a href="#configurationType"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>RbdConfigurationType</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/ceph/block/rbd-configuration-form/rbd-configuration-form.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="formatterService"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            formatterService</b>
+                            <a href="#formatterService"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/FormatterService.html" target="_self" >FormatterService</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/ceph/block/rbd-configuration-form/rbd-configuration-form.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="initialData"></a>
+                        <span class="name">
+                            <b>
+                            initialData</b>
+                            <a href="#initialData"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/RbdConfigurationEntry.html" target="_self" >RbdConfigurationEntry[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/ceph/block/rbd-configuration-form/rbd-configuration-form.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngDataReady"></a>
+                        <span class="name">
+                            <b>
+                            ngDataReady</b>
+                            <a href="#ngDataReady"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new EventEmitter&lt;any&gt;()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/ceph/block/rbd-configuration-form/rbd-configuration-form.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="rbdConfigurationService"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            rbdConfigurationService</b>
+                            <a href="#rbdConfigurationService"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/RbdConfigurationService.html" target="_self" >RbdConfigurationService</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/ceph/block/rbd-configuration-form/rbd-configuration-form.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sectionVisibility"></a>
+                        <span class="name">
+                            <b>
+                            sectionVisibility</b>
+                            <a href="#sectionVisibility"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>literal type</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{}</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/ceph/block/rbd-configuration-form/rbd-configuration-form.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, EventEmitter, Input, OnInit, Output } from &#x27;@angular/core&#x27;;
+import { FormControl, Validators } from &#x27;@angular/forms&#x27;;
+
+import { CdFormGroup } from &#x27;../../../shared/forms/cd-form-group&#x27;;
+import {
+  RbdConfigurationEntry,
+  RbdConfigurationSourceField,
+  RbdConfigurationType
+} from &#x27;../../../shared/models/configuration&#x27;;
+import { FormatterService } from &#x27;../../../shared/services/formatter.service&#x27;;
+import { RbdConfigurationService } from &#x27;../../../shared/services/rbd-configuration.service&#x27;;
+
+@Component({
+  selector: &#x27;cd-rbd-configuration-form&#x27;,
+  templateUrl: &#x27;./rbd-configuration-form.component.html&#x27;,
+  styleUrls: [&#x27;./rbd-configuration-form.component.scss&#x27;]
+})
+export class RbdConfigurationFormComponent implements OnInit {
+  @Input()
+  form: CdFormGroup;
+  @Input()
+  initializeData: EventEmitter&lt;{
+    initialData: RbdConfigurationEntry[];
+    sourceType: RbdConfigurationSourceField;
+  }&gt;;
+  @Output()
+  changes &#x3D; new EventEmitter&lt;any&gt;();
+  ngDataReady &#x3D; new EventEmitter&lt;any&gt;();
+  initialData: RbdConfigurationEntry[];
+  configurationType &#x3D; RbdConfigurationType;
+  sectionVisibility: { [key: string]: boolean } &#x3D; {};
+
+  constructor(
+    public formatterService: FormatterService,
+    public rbdConfigurationService: RbdConfigurationService
+  ) {}
+
+  ngOnInit() {
+    const configFormGroup &#x3D; this.createConfigurationFormGroup();
+    this.form.addControl(&#x27;configuration&#x27;, configFormGroup);
+
+    // Listen to changes and emit the values to the parent component
+    configFormGroup.valueChanges.subscribe(() &#x3D;&gt; {
+      this.changes.emit(this.getDirtyValues.bind(this));
+    });
+
+    if (this.initializeData) {
+      this.initializeData.subscribe((data) &#x3D;&gt; {
+        this.initialData &#x3D; data.initialData;
+        const dataType &#x3D; data.sourceType;
+
+        this.rbdConfigurationService.getWritableOptionFields().forEach((option) &#x3D;&gt; {
+          const optionData &#x3D; data.initialData.filter((entry) &#x3D;&gt; entry.name &#x3D;&#x3D;&#x3D; option.name).pop();
+          if (optionData &amp;&amp; optionData[&#x27;source&#x27;] &#x3D;&#x3D;&#x3D; dataType) {
+            this.form.get(&#x60;configuration.${option.name}&#x60;).setValue(optionData[&#x27;value&#x27;]);
+          }
+        });
+        this.ngDataReady.emit();
+      });
+    }
+
+    this.rbdConfigurationService
+      .getWritableSections()
+      .forEach((section) &#x3D;&gt; (this.sectionVisibility[section.class] &#x3D; false));
+  }
+
+  getDirtyValues(includeLocalValues &#x3D; false, localFieldType?: RbdConfigurationSourceField) {
+    if (includeLocalValues &amp;&amp; !localFieldType) {
+      const msg &#x3D;
+        &#x27;ProgrammingError: If local values shall be included, a proper localFieldType argument has to be provided, too&#x27;;
+      throw new Error(msg);
+    }
+    const result &#x3D; {};
+
+    this.rbdConfigurationService.getWritableOptionFields().forEach((config) &#x3D;&gt; {
+      const control &#x3D; this.form.get(&#x27;configuration&#x27;).get(config.name);
+      const dirty &#x3D; control.dirty;
+
+      if (this.initialData &amp;&amp; this.initialData[config.name] &#x3D;&#x3D;&#x3D; control.value) {
+        return; // Skip controls with initial data loaded
+      }
+
+      if (dirty || (includeLocalValues &amp;&amp; control[&#x27;source&#x27;] &#x3D;&#x3D;&#x3D; localFieldType)) {
+        if (control.value &#x3D;&#x3D;&#x3D; null) {
+          result[config.name] &#x3D; control.value;
+        } else if (config.type &#x3D;&#x3D;&#x3D; RbdConfigurationType.bps) {
+          result[config.name] &#x3D; this.formatterService.toBytes(control.value);
+        } else if (config.type &#x3D;&#x3D;&#x3D; RbdConfigurationType.milliseconds) {
+          result[config.name] &#x3D; this.formatterService.toMilliseconds(control.value);
+        } else if (config.type &#x3D;&#x3D;&#x3D; RbdConfigurationType.iops) {
+          result[config.name] &#x3D; this.formatterService.toIops(control.value);
+        } else {
+          result[config.name] &#x3D; control.value;
+        }
+      }
+    });
+
+    return result;
+  }
+
+  /**
+   * Dynamically create form controls.
+   */
+  private createConfigurationFormGroup() {
+    const configFormGroup &#x3D; new CdFormGroup({});
+
+    this.rbdConfigurationService.getWritableOptionFields().forEach((c) &#x3D;&gt; {
+      let control: FormControl;
+      if (
+        c.type &#x3D;&#x3D;&#x3D; RbdConfigurationType.milliseconds ||
+        c.type &#x3D;&#x3D;&#x3D; RbdConfigurationType.iops ||
+        c.type &#x3D;&#x3D;&#x3D; RbdConfigurationType.bps
+      ) {
+        control &#x3D; new FormControl(0, Validators.min(0));
+      } else {
+        throw new Error(
+          &#x60;Type ${c.type} is unknown, you may need to add it to RbdConfiguration class&#x60;
+        );
+      }
+      configFormGroup.addControl(c.name, control);
+    });
+
+    return configFormGroup;
+  }
+
+  /**
+   * Reset the value. The inherited value will be used instead.
+   */
+  reset(optionName: string) {
+    const formControl &#x3D; this.form.get(&#x27;configuration&#x27;).get(optionName);
+    if (formControl.disabled) {
+      formControl.setValue(formControl[&#x27;previousValue&#x27;] || 0);
+      formControl.enable();
+      if (!formControl[&#x27;previousValue&#x27;]) {
+        formControl.markAsPristine();
+      }
+    } else {
+      formControl[&#x27;previousValue&#x27;] &#x3D; formControl.value;
+      formControl.setValue(null);
+      formControl.markAsDirty();
+      formControl.disable();
+    }
+  }
+
+  isDisabled(optionName: string) {
+    return this.form.get(&#x27;configuration&#x27;).get(optionName).disabled;
+  }
+
+  toggleSectionVisibility(className) {
+    this.sectionVisibility[className] &#x3D; !this.sectionVisibility[className];
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;fieldset #cfgFormGroup [formGroup]&#x3D;&quot;form.get(&#x27;configuration&#x27;)&quot;&gt;
+  &lt;legend i18n&gt;RBD Configuration&lt;/legend&gt;
+
+  &lt;div *ngFor&#x3D;&quot;let section of rbdConfigurationService.sections&quot;&gt;
+    &lt;h3 class&#x3D;&quot;page-header&quot;&gt;
+      &lt;span
+        (click)&#x3D;&quot;toggleSectionVisibility(section.class)&quot;
+        class&#x3D;&quot;collapsible&quot;&gt;{{ section.heading }} &lt;i [ngClass]&#x3D;&quot;{&#x27;fa-plus-circle&#x27;: !sectionVisibility[section.class], &#x27;fa-minus-circle&#x27;: sectionVisibility[section.class]}&quot; class&#x3D;&quot;fa&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;/h3&gt;
+    &lt;div class&#x3D;&quot;{{ section.class }}&quot; [hidden]&#x3D;&quot;!sectionVisibility[section.class]&quot;&gt;
+      &lt;div
+        class&#x3D;&quot;form-group&quot;
+        *ngFor&#x3D;&quot;let option of section.options&quot;
+        [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: form.showError(&#x27;configuration.&#x27; + option.name, cfgFormGroup)}&quot;&gt;
+        &lt;label
+          class&#x3D;&quot;control-label col-sm-3&quot;
+          [for]&#x3D;&quot;option.name&quot;&gt;{{ option.displayName }}&lt;cd-helper&gt;{{ option.description }}&lt;/cd-helper&gt;&lt;/label&gt;
+
+        &lt;div class&#x3D;&quot;col-sm-9 {{ section.heading }}&quot;&gt;
+          &lt;div class&#x3D;&quot;input-group&quot;&gt;
+            &lt;ng-container [ngSwitch]&#x3D;&quot;option.type&quot;&gt;
+              &lt;ng-container *ngSwitchCase&#x3D;&quot;configurationType.milliseconds&quot;&gt;
+                &lt;input
+                  [id]&#x3D;&quot;option.name&quot;
+                  [name]&#x3D;&quot;option.name&quot;
+                  [formControlName]&#x3D;&quot;option.name&quot;
+                  type&#x3D;&quot;text&quot;
+                  class&#x3D;&quot;form-control&quot;
+                  [ngDataReady]&#x3D;&quot;ngDataReady&quot;
+                  cdMilliseconds&gt;
+              &lt;/ng-container&gt;
+              &lt;ng-container *ngSwitchCase&#x3D;&quot;configurationType.bps&quot;&gt;
+                &lt;input
+                  [id]&#x3D;&quot;option.name&quot;
+                  [name]&#x3D;&quot;option.name&quot;
+                  [formControlName]&#x3D;&quot;option.name&quot;
+                  type&#x3D;&quot;text&quot;
+                  class&#x3D;&quot;form-control&quot;
+                  defaultUnit&#x3D;&quot;b&quot;
+                  [ngDataReady]&#x3D;&quot;ngDataReady&quot;
+                  cdDimlessBinaryPerSecond&gt;
+              &lt;/ng-container&gt;
+              &lt;ng-container *ngSwitchCase&#x3D;&quot;configurationType.iops&quot;&gt;
+                &lt;input
+                  [id]&#x3D;&quot;option.name&quot;
+                  [name]&#x3D;&quot;option.name&quot;
+                  [formControlName]&#x3D;&quot;option.name&quot;
+                  type&#x3D;&quot;text&quot;
+                  class&#x3D;&quot;form-control&quot;
+                  [ngDataReady]&#x3D;&quot;ngDataReady&quot;
+                  cdIops&gt;
+              &lt;/ng-container&gt;
+            &lt;/ng-container&gt;
+            &lt;span class&#x3D;&quot;input-group-btn&quot;&gt;
+              &lt;button
+                class&#x3D;&quot;btn btn-default&quot;
+                type&#x3D;&quot;button&quot;
+                data-toggle&#x3D;&quot;button&quot;
+                [ngClass]&#x3D;&quot;{&#x27;active&#x27;: isDisabled(option.name)}&quot;
+                tooltip&#x3D;&quot;Remove the local configuration value. The parent configuration value will be inherited and used instead.&quot;
+                containerClass&#x3D;&quot;tooltip-wide&quot;
+                [delay]&#x3D;&quot;1000&quot;
+                i18n-tooltip
+                (click)&#x3D;&quot;reset(option.name)&quot;&gt;
+                &lt;i class&#x3D;&quot;fa fa-eraser&quot;
+                   aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+              &lt;/button&gt;
+            &lt;/span&gt;
+          &lt;/div&gt;
+          &lt;span
+            i18n
+            class&#x3D;&quot;help-block&quot;
+            *ngIf&#x3D;&quot;form.showError(&#x27;configuration.&#x27; + option.name, cfgFormGroup, &#x27;min&#x27;)&quot;&gt;The mininum value is 0&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/fieldset&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./rbd-configuration-form.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.collapsible {
+  cursor: pointer;
+  user-select: none;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><fieldset #cfgFormGroup [formGroup]="form.get(\'configuration\')">  <legend i18n>RBD Configuration</legend>  <div *ngFor="let section of rbdConfigurationService.sections">    <h3 class="page-header">      <span        (click)="toggleSectionVisibility(section.class)"        class="collapsible">{{ section.heading }} <i [ngClass]="{\'fa-plus-circle\': !sectionVisibility[section.class], \'fa-minus-circle\': sectionVisibility[section.class]}" class="fa" aria-hidden="true"></i></span>    </h3>    <div class="{{ section.class }}" [hidden]="!sectionVisibility[section.class]">      <div        class="form-group"        *ngFor="let option of section.options"        [ngClass]="{\'has-error\': form.showError(\'configuration.\' + option.name, cfgFormGroup)}">        <label          class="control-label col-sm-3"          [for]="option.name">{{ option.displayName }}<cd-helper>{{ option.description }}</cd-helper></label>        <div class="col-sm-9 {{ section.heading }}">          <div class="input-group">            <ng-container [ngSwitch]="option.type">              <ng-container *ngSwitchCase="configurationType.milliseconds">                <input                  [id]="option.name"                  [name]="option.name"                  [formControlName]="option.name"                  type="text"                  class="form-control"                  [ngDataReady]="ngDataReady"                  cdMilliseconds>              </ng-container>              <ng-container *ngSwitchCase="configurationType.bps">                <input                  [id]="option.name"                  [name]="option.name"                  [formControlName]="option.name"                  type="text"                  class="form-control"                  defaultUnit="b"                  [ngDataReady]="ngDataReady"                  cdDimlessBinaryPerSecond>              </ng-container>              <ng-container *ngSwitchCase="configurationType.iops">                <input                  [id]="option.name"                  [name]="option.name"                  [formControlName]="option.name"                  type="text"                  class="form-control"                  [ngDataReady]="ngDataReady"                  cdIops>              </ng-container>            </ng-container>            <span class="input-group-btn">              <button                class="btn btn-default"                type="button"                data-toggle="button"                [ngClass]="{\'active\': isDisabled(option.name)}"                tooltip="Remove the local configuration value. The parent configuration value will be inherited and used instead."                containerClass="tooltip-wide"                [delay]="1000"                i18n-tooltip                (click)="reset(option.name)">                <i class="fa fa-eraser"                   aria-hidden="true"></i>              </button>            </span>          </div>          <span            i18n            class="help-block"            *ngIf="form.showError(\'configuration.\' + option.name, cfgFormGroup, \'min\')">The mininum value is 0</span>        </div>      </div>    </div>  </div></fieldset></div>'
+    var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'cd-about'},{'name': 'AdministrationComponent', 'selector': 'cd-administration'},{'name': 'AppComponent', 'selector': 'cd-root'},{'name': 'BackButtonComponent', 'selector': 'cd-back-button'},{'name': 'BreadcrumbsComponent', 'selector': 'cd-breadcrumbs'},{'name': 'CephfsChartComponent', 'selector': 'cd-cephfs-chart'},{'name': 'CephfsClientsComponent', 'selector': 'cd-cephfs-clients'},{'name': 'CephfsDetailComponent', 'selector': 'cd-cephfs-detail'},{'name': 'CephfsListComponent', 'selector': 'cd-cephfs-list'},{'name': 'ConfigurationComponent', 'selector': 'cd-configuration'},{'name': 'ConfigurationDetailsComponent', 'selector': 'cd-configuration-details'},{'name': 'ConfigurationFormComponent', 'selector': 'cd-configuration-form'},{'name': 'ConfirmationModalComponent', 'selector': 'cd-confirmation-modal'},{'name': 'CriticalConfirmationModalComponent', 'selector': 'cd-deletion-modal'},{'name': 'CrushmapComponent', 'selector': 'cd-crushmap'},{'name': 'DaemonListComponent', 'selector': 'cd-mirroring-daemons'},{'name': 'DashboardComponent', 'selector': 'cd-dashboard'},{'name': 'DashboardHelpComponent', 'selector': 'cd-dashboard-help'},{'name': 'ErasureCodeProfileFormComponent', 'selector': 'cd-erasure-code-profile-form'},{'name': 'ErrorPanelComponent', 'selector': 'cd-error-panel'},{'name': 'ForbiddenComponent', 'selector': 'cd-forbidden'},{'name': 'GrafanaComponent', 'selector': 'cd-grafana'},{'name': 'HealthComponent', 'selector': 'cd-health'},{'name': 'HealthPieComponent', 'selector': 'cd-health-pie'},{'name': 'HelperComponent', 'selector': 'cd-helper'},{'name': 'HostDetailsComponent', 'selector': 'cd-host-details'},{'name': 'HostsComponent', 'selector': 'cd-hosts'},{'name': 'IdentityComponent', 'selector': 'cd-identity'},{'name': 'ImageListComponent', 'selector': 'cd-mirroring-images'},{'name': 'InfoCardComponent', 'selector': 'cd-info-card'},{'name': 'InfoGroupComponent', 'selector': 'cd-info-group'},{'name': 'InfoPanelComponent', 'selector': 'cd-info-panel'},{'name': 'IscsiComponent', 'selector': 'cd-iscsi'},{'name': 'IscsiTabsComponent', 'selector': 'cd-iscsi-tabs'},{'name': 'IscsiTargetDetailsComponent', 'selector': 'cd-iscsi-target-details'},{'name': 'IscsiTargetDiscoveryModalComponent', 'selector': 'cd-iscsi-target-discovery-modal'},{'name': 'IscsiTargetFormComponent', 'selector': 'cd-iscsi-target-form'},{'name': 'IscsiTargetImageSettingsModalComponent', 'selector': 'cd-iscsi-target-image-settings-modal'},{'name': 'IscsiTargetIqnSettingsModalComponent', 'selector': 'cd-iscsi-target-iqn-settings-modal'},{'name': 'IscsiTargetListComponent', 'selector': 'cd-iscsi-target-list'},{'name': 'LanguageSelectorComponent', 'selector': 'cd-language-selector'},{'name': 'LoadingPanelComponent', 'selector': 'cd-loading-panel'},{'name': 'LoginComponent', 'selector': 'cd-login'},{'name': 'LogsComponent', 'selector': 'cd-logs'},{'name': 'MgrModuleDetailsComponent', 'selector': 'cd-mgr-module-details'},{'name': 'MgrModuleFormComponent', 'selector': 'cd-mgr-module-form'},{'name': 'MgrModuleListComponent', 'selector': 'cd-mgr-module-list'},{'name': 'ModalComponent', 'selector': 'cd-modal'},{'name': 'MonitorComponent', 'selector': 'cd-monitor'},{'name': 'NavigationComponent', 'selector': 'cd-navigation'},{'name': 'Nfs501Component', 'selector': 'cd-nfs-501'},{'name': 'NfsDetailsComponent', 'selector': 'cd-nfs-details'},{'name': 'NfsFormClientComponent', 'selector': 'cd-nfs-form-client'},{'name': 'NfsFormComponent', 'selector': 'cd-nfs-form'},{'name': 'NfsListComponent', 'selector': 'cd-nfs-list'},{'name': 'NotFoundComponent', 'selector': 'cd-not-found'},{'name': 'NotificationsComponent', 'selector': 'cd-notifications'},{'name': 'OsdDetailsComponent', 'selector': 'cd-osd-details'},{'name': 'OsdFlagsModalComponent', 'selector': 'cd-osd-flags-modal'},{'name': 'OsdListComponent', 'selector': 'cd-osd-list'},{'name': 'OsdPerformanceHistogramComponent', 'selector': 'cd-osd-performance-histogram'},{'name': 'OsdRecvSpeedModalComponent', 'selector': 'cd-osd-recv-speed-modal'},{'name': 'OsdReweightModalComponent', 'selector': 'cd-osd-reweight-modal'},{'name': 'OsdScrubModalComponent', 'selector': 'cd-osd-scrub-modal'},{'name': 'OverviewComponent', 'selector': 'cd-mirroring'},{'name': 'PerformanceCounterComponent', 'selector': 'cd-performance-counter'},{'name': 'PoolDetailsComponent', 'selector': 'cd-pool-details'},{'name': 'PoolEditModeModalComponent', 'selector': 'cd-pool-edit-mode-modal'},{'name': 'PoolEditPeerModalComponent', 'selector': 'cd-pool-edit-peer-modal'},{'name': 'PoolFormComponent', 'selector': 'cd-pool-form'},{'name': 'PoolListComponent', 'selector': 'cd-pool-list'},{'name': 'PoolListComponent', 'selector': 'cd-mirroring-pools'},{'name': 'PrometheusListComponent', 'selector': 'cd-prometheus-list'},{'name': 'RbdConfigurationFormComponent', 'selector': 'cd-rbd-configuration-form'},{'name': 'RbdConfigurationListComponent', 'selector': 'cd-rbd-configuration-table'},{'name': 'RbdDetailsComponent', 'selector': 'cd-rbd-details'},{'name': 'RbdFormComponent', 'selector': 'cd-rbd-form'},{'name': 'RbdImagesComponent', 'selector': 'cd-rbd-images'},{'name': 'RbdListComponent', 'selector': 'cd-rbd-list'},{'name': 'RbdSnapshotFormComponent', 'selector': 'cd-rbd-snapshot-form'},{'name': 'RbdSnapshotListComponent', 'selector': 'cd-rbd-snapshot-list'},{'name': 'RbdTrashListComponent', 'selector': 'cd-rbd-trash-list'},{'name': 'RbdTrashMoveModalComponent', 'selector': 'cd-rbd-trash-move-modal'},{'name': 'RbdTrashPurgeModalComponent', 'selector': 'cd-rbd-trash-purge-modal'},{'name': 'RbdTrashRestoreModalComponent', 'selector': 'cd-rbd-trash-restore-modal'},{'name': 'RefreshSelectorComponent', 'selector': 'cd-refresh-selector'},{'name': 'Rgw501Component', 'selector': 'cd-rgw-501'},{'name': 'RgwBucketDetailsComponent', 'selector': 'cd-rgw-bucket-details'},{'name': 'RgwBucketFormComponent', 'selector': 'cd-rgw-bucket-form'},{'name': 'RgwBucketListComponent', 'selector': 'cd-rgw-bucket-list'},{'name': 'RgwDaemonDetailsComponent', 'selector': 'cd-rgw-daemon-details'},{'name': 'RgwDaemonListComponent', 'selector': 'cd-rgw-daemon-list'},{'name': 'RgwUserCapabilityModalComponent', 'selector': 'cd-rgw-user-capability-modal'},{'name': 'RgwUserDetailsComponent', 'selector': 'cd-rgw-user-details'},{'name': 'RgwUserFormComponent', 'selector': 'cd-rgw-user-form'},{'name': 'RgwUserListComponent', 'selector': 'cd-rgw-user-list'},{'name': 'RgwUserS3KeyModalComponent', 'selector': 'cd-rgw-user-s3-key-modal'},{'name': 'RgwUserSubuserModalComponent', 'selector': 'cd-rgw-user-subuser-modal'},{'name': 'RgwUserSwiftKeyModalComponent', 'selector': 'cd-rgw-user-swift-key-modal'},{'name': 'RoleDetailsComponent', 'selector': 'cd-role-details'},{'name': 'RoleFormComponent', 'selector': 'cd-role-form'},{'name': 'RoleListComponent', 'selector': 'cd-role-list'},{'name': 'SelectBadgesComponent', 'selector': 'cd-select-badges'},{'name': 'SelectComponent', 'selector': 'cd-select'},{'name': 'SparklineComponent', 'selector': 'cd-sparkline'},{'name': 'SsoNotFoundComponent', 'selector': 'cd-sso-not-found'},{'name': 'SubmitButtonComponent', 'selector': 'cd-submit-button'},{'name': 'TableActionsComponent', 'selector': 'cd-table-actions'},{'name': 'TableComponent', 'selector': 'cd-table'},{'name': 'TableKeyValueComponent', 'selector': 'cd-table-key-value'},{'name': 'TablePerformanceCounterComponent', 'selector': 'cd-table-performance-counter'},{'name': 'TaskManagerComponent', 'selector': 'cd-task-manager'},{'name': 'UsageBarComponent', 'selector': 'cd-usage-bar'},{'name': 'UserFormComponent', 'selector': 'cd-user-form'},{'name': 'UserListComponent', 'selector': 'cd-user-list'},{'name': 'UserTabsComponent', 'selector': 'cd-user-tabs'},{'name': 'ViewCacheComponent', 'selector': 'cd-view-cache'},{'name': 'WarningPanelComponent', 'selector': 'cd-warning-panel'}];
+    var DIRECTIVES = [{'name': 'AutofocusDirective', 'selector': '[autofocus]'},{'name': 'Copy2ClipboardButtonDirective', 'selector': '[cdCopy2ClipboardButton]'},{'name': 'DimlessBinaryDirective', 'selector': '[cdDimlessBinary]'},{'name': 'DimlessBinaryPerSecondDirective', 'selector': '[cdDimlessBinaryPerSecond]'},{'name': 'IopsDirective', 'selector': '[cdIops]'},{'name': 'MillisecondsDirective', 'selector': '[cdMilliseconds]'},{'name': 'PasswordButtonDirective', 'selector': '[cdPasswordButton]'}];
+    var ACTUAL_COMPONENT = {'name': 'RbdConfigurationFormComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'RbdConfigurationFormComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

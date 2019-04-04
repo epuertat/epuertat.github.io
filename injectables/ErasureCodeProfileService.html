@@ -1,0 +1,859 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ceph-dashboard documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ceph-dashboard documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>ErasureCodeProfileService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/shared/api/erasure-code-profile.service.ts</code>
+        </p>
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#apiPath">apiPath</a>
+                            </li>
+                            <li>
+                                <a href="#formTooltips">formTooltips</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#create">create</a>
+                            </li>
+                            <li>
+                                <a href="#delete">delete</a>
+                            </li>
+                            <li>
+                                <a href="#get">get</a>
+                            </li>
+                            <li>
+                                <a href="#getInfo">getInfo</a>
+                            </li>
+                            <li>
+                                <a href="#list">list</a>
+                            </li>
+                            <li>
+                                <a href="#update">update</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>, i18n: I18n)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/app/shared/api/erasure-code-profile.service.ts:80</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>i18n</td>
+                                                  
+                                                        <td>
+                                                                    <code>I18n</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="create"></a>
+                    <span class="name">
+                        <b>
+                            create
+                        </b>
+                        <a href="#create"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>create(ecp: <a href="../classes/ErasureCodeProfile.html">ErasureCodeProfile</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="88"
+                            class="link-to-prism">src/app/shared/api/erasure-code-profile.service.ts:88</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ecp</td>
+                                    <td>
+                                                <code><a href="../classes/ErasureCodeProfile.html" target="_self" >ErasureCodeProfile</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="delete"></a>
+                    <span class="name">
+                        <b>
+                            delete
+                        </b>
+                        <a href="#delete"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>delete(name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="96"
+                            class="link-to-prism">src/app/shared/api/erasure-code-profile.service.ts:96</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="get"></a>
+                    <span class="name">
+                        <b>
+                            get
+                        </b>
+                        <a href="#get"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>get(name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="100"
+                            class="link-to-prism">src/app/shared/api/erasure-code-profile.service.ts:100</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getInfo"></a>
+                    <span class="name">
+                        <b>
+                            getInfo
+                        </b>
+                        <a href="#getInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getInfo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="104"
+                            class="link-to-prism">src/app/shared/api/erasure-code-profile.service.ts:104</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="list"></a>
+                    <span class="name">
+                        <b>
+                            list
+                        </b>
+                        <a href="#list"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>list()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="84"
+                            class="link-to-prism">src/app/shared/api/erasure-code-profile.service.ts:84</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/ErasureCodeProfile.html" target="_self" >Observable&lt;ErasureCodeProfile[]&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="update"></a>
+                    <span class="name">
+                        <b>
+                            update
+                        </b>
+                        <a href="#update"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>update(ecp: <a href="../classes/ErasureCodeProfile.html">ErasureCodeProfile</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="92"
+                            class="link-to-prism">src/app/shared/api/erasure-code-profile.service.ts:92</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ecp</td>
+                                    <td>
+                                                <code><a href="../classes/ErasureCodeProfile.html" target="_self" >ErasureCodeProfile</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="apiPath"></a>
+                        <span class="name">
+                            <b>
+                            apiPath</b>
+                            <a href="#apiPath"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;api/erasure_code_profile&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/shared/api/erasure-code-profile.service.ts:14</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="formTooltips"></a>
+                        <span class="name">
+                            <b>
+                            formTooltips</b>
+                            <a href="#formTooltips"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    // Copied from /srv/cephmgr/ceph-dev/doc/rados/operations/erasure-code.*.rst
+    k: this.i18n(&#x60;Each object is split in data-chunks parts, each stored on a different OSD.&#x60;),
+
+    m: this.i18n(&#x60;Compute coding chunks for each object and store them on different OSDs.
+      The number of coding chunks is also the number of OSDs that can be down without losing data.&#x60;),
+
+    plugins: {
+      jerasure: {
+        description: this.i18n(&#x60;The jerasure plugin is the most generic and flexible plugin,
+          it is also the default for Ceph erasure coded pools.&#x60;),
+        technique: this.i18n(&#x60;The more flexible technique is reed_sol_van : it is enough to set k
+          and m. The cauchy_good technique can be faster but you need to chose the packetsize
+          carefully. All of reed_sol_r6_op, liberation, blaum_roth, liber8tion are RAID6 equivalents
+          in the sense that they can only be configured with m&#x3D;2.&#x60;),
+        packetSize: this.i18n(&#x60;The encoding will be done on packets of bytes size at a time.
+          Chosing the right packet size is difficult.
+          The jerasure documentation contains extensive information on this topic.&#x60;)
+      },
+      lrc: {
+        description: this.i18n(&#x60;With the jerasure plugin, when an erasure coded object is stored on
+          multiple OSDs, recovering from the loss of one OSD requires reading from all the others.
+          For instance if jerasure is configured with k&#x3D;8 and m&#x3D;4, losing one OSD requires reading
+          from the eleven others to repair.
+
+          The lrc erasure code plugin creates local parity chunks to be able to recover using
+          less OSDs. For instance if lrc is configured with k&#x3D;8, m&#x3D;4 and l&#x3D;4, it will create
+          an additional parity chunk for every four OSDs. When a single OSD is lost, it can be
+          recovered with only four OSDs instead of eleven.&#x60;),
+        l: this.i18n(&#x60;Group the coding and data chunks into sets of size locality. For instance,
+          for k&#x3D;4 and m&#x3D;2, when locality&#x3D;3 two groups of three are created. Each set can
+          be recovered without reading chunks from another set.&#x60;),
+        crushLocality: this.i18n(&#x60;The type of the crush bucket in which each set of chunks defined
+          by l will be stored. For instance, if it is set to rack, each group of l chunks will be
+          placed in a different rack. It is used to create a CRUSH rule step such as step choose
+          rack. If it is not set, no such grouping is done.&#x60;)
+      },
+      isa: {
+        description: this.i18n(
+          &#x60;The isa plugin encapsulates the ISA library. It only runs on Intel processors.&#x60;
+        ),
+        technique: this.i18n(&#x60;The ISA plugin comes in two Reed Solomon forms.
+          If reed_sol_van is set, it is Vandermonde, if cauchy is set, it is Cauchy.&#x60;)
+      },
+      shec: {
+        description: this.i18n(&#x60;The shec plugin encapsulates the multiple SHEC library.
+          It allows ceph to recover data more efficiently than Reed Solomon codes.&#x60;),
+        c: this.i18n(&#x60;The number of parity chunks each of which includes each data chunk in its
+          calculation range. The number is used as a durability estimator. For instance, if c&#x3D;2,
+          2 OSDs can be down without losing data.&#x60;)
+      }
+    },
+
+    crushRoot: this.i18n(&#x60;The name of the crush bucket used for the first step of the CRUSH rule.
+      For instance step take default.&#x60;),
+
+    crushFailureDomain: this.i18n(&#x60;Ensure that no two chunks are in a bucket with the same failure
+      domain. For instance, if the failure domain is host no two chunks will be stored on the same
+      host. It is used to create a CRUSH rule step such as step chooseleaf host.&#x60;),
+
+    crushDeviceClass: this.i18n(&#x60;Restrict placement to devices of a specific class
+      (e.g., ssd or hdd), using the crush device class names in the CRUSH map.&#x60;),
+
+    directory: this.i18n(&#x60;Set the directory name from which the erasure code plugin is loaded.&#x60;)
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/shared/api/erasure-code-profile.service.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { HttpClient } from &#x27;@angular/common/http&#x27;;
+import { Injectable } from &#x27;@angular/core&#x27;;
+
+import { Observable } from &#x27;rxjs&#x27;;
+
+import { I18n } from &#x27;@ngx-translate/i18n-polyfill&#x27;;
+import { ErasureCodeProfile } from &#x27;../models/erasure-code-profile&#x27;;
+import { ApiModule } from &#x27;./api.module&#x27;;
+
+@Injectable({
+  providedIn: ApiModule
+})
+export class ErasureCodeProfileService {
+  apiPath &#x3D; &#x27;api/erasure_code_profile&#x27;;
+
+  formTooltips &#x3D; {
+    // Copied from /srv/cephmgr/ceph-dev/doc/rados/operations/erasure-code.*.rst
+    k: this.i18n(&#x60;Each object is split in data-chunks parts, each stored on a different OSD.&#x60;),
+
+    m: this.i18n(&#x60;Compute coding chunks for each object and store them on different OSDs.
+      The number of coding chunks is also the number of OSDs that can be down without losing data.&#x60;),
+
+    plugins: {
+      jerasure: {
+        description: this.i18n(&#x60;The jerasure plugin is the most generic and flexible plugin,
+          it is also the default for Ceph erasure coded pools.&#x60;),
+        technique: this.i18n(&#x60;The more flexible technique is reed_sol_van : it is enough to set k
+          and m. The cauchy_good technique can be faster but you need to chose the packetsize
+          carefully. All of reed_sol_r6_op, liberation, blaum_roth, liber8tion are RAID6 equivalents
+          in the sense that they can only be configured with m&#x3D;2.&#x60;),
+        packetSize: this.i18n(&#x60;The encoding will be done on packets of bytes size at a time.
+          Chosing the right packet size is difficult.
+          The jerasure documentation contains extensive information on this topic.&#x60;)
+      },
+      lrc: {
+        description: this.i18n(&#x60;With the jerasure plugin, when an erasure coded object is stored on
+          multiple OSDs, recovering from the loss of one OSD requires reading from all the others.
+          For instance if jerasure is configured with k&#x3D;8 and m&#x3D;4, losing one OSD requires reading
+          from the eleven others to repair.
+
+          The lrc erasure code plugin creates local parity chunks to be able to recover using
+          less OSDs. For instance if lrc is configured with k&#x3D;8, m&#x3D;4 and l&#x3D;4, it will create
+          an additional parity chunk for every four OSDs. When a single OSD is lost, it can be
+          recovered with only four OSDs instead of eleven.&#x60;),
+        l: this.i18n(&#x60;Group the coding and data chunks into sets of size locality. For instance,
+          for k&#x3D;4 and m&#x3D;2, when locality&#x3D;3 two groups of three are created. Each set can
+          be recovered without reading chunks from another set.&#x60;),
+        crushLocality: this.i18n(&#x60;The type of the crush bucket in which each set of chunks defined
+          by l will be stored. For instance, if it is set to rack, each group of l chunks will be
+          placed in a different rack. It is used to create a CRUSH rule step such as step choose
+          rack. If it is not set, no such grouping is done.&#x60;)
+      },
+      isa: {
+        description: this.i18n(
+          &#x60;The isa plugin encapsulates the ISA library. It only runs on Intel processors.&#x60;
+        ),
+        technique: this.i18n(&#x60;The ISA plugin comes in two Reed Solomon forms.
+          If reed_sol_van is set, it is Vandermonde, if cauchy is set, it is Cauchy.&#x60;)
+      },
+      shec: {
+        description: this.i18n(&#x60;The shec plugin encapsulates the multiple SHEC library.
+          It allows ceph to recover data more efficiently than Reed Solomon codes.&#x60;),
+        c: this.i18n(&#x60;The number of parity chunks each of which includes each data chunk in its
+          calculation range. The number is used as a durability estimator. For instance, if c&#x3D;2,
+          2 OSDs can be down without losing data.&#x60;)
+      }
+    },
+
+    crushRoot: this.i18n(&#x60;The name of the crush bucket used for the first step of the CRUSH rule.
+      For instance step take default.&#x60;),
+
+    crushFailureDomain: this.i18n(&#x60;Ensure that no two chunks are in a bucket with the same failure
+      domain. For instance, if the failure domain is host no two chunks will be stored on the same
+      host. It is used to create a CRUSH rule step such as step chooseleaf host.&#x60;),
+
+    crushDeviceClass: this.i18n(&#x60;Restrict placement to devices of a specific class
+      (e.g., ssd or hdd), using the crush device class names in the CRUSH map.&#x60;),
+
+    directory: this.i18n(&#x60;Set the directory name from which the erasure code plugin is loaded.&#x60;)
+  };
+
+  constructor(private http: HttpClient, private i18n: I18n) {}
+
+  list(): Observable&lt;ErasureCodeProfile[]&gt; {
+    return this.http.get&lt;ErasureCodeProfile[]&gt;(this.apiPath);
+  }
+
+  create(ecp: ErasureCodeProfile) {
+    return this.http.post(this.apiPath, ecp, { observe: &#x27;response&#x27; });
+  }
+
+  update(ecp: ErasureCodeProfile) {
+    return this.http.put(&#x60;${this.apiPath}/${ecp.name}&#x60;, ecp, { observe: &#x27;response&#x27; });
+  }
+
+  delete(name: string) {
+    return this.http.delete(&#x60;${this.apiPath}/${name}&#x60;, { observe: &#x27;response&#x27; });
+  }
+
+  get(name: string) {
+    return this.http.get(&#x60;${this.apiPath}/${name}&#x60;);
+  }
+
+  getInfo() {
+    return this.http.get(&#x60;${this.apiPath}/_info&#x60;);
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'ErasureCodeProfileService.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

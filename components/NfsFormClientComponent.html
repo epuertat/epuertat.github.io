@@ -1,0 +1,1218 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ceph-dashboard documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ceph-dashboard documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>NfsFormClientComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/ceph/nfs/nfs-form-client/nfs-form-client.component.ts</code>
+</p>
+
+
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>cd-nfs-form-client</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./nfs-form-client.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./nfs-form-client.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#nfsAccessType">nfsAccessType</a>
+                            </li>
+                            <li>
+                                <a href="#nfsSquash">nfsSquash</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addClient">addClient</a>
+                            </li>
+                            <li>
+                                <a href="#getAccessTypeHelp">getAccessTypeHelp</a>
+                            </li>
+                            <li>
+                                <a href="#getNoAccessTypeDescr">getNoAccessTypeDescr</a>
+                            </li>
+                            <li>
+                                <a href="#getNoSquashDescr">getNoSquashDescr</a>
+                            </li>
+                            <li>
+                                <a href="#getValue">getValue</a>
+                            </li>
+                            <li>
+                                <a href="#removeClient">removeClient</a>
+                            </li>
+                            <li>
+                                <a href="#resolveModel">resolveModel</a>
+                            </li>
+                            <li>
+                                <a href="#showError">showError</a>
+                            </li>
+                            <li>
+                                <a href="#trackByFn">trackByFn</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#form">form</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(nfsService: <a href="../injectables/NfsService.html">NfsService</a>, i18n: I18n)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/ceph/nfs/nfs-form-client/nfs-form-client.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>nfsService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NfsService.html" target="_self" >NfsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>i18n</td>
+                                                  
+                                                        <td>
+                                                                    <code>I18n</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="form"></a>
+                        <b>form</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/CdFormGroup.html" target="_self" >CdFormGroup</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/ceph/nfs/nfs-form-client/nfs-form-client.component.ts:17</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addClient"></a>
+                    <span class="name">
+                        <b>
+                            addClient
+                        </b>
+                        <a href="#addClient"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addClient()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="45"
+                            class="link-to-prism">src/app/ceph/nfs/nfs-form-client/nfs-form-client.component.ts:45</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAccessTypeHelp"></a>
+                    <span class="name">
+                        <b>
+                            getAccessTypeHelp
+                        </b>
+                        <a href="#getAccessTypeHelp"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAccessTypeHelp(index)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="31"
+                            class="link-to-prism">src/app/ceph/nfs/nfs-form-client/nfs-form-client.component.ts:31</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getNoAccessTypeDescr"></a>
+                    <span class="name">
+                        <b>
+                            getNoAccessTypeDescr
+                        </b>
+                        <a href="#getNoAccessTypeDescr"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getNoAccessTypeDescr()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="24"
+                            class="link-to-prism">src/app/ceph/nfs/nfs-form-client/nfs-form-client.component.ts:24</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getNoSquashDescr"></a>
+                    <span class="name">
+                        <b>
+                            getNoSquashDescr
+                        </b>
+                        <a href="#getNoSquashDescr"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getNoSquashDescr()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="38"
+                            class="link-to-prism">src/app/ceph/nfs/nfs-form-client/nfs-form-client.component.ts:38</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getValue"></a>
+                    <span class="name">
+                        <b>
+                            getValue
+                        </b>
+                        <a href="#getValue"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getValue(index, control)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="72"
+                            class="link-to-prism">src/app/ceph/nfs/nfs-form-client/nfs-form-client.component.ts:72</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>control</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeClient"></a>
+                    <span class="name">
+                        <b>
+                            removeClient
+                        </b>
+                        <a href="#removeClient"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeClient(index)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="63"
+                            class="link-to-prism">src/app/ceph/nfs/nfs-form-client/nfs-form-client.component.ts:63</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resolveModel"></a>
+                    <span class="name">
+                        <b>
+                            resolveModel
+                        </b>
+                        <a href="#resolveModel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>resolveModel(clients: any[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="78"
+                            class="link-to-prism">src/app/ceph/nfs/nfs-form-client/nfs-form-client.component.ts:78</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>clients</td>
+                                    <td>
+                                            <code>any[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showError"></a>
+                    <span class="name">
+                        <b>
+                            showError
+                        </b>
+                        <a href="#showError"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showError(index, control, formDir, x)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="68"
+                            class="link-to-prism">src/app/ceph/nfs/nfs-form-client/nfs-form-client.component.ts:68</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>control</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>formDir</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>x</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="trackByFn"></a>
+                    <span class="name">
+                        <b>
+                            trackByFn
+                        </b>
+                        <a href="#trackByFn"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>trackByFn(index)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="85"
+                            class="link-to-prism">src/app/ceph/nfs/nfs-form-client/nfs-form-client.component.ts:85</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="nfsAccessType"></a>
+                        <span class="name">
+                            <b>
+                            nfsAccessType</b>
+                            <a href="#nfsAccessType"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>any[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>this.nfsService.nfsAccessType</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/ceph/nfs/nfs-form-client/nfs-form-client.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="nfsSquash"></a>
+                        <span class="name">
+                            <b>
+                            nfsSquash</b>
+                            <a href="#nfsSquash"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>any[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>this.nfsService.nfsSquash</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/ceph/nfs/nfs-form-client/nfs-form-client.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Input } from &#x27;@angular/core&#x27;;
+import { FormArray, FormControl, Validators } from &#x27;@angular/forms&#x27;;
+
+import { I18n } from &#x27;@ngx-translate/i18n-polyfill&#x27;;
+import * as _ from &#x27;lodash&#x27;;
+
+import { NfsService } from &#x27;../../../shared/api/nfs.service&#x27;;
+import { CdFormGroup } from &#x27;../../../shared/forms/cd-form-group&#x27;;
+
+@Component({
+  selector: &#x27;cd-nfs-form-client&#x27;,
+  templateUrl: &#x27;./nfs-form-client.component.html&#x27;,
+  styleUrls: [&#x27;./nfs-form-client.component.scss&#x27;]
+})
+export class NfsFormClientComponent {
+  @Input()
+  form: CdFormGroup;
+
+  nfsSquash: any[] &#x3D; this.nfsService.nfsSquash;
+  nfsAccessType: any[] &#x3D; this.nfsService.nfsAccessType;
+
+  constructor(private nfsService: NfsService, private i18n: I18n) {}
+
+  getNoAccessTypeDescr() {
+    if (this.form.getValue(&#x27;access_type&#x27;)) {
+      return &#x60;${this.form.getValue(&#x27;access_type&#x27;)} ${this.i18n(&#x27;(inherited from global config)&#x27;)}&#x60;;
+    }
+    return this.i18n(&#x27;-- Select the access type --&#x27;);
+  }
+
+  getAccessTypeHelp(index) {
+    const accessTypeItem &#x3D; this.nfsAccessType.find((currentAccessTypeItem) &#x3D;&gt; {
+      return this.getValue(index, &#x27;access_type&#x27;) &#x3D;&#x3D;&#x3D; currentAccessTypeItem.value;
+    });
+    return _.isObjectLike(accessTypeItem) ? accessTypeItem.help : &#x27;&#x27;;
+  }
+
+  getNoSquashDescr() {
+    if (this.form.getValue(&#x27;squash&#x27;)) {
+      return &#x60;${this.form.getValue(&#x27;squash&#x27;)} (${this.i18n(&#x27;inherited from global config&#x27;)})&#x60;;
+    }
+    return this.i18n(&#x27;-- Select what kind of user id squashing is performed --&#x27;);
+  }
+
+  addClient() {
+    const clients &#x3D; this.form.get(&#x27;clients&#x27;) as FormArray;
+
+    const REGEX_IP &#x3D; &#x60;(([0-9]{1,3})\\.([0-9]{1,3})\\.([0-9]{1,3})\.([0-9]{1,3})([/](\\d|[1-2]\\d|3[0-2]))?)&#x60;;
+    const REGEX_LIST_IP &#x3D; &#x60;${REGEX_IP}([ ,]{1,2}${REGEX_IP})*&#x60;;
+
+    const fg &#x3D; new CdFormGroup({
+      addresses: new FormControl(&#x27;&#x27;, {
+        validators: [Validators.required, Validators.pattern(REGEX_LIST_IP)]
+      }),
+      access_type: new FormControl(this.form.getValue(&#x27;access_type&#x27;)),
+      squash: new FormControl(this.form.getValue(&#x27;squash&#x27;))
+    });
+
+    clients.push(fg);
+    return fg;
+  }
+
+  removeClient(index) {
+    const clients &#x3D; this.form.get(&#x27;clients&#x27;) as FormArray;
+    clients.removeAt(index);
+  }
+
+  showError(index, control, formDir, x) {
+    return (&lt;any&gt;this.form.controls.clients).controls[index].showError(control, formDir, x);
+  }
+
+  getValue(index, control) {
+    const clients &#x3D; this.form.get(&#x27;clients&#x27;) as FormArray;
+    const client &#x3D; clients.at(index) as CdFormGroup;
+    return client.getValue(control);
+  }
+
+  resolveModel(clients: any[]) {
+    _.forEach(clients, (client) &#x3D;&gt; {
+      const fg &#x3D; this.addClient();
+      fg.patchValue(client);
+    });
+  }
+
+  trackByFn(index) {
+    return index;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;form-group&quot;&gt;
+  &lt;label class&#x3D;&quot;col-sm-3 control-label&quot;
+         i18n&gt;Clients&lt;/label&gt;
+
+  &lt;div class&#x3D;&quot;col-sm-9&quot;
+       [formGroup]&#x3D;&quot;form&quot;
+       #formDir&#x3D;&quot;ngForm&quot;&gt;
+    &lt;span *ngIf&#x3D;&quot;form.get(&#x27;clients&#x27;).value.length &#x3D;&#x3D;&#x3D; 0&quot;
+          class&#x3D;&quot;form-control no-border text-muted&quot;&gt;
+      &lt;span class&#x3D;&quot;text-muted&quot;
+            i18n&gt;Any client can access&lt;/span&gt;
+    &lt;/span&gt;
+
+    &lt;ng-container formArrayName&#x3D;&quot;clients&quot;&gt;
+      &lt;div *ngFor&#x3D;&quot;let item of form.get(&#x27;clients&#x27;).value; let index &#x3D; index; trackBy: trackByFn&quot;&gt;
+        &lt;div class&#x3D;&quot;panel panel-default&quot;
+             [formGroupName]&#x3D;&quot;index&quot;&gt;
+          &lt;div class&#x3D;&quot;panel-heading&quot;&gt;
+            &lt;h3 class&#x3D;&quot;panel-title&quot;&gt;{{ (index + 1) | ordinal }}
+              &lt;span class&#x3D;&quot;pull-right clickable&quot;
+                    (click)&#x3D;&quot;removeClient(index)&quot;
+                    tooltip&#x3D;&quot;Remove&quot;&gt;&amp;times;&lt;/span&gt;
+            &lt;/h3&gt;
+          &lt;/div&gt;
+
+          &lt;div class&#x3D;&quot;panel-body&quot;&gt;
+            &lt;!-- Addresses --&gt;
+            &lt;div class&#x3D;&quot;form-group&quot;
+                 [ngClass]&#x3D;&quot;{ &#x27;has-error&#x27;: showError(index, &#x27;addresses&#x27;, formDir) }&quot;&gt;
+              &lt;label i18n
+                     class&#x3D;&quot;col-sm-3 control-label&quot;
+                     for&#x3D;&quot;addresses&quot;&gt;Addresses&lt;/label&gt;
+              &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+                &lt;input type&#x3D;&quot;text&quot;
+                       class&#x3D;&quot;form-control&quot;
+                       name&#x3D;&quot;addresses&quot;
+                       id&#x3D;&quot;addresses&quot;
+                       formControlName&#x3D;&quot;addresses&quot;
+                       placeholder&#x3D;&quot;192.168.0.10, 192.168.1.0/8&quot;&gt;
+                &lt;span class&#x3D;&quot;help-block&quot;&gt;
+                  &lt;span *ngIf&#x3D;&quot;showError(index, &#x27;addresses&#x27;, formDir, &#x27;required&#x27;)&quot;
+                        i18n&gt;Required field&lt;/span&gt;
+
+                  &lt;span *ngIf&#x3D;&quot;showError(index, &#x27;addresses&#x27;, formDir, &#x27;pattern&#x27;)&quot;&gt;
+                    &lt;ng-container i18n&gt;Must contain one or more comma-separated values&lt;/ng-container&gt;
+                    &lt;br&gt;
+                    &lt;ng-container i18n&gt;For example:&lt;/ng-container&gt; 192.168.0.10, 192.168.1.0/8
+                  &lt;/span&gt;
+                &lt;/span&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Access Type--&gt;
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+              &lt;label i18n
+                     class&#x3D;&quot;col-sm-3 control-label&quot;
+                     for&#x3D;&quot;access_type&quot;&gt;Access Type&lt;/label&gt;
+              &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+                &lt;select class&#x3D;&quot;form-control&quot;
+                        name&#x3D;&quot;access_type&quot;
+                        id&#x3D;&quot;access_type&quot;
+                        formControlName&#x3D;&quot;access_type&quot;&gt;
+                  &lt;option [value]&#x3D;&quot;form.getValue(&#x27;access_type&#x27;)&quot;&gt;{{ getNoAccessTypeDescr() }}&lt;/option&gt;
+                  &lt;option *ngFor&#x3D;&quot;let item of nfsAccessType&quot;
+                          [value]&#x3D;&quot;item.value&quot;&gt;{{ item.value }}&lt;/option&gt;
+                &lt;/select&gt;
+                &lt;span class&#x3D;&quot;help-block&quot;
+                      *ngIf&#x3D;&quot;getValue(index, &#x27;access_type&#x27;)&quot;&gt;
+                  {{ getAccessTypeHelp(index) }}
+                &lt;/span&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Squash --&gt;
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+              &lt;label i18n
+                     class&#x3D;&quot;col-sm-3 control-label&quot;
+                     for&#x3D;&quot;squash&quot;&gt;Squash&lt;/label&gt;
+              &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+                &lt;select class&#x3D;&quot;form-control&quot;
+                        name&#x3D;&quot;squash&quot;
+                        id&#x3D;&quot;squash&quot;
+                        formControlName&#x3D;&quot;squash&quot;&gt;
+                  &lt;option [value]&#x3D;&quot;form.getValue(&#x27;squash&#x27;)&quot;&gt;{{ getNoSquashDescr() }}&lt;/option&gt;
+                  &lt;option *ngFor&#x3D;&quot;let squash of nfsSquash&quot;
+                          [value]&#x3D;&quot;squash&quot;&gt;{{ squash }}&lt;/option&gt;
+                &lt;/select&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/ng-container&gt;
+
+    &lt;span class&#x3D;&quot;form-control no-border&quot;&gt;
+      &lt;button class&#x3D;&quot;btn btn-default btn-label pull-right&quot;
+              (click)&#x3D;&quot;addClient()&quot;&gt;
+        &lt;i class&#x3D;&quot;fa fa-fw fa-plus&quot;&gt;&lt;/i&gt;
+        &lt;ng-container i18n&gt;Add clients&lt;/ng-container&gt;
+      &lt;/button&gt;
+    &lt;/span&gt;
+    &lt;hr&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./nfs-form-client.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="form-group">  <label class="col-sm-3 control-label"         i18n>Clients</label>  <div class="col-sm-9"       [formGroup]="form"       #formDir="ngForm">    <span *ngIf="form.get(\'clients\').value.length === 0"          class="form-control no-border text-muted">      <span class="text-muted"            i18n>Any client can access</span>    </span>    <ng-container formArrayName="clients">      <div *ngFor="let item of form.get(\'clients\').value; let index = index; trackBy: trackByFn">        <div class="panel panel-default"             [formGroupName]="index">          <div class="panel-heading">            <h3 class="panel-title">{{ (index + 1) | ordinal }}              <span class="pull-right clickable"                    (click)="removeClient(index)"                    tooltip="Remove">&times;</span>            </h3>          </div>          <div class="panel-body">            <!-- Addresses -->            <div class="form-group"                 [ngClass]="{ \'has-error\': showError(index, \'addresses\', formDir) }">              <label i18n                     class="col-sm-3 control-label"                     for="addresses">Addresses</label>              <div class="col-sm-9">                <input type="text"                       class="form-control"                       name="addresses"                       id="addresses"                       formControlName="addresses"                       placeholder="192.168.0.10, 192.168.1.0/8">                <span class="help-block">                  <span *ngIf="showError(index, \'addresses\', formDir, \'required\')"                        i18n>Required field</span>                  <span *ngIf="showError(index, \'addresses\', formDir, \'pattern\')">                    <ng-container i18n>Must contain one or more comma-separated values</ng-container>                    <br>                    <ng-container i18n>For example:</ng-container> 192.168.0.10, 192.168.1.0/8                  </span>                </span>              </div>            </div>            <!-- Access Type-->            <div class="form-group">              <label i18n                     class="col-sm-3 control-label"                     for="access_type">Access Type</label>              <div class="col-sm-9">                <select class="form-control"                        name="access_type"                        id="access_type"                        formControlName="access_type">                  <option [value]="form.getValue(\'access_type\')">{{ getNoAccessTypeDescr() }}</option>                  <option *ngFor="let item of nfsAccessType"                          [value]="item.value">{{ item.value }}</option>                </select>                <span class="help-block"                      *ngIf="getValue(index, \'access_type\')">                  {{ getAccessTypeHelp(index) }}                </span>              </div>            </div>            <!-- Squash -->            <div class="form-group">              <label i18n                     class="col-sm-3 control-label"                     for="squash">Squash</label>              <div class="col-sm-9">                <select class="form-control"                        name="squash"                        id="squash"                        formControlName="squash">                  <option [value]="form.getValue(\'squash\')">{{ getNoSquashDescr() }}</option>                  <option *ngFor="let squash of nfsSquash"                          [value]="squash">{{ squash }}</option>                </select>              </div>            </div>          </div>        </div>      </div>    </ng-container>    <span class="form-control no-border">      <button class="btn btn-default btn-label pull-right"              (click)="addClient()">        <i class="fa fa-fw fa-plus"></i>        <ng-container i18n>Add clients</ng-container>      </button>    </span>    <hr>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'cd-about'},{'name': 'AdministrationComponent', 'selector': 'cd-administration'},{'name': 'AppComponent', 'selector': 'cd-root'},{'name': 'BackButtonComponent', 'selector': 'cd-back-button'},{'name': 'BreadcrumbsComponent', 'selector': 'cd-breadcrumbs'},{'name': 'CephfsChartComponent', 'selector': 'cd-cephfs-chart'},{'name': 'CephfsClientsComponent', 'selector': 'cd-cephfs-clients'},{'name': 'CephfsDetailComponent', 'selector': 'cd-cephfs-detail'},{'name': 'CephfsListComponent', 'selector': 'cd-cephfs-list'},{'name': 'ConfigurationComponent', 'selector': 'cd-configuration'},{'name': 'ConfigurationDetailsComponent', 'selector': 'cd-configuration-details'},{'name': 'ConfigurationFormComponent', 'selector': 'cd-configuration-form'},{'name': 'ConfirmationModalComponent', 'selector': 'cd-confirmation-modal'},{'name': 'CriticalConfirmationModalComponent', 'selector': 'cd-deletion-modal'},{'name': 'CrushmapComponent', 'selector': 'cd-crushmap'},{'name': 'DaemonListComponent', 'selector': 'cd-mirroring-daemons'},{'name': 'DashboardComponent', 'selector': 'cd-dashboard'},{'name': 'DashboardHelpComponent', 'selector': 'cd-dashboard-help'},{'name': 'ErasureCodeProfileFormComponent', 'selector': 'cd-erasure-code-profile-form'},{'name': 'ErrorPanelComponent', 'selector': 'cd-error-panel'},{'name': 'ForbiddenComponent', 'selector': 'cd-forbidden'},{'name': 'GrafanaComponent', 'selector': 'cd-grafana'},{'name': 'HealthComponent', 'selector': 'cd-health'},{'name': 'HealthPieComponent', 'selector': 'cd-health-pie'},{'name': 'HelperComponent', 'selector': 'cd-helper'},{'name': 'HostDetailsComponent', 'selector': 'cd-host-details'},{'name': 'HostsComponent', 'selector': 'cd-hosts'},{'name': 'IdentityComponent', 'selector': 'cd-identity'},{'name': 'ImageListComponent', 'selector': 'cd-mirroring-images'},{'name': 'InfoCardComponent', 'selector': 'cd-info-card'},{'name': 'InfoGroupComponent', 'selector': 'cd-info-group'},{'name': 'InfoPanelComponent', 'selector': 'cd-info-panel'},{'name': 'IscsiComponent', 'selector': 'cd-iscsi'},{'name': 'IscsiTabsComponent', 'selector': 'cd-iscsi-tabs'},{'name': 'IscsiTargetDetailsComponent', 'selector': 'cd-iscsi-target-details'},{'name': 'IscsiTargetDiscoveryModalComponent', 'selector': 'cd-iscsi-target-discovery-modal'},{'name': 'IscsiTargetFormComponent', 'selector': 'cd-iscsi-target-form'},{'name': 'IscsiTargetImageSettingsModalComponent', 'selector': 'cd-iscsi-target-image-settings-modal'},{'name': 'IscsiTargetIqnSettingsModalComponent', 'selector': 'cd-iscsi-target-iqn-settings-modal'},{'name': 'IscsiTargetListComponent', 'selector': 'cd-iscsi-target-list'},{'name': 'LanguageSelectorComponent', 'selector': 'cd-language-selector'},{'name': 'LoadingPanelComponent', 'selector': 'cd-loading-panel'},{'name': 'LoginComponent', 'selector': 'cd-login'},{'name': 'LogsComponent', 'selector': 'cd-logs'},{'name': 'MgrModuleDetailsComponent', 'selector': 'cd-mgr-module-details'},{'name': 'MgrModuleFormComponent', 'selector': 'cd-mgr-module-form'},{'name': 'MgrModuleListComponent', 'selector': 'cd-mgr-module-list'},{'name': 'ModalComponent', 'selector': 'cd-modal'},{'name': 'MonitorComponent', 'selector': 'cd-monitor'},{'name': 'NavigationComponent', 'selector': 'cd-navigation'},{'name': 'Nfs501Component', 'selector': 'cd-nfs-501'},{'name': 'NfsDetailsComponent', 'selector': 'cd-nfs-details'},{'name': 'NfsFormClientComponent', 'selector': 'cd-nfs-form-client'},{'name': 'NfsFormComponent', 'selector': 'cd-nfs-form'},{'name': 'NfsListComponent', 'selector': 'cd-nfs-list'},{'name': 'NotFoundComponent', 'selector': 'cd-not-found'},{'name': 'NotificationsComponent', 'selector': 'cd-notifications'},{'name': 'OsdDetailsComponent', 'selector': 'cd-osd-details'},{'name': 'OsdFlagsModalComponent', 'selector': 'cd-osd-flags-modal'},{'name': 'OsdListComponent', 'selector': 'cd-osd-list'},{'name': 'OsdPerformanceHistogramComponent', 'selector': 'cd-osd-performance-histogram'},{'name': 'OsdRecvSpeedModalComponent', 'selector': 'cd-osd-recv-speed-modal'},{'name': 'OsdReweightModalComponent', 'selector': 'cd-osd-reweight-modal'},{'name': 'OsdScrubModalComponent', 'selector': 'cd-osd-scrub-modal'},{'name': 'OverviewComponent', 'selector': 'cd-mirroring'},{'name': 'PerformanceCounterComponent', 'selector': 'cd-performance-counter'},{'name': 'PoolDetailsComponent', 'selector': 'cd-pool-details'},{'name': 'PoolEditModeModalComponent', 'selector': 'cd-pool-edit-mode-modal'},{'name': 'PoolEditPeerModalComponent', 'selector': 'cd-pool-edit-peer-modal'},{'name': 'PoolFormComponent', 'selector': 'cd-pool-form'},{'name': 'PoolListComponent', 'selector': 'cd-pool-list'},{'name': 'PoolListComponent', 'selector': 'cd-mirroring-pools'},{'name': 'PrometheusListComponent', 'selector': 'cd-prometheus-list'},{'name': 'RbdConfigurationFormComponent', 'selector': 'cd-rbd-configuration-form'},{'name': 'RbdConfigurationListComponent', 'selector': 'cd-rbd-configuration-table'},{'name': 'RbdDetailsComponent', 'selector': 'cd-rbd-details'},{'name': 'RbdFormComponent', 'selector': 'cd-rbd-form'},{'name': 'RbdImagesComponent', 'selector': 'cd-rbd-images'},{'name': 'RbdListComponent', 'selector': 'cd-rbd-list'},{'name': 'RbdSnapshotFormComponent', 'selector': 'cd-rbd-snapshot-form'},{'name': 'RbdSnapshotListComponent', 'selector': 'cd-rbd-snapshot-list'},{'name': 'RbdTrashListComponent', 'selector': 'cd-rbd-trash-list'},{'name': 'RbdTrashMoveModalComponent', 'selector': 'cd-rbd-trash-move-modal'},{'name': 'RbdTrashPurgeModalComponent', 'selector': 'cd-rbd-trash-purge-modal'},{'name': 'RbdTrashRestoreModalComponent', 'selector': 'cd-rbd-trash-restore-modal'},{'name': 'RefreshSelectorComponent', 'selector': 'cd-refresh-selector'},{'name': 'Rgw501Component', 'selector': 'cd-rgw-501'},{'name': 'RgwBucketDetailsComponent', 'selector': 'cd-rgw-bucket-details'},{'name': 'RgwBucketFormComponent', 'selector': 'cd-rgw-bucket-form'},{'name': 'RgwBucketListComponent', 'selector': 'cd-rgw-bucket-list'},{'name': 'RgwDaemonDetailsComponent', 'selector': 'cd-rgw-daemon-details'},{'name': 'RgwDaemonListComponent', 'selector': 'cd-rgw-daemon-list'},{'name': 'RgwUserCapabilityModalComponent', 'selector': 'cd-rgw-user-capability-modal'},{'name': 'RgwUserDetailsComponent', 'selector': 'cd-rgw-user-details'},{'name': 'RgwUserFormComponent', 'selector': 'cd-rgw-user-form'},{'name': 'RgwUserListComponent', 'selector': 'cd-rgw-user-list'},{'name': 'RgwUserS3KeyModalComponent', 'selector': 'cd-rgw-user-s3-key-modal'},{'name': 'RgwUserSubuserModalComponent', 'selector': 'cd-rgw-user-subuser-modal'},{'name': 'RgwUserSwiftKeyModalComponent', 'selector': 'cd-rgw-user-swift-key-modal'},{'name': 'RoleDetailsComponent', 'selector': 'cd-role-details'},{'name': 'RoleFormComponent', 'selector': 'cd-role-form'},{'name': 'RoleListComponent', 'selector': 'cd-role-list'},{'name': 'SelectBadgesComponent', 'selector': 'cd-select-badges'},{'name': 'SelectComponent', 'selector': 'cd-select'},{'name': 'SparklineComponent', 'selector': 'cd-sparkline'},{'name': 'SsoNotFoundComponent', 'selector': 'cd-sso-not-found'},{'name': 'SubmitButtonComponent', 'selector': 'cd-submit-button'},{'name': 'TableActionsComponent', 'selector': 'cd-table-actions'},{'name': 'TableComponent', 'selector': 'cd-table'},{'name': 'TableKeyValueComponent', 'selector': 'cd-table-key-value'},{'name': 'TablePerformanceCounterComponent', 'selector': 'cd-table-performance-counter'},{'name': 'TaskManagerComponent', 'selector': 'cd-task-manager'},{'name': 'UsageBarComponent', 'selector': 'cd-usage-bar'},{'name': 'UserFormComponent', 'selector': 'cd-user-form'},{'name': 'UserListComponent', 'selector': 'cd-user-list'},{'name': 'UserTabsComponent', 'selector': 'cd-user-tabs'},{'name': 'ViewCacheComponent', 'selector': 'cd-view-cache'},{'name': 'WarningPanelComponent', 'selector': 'cd-warning-panel'}];
+    var DIRECTIVES = [{'name': 'AutofocusDirective', 'selector': '[autofocus]'},{'name': 'Copy2ClipboardButtonDirective', 'selector': '[cdCopy2ClipboardButton]'},{'name': 'DimlessBinaryDirective', 'selector': '[cdDimlessBinary]'},{'name': 'DimlessBinaryPerSecondDirective', 'selector': '[cdDimlessBinaryPerSecond]'},{'name': 'IopsDirective', 'selector': '[cdIops]'},{'name': 'MillisecondsDirective', 'selector': '[cdMilliseconds]'},{'name': 'PasswordButtonDirective', 'selector': '[cdPasswordButton]'}];
+    var ACTUAL_COMPONENT = {'name': 'NfsFormClientComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'NfsFormClientComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

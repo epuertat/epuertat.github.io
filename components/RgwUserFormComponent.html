@@ -1,0 +1,3702 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ceph-dashboard documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ceph-dashboard documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>RgwUserFormComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>cd-rgw-user-form</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./rgw-user-form.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./rgw-user-form.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#action">action</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#actionLabels">actionLabels</a>
+                            </li>
+                            <li>
+                                <a href="#capabilities">capabilities</a>
+                            </li>
+                            <li>
+                                <a href="#capabilityLabel">capabilityLabel</a>
+                            </li>
+                            <li>
+                                <a href="#editing">editing</a>
+                            </li>
+                            <li>
+                                <a href="#error">error</a>
+                            </li>
+                            <li>
+                                <a href="#loading">loading</a>
+                            </li>
+                            <li>
+                                <a href="#resource">resource</a>
+                            </li>
+                            <li>
+                                <a href="#s3keyLabel">s3keyLabel</a>
+                            </li>
+                            <li>
+                                <a href="#s3Keys">s3Keys</a>
+                            </li>
+                            <li>
+                                <a href="#submitObservables">submitObservables</a>
+                            </li>
+                            <li>
+                                <a href="#subuserLabel">subuserLabel</a>
+                            </li>
+                            <li>
+                                <a href="#subusers">subusers</a>
+                            </li>
+                            <li>
+                                <a href="#swiftKeys">swiftKeys</a>
+                            </li>
+                            <li>
+                                <a href="#userForm">userForm</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_getBucketQuotaArgs">_getBucketQuotaArgs</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_getCreateArgs">_getCreateArgs</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_getS3KeyUserCandidates">_getS3KeyUserCandidates</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_getUpdateArgs">_getUpdateArgs</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_getUserQuotaArgs">_getUserQuotaArgs</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_isBucketQuotaDirty">_isBucketQuotaDirty</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_isGeneralDirty">_isGeneralDirty</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_isUserQuotaDirty">_isUserQuotaDirty</a>
+                            </li>
+                            <li>
+                                <a href="#createForm">createForm</a>
+                            </li>
+                            <li>
+                                <a href="#deleteCapability">deleteCapability</a>
+                            </li>
+                            <li>
+                                <a href="#deleteS3Key">deleteS3Key</a>
+                            </li>
+                            <li>
+                                <a href="#deleteSubuser">deleteSubuser</a>
+                            </li>
+                            <li>
+                                <a href="#goToListView">goToListView</a>
+                            </li>
+                            <li>
+                                <a href="#listenToChanges">listenToChanges</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onSubmit">onSubmit</a>
+                            </li>
+                            <li>
+                                <a href="#quotaMaxSizeValidator">quotaMaxSizeValidator</a>
+                            </li>
+                            <li>
+                                <a href="#setCapability">setCapability</a>
+                            </li>
+                            <li>
+                                <a href="#setS3Key">setS3Key</a>
+                            </li>
+                            <li>
+                                <a href="#setSubuser">setSubuser</a>
+                            </li>
+                            <li>
+                                <a href="#showCapabilityModal">showCapabilityModal</a>
+                            </li>
+                            <li>
+                                <a href="#showS3KeyModal">showS3KeyModal</a>
+                            </li>
+                            <li>
+                                <a href="#showSubuserModal">showSubuserModal</a>
+                            </li>
+                            <li>
+                                <a href="#showSwiftKeyModal">showSwiftKeyModal</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(formBuilder: <a href="../injectables/CdFormBuilder.html">CdFormBuilder</a>, route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, rgwUserService: <a href="../injectables/RgwUserService.html">RgwUserService</a>, bsModalService: BsModalService, notificationService: <a href="../injectables/NotificationService.html">NotificationService</a>, i18n: I18n, actionLabels: <a href="../injectables/ActionLabelsI18n.html">ActionLabelsI18n</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:48</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>formBuilder</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CdFormBuilder.html" target="_self" >CdFormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>rgwUserService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RgwUserService.html" target="_self" >RgwUserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>bsModalService</td>
+                                                  
+                                                        <td>
+                                                                    <code>BsModalService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>notificationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NotificationService.html" target="_self" >NotificationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>i18n</td>
+                                                  
+                                                        <td>
+                                                                    <code>I18n</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>actionLabels</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ActionLabelsI18n.html" target="_self" >ActionLabelsI18n</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_getBucketQuotaArgs"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            _getBucketQuotaArgs
+                        </b>
+                        <a href="#_getBucketQuotaArgs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>_getBucketQuotaArgs()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="649"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:649</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Helper function to get the arguments for the API request when the bucket
+quota configuration has been modified.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_getCreateArgs"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            _getCreateArgs
+                        </b>
+                        <a href="#_getCreateArgs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>_getCreateArgs()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="583"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:583</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Helper function to get the arguments of the API request when a new
+user is created.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{ uid: any; display_name: any; suspended: any; email: string; max_buckets: any; generate_key: any...</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_getS3KeyUserCandidates"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            _getS3KeyUserCandidates
+                        </b>
+                        <a href="#_getS3KeyUserCandidates"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>_getS3KeyUserCandidates()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="672"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:672</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Helper method to get the user candidates for S3 keys.</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{}</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Returns a list of user identifiers.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_getUpdateArgs"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            _getUpdateArgs
+                        </b>
+                        <a href="#_getUpdateArgs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>_getUpdateArgs()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="613"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:613</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Helper function to get the arguments for the API request when the user
+configuration has been modified.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{}</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_getUserQuotaArgs"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            _getUserQuotaArgs
+                        </b>
+                        <a href="#_getUserQuotaArgs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>_getUserQuotaArgs()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="626"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:626</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Helper function to get the arguments for the API request when the user
+quota configuration has been modified.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_isBucketQuotaDirty"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            _isBucketQuotaDirty
+                        </b>
+                        <a href="#_isBucketQuotaDirty"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>_isBucketQuotaDirty()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="567"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:567</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Check if the bucket quota has been modified.</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Returns TRUE if the bucket quota has been modified.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_isGeneralDirty"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            _isGeneralDirty
+                        </b>
+                        <a href="#_isGeneralDirty"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>_isGeneralDirty()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="541"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:541</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Check if the general user settings (display name, email, ...) have been modified.</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Returns TRUE if the general user settings have been modified.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_isUserQuotaDirty"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            _isUserQuotaDirty
+                        </b>
+                        <a href="#_isUserQuotaDirty"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>_isUserQuotaDirty()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="551"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:551</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Check if the user quota has been modified.</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Returns TRUE if the user quota has been modified.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createForm"></a>
+                    <span class="name">
+                        <b>
+                            createForm
+                        </b>
+                        <a href="#createForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="68"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:68</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteCapability"></a>
+                    <span class="name">
+                        <b>
+                            deleteCapability
+                        </b>
+                        <a href="#deleteCapability"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteCapability(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="401"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:401</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Delete the given capability:
+- Delete it from the local array to update the UI
+- Create an observable that will be executed on form submit</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The capability to delete.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteS3Key"></a>
+                    <span class="name">
+                        <b>
+                            deleteS3Key
+                        </b>
+                        <a href="#deleteS3Key"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteS3Key(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="449"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:449</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Delete a S3 key.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The S3 key to delete.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteSubuser"></a>
+                    <span class="name">
+                        <b>
+                            deleteSubuser
+                        </b>
+                        <a href="#deleteSubuser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteSubuser(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="349"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:349</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Delete a subuser.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The subuser to delete.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="goToListView"></a>
+                    <span class="name">
+                        <b>
+                            goToListView
+                        </b>
+                        <a href="#goToListView"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>goToListView()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="240"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:240</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listenToChanges"></a>
+                    <span class="name">
+                        <b>
+                            listenToChanges
+                        </b>
+                        <a href="#listenToChanges"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listenToChanges()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="139"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:139</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="172"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:172</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSubmit"></a>
+                    <span class="name">
+                        <b>
+                            onSubmit
+                        </b>
+                        <a href="#onSubmit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSubmit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="244"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:244</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="quotaMaxSizeValidator"></a>
+                    <span class="name">
+                        <b>
+                            quotaMaxSizeValidator
+                        </b>
+                        <a href="#quotaMaxSizeValidator"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>quotaMaxSizeValidator(control: <a href="https://angular.io/api/forms/AbstractControl" target="_blank">AbstractControl</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="292"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:292</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Validate the quota maximum size, e.g. 1096, 1K, 30M. Only integer numbers are valid,
+something like 1.9M is not recognized as valid.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>control</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/forms/AbstractControl" target="_blank" >AbstractControl</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>ValidationErrors | null</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setCapability"></a>
+                    <span class="name">
+                        <b>
+                            setCapability
+                        </b>
+                        <a href="#setCapability"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setCapability(cap: <a href="../classes/RgwUserCapability.html">RgwUserCapability</a>, index?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="372"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:372</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Add/Update a capability.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cap</td>
+                                    <td>
+                                                <code><a href="../classes/RgwUserCapability.html" target="_self" >RgwUserCapability</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setS3Key"></a>
+                    <span class="name">
+                        <b>
+                            setS3Key
+                        </b>
+                        <a href="#setS3Key"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setS3Key(key: <a href="../classes/RgwUserS3Key.html">RgwUserS3Key</a>, index?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="416"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:416</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Add/Update a S3 key.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>key</td>
+                                    <td>
+                                                <code><a href="../classes/RgwUserS3Key.html" target="_self" >RgwUserS3Key</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setSubuser"></a>
+                    <span class="name">
+                        <b>
+                            setSubuser
+                        </b>
+                        <a href="#setSubuser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setSubuser(subuser: <a href="../classes/RgwUserSubuser.html">RgwUserSubuser</a>, index?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="309"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:309</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Add/Update a subuser.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>subuser</td>
+                                    <td>
+                                                <code><a href="../classes/RgwUserSubuser.html" target="_self" >RgwUserSubuser</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showCapabilityModal"></a>
+                    <span class="name">
+                        <b>
+                            showCapabilityModal
+                        </b>
+                        <a href="#showCapabilityModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showCapabilityModal(index?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="520"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:520</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Show the specified capability in a modal dialog.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>The S3 key to show.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showS3KeyModal"></a>
+                    <span class="name">
+                        <b>
+                            showS3KeyModal
+                        </b>
+                        <a href="#showS3KeyModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showS3KeyModal(index?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="488"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:488</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Show the specified S3 key in a modal dialog.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>The S3 key to show.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showSubuserModal"></a>
+                    <span class="name">
+                        <b>
+                            showSubuserModal
+                        </b>
+                        <a href="#showSubuserModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showSubuserModal(index?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="465"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:465</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Show the specified subuser in a modal dialog.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>The subuser to show.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showSwiftKeyModal"></a>
+                    <span class="name">
+                        <b>
+                            showSwiftKeyModal
+                        </b>
+                        <a href="#showSwiftKeyModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showSwiftKeyModal(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="510"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:510</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Show the specified Swift key in a modal dialog.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The Swift key to show.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="action"></a>
+                        <span class="name">
+                            <b>
+                            action</b>
+                            <a href="#action"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="actionLabels"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            actionLabels</b>
+                            <a href="#actionLabels"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/ActionLabelsI18n.html" target="_self" >ActionLabelsI18n</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:58</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="capabilities"></a>
+                        <span class="name">
+                            <b>
+                            capabilities</b>
+                            <a href="#capabilities"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/RgwUserCapability.html" target="_self" >RgwUserCapability[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="capabilityLabel"></a>
+                        <span class="name">
+                            <b>
+                            capabilityLabel</b>
+                            <a href="#capabilityLabel"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:48</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="editing"></a>
+                        <span class="name">
+                            <b>
+                            editing</b>
+                            <a href="#editing"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="error"></a>
+                        <span class="name">
+                            <b>
+                            error</b>
+                            <a href="#error"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loading"></a>
+                        <span class="name">
+                            <b>
+                            loading</b>
+                            <a href="#loading"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="resource"></a>
+                        <span class="name">
+                            <b>
+                            resource</b>
+                            <a href="#resource"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:45</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="s3keyLabel"></a>
+                        <span class="name">
+                            <b>
+                            s3keyLabel</b>
+                            <a href="#s3keyLabel"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:47</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="s3Keys"></a>
+                        <span class="name">
+                            <b>
+                            s3Keys</b>
+                            <a href="#s3Keys"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/RgwUserS3Key.html" target="_self" >RgwUserS3Key[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="submitObservables"></a>
+                        <span class="name">
+                            <b>
+                            submitObservables</b>
+                            <a href="#submitObservables"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Observable&lt;Object&gt;[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="subuserLabel"></a>
+                        <span class="name">
+                            <b>
+                            subuserLabel</b>
+                            <a href="#subuserLabel"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:46</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="subusers"></a>
+                        <span class="name">
+                            <b>
+                            subusers</b>
+                            <a href="#subusers"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/RgwUserSubuser.html" target="_self" >RgwUserSubuser[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="swiftKeys"></a>
+                        <span class="name">
+                            <b>
+                            swiftKeys</b>
+                            <a href="#swiftKeys"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/RgwUserSwiftKey.html" target="_self" >RgwUserSwiftKey[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="userForm"></a>
+                        <span class="name">
+                            <b>
+                            userForm</b>
+                            <a href="#userForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/CdFormGroup.html" target="_self" >CdFormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/ceph/rgw/rgw-user-form/rgw-user-form.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { AbstractControl, ValidationErrors, Validators } from &#x27;@angular/forms&#x27;;
+import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
+
+import { I18n } from &#x27;@ngx-translate/i18n-polyfill&#x27;;
+import * as _ from &#x27;lodash&#x27;;
+import { BsModalService } from &#x27;ngx-bootstrap/modal&#x27;;
+import { forkJoin as observableForkJoin, Observable } from &#x27;rxjs&#x27;;
+
+import { RgwUserService } from &#x27;../../../shared/api/rgw-user.service&#x27;;
+import { ActionLabelsI18n, URLVerbs } from &#x27;../../../shared/constants/app.constants&#x27;;
+import { NotificationType } from &#x27;../../../shared/enum/notification-type.enum&#x27;;
+import { CdFormBuilder } from &#x27;../../../shared/forms/cd-form-builder&#x27;;
+import { CdFormGroup } from &#x27;../../../shared/forms/cd-form-group&#x27;;
+import { CdValidators, isEmptyInputValue } from &#x27;../../../shared/forms/cd-validators&#x27;;
+import { FormatterService } from &#x27;../../../shared/services/formatter.service&#x27;;
+import { NotificationService } from &#x27;../../../shared/services/notification.service&#x27;;
+import { RgwUserCapability } from &#x27;../models/rgw-user-capability&#x27;;
+import { RgwUserS3Key } from &#x27;../models/rgw-user-s3-key&#x27;;
+import { RgwUserSubuser } from &#x27;../models/rgw-user-subuser&#x27;;
+import { RgwUserSwiftKey } from &#x27;../models/rgw-user-swift-key&#x27;;
+import { RgwUserCapabilityModalComponent } from &#x27;../rgw-user-capability-modal/rgw-user-capability-modal.component&#x27;;
+import { RgwUserS3KeyModalComponent } from &#x27;../rgw-user-s3-key-modal/rgw-user-s3-key-modal.component&#x27;;
+import { RgwUserSubuserModalComponent } from &#x27;../rgw-user-subuser-modal/rgw-user-subuser-modal.component&#x27;;
+import { RgwUserSwiftKeyModalComponent } from &#x27;../rgw-user-swift-key-modal/rgw-user-swift-key-modal.component&#x27;;
+
+@Component({
+  selector: &#x27;cd-rgw-user-form&#x27;,
+  templateUrl: &#x27;./rgw-user-form.component.html&#x27;,
+  styleUrls: [&#x27;./rgw-user-form.component.scss&#x27;]
+})
+export class RgwUserFormComponent implements OnInit {
+  userForm: CdFormGroup;
+  editing &#x3D; false;
+  error &#x3D; false;
+  loading &#x3D; false;
+  submitObservables: Observable&lt;Object&gt;[] &#x3D; [];
+
+  subusers: RgwUserSubuser[] &#x3D; [];
+  s3Keys: RgwUserS3Key[] &#x3D; [];
+  swiftKeys: RgwUserSwiftKey[] &#x3D; [];
+  capabilities: RgwUserCapability[] &#x3D; [];
+
+  action: string;
+  resource: string;
+  subuserLabel: string;
+  s3keyLabel: string;
+  capabilityLabel: string;
+
+  constructor(
+    private formBuilder: CdFormBuilder,
+    private route: ActivatedRoute,
+    private router: Router,
+    private rgwUserService: RgwUserService,
+    private bsModalService: BsModalService,
+    private notificationService: NotificationService,
+    private i18n: I18n,
+    public actionLabels: ActionLabelsI18n
+  ) {
+    this.resource &#x3D; this.i18n(&#x27;user&#x27;);
+    this.subuserLabel &#x3D; this.i18n(&#x27;subuser&#x27;);
+    this.s3keyLabel &#x3D; this.i18n(&#x27;S3 Key&#x27;);
+    this.capabilityLabel &#x3D; this.i18n(&#x27;capability&#x27;);
+    this.createForm();
+    this.listenToChanges();
+  }
+
+  createForm() {
+    this.userForm &#x3D; this.formBuilder.group({
+      // General
+      uid: [
+        null,
+        [Validators.required],
+        [CdValidators.unique(this.rgwUserService.exists, this.rgwUserService)]
+      ],
+      display_name: [null, [Validators.required]],
+      email: [
+        null,
+        [CdValidators.email],
+        [CdValidators.unique(this.rgwUserService.emailExists, this.rgwUserService)]
+      ],
+      max_buckets: [1000, [Validators.required, Validators.min(0)]],
+      suspended: [false],
+      // S3 key
+      generate_key: [true],
+      access_key: [null, [CdValidators.requiredIf({ generate_key: false })]],
+      secret_key: [null, [CdValidators.requiredIf({ generate_key: false })]],
+      // User quota
+      user_quota_enabled: [false],
+      user_quota_max_size_unlimited: [true],
+      user_quota_max_size: [
+        null,
+        [
+          CdValidators.requiredIf({
+            user_quota_enabled: true,
+            user_quota_max_size_unlimited: false
+          }),
+          this.quotaMaxSizeValidator
+        ]
+      ],
+      user_quota_max_objects_unlimited: [true],
+      user_quota_max_objects: [
+        null,
+        [
+          Validators.min(0),
+          CdValidators.requiredIf({
+            user_quota_enabled: true,
+            user_quota_max_objects_unlimited: false
+          })
+        ]
+      ],
+      // Bucket quota
+      bucket_quota_enabled: [false],
+      bucket_quota_max_size_unlimited: [true],
+      bucket_quota_max_size: [
+        null,
+        [
+          CdValidators.requiredIf({
+            bucket_quota_enabled: true,
+            bucket_quota_max_size_unlimited: false
+          }),
+          this.quotaMaxSizeValidator
+        ]
+      ],
+      bucket_quota_max_objects_unlimited: [true],
+      bucket_quota_max_objects: [
+        null,
+        [
+          Validators.min(0),
+          CdValidators.requiredIf({
+            bucket_quota_enabled: true,
+            bucket_quota_max_objects_unlimited: false
+          })
+        ]
+      ]
+    });
+  }
+
+  listenToChanges() {
+    // Reset the validation status of various controls, especially those that are using
+    // the &#x27;requiredIf&#x27; validator. This is necessary because the controls itself are not
+    // validated again if the status of their prerequisites have been changed.
+    this.userForm.get(&#x27;generate_key&#x27;).valueChanges.subscribe(() &#x3D;&gt; {
+      [&#x27;access_key&#x27;, &#x27;secret_key&#x27;].forEach((path) &#x3D;&gt; {
+        this.userForm.get(path).updateValueAndValidity({ onlySelf: true });
+      });
+    });
+    this.userForm.get(&#x27;user_quota_enabled&#x27;).valueChanges.subscribe(() &#x3D;&gt; {
+      [&#x27;user_quota_max_size&#x27;, &#x27;user_quota_max_objects&#x27;].forEach((path) &#x3D;&gt; {
+        this.userForm.get(path).updateValueAndValidity({ onlySelf: true });
+      });
+    });
+    this.userForm.get(&#x27;user_quota_max_size_unlimited&#x27;).valueChanges.subscribe(() &#x3D;&gt; {
+      this.userForm.get(&#x27;user_quota_max_size&#x27;).updateValueAndValidity({ onlySelf: true });
+    });
+    this.userForm.get(&#x27;user_quota_max_objects_unlimited&#x27;).valueChanges.subscribe(() &#x3D;&gt; {
+      this.userForm.get(&#x27;user_quota_max_objects&#x27;).updateValueAndValidity({ onlySelf: true });
+    });
+    this.userForm.get(&#x27;bucket_quota_enabled&#x27;).valueChanges.subscribe(() &#x3D;&gt; {
+      [&#x27;bucket_quota_max_size&#x27;, &#x27;bucket_quota_max_objects&#x27;].forEach((path) &#x3D;&gt; {
+        this.userForm.get(path).updateValueAndValidity({ onlySelf: true });
+      });
+    });
+    this.userForm.get(&#x27;bucket_quota_max_size_unlimited&#x27;).valueChanges.subscribe(() &#x3D;&gt; {
+      this.userForm.get(&#x27;bucket_quota_max_size&#x27;).updateValueAndValidity({ onlySelf: true });
+    });
+    this.userForm.get(&#x27;bucket_quota_max_objects_unlimited&#x27;).valueChanges.subscribe(() &#x3D;&gt; {
+      this.userForm.get(&#x27;bucket_quota_max_objects&#x27;).updateValueAndValidity({ onlySelf: true });
+    });
+  }
+
+  ngOnInit() {
+    this.editing &#x3D; this.router.url.startsWith(&#x60;/rgw/user/${URLVerbs.EDIT}&#x60;);
+    this.action &#x3D; this.editing ? this.actionLabels.EDIT : this.actionLabels.CREATE;
+    // Process route parameters.
+    this.route.params.subscribe((params: { uid: string }) &#x3D;&gt; {
+      if (!params.hasOwnProperty(&#x27;uid&#x27;)) {
+        return;
+      }
+      const uid &#x3D; decodeURIComponent(params.uid);
+      this.loading &#x3D; true;
+      // Load the user and quota information.
+      const observables &#x3D; [];
+      observables.push(this.rgwUserService.get(uid));
+      observables.push(this.rgwUserService.getQuota(uid));
+      observableForkJoin(observables).subscribe(
+        (resp: any[]) &#x3D;&gt; {
+          this.loading &#x3D; false;
+          // Get the default values.
+          const defaults &#x3D; _.clone(this.userForm.value);
+          // Extract the values displayed in the form.
+          let value &#x3D; _.pick(resp[0], _.keys(this.userForm.value));
+          // Map the quota values.
+          [&#x27;user&#x27;, &#x27;bucket&#x27;].forEach((type) &#x3D;&gt; {
+            const quota &#x3D; resp[1][type + &#x27;_quota&#x27;];
+            value[type + &#x27;_quota_enabled&#x27;] &#x3D; quota.enabled;
+            if (quota.max_size &lt; 0) {
+              value[type + &#x27;_quota_max_size_unlimited&#x27;] &#x3D; true;
+              value[type + &#x27;_quota_max_size&#x27;] &#x3D; null;
+            } else {
+              value[type + &#x27;_quota_max_size_unlimited&#x27;] &#x3D; false;
+              value[type + &#x27;_quota_max_size&#x27;] &#x3D; &#x60;${quota.max_size} B&#x60;;
+            }
+            if (quota.max_objects &lt; 0) {
+              value[type + &#x27;_quota_max_objects_unlimited&#x27;] &#x3D; true;
+              value[type + &#x27;_quota_max_objects&#x27;] &#x3D; null;
+            } else {
+              value[type + &#x27;_quota_max_objects_unlimited&#x27;] &#x3D; false;
+              value[type + &#x27;_quota_max_objects&#x27;] &#x3D; quota.max_objects;
+            }
+          });
+          // Merge with default values.
+          value &#x3D; _.merge(defaults, value);
+          // Update the form.
+          this.userForm.setValue(value);
+
+          // Get the sub users.
+          this.subusers &#x3D; resp[0].subusers;
+
+          // Get the keys.
+          this.s3Keys &#x3D; resp[0].keys;
+          this.swiftKeys &#x3D; resp[0].swift_keys;
+
+          // Process the capabilities.
+          const mapPerm &#x3D; { &#x27;read, write&#x27;: &#x27;*&#x27; };
+          resp[0].caps.forEach((cap) &#x3D;&gt; {
+            if (cap.perm in mapPerm) {
+              cap.perm &#x3D; mapPerm[cap.perm];
+            }
+          });
+          this.capabilities &#x3D; resp[0].caps;
+        },
+        (error) &#x3D;&gt; {
+          this.error &#x3D; error;
+        }
+      );
+    });
+  }
+
+  goToListView() {
+    this.router.navigate([&#x27;/rgw/user&#x27;]);
+  }
+
+  onSubmit() {
+    let notificationTitle: string;
+    // Exit immediately if the form isn&#x27;t dirty.
+    if (this.userForm.pristine) {
+      this.goToListView();
+      return;
+    }
+    const uid &#x3D; this.userForm.getValue(&#x27;uid&#x27;);
+    if (this.editing) {
+      // Edit
+      if (this._isGeneralDirty()) {
+        const args &#x3D; this._getUpdateArgs();
+        this.submitObservables.push(this.rgwUserService.update(uid, args));
+      }
+      notificationTitle &#x3D; this.i18n(&#x27;Updated Object Gateway user &quot;{{uid}}&quot;&#x27;, { uid: uid });
+    } else {
+      // Add
+      const args &#x3D; this._getCreateArgs();
+      this.submitObservables.push(this.rgwUserService.create(args));
+      notificationTitle &#x3D; this.i18n(&#x27;Created Object Gateway user &quot;{{uid}}&quot;&#x27;, { uid: uid });
+    }
+    // Check if user quota has been modified.
+    if (this._isUserQuotaDirty()) {
+      const userQuotaArgs &#x3D; this._getUserQuotaArgs();
+      this.submitObservables.push(this.rgwUserService.updateQuota(uid, userQuotaArgs));
+    }
+    // Check if bucket quota has been modified.
+    if (this._isBucketQuotaDirty()) {
+      const bucketQuotaArgs &#x3D; this._getBucketQuotaArgs();
+      this.submitObservables.push(this.rgwUserService.updateQuota(uid, bucketQuotaArgs));
+    }
+    // Finally execute all observables.
+    observableForkJoin(this.submitObservables).subscribe(
+      () &#x3D;&gt; {
+        this.notificationService.show(NotificationType.success, notificationTitle);
+        this.goToListView();
+      },
+      () &#x3D;&gt; {
+        // Reset the &#x27;Submit&#x27; button.
+        this.userForm.setErrors({ cdSubmitButton: true });
+      }
+    );
+  }
+
+  /**
+   * Validate the quota maximum size, e.g. 1096, 1K, 30M. Only integer numbers are valid,
+   * something like 1.9M is not recognized as valid.
+   */
+  quotaMaxSizeValidator(control: AbstractControl): ValidationErrors | null {
+    if (isEmptyInputValue(control.value)) {
+      return null;
+    }
+    const m &#x3D; RegExp(&#x27;^(\\d+)\\s*(B|K(B|iB)?|M(B|iB)?|G(B|iB)?|T(B|iB)?)?$&#x27;, &#x27;i&#x27;).exec(
+      control.value
+    );
+    if (m &#x3D;&#x3D;&#x3D; null) {
+      return { quotaMaxSize: true };
+    }
+    const bytes &#x3D; new FormatterService().toBytes(control.value);
+    return bytes &lt; 1024 ? { quotaMaxSize: true } : null;
+  }
+
+  /**
+   * Add/Update a subuser.
+   */
+  setSubuser(subuser: RgwUserSubuser, index?: number) {
+    const mapPermissions &#x3D; {
+      &#x27;full-control&#x27;: &#x27;full&#x27;,
+      &#x27;read-write&#x27;: &#x27;readwrite&#x27;
+    };
+    const uid &#x3D; this.userForm.getValue(&#x27;uid&#x27;);
+    const args &#x3D; {
+      subuser: subuser.id,
+      access:
+        subuser.permissions in mapPermissions
+          ? mapPermissions[subuser.permissions]
+          : subuser.permissions,
+      key_type: &#x27;swift&#x27;,
+      secret_key: subuser.secret_key,
+      generate_secret: subuser.generate_secret ? &#x27;true&#x27; : &#x27;false&#x27;
+    };
+    this.submitObservables.push(this.rgwUserService.createSubuser(uid, args));
+    if (_.isNumber(index)) {
+      // Modify
+      // Create an observable to modify the subuser when the form is submitted.
+      this.subusers[index] &#x3D; subuser;
+    } else {
+      // Add
+      // Create an observable to add the subuser when the form is submitted.
+      this.subusers.push(subuser);
+      // Add a Swift key. If the secret key is auto-generated, then visualize
+      // this to the user by displaying a notification instead of the key.
+      this.swiftKeys.push({
+        user: subuser.id,
+        secret_key: subuser.generate_secret ? &#x27;Apply your changes first...&#x27; : subuser.secret_key
+      });
+    }
+    // Mark the form as dirty to be able to submit it.
+    this.userForm.markAsDirty();
+  }
+
+  /**
+   * Delete a subuser.
+   * @param {number} index The subuser to delete.
+   */
+  deleteSubuser(index: number) {
+    const subuser &#x3D; this.subusers[index];
+    // Create an observable to delete the subuser when the form is submitted.
+    this.submitObservables.push(
+      this.rgwUserService.deleteSubuser(this.userForm.getValue(&#x27;uid&#x27;), subuser.id)
+    );
+    // Remove the associated S3 keys.
+    this.s3Keys &#x3D; this.s3Keys.filter((key) &#x3D;&gt; {
+      return key.user !&#x3D;&#x3D; subuser.id;
+    });
+    // Remove the associated Swift keys.
+    this.swiftKeys &#x3D; this.swiftKeys.filter((key) &#x3D;&gt; {
+      return key.user !&#x3D;&#x3D; subuser.id;
+    });
+    // Remove the subuser to update the UI.
+    this.subusers.splice(index, 1);
+    // Mark the form as dirty to be able to submit it.
+    this.userForm.markAsDirty();
+  }
+
+  /**
+   * Add/Update a capability.
+   */
+  setCapability(cap: RgwUserCapability, index?: number) {
+    const uid &#x3D; this.userForm.getValue(&#x27;uid&#x27;);
+    if (_.isNumber(index)) {
+      // Modify
+      const oldCap &#x3D; this.capabilities[index];
+      // Note, the RadosGW Admin OPS API does not support the modification of
+      // user capabilities. Because of that it is necessary to delete it and
+      // then to re-add the capability with its new value/permission.
+      this.submitObservables.push(
+        this.rgwUserService.deleteCapability(uid, oldCap.type, oldCap.perm)
+      );
+      this.submitObservables.push(this.rgwUserService.addCapability(uid, cap.type, cap.perm));
+      this.capabilities[index] &#x3D; cap;
+    } else {
+      // Add
+      // Create an observable to add the capability when the form is submitted.
+      this.submitObservables.push(this.rgwUserService.addCapability(uid, cap.type, cap.perm));
+      this.capabilities.push(cap);
+    }
+    // Mark the form as dirty to be able to submit it.
+    this.userForm.markAsDirty();
+  }
+
+  /**
+   * Delete the given capability:
+   * - Delete it from the local array to update the UI
+   * - Create an observable that will be executed on form submit
+   * @param {number} index The capability to delete.
+   */
+  deleteCapability(index: number) {
+    const cap &#x3D; this.capabilities[index];
+    // Create an observable to delete the capability when the form is submitted.
+    this.submitObservables.push(
+      this.rgwUserService.deleteCapability(this.userForm.getValue(&#x27;uid&#x27;), cap.type, cap.perm)
+    );
+    // Remove the capability to update the UI.
+    this.capabilities.splice(index, 1);
+    // Mark the form as dirty to be able to submit it.
+    this.userForm.markAsDirty();
+  }
+
+  /**
+   * Add/Update a S3 key.
+   */
+  setS3Key(key: RgwUserS3Key, index?: number) {
+    if (_.isNumber(index)) {
+      // Modify
+      // Nothing to do here at the moment.
+    } else {
+      // Add
+      // Split the key&#x27;s user name into its user and subuser parts.
+      const userMatches &#x3D; key.user.match(/([^:]+)(:(.+))?/);
+      // Create an observable to add the S3 key when the form is submitted.
+      const uid &#x3D; userMatches[1];
+      const args &#x3D; {
+        subuser: userMatches[2] ? userMatches[3] : &#x27;&#x27;,
+        generate_key: key.generate_key ? &#x27;true&#x27; : &#x27;false&#x27;,
+        access_key: key.access_key,
+        secret_key: key.secret_key
+      };
+      this.submitObservables.push(this.rgwUserService.addS3Key(uid, args));
+      // If the access and the secret key are auto-generated, then visualize
+      // this to the user by displaying a notification instead of the key.
+      this.s3Keys.push({
+        user: key.user,
+        access_key: key.generate_key ? &#x27;Apply your changes first...&#x27; : key.access_key,
+        secret_key: key.generate_key ? &#x27;Apply your changes first...&#x27; : key.secret_key
+      });
+    }
+    // Mark the form as dirty to be able to submit it.
+    this.userForm.markAsDirty();
+  }
+
+  /**
+   * Delete a S3 key.
+   * @param {number} index The S3 key to delete.
+   */
+  deleteS3Key(index: number) {
+    const key &#x3D; this.s3Keys[index];
+    // Create an observable to delete the S3 key when the form is submitted.
+    this.submitObservables.push(
+      this.rgwUserService.deleteS3Key(this.userForm.getValue(&#x27;uid&#x27;), key.access_key)
+    );
+    // Remove the S3 key to update the UI.
+    this.s3Keys.splice(index, 1);
+    // Mark the form as dirty to be able to submit it.
+    this.userForm.markAsDirty();
+  }
+
+  /**
+   * Show the specified subuser in a modal dialog.
+   * @param {number | undefined} index The subuser to show.
+   */
+  showSubuserModal(index?: number) {
+    const uid &#x3D; this.userForm.getValue(&#x27;uid&#x27;);
+    const modalRef &#x3D; this.bsModalService.show(RgwUserSubuserModalComponent);
+    if (_.isNumber(index)) {
+      // Edit
+      const subuser &#x3D; this.subusers[index];
+      modalRef.content.setEditing();
+      modalRef.content.setValues(uid, subuser.id, subuser.permissions);
+    } else {
+      // Add
+      modalRef.content.setEditing(false);
+      modalRef.content.setValues(uid);
+      modalRef.content.setSubusers(this.subusers);
+    }
+    modalRef.content.submitAction.subscribe((subuser: RgwUserSubuser) &#x3D;&gt; {
+      this.setSubuser(subuser, index);
+    });
+  }
+
+  /**
+   * Show the specified S3 key in a modal dialog.
+   * @param {number | undefined} index The S3 key to show.
+   */
+  showS3KeyModal(index?: number) {
+    const modalRef &#x3D; this.bsModalService.show(RgwUserS3KeyModalComponent);
+    if (_.isNumber(index)) {
+      // View
+      const key &#x3D; this.s3Keys[index];
+      modalRef.content.setViewing();
+      modalRef.content.setValues(key.user, key.access_key, key.secret_key);
+    } else {
+      // Add
+      const candidates &#x3D; this._getS3KeyUserCandidates();
+      modalRef.content.setViewing(false);
+      modalRef.content.setUserCandidates(candidates);
+      modalRef.content.submitAction.subscribe((key: RgwUserS3Key) &#x3D;&gt; {
+        this.setS3Key(key);
+      });
+    }
+  }
+
+  /**
+   * Show the specified Swift key in a modal dialog.
+   * @param {number} index The Swift key to show.
+   */
+  showSwiftKeyModal(index: number) {
+    const modalRef &#x3D; this.bsModalService.show(RgwUserSwiftKeyModalComponent);
+    const key &#x3D; this.swiftKeys[index];
+    modalRef.content.setValues(key.user, key.secret_key);
+  }
+
+  /**
+   * Show the specified capability in a modal dialog.
+   * @param {number | undefined} index The S3 key to show.
+   */
+  showCapabilityModal(index?: number) {
+    const modalRef &#x3D; this.bsModalService.show(RgwUserCapabilityModalComponent);
+    if (_.isNumber(index)) {
+      // Edit
+      const cap &#x3D; this.capabilities[index];
+      modalRef.content.setEditing();
+      modalRef.content.setValues(cap.type, cap.perm);
+    } else {
+      // Add
+      modalRef.content.setEditing(false);
+      modalRef.content.setCapabilities(this.capabilities);
+    }
+    modalRef.content.submitAction.subscribe((cap: RgwUserCapability) &#x3D;&gt; {
+      this.setCapability(cap, index);
+    });
+  }
+
+  /**
+   * Check if the general user settings (display name, email, ...) have been modified.
+   * @return {Boolean} Returns TRUE if the general user settings have been modified.
+   */
+  private _isGeneralDirty(): boolean {
+    return [&#x27;display_name&#x27;, &#x27;email&#x27;, &#x27;max_buckets&#x27;, &#x27;suspended&#x27;].some((path) &#x3D;&gt; {
+      return this.userForm.get(path).dirty;
+    });
+  }
+
+  /**
+   * Check if the user quota has been modified.
+   * @return {Boolean} Returns TRUE if the user quota has been modified.
+   */
+  private _isUserQuotaDirty(): boolean {
+    return [
+      &#x27;user_quota_enabled&#x27;,
+      &#x27;user_quota_max_size_unlimited&#x27;,
+      &#x27;user_quota_max_size&#x27;,
+      &#x27;user_quota_max_objects_unlimited&#x27;,
+      &#x27;user_quota_max_objects&#x27;
+    ].some((path) &#x3D;&gt; {
+      return this.userForm.get(path).dirty;
+    });
+  }
+
+  /**
+   * Check if the bucket quota has been modified.
+   * @return {Boolean} Returns TRUE if the bucket quota has been modified.
+   */
+  private _isBucketQuotaDirty(): boolean {
+    return [
+      &#x27;bucket_quota_enabled&#x27;,
+      &#x27;bucket_quota_max_size_unlimited&#x27;,
+      &#x27;bucket_quota_max_size&#x27;,
+      &#x27;bucket_quota_max_objects_unlimited&#x27;,
+      &#x27;bucket_quota_max_objects&#x27;
+    ].some((path) &#x3D;&gt; {
+      return this.userForm.get(path).dirty;
+    });
+  }
+
+  /**
+   * Helper function to get the arguments of the API request when a new
+   * user is created.
+   */
+  private _getCreateArgs() {
+    const result &#x3D; {
+      uid: this.userForm.getValue(&#x27;uid&#x27;),
+      display_name: this.userForm.getValue(&#x27;display_name&#x27;),
+      suspended: this.userForm.getValue(&#x27;suspended&#x27;),
+      email: &#x27;&#x27;,
+      max_buckets: this.userForm.getValue(&#x27;max_buckets&#x27;),
+      generate_key: this.userForm.getValue(&#x27;generate_key&#x27;),
+      access_key: &#x27;&#x27;,
+      secret_key: &#x27;&#x27;
+    };
+    const email &#x3D; this.userForm.getValue(&#x27;email&#x27;);
+    if (_.isString(email) &amp;&amp; email.length &gt; 0) {
+      _.merge(result, { email: email });
+    }
+    const generateKey &#x3D; this.userForm.getValue(&#x27;generate_key&#x27;);
+    if (!generateKey) {
+      _.merge(result, {
+        generate_key: false,
+        access_key: this.userForm.getValue(&#x27;access_key&#x27;),
+        secret_key: this.userForm.getValue(&#x27;secret_key&#x27;)
+      });
+    }
+    return result;
+  }
+
+  /**
+   * Helper function to get the arguments for the API request when the user
+   * configuration has been modified.
+   */
+  private _getUpdateArgs() {
+    const result &#x3D; {};
+    const keys &#x3D; [&#x27;display_name&#x27;, &#x27;email&#x27;, &#x27;max_buckets&#x27;, &#x27;suspended&#x27;];
+    for (const key of keys) {
+      result[key] &#x3D; this.userForm.getValue(key);
+    }
+    return result;
+  }
+
+  /**
+   * Helper function to get the arguments for the API request when the user
+   * quota configuration has been modified.
+   */
+  private _getUserQuotaArgs(): object {
+    const result &#x3D; {
+      quota_type: &#x27;user&#x27;,
+      enabled: this.userForm.getValue(&#x27;user_quota_enabled&#x27;),
+      max_size_kb: -1,
+      max_objects: -1
+    };
+    if (!this.userForm.getValue(&#x27;user_quota_max_size_unlimited&#x27;)) {
+      // Convert the given value to bytes.
+      const bytes &#x3D; new FormatterService().toBytes(this.userForm.getValue(&#x27;user_quota_max_size&#x27;));
+      // Finally convert the value to KiB.
+      result[&#x27;max_size_kb&#x27;] &#x3D; (bytes / 1024).toFixed(0) as any;
+    }
+    if (!this.userForm.getValue(&#x27;user_quota_max_objects_unlimited&#x27;)) {
+      result[&#x27;max_objects&#x27;] &#x3D; this.userForm.getValue(&#x27;user_quota_max_objects&#x27;);
+    }
+    return result;
+  }
+
+  /**
+   * Helper function to get the arguments for the API request when the bucket
+   * quota configuration has been modified.
+   */
+  private _getBucketQuotaArgs(): object {
+    const result &#x3D; {
+      quota_type: &#x27;bucket&#x27;,
+      enabled: this.userForm.getValue(&#x27;bucket_quota_enabled&#x27;),
+      max_size_kb: -1,
+      max_objects: -1
+    };
+    if (!this.userForm.getValue(&#x27;bucket_quota_max_size_unlimited&#x27;)) {
+      // Convert the given value to bytes.
+      const bytes &#x3D; new FormatterService().toBytes(this.userForm.getValue(&#x27;bucket_quota_max_size&#x27;));
+      // Finally convert the value to KiB.
+      result[&#x27;max_size_kb&#x27;] &#x3D; (bytes / 1024).toFixed(0) as any;
+    }
+    if (!this.userForm.getValue(&#x27;bucket_quota_max_objects_unlimited&#x27;)) {
+      result[&#x27;max_objects&#x27;] &#x3D; this.userForm.getValue(&#x27;bucket_quota_max_objects&#x27;);
+    }
+    return result;
+  }
+
+  /**
+   * Helper method to get the user candidates for S3 keys.
+   * @returns {Array} Returns a list of user identifiers.
+   */
+  private _getS3KeyUserCandidates() {
+    let result &#x3D; [];
+    // Add the current user id.
+    const uid &#x3D; this.userForm.getValue(&#x27;uid&#x27;);
+    if (_.isString(uid) &amp;&amp; !_.isEmpty(uid)) {
+      result.push(uid);
+    }
+    // Append the subusers.
+    this.subusers.forEach((subUser) &#x3D;&gt; {
+      result.push(subUser.id);
+    });
+    // Note that it&#x27;s possible to create multiple S3 key pairs for a user,
+    // thus we append already configured users, too.
+    this.s3Keys.forEach((key) &#x3D;&gt; {
+      result.push(key.user);
+    });
+    result &#x3D; _.uniq(result);
+    return result;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;cd-loading-panel *ngIf&#x3D;&quot;editing &amp;&amp; loading &amp;&amp; !error&quot;
+                  i18n&gt;Loading user data...&lt;/cd-loading-panel&gt;
+&lt;cd-error-panel *ngIf&#x3D;&quot;editing &amp;&amp; error&quot;
+                (backAction)&#x3D;&quot;goToListView()&quot;
+                i18n&gt;The user data could not be loaded.&lt;/cd-error-panel&gt;
+
+&lt;div class&#x3D;&quot;col-sm-12 col-lg-6&quot;
+     *ngIf&#x3D;&quot;!loading &amp;&amp; !error&quot;&gt;
+  &lt;form class&#x3D;&quot;form-horizontal&quot;
+        #frm&#x3D;&quot;ngForm&quot;
+        [formGroup]&#x3D;&quot;userForm&quot;
+        novalidate&gt;
+    &lt;div class&#x3D;&quot;panel panel-default&quot;&gt;
+      &lt;div class&#x3D;&quot;panel-heading&quot;&gt;
+        &lt;h3 i18n&#x3D;&quot;form title|Example: Create Pool@@formTitle&quot;
+            class&#x3D;&quot;panel-title&quot;&gt;{{ action | titlecase }} {{ resource | upperFirst }}&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;panel-body&quot;&gt;
+
+        &lt;!-- Username --&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;
+             [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: userForm.showError(&#x27;uid&#x27;, frm)}&quot;&gt;
+          &lt;label class&#x3D;&quot;control-label col-sm-3&quot;
+                 for&#x3D;&quot;uid&quot;&gt;
+            &lt;ng-container i18n&gt;Username&lt;/ng-container&gt;
+            &lt;span class&#x3D;&quot;required&quot;
+                  *ngIf&#x3D;&quot;!editing&quot;&gt;
+            &lt;/span&gt;
+          &lt;/label&gt;
+          &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+            &lt;input id&#x3D;&quot;uid&quot;
+                   class&#x3D;&quot;form-control&quot;
+                   type&#x3D;&quot;text&quot;
+                   formControlName&#x3D;&quot;uid&quot;
+                   [readonly]&#x3D;&quot;editing&quot;
+                   autofocus&gt;
+            &lt;span class&#x3D;&quot;help-block&quot;
+                  *ngIf&#x3D;&quot;userForm.showError(&#x27;uid&#x27;, frm, &#x27;required&#x27;)&quot;
+                  i18n&gt;This field is required.&lt;/span&gt;
+            &lt;span class&#x3D;&quot;help-block&quot;
+                  *ngIf&#x3D;&quot;userForm.showError(&#x27;uid&#x27;, frm, &#x27;notUnique&#x27;)&quot;
+                  i18n&gt;The chosen user ID is already in use.&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Full name --&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;
+             [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: userForm.showError(&#x27;display_name&#x27;, frm)}&quot;&gt;
+          &lt;label class&#x3D;&quot;control-label col-sm-3&quot;
+                 for&#x3D;&quot;display_name&quot;&gt;
+            &lt;ng-container i18n&gt;Full name&lt;/ng-container&gt;
+            &lt;span class&#x3D;&quot;required&quot;
+                  *ngIf&#x3D;&quot;!editing&quot;&gt;
+            &lt;/span&gt;
+          &lt;/label&gt;
+          &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+            &lt;input id&#x3D;&quot;display_name&quot;
+                   class&#x3D;&quot;form-control&quot;
+                   type&#x3D;&quot;text&quot;
+                   formControlName&#x3D;&quot;display_name&quot;&gt;
+            &lt;span class&#x3D;&quot;help-block&quot;
+                  *ngIf&#x3D;&quot;userForm.showError(&#x27;display_name&#x27;, frm, &#x27;required&#x27;)&quot;
+                  i18n&gt;This field is required.&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Email address --&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;
+             [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: userForm.showError(&#x27;email&#x27;, frm)}&quot;&gt;
+          &lt;label class&#x3D;&quot;control-label col-sm-3&quot;
+                 for&#x3D;&quot;email&quot;
+                 i18n&gt;Email address&lt;/label&gt;
+          &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+            &lt;input id&#x3D;&quot;email&quot;
+                   class&#x3D;&quot;form-control&quot;
+                   type&#x3D;&quot;text&quot;
+                   formControlName&#x3D;&quot;email&quot;&gt;
+            &lt;span class&#x3D;&quot;help-block&quot;
+                  *ngIf&#x3D;&quot;userForm.showError(&#x27;email&#x27;, frm, &#x27;email&#x27;)&quot;
+                  i18n&gt;This is not a valid email address.&lt;/span&gt;
+            &lt;span class&#x3D;&quot;help-block&quot;
+                  *ngIf&#x3D;&quot;userForm.showError(&#x27;email&#x27;, frm, &#x27;notUnique&#x27;)&quot;
+                  i18n&gt;The chosen email address is already in use.&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Max. buckets --&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;
+             [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: userForm.showError(&#x27;max_buckets&#x27;, frm)}&quot;&gt;
+          &lt;label class&#x3D;&quot;control-label col-sm-3&quot;
+                 for&#x3D;&quot;max_buckets&quot;&gt;
+            &lt;ng-container i18n&gt;Max. buckets&lt;/ng-container&gt;
+            &lt;span class&#x3D;&quot;required&quot;&gt;&lt;/span&gt;
+          &lt;/label&gt;
+          &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+            &lt;input id&#x3D;&quot;max_buckets&quot;
+                   class&#x3D;&quot;form-control&quot;
+                   type&#x3D;&quot;number&quot;
+                   formControlName&#x3D;&quot;max_buckets&quot;&gt;
+            &lt;span class&#x3D;&quot;help-block&quot;
+                  *ngIf&#x3D;&quot;userForm.showError(&#x27;max_buckets&#x27;, frm, &#x27;required&#x27;)&quot;
+                  i18n&gt;This field is required.&lt;/span&gt;
+            &lt;span class&#x3D;&quot;help-block&quot;
+                  *ngIf&#x3D;&quot;userForm.showError(&#x27;max_buckets&#x27;, frm, &#x27;min&#x27;)&quot;
+                  i18n&gt;The entered value must be &gt;&#x3D; 0.&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Suspended --&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;div class&#x3D;&quot;col-sm-offset-3 col-sm-9&quot;&gt;
+            &lt;div class&#x3D;&quot;checkbox checkbox-primary&quot;&gt;
+              &lt;input id&#x3D;&quot;suspended&quot;
+                     type&#x3D;&quot;checkbox&quot;
+                     formControlName&#x3D;&quot;suspended&quot;&gt;
+              &lt;label for&#x3D;&quot;suspended&quot;
+                     i18n&gt;Suspended&lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- S3 key --&gt;
+        &lt;fieldset *ngIf&#x3D;&quot;!editing&quot;&gt;
+          &lt;legend i18n&gt;S3 key&lt;/legend&gt;
+
+          &lt;!-- Auto-generate key --&gt;
+          &lt;div class&#x3D;&quot;form-group&quot;&gt;
+            &lt;div class&#x3D;&quot;col-sm-offset-3 col-sm-9&quot;&gt;
+              &lt;div class&#x3D;&quot;checkbox checkbox-primary&quot;&gt;
+                &lt;input id&#x3D;&quot;generate_key&quot;
+                       type&#x3D;&quot;checkbox&quot;
+                       formControlName&#x3D;&quot;generate_key&quot;&gt;
+                &lt;label for&#x3D;&quot;generate_key&quot;
+                       i18n&gt;Auto-generate key&lt;/label&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;!-- Access key --&gt;
+          &lt;div class&#x3D;&quot;form-group&quot;
+               [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: userForm.showError(&#x27;access_key&#x27;, frm)}&quot;
+               *ngIf&#x3D;&quot;!editing &amp;&amp; !userForm.getValue(&#x27;generate_key&#x27;)&quot;&gt;
+            &lt;label class&#x3D;&quot;control-label col-sm-3&quot;
+                   for&#x3D;&quot;access_key&quot;&gt;
+              &lt;ng-container i18n&gt;Access key&lt;/ng-container&gt;
+              &lt;span class&#x3D;&quot;required&quot;&gt;&lt;/span&gt;
+            &lt;/label&gt;
+            &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+              &lt;div class&#x3D;&quot;input-group&quot;&gt;
+                &lt;input id&#x3D;&quot;access_key&quot;
+                       class&#x3D;&quot;form-control&quot;
+                       type&#x3D;&quot;password&quot;
+                       formControlName&#x3D;&quot;access_key&quot;&gt;
+                &lt;span class&#x3D;&quot;input-group-btn&quot;&gt;
+                  &lt;button type&#x3D;&quot;button&quot;
+                          class&#x3D;&quot;btn btn-default&quot;
+                          cdPasswordButton&#x3D;&quot;access_key&quot;&gt;
+                  &lt;/button&gt;
+                  &lt;button type&#x3D;&quot;button&quot;
+                          class&#x3D;&quot;btn btn-default&quot;
+                          cdCopy2ClipboardButton&#x3D;&quot;access_key&quot;&gt;
+                  &lt;/button&gt;
+                &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;span class&#x3D;&quot;help-block&quot;
+                    *ngIf&#x3D;&quot;userForm.showError(&#x27;access_key&#x27;, frm, &#x27;required&#x27;)&quot;
+                    i18n&gt;This field is required.&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;!-- Secret key --&gt;
+          &lt;div class&#x3D;&quot;form-group&quot;
+               [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: userForm.showError(&#x27;secret_key&#x27;, frm)}&quot;
+               *ngIf&#x3D;&quot;!editing &amp;&amp; !userForm.getValue(&#x27;generate_key&#x27;)&quot;&gt;
+            &lt;label class&#x3D;&quot;control-label col-sm-3&quot;
+                   for&#x3D;&quot;secret_key&quot;&gt;
+              &lt;ng-container i18n&gt;Secret key&lt;/ng-container&gt;
+              &lt;span class&#x3D;&quot;required&quot;&gt;&lt;/span&gt;
+            &lt;/label&gt;
+            &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+              &lt;div class&#x3D;&quot;input-group&quot;&gt;
+                &lt;input id&#x3D;&quot;secret_key&quot;
+                       class&#x3D;&quot;form-control&quot;
+                       type&#x3D;&quot;password&quot;
+                       formControlName&#x3D;&quot;secret_key&quot;&gt;
+                &lt;span class&#x3D;&quot;input-group-btn&quot;&gt;
+                  &lt;button type&#x3D;&quot;button&quot;
+                          class&#x3D;&quot;btn btn-default&quot;
+                          cdPasswordButton&#x3D;&quot;secret_key&quot;&gt;
+                  &lt;/button&gt;
+                  &lt;button type&#x3D;&quot;button&quot;
+                          class&#x3D;&quot;btn btn-default&quot;
+                          cdCopy2ClipboardButton&#x3D;&quot;secret_key&quot;&gt;
+                  &lt;/button&gt;
+                &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;span class&#x3D;&quot;help-block&quot;
+                    *ngIf&#x3D;&quot;userForm.showError(&#x27;secret_key&#x27;, frm, &#x27;required&#x27;)&quot;
+                    i18n&gt;This field is required.&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/fieldset&gt;
+
+        &lt;!-- Subusers --&gt;
+        &lt;fieldset *ngIf&#x3D;&quot;editing&quot;&gt;
+          &lt;legend i18n&gt;Subusers&lt;/legend&gt;
+
+          &lt;div class&#x3D;&quot;col-sm-offset-3 col-sm-9&quot;&gt;
+            &lt;span *ngIf&#x3D;&quot;subusers.length &#x3D;&#x3D;&#x3D; 0&quot;
+                  class&#x3D;&quot;form-control no-border&quot;&gt;
+              &lt;span class&#x3D;&quot;text-muted&quot;
+                    i18n&gt;There are no subusers.&lt;/span&gt;
+            &lt;/span&gt;
+
+            &lt;span *ngFor&#x3D;&quot;let subuser of subusers; let i&#x3D;index;&quot;&gt;
+              &lt;div class&#x3D;&quot;input-group&quot;&gt;
+                &lt;span class&#x3D;&quot;input-group-addon&quot;&gt;
+                  &lt;i class&#x3D;&quot;icon-prepend fa fa-user&quot;&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;input type&#x3D;&quot;text&quot;
+                       class&#x3D;&quot;form-control&quot;
+                       value&#x3D;&quot;{{ subuser.id }}&quot;
+                       readonly&gt;
+                &lt;span class&#x3D;&quot;input-group-addon&quot;
+                      style&#x3D;&quot;border-left: 0; border-right: 0;&quot;&gt;
+                  &lt;i class&#x3D;&quot;icon-prepend fa fa-share-alt&quot;&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;input type&#x3D;&quot;text&quot;
+                       class&#x3D;&quot;form-control&quot;
+                       value&#x3D;&quot;{{ (&#x27;full-control&#x27; &#x3D;&#x3D;&#x3D; subuser.permissions) ? &#x27;full&#x27; : subuser.permissions }}&quot;
+                       readonly&gt;
+                &lt;span class&#x3D;&quot;input-group-btn&quot;&gt;
+                  &lt;button type&#x3D;&quot;button&quot;
+                          class&#x3D;&quot;btn btn-default tc_showSubuserButton&quot;
+                          i18n-tooltip
+                          tooltip&#x3D;&quot;Edit&quot;
+                          (click)&#x3D;&quot;showSubuserModal(i)&quot;&gt;
+                    &lt;i class&#x3D;&quot;fa fa-cogs&quot;&gt;&lt;/i&gt;
+                  &lt;/button&gt;
+                  &lt;button type&#x3D;&quot;button&quot;
+                          class&#x3D;&quot;btn btn-default tc_deleteSubuserButton&quot;
+                          i18n-tooltip
+                          tooltip&#x3D;&quot;Delete&quot;
+                          (click)&#x3D;&quot;deleteSubuser(i)&quot;&gt;
+                    &lt;i class&#x3D;&quot;fa fa-times&quot;&gt;&lt;/i&gt;
+                  &lt;/button&gt;
+                &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;span class&#x3D;&quot;help-block&quot;&gt;&lt;/span&gt;
+            &lt;/span&gt;
+
+            &lt;span class&#x3D;&quot;form-control no-border&quot;&gt;
+              &lt;button type&#x3D;&quot;button&quot;
+                      class&#x3D;&quot;btn btn-sm btn-default btn-label pull-right tc_addSubuserButton&quot;
+                      (click)&#x3D;&quot;showSubuserModal()&quot;&gt;
+                &lt;i class&#x3D;&quot;fa fa-fw fa-plus&quot;&gt;&lt;/i&gt;
+                &lt;ng-container i18n&gt;{{ actionLabels.CREATE | titlecase }} {{ subuserLabel | upperFirst }}&lt;/ng-container&gt;
+              &lt;/button&gt;
+            &lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/fieldset&gt;
+
+        &lt;!-- Keys --&gt;
+        &lt;fieldset *ngIf&#x3D;&quot;editing&quot;&gt;
+          &lt;legend i18n&gt;Keys&lt;/legend&gt;
+
+          &lt;!-- S3 keys --&gt;
+          &lt;label class&#x3D;&quot;col-sm-3 control-label&quot;
+                 i18n&gt;S3&lt;/label&gt;
+          &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+            &lt;span *ngIf&#x3D;&quot;s3Keys.length &#x3D;&#x3D;&#x3D; 0&quot;
+                  class&#x3D;&quot;form-control no-border&quot;&gt;
+              &lt;span class&#x3D;&quot;text-muted&quot;
+                    i18n&gt;There are no keys.&lt;/span&gt;
+            &lt;/span&gt;
+
+            &lt;span *ngFor&#x3D;&quot;let key of s3Keys; let i&#x3D;index;&quot;&gt;
+              &lt;div class&#x3D;&quot;input-group&quot;&gt;
+                &lt;span class&#x3D;&quot;input-group-addon&quot;&gt;
+                  &lt;i class&#x3D;&quot;icon-prepend fa fa-key&quot;&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;input type&#x3D;&quot;text&quot;
+                       class&#x3D;&quot;form-control&quot;
+                       value&#x3D;&quot;{{ key.user }}&quot;
+                       readonly&gt;
+                &lt;span class&#x3D;&quot;input-group-btn&quot;&gt;
+                  &lt;button type&#x3D;&quot;button&quot;
+                          class&#x3D;&quot;btn btn-default tc_showS3KeyButton&quot;
+                          i18n-tooltip
+                          tooltip&#x3D;&quot;Show&quot;
+                          (click)&#x3D;&quot;showS3KeyModal(i)&quot;&gt;
+                    &lt;i class&#x3D;&quot;fa fa-eye&quot;&gt;&lt;/i&gt;
+                  &lt;/button&gt;
+                  &lt;button type&#x3D;&quot;button&quot;
+                          class&#x3D;&quot;btn btn-default tc_deleteS3KeyButton&quot;
+                          i18n-tooltip
+                          tooltip&#x3D;&quot;Delete&quot;
+                          (click)&#x3D;&quot;deleteS3Key(i)&quot;&gt;
+                    &lt;i class&#x3D;&quot;fa fa-times&quot;&gt;&lt;/i&gt;
+                  &lt;/button&gt;
+                &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;span class&#x3D;&quot;help-block&quot;&gt;&lt;/span&gt;
+            &lt;/span&gt;
+
+            &lt;span class&#x3D;&quot;form-control no-border&quot;&gt;
+              &lt;button type&#x3D;&quot;button&quot;
+                      class&#x3D;&quot;btn btn-sm btn-default btn-label pull-right tc_addS3KeyButton&quot;
+                      (click)&#x3D;&quot;showS3KeyModal()&quot;&gt;
+                &lt;i class&#x3D;&quot;fa fa-fw fa-plus&quot;&gt;&lt;/i&gt;
+                &lt;ng-container i18n&gt;{{ actionLabels.CREATE | titlecase }} {{ s3keyLabel | upperFirst }}&lt;/ng-container&gt;
+              &lt;/button&gt;
+            &lt;/span&gt;
+            &lt;hr&gt;
+          &lt;/div&gt;
+
+          &lt;!-- Swift keys --&gt;
+          &lt;label class&#x3D;&quot;col-sm-3 control-label&quot;
+                 i18n&gt;Swift&lt;/label&gt;
+          &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+            &lt;span *ngIf&#x3D;&quot;swiftKeys.length &#x3D;&#x3D;&#x3D; 0&quot;
+                  class&#x3D;&quot;form-control no-border&quot;&gt;
+              &lt;span class&#x3D;&quot;text-muted&quot;
+                    i18n&gt;There are no keys.&lt;/span&gt;
+            &lt;/span&gt;
+
+            &lt;span *ngFor&#x3D;&quot;let key of swiftKeys; let i&#x3D;index;&quot;&gt;
+              &lt;div class&#x3D;&quot;input-group&quot;&gt;
+                &lt;span class&#x3D;&quot;input-group-addon&quot;&gt;
+                  &lt;i class&#x3D;&quot;icon-prepend fa fa-key&quot;&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;input type&#x3D;&quot;text&quot;
+                       class&#x3D;&quot;form-control&quot;
+                       value&#x3D;&quot;{{ key.user }}&quot;
+                       readonly&gt;
+                &lt;span class&#x3D;&quot;input-group-btn&quot;&gt;
+                  &lt;button type&#x3D;&quot;button&quot;
+                          class&#x3D;&quot;btn btn-default tc_showSwiftKeyButton&quot;
+                          i18n-tooltip
+                          tooltip&#x3D;&quot;Show&quot;
+                          (click)&#x3D;&quot;showSwiftKeyModal(i)&quot;&gt;
+                    &lt;i class&#x3D;&quot;fa fa-eye&quot;&gt;&lt;/i&gt;
+                  &lt;/button&gt;
+                &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;span class&#x3D;&quot;help-block&quot;&gt;&lt;/span&gt;
+            &lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/fieldset&gt;
+
+        &lt;!-- Capabilities --&gt;
+        &lt;fieldset *ngIf&#x3D;&quot;editing&quot;&gt;
+          &lt;legend i18n&gt;Capabilities&lt;/legend&gt;
+
+          &lt;div class&#x3D;&quot;col-sm-offset-3 col-sm-9&quot;&gt;
+            &lt;span *ngIf&#x3D;&quot;capabilities.length &#x3D;&#x3D;&#x3D; 0&quot;
+                  class&#x3D;&quot;form-control no-border&quot;&gt;
+              &lt;span class&#x3D;&quot;text-muted&quot;
+                    i18n&gt;There are no capabilities.&lt;/span&gt;
+            &lt;/span&gt;
+
+            &lt;span *ngFor&#x3D;&quot;let cap of capabilities; let i&#x3D;index;&quot;&gt;
+              &lt;div class&#x3D;&quot;input-group&quot;&gt;
+                &lt;span class&#x3D;&quot;input-group-addon&quot;&gt;
+                  &lt;i class&#x3D;&quot;icon-prepend fa fa-share-alt&quot;&gt;&lt;/i&gt;
+                &lt;/span&gt;
+                &lt;input type&#x3D;&quot;text&quot;
+                       class&#x3D;&quot;form-control&quot;
+                       value&#x3D;&quot;{{ cap.type }}:{{ cap.perm }}&quot;
+                       readonly&gt;
+                &lt;span class&#x3D;&quot;input-group-btn&quot;&gt;
+                  &lt;button type&#x3D;&quot;button&quot;
+                          class&#x3D;&quot;btn btn-default tc_editCapButton&quot;
+                          i18n-tooltip
+                          tooltip&#x3D;&quot;Edit&quot;
+                          (click)&#x3D;&quot;showCapabilityModal(i)&quot;&gt;
+                    &lt;i class&#x3D;&quot;fa fa-cogs&quot;&gt;&lt;/i&gt;
+                  &lt;/button&gt;
+                  &lt;button type&#x3D;&quot;button&quot;
+                          class&#x3D;&quot;btn btn-default tc_deleteCapButton&quot;
+                          i18n-tooltip
+                          tooltip&#x3D;&quot;Delete&quot;
+                          (click)&#x3D;&quot;deleteCapability(i)&quot;&gt;
+                    &lt;i class&#x3D;&quot;fa fa-times&quot;&gt;&lt;/i&gt;
+                  &lt;/button&gt;
+                &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;span class&#x3D;&quot;help-block&quot;&gt;&lt;/span&gt;
+            &lt;/span&gt;
+
+            &lt;span class&#x3D;&quot;form-control no-border&quot;&gt;
+              &lt;button type&#x3D;&quot;button&quot;
+                      class&#x3D;&quot;btn btn-sm btn-default btn-label pull-right tc_addCapButton&quot;
+                      (click)&#x3D;&quot;showCapabilityModal()&quot;&gt;
+                &lt;i class&#x3D;&quot;fa fa-fw fa-plus&quot;&gt;&lt;/i&gt;
+                &lt;ng-container i18n&gt;{{ actionLabels.ADD | titlecase }} {{ capabilityLabel | upperFirst }}&lt;/ng-container&gt;
+              &lt;/button&gt;
+            &lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/fieldset&gt;
+
+        &lt;!-- User quota --&gt;
+        &lt;fieldset&gt;
+          &lt;legend i18n&gt;User quota&lt;/legend&gt;
+
+          &lt;!-- Enabled --&gt;
+          &lt;div class&#x3D;&quot;form-group&quot;&gt;
+            &lt;div class&#x3D;&quot;col-sm-offset-3 col-sm-9&quot;&gt;
+              &lt;div class&#x3D;&quot;checkbox checkbox-primary&quot;&gt;
+                &lt;input id&#x3D;&quot;user_quota_enabled&quot;
+                       type&#x3D;&quot;checkbox&quot;
+                       formControlName&#x3D;&quot;user_quota_enabled&quot;&gt;
+                &lt;label for&#x3D;&quot;user_quota_enabled&quot;
+                       i18n&gt;Enabled&lt;/label&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;!-- Unlimited size --&gt;
+          &lt;div class&#x3D;&quot;form-group&quot;
+               *ngIf&#x3D;&quot;userForm.controls.user_quota_enabled.value&quot;&gt;
+            &lt;div class&#x3D;&quot;col-sm-offset-3 col-sm-9&quot;&gt;
+              &lt;div class&#x3D;&quot;checkbox checkbox-primary&quot;&gt;
+                &lt;input id&#x3D;&quot;user_quota_max_size_unlimited&quot;
+                       type&#x3D;&quot;checkbox&quot;
+                       formControlName&#x3D;&quot;user_quota_max_size_unlimited&quot;&gt;
+                &lt;label for&#x3D;&quot;user_quota_max_size_unlimited&quot;
+                       i18n&gt;Unlimited size&lt;/label&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;!-- Maximum size --&gt;
+          &lt;div class&#x3D;&quot;form-group&quot;
+               [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: userForm.showError(&#x27;user_quota_max_size&#x27;, frm)}&quot;
+               *ngIf&#x3D;&quot;!userForm.getValue(&#x27;user_quota_max_size_unlimited&#x27;)&quot;&gt;
+            &lt;label class&#x3D;&quot;control-label col-sm-3&quot;
+                   for&#x3D;&quot;user_quota_max_size&quot;&gt;
+              &lt;ng-container i18n&gt;Max. size&lt;/ng-container&gt;
+              &lt;span class&#x3D;&quot;required&quot;&gt;&lt;/span&gt;
+            &lt;/label&gt;
+            &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+              &lt;input id&#x3D;&quot;user_quota_max_size&quot;
+                     class&#x3D;&quot;form-control&quot;
+                     type&#x3D;&quot;text&quot;
+                     formControlName&#x3D;&quot;user_quota_max_size&quot;
+                     cdDimlessBinary&gt;
+              &lt;span class&#x3D;&quot;help-block&quot;
+                    *ngIf&#x3D;&quot;userForm.showError(&#x27;user_quota_max_size&#x27;, frm, &#x27;required&#x27;)&quot;
+                    i18n&gt;This field is required.&lt;/span&gt;
+              &lt;span class&#x3D;&quot;help-block&quot;
+                    *ngIf&#x3D;&quot;userForm.showError(&#x27;user_quota_max_size&#x27;, frm, &#x27;quotaMaxSize&#x27;)&quot;
+                    i18n&gt;The value is not valid.&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;!-- Unlimited objects --&gt;
+          &lt;div class&#x3D;&quot;form-group&quot;
+               *ngIf&#x3D;&quot;userForm.controls.user_quota_enabled.value&quot;&gt;
+            &lt;div class&#x3D;&quot;col-sm-offset-3 col-sm-9&quot;&gt;
+              &lt;div class&#x3D;&quot;checkbox checkbox-primary&quot;&gt;
+                &lt;input id&#x3D;&quot;user_quota_max_objects_unlimited&quot;
+                       type&#x3D;&quot;checkbox&quot;
+                       formControlName&#x3D;&quot;user_quota_max_objects_unlimited&quot;&gt;
+                &lt;label for&#x3D;&quot;user_quota_max_objects_unlimited&quot;
+                       i18n&gt;Unlimited objects&lt;/label&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;!-- Maximum objects --&gt;
+          &lt;div class&#x3D;&quot;form-group&quot;
+               [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: userForm.showError(&#x27;user_quota_max_objects&#x27;, frm)}&quot;
+               *ngIf&#x3D;&quot;!userForm.getValue(&#x27;user_quota_max_objects_unlimited&#x27;)&quot;&gt;
+            &lt;label class&#x3D;&quot;control-label col-sm-3&quot;
+                   for&#x3D;&quot;user_quota_max_objects&quot;&gt;
+              &lt;ng-container i18n&gt;Max. objects&lt;/ng-container&gt;
+              &lt;span class&#x3D;&quot;required&quot;&gt;&lt;/span&gt;
+            &lt;/label&gt;
+            &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+              &lt;input id&#x3D;&quot;user_quota_max_objects&quot;
+                     class&#x3D;&quot;form-control&quot;
+                     type&#x3D;&quot;number&quot;
+                     formControlName&#x3D;&quot;user_quota_max_objects&quot;&gt;
+              &lt;span class&#x3D;&quot;help-block&quot;
+                    *ngIf&#x3D;&quot;userForm.showError(&#x27;user_quota_max_objects&#x27;, frm, &#x27;required&#x27;)&quot;
+                    i18n&gt;This field is required.&lt;/span&gt;
+              &lt;span class&#x3D;&quot;help-block&quot;
+                    *ngIf&#x3D;&quot;userForm.showError(&#x27;user_quota_max_objects&#x27;, frm, &#x27;min&#x27;)&quot;
+                    i18n&gt;The entered value must be &gt;&#x3D; 0.&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/fieldset&gt;
+
+        &lt;!-- Bucket quota --&gt;
+        &lt;fieldset&gt;
+          &lt;legend i18n&gt;Bucket quota&lt;/legend&gt;
+
+          &lt;!-- Enabled --&gt;
+          &lt;div class&#x3D;&quot;form-group&quot;&gt;
+            &lt;div class&#x3D;&quot;col-sm-offset-3 col-sm-9&quot;&gt;
+              &lt;div class&#x3D;&quot;checkbox checkbox-primary&quot;&gt;
+                &lt;input id&#x3D;&quot;bucket_quota_enabled&quot;
+                       type&#x3D;&quot;checkbox&quot;
+                       formControlName&#x3D;&quot;bucket_quota_enabled&quot;&gt;
+                &lt;label for&#x3D;&quot;bucket_quota_enabled&quot;
+                       i18n&gt;Enabled&lt;/label&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;!-- Unlimited size --&gt;
+          &lt;div class&#x3D;&quot;form-group&quot;
+               *ngIf&#x3D;&quot;userForm.controls.bucket_quota_enabled.value&quot;&gt;
+            &lt;div class&#x3D;&quot;col-sm-offset-3 col-sm-9&quot;&gt;
+              &lt;div class&#x3D;&quot;checkbox checkbox-primary&quot;&gt;
+                &lt;input id&#x3D;&quot;bucket_quota_max_size_unlimited&quot;
+                       type&#x3D;&quot;checkbox&quot;
+                       formControlName&#x3D;&quot;bucket_quota_max_size_unlimited&quot;&gt;
+                &lt;label for&#x3D;&quot;bucket_quota_max_size_unlimited&quot;
+                       i18n&gt;Unlimited size&lt;/label&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;!-- Maximum size --&gt;
+          &lt;div class&#x3D;&quot;form-group&quot;
+               [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: userForm.showError(&#x27;bucket_quota_max_size&#x27;, frm)}&quot;
+               *ngIf&#x3D;&quot;!userForm.getValue(&#x27;bucket_quota_max_size_unlimited&#x27;)&quot;&gt;
+            &lt;label class&#x3D;&quot;control-label col-sm-3&quot;
+                   for&#x3D;&quot;bucket_quota_max_size&quot;&gt;
+              &lt;ng-container i18n&gt;Max. size&lt;/ng-container&gt;
+              &lt;span class&#x3D;&quot;required&quot;&gt;&lt;/span&gt;
+            &lt;/label&gt;
+            &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+              &lt;input id&#x3D;&quot;bucket_quota_max_size&quot;
+                     class&#x3D;&quot;form-control&quot;
+                     type&#x3D;&quot;text&quot;
+                     formControlName&#x3D;&quot;bucket_quota_max_size&quot;
+                     cdDimlessBinary&gt;
+              &lt;span class&#x3D;&quot;help-block&quot;
+                    *ngIf&#x3D;&quot;userForm.showError(&#x27;bucket_quota_max_size&#x27;, frm, &#x27;required&#x27;)&quot;
+                    i18n&gt;This field is required.&lt;/span&gt;
+              &lt;span class&#x3D;&quot;help-block&quot;
+                    *ngIf&#x3D;&quot;userForm.showError(&#x27;bucket_quota_max_size&#x27;, frm, &#x27;quotaMaxSize&#x27;)&quot;
+                    i18n&gt;The value is not valid.&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;!-- Unlimited objects --&gt;
+          &lt;div class&#x3D;&quot;form-group&quot;
+               *ngIf&#x3D;&quot;userForm.controls.bucket_quota_enabled.value&quot;&gt;
+            &lt;div class&#x3D;&quot;col-sm-offset-3 col-sm-9&quot;&gt;
+              &lt;div class&#x3D;&quot;checkbox checkbox-primary&quot;&gt;
+                &lt;input id&#x3D;&quot;bucket_quota_max_objects_unlimited&quot;
+                       type&#x3D;&quot;checkbox&quot;
+                       formControlName&#x3D;&quot;bucket_quota_max_objects_unlimited&quot;&gt;
+                &lt;label for&#x3D;&quot;bucket_quota_max_objects_unlimited&quot;
+                       i18n&gt;Unlimited objects&lt;/label&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;!-- Maximum objects --&gt;
+          &lt;div class&#x3D;&quot;form-group&quot;
+               [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: userForm.showError(&#x27;bucket_quota_max_objects&#x27;, frm)}&quot;
+               *ngIf&#x3D;&quot;!userForm.getValue(&#x27;bucket_quota_max_objects_unlimited&#x27;)&quot;&gt;
+            &lt;label class&#x3D;&quot;control-label col-sm-3&quot;
+                   for&#x3D;&quot;bucket_quota_max_objects&quot;&gt;
+              &lt;ng-container i18n&gt;Max. objects&lt;/ng-container&gt;
+              &lt;span class&#x3D;&quot;required&quot;&gt;&lt;/span&gt;
+            &lt;/label&gt;
+            &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+              &lt;input id&#x3D;&quot;bucket_quota_max_objects&quot;
+                     class&#x3D;&quot;form-control&quot;
+                     type&#x3D;&quot;number&quot;
+                     formControlName&#x3D;&quot;bucket_quota_max_objects&quot;&gt;
+              &lt;span class&#x3D;&quot;help-block&quot;
+                    *ngIf&#x3D;&quot;userForm.showError(&#x27;bucket_quota_max_objects&#x27;, frm, &#x27;required&#x27;)&quot;
+                    i18n&gt;This field is required.&lt;/span&gt;
+              &lt;span class&#x3D;&quot;help-block&quot;
+                    *ngIf&#x3D;&quot;userForm.showError(&#x27;bucket_quota_max_objects&#x27;, frm, &#x27;min&#x27;)&quot;
+                    i18n&gt;The entered value must be &gt;&#x3D; 0.&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/fieldset&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;panel-footer&quot;&gt;
+        &lt;div class&#x3D;&quot;button-group text-right&quot;&gt;
+          &lt;cd-submit-button
+            (submitAction)&#x3D;&quot;onSubmit()&quot;
+            [form]&#x3D;&quot;userForm&quot;
+            i18n&#x3D;&quot;form action button|Example: Create Pool@@formActionButton&quot;
+            type&#x3D;&quot;button&quot;&gt;{{ action | titlecase }} {{ resource | upperFirst }}&lt;/cd-submit-button&gt;
+          &lt;cd-back-button&gt;&lt;/cd-back-button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./rgw-user-form.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;../../../../defaults&#x27;;
+
+form .input-group-addon {
+  color: $color-rgw-icon !important;
+  background-color: transparent;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><cd-loading-panel *ngIf="editing && loading && !error"                  i18n>Loading user data...</cd-loading-panel><cd-error-panel *ngIf="editing && error"                (backAction)="goToListView()"                i18n>The user data could not be loaded.</cd-error-panel><div class="col-sm-12 col-lg-6"     *ngIf="!loading && !error">  <form class="form-horizontal"        #frm="ngForm"        [formGroup]="userForm"        novalidate>    <div class="panel panel-default">      <div class="panel-heading">        <h3 i18n="form title|Example: Create Pool@@formTitle"            class="panel-title">{{ action | titlecase }} {{ resource | upperFirst }}</h3>      </div>      <div class="panel-body">        <!-- Username -->        <div class="form-group"             [ngClass]="{\'has-error\': userForm.showError(\'uid\', frm)}">          <label class="control-label col-sm-3"                 for="uid">            <ng-container i18n>Username</ng-container>            <span class="required"                  *ngIf="!editing">            </span>          </label>          <div class="col-sm-9">            <input id="uid"                   class="form-control"                   type="text"                   formControlName="uid"                   [readonly]="editing"                   autofocus>            <span class="help-block"                  *ngIf="userForm.showError(\'uid\', frm, \'required\')"                  i18n>This field is required.</span>            <span class="help-block"                  *ngIf="userForm.showError(\'uid\', frm, \'notUnique\')"                  i18n>The chosen user ID is already in use.</span>          </div>        </div>        <!-- Full name -->        <div class="form-group"             [ngClass]="{\'has-error\': userForm.showError(\'display_name\', frm)}">          <label class="control-label col-sm-3"                 for="display_name">            <ng-container i18n>Full name</ng-container>            <span class="required"                  *ngIf="!editing">            </span>          </label>          <div class="col-sm-9">            <input id="display_name"                   class="form-control"                   type="text"                   formControlName="display_name">            <span class="help-block"                  *ngIf="userForm.showError(\'display_name\', frm, \'required\')"                  i18n>This field is required.</span>          </div>        </div>        <!-- Email address -->        <div class="form-group"             [ngClass]="{\'has-error\': userForm.showError(\'email\', frm)}">          <label class="control-label col-sm-3"                 for="email"                 i18n>Email address</label>          <div class="col-sm-9">            <input id="email"                   class="form-control"                   type="text"                   formControlName="email">            <span class="help-block"                  *ngIf="userForm.showError(\'email\', frm, \'email\')"                  i18n>This is not a valid email address.</span>            <span class="help-block"                  *ngIf="userForm.showError(\'email\', frm, \'notUnique\')"                  i18n>The chosen email address is already in use.</span>          </div>        </div>        <!-- Max. buckets -->        <div class="form-group"             [ngClass]="{\'has-error\': userForm.showError(\'max_buckets\', frm)}">          <label class="control-label col-sm-3"                 for="max_buckets">            <ng-container i18n>Max. buckets</ng-container>            <span class="required"></span>          </label>          <div class="col-sm-9">            <input id="max_buckets"                   class="form-control"                   type="number"                   formControlName="max_buckets">            <span class="help-block"                  *ngIf="userForm.showError(\'max_buckets\', frm, \'required\')"                  i18n>This field is required.</span>            <span class="help-block"                  *ngIf="userForm.showError(\'max_buckets\', frm, \'min\')"                  i18n>The entered value must be >= 0.</span>          </div>        </div>        <!-- Suspended -->        <div class="form-group">          <div class="col-sm-offset-3 col-sm-9">            <div class="checkbox checkbox-primary">              <input id="suspended"                     type="checkbox"                     formControlName="suspended">              <label for="suspended"                     i18n>Suspended</label>            </div>          </div>        </div>        <!-- S3 key -->        <fieldset *ngIf="!editing">          <legend i18n>S3 key</legend>          <!-- Auto-generate key -->          <div class="form-group">            <div class="col-sm-offset-3 col-sm-9">              <div class="checkbox checkbox-primary">                <input id="generate_key"                       type="checkbox"                       formControlName="generate_key">                <label for="generate_key"                       i18n>Auto-generate key</label>              </div>            </div>          </div>          <!-- Access key -->          <div class="form-group"               [ngClass]="{\'has-error\': userForm.showError(\'access_key\', frm)}"               *ngIf="!editing && !userForm.getValue(\'generate_key\')">            <label class="control-label col-sm-3"                   for="access_key">              <ng-container i18n>Access key</ng-container>              <span class="required"></span>            </label>            <div class="col-sm-9">              <div class="input-group">                <input id="access_key"                       class="form-control"                       type="password"                       formControlName="access_key">                <span class="input-group-btn">                  <button type="button"                          class="btn btn-default"                          cdPasswordButton="access_key">                  </button>                  <button type="button"                          class="btn btn-default"                          cdCopy2ClipboardButton="access_key">                  </button>                </span>              </div>              <span class="help-block"                    *ngIf="userForm.showError(\'access_key\', frm, \'required\')"                    i18n>This field is required.</span>            </div>          </div>          <!-- Secret key -->          <div class="form-group"               [ngClass]="{\'has-error\': userForm.showError(\'secret_key\', frm)}"               *ngIf="!editing && !userForm.getValue(\'generate_key\')">            <label class="control-label col-sm-3"                   for="secret_key">              <ng-container i18n>Secret key</ng-container>              <span class="required"></span>            </label>            <div class="col-sm-9">              <div class="input-group">                <input id="secret_key"                       class="form-control"                       type="password"                       formControlName="secret_key">                <span class="input-group-btn">                  <button type="button"                          class="btn btn-default"                          cdPasswordButton="secret_key">                  </button>                  <button type="button"                          class="btn btn-default"                          cdCopy2ClipboardButton="secret_key">                  </button>                </span>              </div>              <span class="help-block"                    *ngIf="userForm.showError(\'secret_key\', frm, \'required\')"                    i18n>This field is required.</span>            </div>          </div>        </fieldset>        <!-- Subusers -->        <fieldset *ngIf="editing">          <legend i18n>Subusers</legend>          <div class="col-sm-offset-3 col-sm-9">            <span *ngIf="subusers.length === 0"                  class="form-control no-border">              <span class="text-muted"                    i18n>There are no subusers.</span>            </span>            <span *ngFor="let subuser of subusers; let i=index;">              <div class="input-group">                <span class="input-group-addon">                  <i class="icon-prepend fa fa-user"></i>                </span>                <input type="text"                       class="form-control"                       value="{{ subuser.id }}"                       readonly>                <span class="input-group-addon"                      style="border-left: 0; border-right: 0;">                  <i class="icon-prepend fa fa-share-alt"></i>                </span>                <input type="text"                       class="form-control"                       value="{{ (\'full-control\' === subuser.permissions) ? \'full\' : subuser.permissions }}"                       readonly>                <span class="input-group-btn">                  <button type="button"                          class="btn btn-default tc_showSubuserButton"                          i18n-tooltip                          tooltip="Edit"                          (click)="showSubuserModal(i)">                    <i class="fa fa-cogs"></i>                  </button>                  <button type="button"                          class="btn btn-default tc_deleteSubuserButton"                          i18n-tooltip                          tooltip="Delete"                          (click)="deleteSubuser(i)">                    <i class="fa fa-times"></i>                  </button>                </span>              </div>              <span class="help-block"></span>            </span>            <span class="form-control no-border">              <button type="button"                      class="btn btn-sm btn-default btn-label pull-right tc_addSubuserButton"                      (click)="showSubuserModal()">                <i class="fa fa-fw fa-plus"></i>                <ng-container i18n>{{ actionLabels.CREATE | titlecase }} {{ subuserLabel | upperFirst }}</ng-container>              </button>            </span>          </div>        </fieldset>        <!-- Keys -->        <fieldset *ngIf="editing">          <legend i18n>Keys</legend>          <!-- S3 keys -->          <label class="col-sm-3 control-label"                 i18n>S3</label>          <div class="col-sm-9">            <span *ngIf="s3Keys.length === 0"                  class="form-control no-border">              <span class="text-muted"                    i18n>There are no keys.</span>            </span>            <span *ngFor="let key of s3Keys; let i=index;">              <div class="input-group">                <span class="input-group-addon">                  <i class="icon-prepend fa fa-key"></i>                </span>                <input type="text"                       class="form-control"                       value="{{ key.user }}"                       readonly>                <span class="input-group-btn">                  <button type="button"                          class="btn btn-default tc_showS3KeyButton"                          i18n-tooltip                          tooltip="Show"                          (click)="showS3KeyModal(i)">                    <i class="fa fa-eye"></i>                  </button>                  <button type="button"                          class="btn btn-default tc_deleteS3KeyButton"                          i18n-tooltip                          tooltip="Delete"                          (click)="deleteS3Key(i)">                    <i class="fa fa-times"></i>                  </button>                </span>              </div>              <span class="help-block"></span>            </span>            <span class="form-control no-border">              <button type="button"                      class="btn btn-sm btn-default btn-label pull-right tc_addS3KeyButton"                      (click)="showS3KeyModal()">                <i class="fa fa-fw fa-plus"></i>                <ng-container i18n>{{ actionLabels.CREATE | titlecase }} {{ s3keyLabel | upperFirst }}</ng-container>              </button>            </span>            <hr>          </div>          <!-- Swift keys -->          <label class="col-sm-3 control-label"                 i18n>Swift</label>          <div class="col-sm-9">            <span *ngIf="swiftKeys.length === 0"                  class="form-control no-border">              <span class="text-muted"                    i18n>There are no keys.</span>            </span>            <span *ngFor="let key of swiftKeys; let i=index;">              <div class="input-group">                <span class="input-group-addon">                  <i class="icon-prepend fa fa-key"></i>                </span>                <input type="text"                       class="form-control"                       value="{{ key.user }}"                       readonly>                <span class="input-group-btn">                  <button type="button"                          class="btn btn-default tc_showSwiftKeyButton"                          i18n-tooltip                          tooltip="Show"                          (click)="showSwiftKeyModal(i)">                    <i class="fa fa-eye"></i>                  </button>                </span>              </div>              <span class="help-block"></span>            </span>          </div>        </fieldset>        <!-- Capabilities -->        <fieldset *ngIf="editing">          <legend i18n>Capabilities</legend>          <div class="col-sm-offset-3 col-sm-9">            <span *ngIf="capabilities.length === 0"                  class="form-control no-border">              <span class="text-muted"                    i18n>There are no capabilities.</span>            </span>            <span *ngFor="let cap of capabilities; let i=index;">              <div class="input-group">                <span class="input-group-addon">                  <i class="icon-prepend fa fa-share-alt"></i>                </span>                <input type="text"                       class="form-control"                       value="{{ cap.type }}:{{ cap.perm }}"                       readonly>                <span class="input-group-btn">                  <button type="button"                          class="btn btn-default tc_editCapButton"                          i18n-tooltip                          tooltip="Edit"                          (click)="showCapabilityModal(i)">                    <i class="fa fa-cogs"></i>                  </button>                  <button type="button"                          class="btn btn-default tc_deleteCapButton"                          i18n-tooltip                          tooltip="Delete"                          (click)="deleteCapability(i)">                    <i class="fa fa-times"></i>                  </button>                </span>              </div>              <span class="help-block"></span>            </span>            <span class="form-control no-border">              <button type="button"                      class="btn btn-sm btn-default btn-label pull-right tc_addCapButton"                      (click)="showCapabilityModal()">                <i class="fa fa-fw fa-plus"></i>                <ng-container i18n>{{ actionLabels.ADD | titlecase }} {{ capabilityLabel | upperFirst }}</ng-container>              </button>            </span>          </div>        </fieldset>        <!-- User quota -->        <fieldset>          <legend i18n>User quota</legend>          <!-- Enabled -->          <div class="form-group">            <div class="col-sm-offset-3 col-sm-9">              <div class="checkbox checkbox-primary">                <input id="user_quota_enabled"                       type="checkbox"                       formControlName="user_quota_enabled">                <label for="user_quota_enabled"                       i18n>Enabled</label>              </div>            </div>          </div>          <!-- Unlimited size -->          <div class="form-group"               *ngIf="userForm.controls.user_quota_enabled.value">            <div class="col-sm-offset-3 col-sm-9">              <div class="checkbox checkbox-primary">                <input id="user_quota_max_size_unlimited"                       type="checkbox"                       formControlName="user_quota_max_size_unlimited">                <label for="user_quota_max_size_unlimited"                       i18n>Unlimited size</label>              </div>            </div>          </div>          <!-- Maximum size -->          <div class="form-group"               [ngClass]="{\'has-error\': userForm.showError(\'user_quota_max_size\', frm)}"               *ngIf="!userForm.getValue(\'user_quota_max_size_unlimited\')">            <label class="control-label col-sm-3"                   for="user_quota_max_size">              <ng-container i18n>Max. size</ng-container>              <span class="required"></span>            </label>            <div class="col-sm-9">              <input id="user_quota_max_size"                     class="form-control"                     type="text"                     formControlName="user_quota_max_size"                     cdDimlessBinary>              <span class="help-block"                    *ngIf="userForm.showError(\'user_quota_max_size\', frm, \'required\')"                    i18n>This field is required.</span>              <span class="help-block"                    *ngIf="userForm.showError(\'user_quota_max_size\', frm, \'quotaMaxSize\')"                    i18n>The value is not valid.</span>            </div>          </div>          <!-- Unlimited objects -->          <div class="form-group"               *ngIf="userForm.controls.user_quota_enabled.value">            <div class="col-sm-offset-3 col-sm-9">              <div class="checkbox checkbox-primary">                <input id="user_quota_max_objects_unlimited"                       type="checkbox"                       formControlName="user_quota_max_objects_unlimited">                <label for="user_quota_max_objects_unlimited"                       i18n>Unlimited objects</label>              </div>            </div>          </div>          <!-- Maximum objects -->          <div class="form-group"               [ngClass]="{\'has-error\': userForm.showError(\'user_quota_max_objects\', frm)}"               *ngIf="!userForm.getValue(\'user_quota_max_objects_unlimited\')">            <label class="control-label col-sm-3"                   for="user_quota_max_objects">              <ng-container i18n>Max. objects</ng-container>              <span class="required"></span>            </label>            <div class="col-sm-9">              <input id="user_quota_max_objects"                     class="form-control"                     type="number"                     formControlName="user_quota_max_objects">              <span class="help-block"                    *ngIf="userForm.showError(\'user_quota_max_objects\', frm, \'required\')"                    i18n>This field is required.</span>              <span class="help-block"                    *ngIf="userForm.showError(\'user_quota_max_objects\', frm, \'min\')"                    i18n>The entered value must be >= 0.</span>            </div>          </div>        </fieldset>        <!-- Bucket quota -->        <fieldset>          <legend i18n>Bucket quota</legend>          <!-- Enabled -->          <div class="form-group">            <div class="col-sm-offset-3 col-sm-9">              <div class="checkbox checkbox-primary">                <input id="bucket_quota_enabled"                       type="checkbox"                       formControlName="bucket_quota_enabled">                <label for="bucket_quota_enabled"                       i18n>Enabled</label>              </div>            </div>          </div>          <!-- Unlimited size -->          <div class="form-group"               *ngIf="userForm.controls.bucket_quota_enabled.value">            <div class="col-sm-offset-3 col-sm-9">              <div class="checkbox checkbox-primary">                <input id="bucket_quota_max_size_unlimited"                       type="checkbox"                       formControlName="bucket_quota_max_size_unlimited">                <label for="bucket_quota_max_size_unlimited"                       i18n>Unlimited size</label>              </div>            </div>          </div>          <!-- Maximum size -->          <div class="form-group"               [ngClass]="{\'has-error\': userForm.showError(\'bucket_quota_max_size\', frm)}"               *ngIf="!userForm.getValue(\'bucket_quota_max_size_unlimited\')">            <label class="control-label col-sm-3"                   for="bucket_quota_max_size">              <ng-container i18n>Max. size</ng-container>              <span class="required"></span>            </label>            <div class="col-sm-9">              <input id="bucket_quota_max_size"                     class="form-control"                     type="text"                     formControlName="bucket_quota_max_size"                     cdDimlessBinary>              <span class="help-block"                    *ngIf="userForm.showError(\'bucket_quota_max_size\', frm, \'required\')"                    i18n>This field is required.</span>              <span class="help-block"                    *ngIf="userForm.showError(\'bucket_quota_max_size\', frm, \'quotaMaxSize\')"                    i18n>The value is not valid.</span>            </div>          </div>          <!-- Unlimited objects -->          <div class="form-group"               *ngIf="userForm.controls.bucket_quota_enabled.value">            <div class="col-sm-offset-3 col-sm-9">              <div class="checkbox checkbox-primary">                <input id="bucket_quota_max_objects_unlimited"                       type="checkbox"                       formControlName="bucket_quota_max_objects_unlimited">                <label for="bucket_quota_max_objects_unlimited"                       i18n>Unlimited objects</label>              </div>            </div>          </div>          <!-- Maximum objects -->          <div class="form-group"               [ngClass]="{\'has-error\': userForm.showError(\'bucket_quota_max_objects\', frm)}"               *ngIf="!userForm.getValue(\'bucket_quota_max_objects_unlimited\')">            <label class="control-label col-sm-3"                   for="bucket_quota_max_objects">              <ng-container i18n>Max. objects</ng-container>              <span class="required"></span>            </label>            <div class="col-sm-9">              <input id="bucket_quota_max_objects"                     class="form-control"                     type="number"                     formControlName="bucket_quota_max_objects">              <span class="help-block"                    *ngIf="userForm.showError(\'bucket_quota_max_objects\', frm, \'required\')"                    i18n>This field is required.</span>              <span class="help-block"                    *ngIf="userForm.showError(\'bucket_quota_max_objects\', frm, \'min\')"                    i18n>The entered value must be >= 0.</span>            </div>          </div>        </fieldset>      </div>      <div class="panel-footer">        <div class="button-group text-right">          <cd-submit-button            (submitAction)="onSubmit()"            [form]="userForm"            i18n="form action button|Example: Create Pool@@formActionButton"            type="button">{{ action | titlecase }} {{ resource | upperFirst }}</cd-submit-button>          <cd-back-button></cd-back-button>        </div>      </div>    </div>  </form></div></div>'
+    var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'cd-about'},{'name': 'AdministrationComponent', 'selector': 'cd-administration'},{'name': 'AppComponent', 'selector': 'cd-root'},{'name': 'BackButtonComponent', 'selector': 'cd-back-button'},{'name': 'BreadcrumbsComponent', 'selector': 'cd-breadcrumbs'},{'name': 'CephfsChartComponent', 'selector': 'cd-cephfs-chart'},{'name': 'CephfsClientsComponent', 'selector': 'cd-cephfs-clients'},{'name': 'CephfsDetailComponent', 'selector': 'cd-cephfs-detail'},{'name': 'CephfsListComponent', 'selector': 'cd-cephfs-list'},{'name': 'ConfigurationComponent', 'selector': 'cd-configuration'},{'name': 'ConfigurationDetailsComponent', 'selector': 'cd-configuration-details'},{'name': 'ConfigurationFormComponent', 'selector': 'cd-configuration-form'},{'name': 'ConfirmationModalComponent', 'selector': 'cd-confirmation-modal'},{'name': 'CriticalConfirmationModalComponent', 'selector': 'cd-deletion-modal'},{'name': 'CrushmapComponent', 'selector': 'cd-crushmap'},{'name': 'DaemonListComponent', 'selector': 'cd-mirroring-daemons'},{'name': 'DashboardComponent', 'selector': 'cd-dashboard'},{'name': 'DashboardHelpComponent', 'selector': 'cd-dashboard-help'},{'name': 'ErasureCodeProfileFormComponent', 'selector': 'cd-erasure-code-profile-form'},{'name': 'ErrorPanelComponent', 'selector': 'cd-error-panel'},{'name': 'ForbiddenComponent', 'selector': 'cd-forbidden'},{'name': 'GrafanaComponent', 'selector': 'cd-grafana'},{'name': 'HealthComponent', 'selector': 'cd-health'},{'name': 'HealthPieComponent', 'selector': 'cd-health-pie'},{'name': 'HelperComponent', 'selector': 'cd-helper'},{'name': 'HostDetailsComponent', 'selector': 'cd-host-details'},{'name': 'HostsComponent', 'selector': 'cd-hosts'},{'name': 'IdentityComponent', 'selector': 'cd-identity'},{'name': 'ImageListComponent', 'selector': 'cd-mirroring-images'},{'name': 'InfoCardComponent', 'selector': 'cd-info-card'},{'name': 'InfoGroupComponent', 'selector': 'cd-info-group'},{'name': 'InfoPanelComponent', 'selector': 'cd-info-panel'},{'name': 'IscsiComponent', 'selector': 'cd-iscsi'},{'name': 'IscsiTabsComponent', 'selector': 'cd-iscsi-tabs'},{'name': 'IscsiTargetDetailsComponent', 'selector': 'cd-iscsi-target-details'},{'name': 'IscsiTargetDiscoveryModalComponent', 'selector': 'cd-iscsi-target-discovery-modal'},{'name': 'IscsiTargetFormComponent', 'selector': 'cd-iscsi-target-form'},{'name': 'IscsiTargetImageSettingsModalComponent', 'selector': 'cd-iscsi-target-image-settings-modal'},{'name': 'IscsiTargetIqnSettingsModalComponent', 'selector': 'cd-iscsi-target-iqn-settings-modal'},{'name': 'IscsiTargetListComponent', 'selector': 'cd-iscsi-target-list'},{'name': 'LanguageSelectorComponent', 'selector': 'cd-language-selector'},{'name': 'LoadingPanelComponent', 'selector': 'cd-loading-panel'},{'name': 'LoginComponent', 'selector': 'cd-login'},{'name': 'LogsComponent', 'selector': 'cd-logs'},{'name': 'MgrModuleDetailsComponent', 'selector': 'cd-mgr-module-details'},{'name': 'MgrModuleFormComponent', 'selector': 'cd-mgr-module-form'},{'name': 'MgrModuleListComponent', 'selector': 'cd-mgr-module-list'},{'name': 'ModalComponent', 'selector': 'cd-modal'},{'name': 'MonitorComponent', 'selector': 'cd-monitor'},{'name': 'NavigationComponent', 'selector': 'cd-navigation'},{'name': 'Nfs501Component', 'selector': 'cd-nfs-501'},{'name': 'NfsDetailsComponent', 'selector': 'cd-nfs-details'},{'name': 'NfsFormClientComponent', 'selector': 'cd-nfs-form-client'},{'name': 'NfsFormComponent', 'selector': 'cd-nfs-form'},{'name': 'NfsListComponent', 'selector': 'cd-nfs-list'},{'name': 'NotFoundComponent', 'selector': 'cd-not-found'},{'name': 'NotificationsComponent', 'selector': 'cd-notifications'},{'name': 'OsdDetailsComponent', 'selector': 'cd-osd-details'},{'name': 'OsdFlagsModalComponent', 'selector': 'cd-osd-flags-modal'},{'name': 'OsdListComponent', 'selector': 'cd-osd-list'},{'name': 'OsdPerformanceHistogramComponent', 'selector': 'cd-osd-performance-histogram'},{'name': 'OsdRecvSpeedModalComponent', 'selector': 'cd-osd-recv-speed-modal'},{'name': 'OsdReweightModalComponent', 'selector': 'cd-osd-reweight-modal'},{'name': 'OsdScrubModalComponent', 'selector': 'cd-osd-scrub-modal'},{'name': 'OverviewComponent', 'selector': 'cd-mirroring'},{'name': 'PerformanceCounterComponent', 'selector': 'cd-performance-counter'},{'name': 'PoolDetailsComponent', 'selector': 'cd-pool-details'},{'name': 'PoolEditModeModalComponent', 'selector': 'cd-pool-edit-mode-modal'},{'name': 'PoolEditPeerModalComponent', 'selector': 'cd-pool-edit-peer-modal'},{'name': 'PoolFormComponent', 'selector': 'cd-pool-form'},{'name': 'PoolListComponent', 'selector': 'cd-pool-list'},{'name': 'PoolListComponent', 'selector': 'cd-mirroring-pools'},{'name': 'PrometheusListComponent', 'selector': 'cd-prometheus-list'},{'name': 'RbdConfigurationFormComponent', 'selector': 'cd-rbd-configuration-form'},{'name': 'RbdConfigurationListComponent', 'selector': 'cd-rbd-configuration-table'},{'name': 'RbdDetailsComponent', 'selector': 'cd-rbd-details'},{'name': 'RbdFormComponent', 'selector': 'cd-rbd-form'},{'name': 'RbdImagesComponent', 'selector': 'cd-rbd-images'},{'name': 'RbdListComponent', 'selector': 'cd-rbd-list'},{'name': 'RbdSnapshotFormComponent', 'selector': 'cd-rbd-snapshot-form'},{'name': 'RbdSnapshotListComponent', 'selector': 'cd-rbd-snapshot-list'},{'name': 'RbdTrashListComponent', 'selector': 'cd-rbd-trash-list'},{'name': 'RbdTrashMoveModalComponent', 'selector': 'cd-rbd-trash-move-modal'},{'name': 'RbdTrashPurgeModalComponent', 'selector': 'cd-rbd-trash-purge-modal'},{'name': 'RbdTrashRestoreModalComponent', 'selector': 'cd-rbd-trash-restore-modal'},{'name': 'RefreshSelectorComponent', 'selector': 'cd-refresh-selector'},{'name': 'Rgw501Component', 'selector': 'cd-rgw-501'},{'name': 'RgwBucketDetailsComponent', 'selector': 'cd-rgw-bucket-details'},{'name': 'RgwBucketFormComponent', 'selector': 'cd-rgw-bucket-form'},{'name': 'RgwBucketListComponent', 'selector': 'cd-rgw-bucket-list'},{'name': 'RgwDaemonDetailsComponent', 'selector': 'cd-rgw-daemon-details'},{'name': 'RgwDaemonListComponent', 'selector': 'cd-rgw-daemon-list'},{'name': 'RgwUserCapabilityModalComponent', 'selector': 'cd-rgw-user-capability-modal'},{'name': 'RgwUserDetailsComponent', 'selector': 'cd-rgw-user-details'},{'name': 'RgwUserFormComponent', 'selector': 'cd-rgw-user-form'},{'name': 'RgwUserListComponent', 'selector': 'cd-rgw-user-list'},{'name': 'RgwUserS3KeyModalComponent', 'selector': 'cd-rgw-user-s3-key-modal'},{'name': 'RgwUserSubuserModalComponent', 'selector': 'cd-rgw-user-subuser-modal'},{'name': 'RgwUserSwiftKeyModalComponent', 'selector': 'cd-rgw-user-swift-key-modal'},{'name': 'RoleDetailsComponent', 'selector': 'cd-role-details'},{'name': 'RoleFormComponent', 'selector': 'cd-role-form'},{'name': 'RoleListComponent', 'selector': 'cd-role-list'},{'name': 'SelectBadgesComponent', 'selector': 'cd-select-badges'},{'name': 'SelectComponent', 'selector': 'cd-select'},{'name': 'SparklineComponent', 'selector': 'cd-sparkline'},{'name': 'SsoNotFoundComponent', 'selector': 'cd-sso-not-found'},{'name': 'SubmitButtonComponent', 'selector': 'cd-submit-button'},{'name': 'TableActionsComponent', 'selector': 'cd-table-actions'},{'name': 'TableComponent', 'selector': 'cd-table'},{'name': 'TableKeyValueComponent', 'selector': 'cd-table-key-value'},{'name': 'TablePerformanceCounterComponent', 'selector': 'cd-table-performance-counter'},{'name': 'TaskManagerComponent', 'selector': 'cd-task-manager'},{'name': 'UsageBarComponent', 'selector': 'cd-usage-bar'},{'name': 'UserFormComponent', 'selector': 'cd-user-form'},{'name': 'UserListComponent', 'selector': 'cd-user-list'},{'name': 'UserTabsComponent', 'selector': 'cd-user-tabs'},{'name': 'ViewCacheComponent', 'selector': 'cd-view-cache'},{'name': 'WarningPanelComponent', 'selector': 'cd-warning-panel'}];
+    var DIRECTIVES = [{'name': 'AutofocusDirective', 'selector': '[autofocus]'},{'name': 'Copy2ClipboardButtonDirective', 'selector': '[cdCopy2ClipboardButton]'},{'name': 'DimlessBinaryDirective', 'selector': '[cdDimlessBinary]'},{'name': 'DimlessBinaryPerSecondDirective', 'selector': '[cdDimlessBinaryPerSecond]'},{'name': 'IopsDirective', 'selector': '[cdIops]'},{'name': 'MillisecondsDirective', 'selector': '[cdMilliseconds]'},{'name': 'PasswordButtonDirective', 'selector': '[cdPasswordButton]'}];
+    var ACTUAL_COMPONENT = {'name': 'RgwUserFormComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'RgwUserFormComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

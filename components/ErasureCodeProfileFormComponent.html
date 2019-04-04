@@ -1,0 +1,2209 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ceph-dashboard documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ceph-dashboard documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>ErasureCodeProfileFormComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>cd-erasure-code-profile-form</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./erasure-code-profile-form.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./erasure-code-profile-form.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#action">action</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#actionLabels">actionLabels</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#bsModalRef">bsModalRef</a>
+                            </li>
+                            <li>
+                                <a href="#devices">devices</a>
+                            </li>
+                            <li>
+                                <a href="#failureDomains">failureDomains</a>
+                            </li>
+                            <li>
+                                <a href="#form">form</a>
+                            </li>
+                            <li>
+                                <a href="#names">names</a>
+                            </li>
+                            <li>
+                                <a href="#plugin">plugin</a>
+                            </li>
+                            <li>
+                                <a href="#PLUGIN">PLUGIN</a>
+                            </li>
+                            <li>
+                                <a href="#plugins">plugins</a>
+                            </li>
+                            <li>
+                                <a href="#requiredControls">requiredControls</a>
+                            </li>
+                            <li>
+                                <a href="#resource">resource</a>
+                            </li>
+                            <li>
+                                <a href="#techniques">techniques</a>
+                            </li>
+                            <li>
+                                <a href="#tooltips">tooltips</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#createForm">createForm</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#createJson">createJson</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#extendJson">extendJson</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onPluginChange">onPluginChange</a>
+                            </li>
+                            <li>
+                                <a href="#onSubmit">onSubmit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#setDefaults">setDefaults</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#setIsaDefaults">setIsaDefaults</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#setJerasureDefaults">setJerasureDefaults</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#setKMValidators">setKMValidators</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#setLrcDefaults">setLrcDefaults</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#setNumberValidators">setNumberValidators</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#setShecDefaults">setShecDefaults</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#submitAction">submitAction</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(formBuilder: <a href="../injectables/CdFormBuilder.html">CdFormBuilder</a>, bsModalRef: BsModalRef, taskWrapper: <a href="../injectables/TaskWrapperService.html">TaskWrapperService</a>, ecpService: <a href="../injectables/ErasureCodeProfileService.html">ErasureCodeProfileService</a>, i18n: I18n, actionLabels: <a href="../injectables/ActionLabelsI18n.html">ActionLabelsI18n</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>formBuilder</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CdFormBuilder.html" target="_self" >CdFormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>bsModalRef</td>
+                                                  
+                                                        <td>
+                                                                    <code>BsModalRef</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>taskWrapper</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TaskWrapperService.html" target="_self" >TaskWrapperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>ecpService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ErasureCodeProfileService.html" target="_self" >ErasureCodeProfileService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>i18n</td>
+                                                  
+                                                        <td>
+                                                                    <code>I18n</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>actionLabels</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ActionLabelsI18n.html" target="_self" >ActionLabelsI18n</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="submitAction"></a>
+                        <b>submitAction</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:23</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createForm"></a>
+                    <span class="name">
+                        <b>
+                            createForm
+                        </b>
+                        <a href="#createForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="58"
+                            class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:58</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createJson"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            createJson
+                        </b>
+                        <a href="#createJson"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createJson()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="199"
+                            class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:199</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="extendJson"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            extendJson
+                        </b>
+                        <a href="#extendJson"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>extendJson(name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, ecp: <a href="../classes/ErasureCodeProfile.html">ErasureCodeProfile</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="226"
+                            class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:226</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>ecp</td>
+                                    <td>
+                                                <code><a href="../classes/ErasureCodeProfile.html" target="_self" >ErasureCodeProfile</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="173"
+                            class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:173</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onPluginChange"></a>
+                    <span class="name">
+                        <b>
+                            onPluginChange
+                        </b>
+                        <a href="#onPluginChange"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onPluginChange(plugin)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="91"
+                            class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:91</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>plugin</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSubmit"></a>
+                    <span class="name">
+                        <b>
+                            onSubmit
+                        </b>
+                        <a href="#onSubmit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSubmit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="237"
+                            class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:237</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setDefaults"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            setDefaults
+                        </b>
+                        <a href="#setDefaults"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setDefaults(defaults: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank">object</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="165"
+                            class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:165</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>defaults</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setIsaDefaults"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            setIsaDefaults
+                        </b>
+                        <a href="#setIsaDefaults"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setIsaDefaults()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="145"
+                            class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:145</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setJerasureDefaults"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            setJerasureDefaults
+                        </b>
+                        <a href="#setJerasureDefaults"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setJerasureDefaults()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="116"
+                            class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:116</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setKMValidators"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            setKMValidators
+                        </b>
+                        <a href="#setKMValidators"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setKMValidators(required: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="112"
+                            class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:112</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>required</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setLrcDefaults"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            setLrcDefaults
+                        </b>
+                        <a href="#setLrcDefaults"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setLrcDefaults()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="134"
+                            class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:134</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setNumberValidators"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            setNumberValidators
+                        </b>
+                        <a href="#setNumberValidators"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setNumberValidators(name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, required: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="104"
+                            class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:104</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>required</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setShecDefaults"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            setShecDefaults
+                        </b>
+                        <a href="#setShecDefaults"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setShecDefaults()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="155"
+                            class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:155</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="action"></a>
+                        <span class="name">
+                            <b>
+                            action</b>
+                            <a href="#action"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="actionLabels"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            actionLabels</b>
+                            <a href="#actionLabels"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/ActionLabelsI18n.html" target="_self" >ActionLabelsI18n</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:50</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bsModalRef"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            bsModalRef</b>
+                            <a href="#bsModalRef"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>BsModalRef</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:46</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="devices"></a>
+                        <span class="name">
+                            <b>
+                            devices</b>
+                            <a href="#devices"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>string[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="failureDomains"></a>
+                        <span class="name">
+                            <b>
+                            failureDomains</b>
+                            <a href="#failureDomains"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>string[]</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="form"></a>
+                        <span class="name">
+                            <b>
+                            form</b>
+                            <a href="#form"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/CdFormGroup.html" target="_self" >CdFormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="names"></a>
+                        <span class="name">
+                            <b>
+                            names</b>
+                            <a href="#names"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>string[]</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="plugin"></a>
+                        <span class="name">
+                            <b>
+                            plugin</b>
+                            <a href="#plugin"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>this.PLUGIN.JERASURE</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="PLUGIN"></a>
+                        <span class="name">
+                            <b>
+                            PLUGIN</b>
+                            <a href="#PLUGIN"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    LRC: &#x27;lrc&#x27;, // Locally Repairable Erasure Code
+    SHEC: &#x27;shec&#x27;, // Shingled Erasure Code
+    JERASURE: &#x27;jerasure&#x27;, // default
+    ISA: &#x27;isa&#x27; // Intel Storage Acceleration
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="plugins"></a>
+                        <span class="name">
+                            <b>
+                            plugins</b>
+                            <a href="#plugins"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>string[]</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="requiredControls"></a>
+                        <span class="name">
+                            <b>
+                            requiredControls</b>
+                            <a href="#requiredControls"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>string[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="resource"></a>
+                        <span class="name">
+                            <b>
+                            resource</b>
+                            <a href="#resource"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="techniques"></a>
+                        <span class="name">
+                            <b>
+                            techniques</b>
+                            <a href="#techniques"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>string[]</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tooltips"></a>
+                        <span class="name">
+                            <b>
+                            tooltips</b>
+                            <a href="#tooltips"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>this.ecpService.formTooltips</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/ceph/pool/erasure-code-profile-form/erasure-code-profile-form.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, EventEmitter, OnInit, Output } from &#x27;@angular/core&#x27;;
+import { Validators } from &#x27;@angular/forms&#x27;;
+
+import { I18n } from &#x27;@ngx-translate/i18n-polyfill&#x27;;
+import { BsModalRef } from &#x27;ngx-bootstrap/modal&#x27;;
+
+import { ErasureCodeProfileService } from &#x27;../../../shared/api/erasure-code-profile.service&#x27;;
+import { ActionLabelsI18n } from &#x27;../../../shared/constants/app.constants&#x27;;
+import { CdFormBuilder } from &#x27;../../../shared/forms/cd-form-builder&#x27;;
+import { CdFormGroup } from &#x27;../../../shared/forms/cd-form-group&#x27;;
+import { CdValidators } from &#x27;../../../shared/forms/cd-validators&#x27;;
+import { ErasureCodeProfile } from &#x27;../../../shared/models/erasure-code-profile&#x27;;
+import { FinishedTask } from &#x27;../../../shared/models/finished-task&#x27;;
+import { TaskWrapperService } from &#x27;../../../shared/services/task-wrapper.service&#x27;;
+
+@Component({
+  selector: &#x27;cd-erasure-code-profile-form&#x27;,
+  templateUrl: &#x27;./erasure-code-profile-form.component.html&#x27;,
+  styleUrls: [&#x27;./erasure-code-profile-form.component.scss&#x27;]
+})
+export class ErasureCodeProfileFormComponent implements OnInit {
+  @Output()
+  submitAction &#x3D; new EventEmitter();
+
+  form: CdFormGroup;
+  failureDomains: string[];
+  plugins: string[];
+  names: string[];
+  techniques: string[];
+  requiredControls: string[] &#x3D; [];
+  devices: string[] &#x3D; [];
+  tooltips &#x3D; this.ecpService.formTooltips;
+
+  PLUGIN &#x3D; {
+    LRC: &#x27;lrc&#x27;, // Locally Repairable Erasure Code
+    SHEC: &#x27;shec&#x27;, // Shingled Erasure Code
+    JERASURE: &#x27;jerasure&#x27;, // default
+    ISA: &#x27;isa&#x27; // Intel Storage Acceleration
+  };
+  plugin &#x3D; this.PLUGIN.JERASURE;
+  action: string;
+  resource: string;
+
+  constructor(
+    private formBuilder: CdFormBuilder,
+    public bsModalRef: BsModalRef,
+    private taskWrapper: TaskWrapperService,
+    private ecpService: ErasureCodeProfileService,
+    private i18n: I18n,
+    public actionLabels: ActionLabelsI18n
+  ) {
+    this.action &#x3D; this.actionLabels.CREATE;
+    this.resource &#x3D; this.i18n(&#x27;EC Profile&#x27;);
+    this.createForm();
+    this.setJerasureDefaults();
+  }
+
+  createForm() {
+    this.form &#x3D; this.formBuilder.group({
+      name: [
+        null,
+        [
+          Validators.required,
+          Validators.pattern(&#x27;[A-Za-z0-9_-]+&#x27;),
+          CdValidators.custom(
+            &#x27;uniqueName&#x27;,
+            (value) &#x3D;&gt; this.names &amp;&amp; this.names.indexOf(value) !&#x3D;&#x3D; -1
+          )
+        ]
+      ],
+      plugin: [this.PLUGIN.JERASURE, [Validators.required]],
+      k: [1], // Will be replaced by plugin defaults
+      m: [1], // Will be replaced by plugin defaults
+      crushFailureDomain: [&#x27;host&#x27;],
+      crushRoot: [&#x27;default&#x27;], // default for all - is a list possible???
+      crushDeviceClass: [&#x27;&#x27;], // set none to empty at submit - get list from configs?
+      directory: [&#x27;&#x27;],
+      // Only for &#x27;jerasure&#x27; and &#x27;isa&#x27; use
+      technique: [&#x27;reed_sol_van&#x27;],
+      // Only for &#x27;jerasure&#x27; use
+      packetSize: [2048, [Validators.min(1)]],
+      // Only for &#x27;lrc&#x27; use
+      l: [1, [Validators.required, Validators.min(1)]],
+      crushLocality: [&#x27;&#x27;], // set to none at the end (same list as for failure domains)
+      // Only for &#x27;shec&#x27; use
+      c: [1, [Validators.required, Validators.min(1)]]
+    });
+    this.form.get(&#x27;plugin&#x27;).valueChanges.subscribe((plugin) &#x3D;&gt; this.onPluginChange(plugin));
+  }
+
+  onPluginChange(plugin) {
+    this.plugin &#x3D; plugin;
+    if (plugin &#x3D;&#x3D;&#x3D; this.PLUGIN.JERASURE) {
+      this.setJerasureDefaults();
+    } else if (plugin &#x3D;&#x3D;&#x3D; this.PLUGIN.LRC) {
+      this.setLrcDefaults();
+    } else if (plugin &#x3D;&#x3D;&#x3D; this.PLUGIN.ISA) {
+      this.setIsaDefaults();
+    } else if (plugin &#x3D;&#x3D;&#x3D; this.PLUGIN.SHEC) {
+      this.setShecDefaults();
+    }
+  }
+
+  private setNumberValidators(name: string, required: boolean) {
+    const validators &#x3D; [Validators.min(1)];
+    if (required) {
+      validators.push(Validators.required);
+    }
+    this.form.get(name).setValidators(validators);
+  }
+
+  private setKMValidators(required: boolean) {
+    [&#x27;k&#x27;, &#x27;m&#x27;].forEach((name) &#x3D;&gt; this.setNumberValidators(name, required));
+  }
+
+  private setJerasureDefaults() {
+    this.requiredControls &#x3D; [&#x27;k&#x27;, &#x27;m&#x27;];
+    this.setDefaults({
+      k: 4,
+      m: 2
+    });
+    this.setKMValidators(true);
+    this.techniques &#x3D; [
+      &#x27;reed_sol_van&#x27;,
+      &#x27;reed_sol_r6_op&#x27;,
+      &#x27;cauchy_orig&#x27;,
+      &#x27;cauchy_good&#x27;,
+      &#x27;liberation&#x27;,
+      &#x27;blaum_roth&#x27;,
+      &#x27;liber8tion&#x27;
+    ];
+  }
+
+  private setLrcDefaults() {
+    this.requiredControls &#x3D; [&#x27;k&#x27;, &#x27;m&#x27;, &#x27;l&#x27;];
+    this.setKMValidators(true);
+    this.setNumberValidators(&#x27;l&#x27;, true);
+    this.setDefaults({
+      k: 4,
+      m: 2,
+      l: 3
+    });
+  }
+
+  private setIsaDefaults() {
+    this.requiredControls &#x3D; [];
+    this.setKMValidators(false);
+    this.setDefaults({
+      k: 7,
+      m: 3
+    });
+    this.techniques &#x3D; [&#x27;reed_sol_van&#x27;, &#x27;cauchy&#x27;];
+  }
+
+  private setShecDefaults() {
+    this.requiredControls &#x3D; [];
+    this.setKMValidators(false);
+    this.setDefaults({
+      k: 4,
+      m: 3,
+      c: 2
+    });
+  }
+
+  private setDefaults(defaults: object) {
+    Object.keys(defaults).forEach((controlName) &#x3D;&gt; {
+      if (this.form.get(controlName).pristine) {
+        this.form.silentSet(controlName, defaults[controlName]);
+      }
+    });
+  }
+
+  ngOnInit() {
+    this.ecpService
+      .getInfo()
+      .subscribe(
+        ({
+          failure_domains,
+          plugins,
+          names,
+          directory,
+          devices
+        }: {
+          failure_domains: string[];
+          plugins: string[];
+          names: string[];
+          directory: string;
+          devices: string[];
+        }) &#x3D;&gt; {
+          this.failureDomains &#x3D; failure_domains;
+          this.plugins &#x3D; plugins;
+          this.names &#x3D; names;
+          this.devices &#x3D; devices;
+          this.form.silentSet(&#x27;directory&#x27;, directory);
+        }
+      );
+  }
+
+  private createJson() {
+    const pluginControls &#x3D; {
+      technique: [this.PLUGIN.ISA, this.PLUGIN.JERASURE],
+      packetSize: [this.PLUGIN.JERASURE],
+      l: [this.PLUGIN.LRC],
+      crushLocality: [this.PLUGIN.LRC],
+      c: [this.PLUGIN.SHEC]
+    };
+    const ecp &#x3D; new ErasureCodeProfile();
+    const plugin &#x3D; this.form.getValue(&#x27;plugin&#x27;);
+    Object.keys(this.form.controls)
+      .filter((name) &#x3D;&gt; {
+        const pluginControl &#x3D; pluginControls[name];
+        const control &#x3D; this.form.get(name);
+        const usable &#x3D; (pluginControl &amp;&amp; pluginControl.includes(plugin)) || !pluginControl;
+        return (
+          usable &amp;&amp;
+          (control.dirty || this.requiredControls.includes(name)) &amp;&amp;
+          this.form.getValue(name)
+        );
+      })
+      .forEach((name) &#x3D;&gt; {
+        this.extendJson(name, ecp);
+      });
+    return ecp;
+  }
+
+  private extendJson(name: string, ecp: ErasureCodeProfile) {
+    const differentApiAttributes &#x3D; {
+      crushFailureDomain: &#x27;crush-failure-domain&#x27;,
+      crushRoot: &#x27;crush-root&#x27;,
+      crushDeviceClass: &#x27;crush-device-class&#x27;,
+      packetSize: &#x27;packetsize&#x27;,
+      crushLocality: &#x27;crush-locality&#x27;
+    };
+    ecp[differentApiAttributes[name] || name] &#x3D; this.form.getValue(name);
+  }
+
+  onSubmit() {
+    if (this.form.invalid) {
+      this.form.setErrors({ cdSubmitButton: true });
+      return;
+    }
+    const profile &#x3D; this.createJson();
+    this.taskWrapper
+      .wrapTaskAroundCall({
+        task: new FinishedTask(&#x27;ecp/create&#x27;, { name: profile.name }),
+        call: this.ecpService.create(profile)
+      })
+      .subscribe(
+        undefined,
+        () &#x3D;&gt; {
+          this.form.setErrors({ cdSubmitButton: true });
+        },
+        () &#x3D;&gt; {
+          this.bsModalRef.hide();
+          this.submitAction.emit(profile);
+        }
+      );
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;modal-header&quot;&gt;
+  &lt;h4 i18n&#x3D;&quot;form title|Example: Create Pool@@formTitle&quot;
+      class&#x3D;&quot;modal-title pull-left&quot;&gt;{{ action | titlecase }} {{ resource | upperFirst }}&lt;/h4&gt;
+  &lt;button type&#x3D;&quot;button&quot;
+          class&#x3D;&quot;close pull-right&quot;
+          aria-label&#x3D;&quot;Close&quot;
+          (click)&#x3D;&quot;bsModalRef.hide()&quot;&gt;
+    &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;form class&#x3D;&quot;form-horizontal&quot;
+      #frm&#x3D;&quot;ngForm&quot;
+      [formGroup]&#x3D;&quot;form&quot;
+      novalidate&gt;
+  &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+    &lt;div class&#x3D;&quot;form-group&quot;
+         [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: form.showError(&#x27;name&#x27;, frm)}&quot;&gt;
+      &lt;label for&#x3D;&quot;name&quot;
+             class&#x3D;&quot;control-label col-sm-3&quot;&gt;
+        &lt;ng-container i18n&gt;Name&lt;/ng-container&gt;
+        &lt;span class&#x3D;&quot;required&quot;&gt;&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+        &lt;input type&#x3D;&quot;text&quot;
+               id&#x3D;&quot;name&quot;
+               name&#x3D;&quot;name&quot;
+               class&#x3D;&quot;form-control&quot;
+               placeholder&#x3D;&quot;Name...&quot;
+               formControlName&#x3D;&quot;name&quot;
+               autofocus&gt;
+        &lt;span class&#x3D;&quot;help-block&quot;
+              *ngIf&#x3D;&quot;form.showError(&#x27;name&#x27;, frm, &#x27;required&#x27;)&quot;
+              i18n&gt;This field is required!&lt;/span&gt;
+        &lt;span class&#x3D;&quot;help-block&quot;
+              *ngIf&#x3D;&quot;form.showError(&#x27;name&#x27;, frm, &#x27;pattern&#x27;)&quot;
+              i18n&gt;The name can only consist of alphanumeric characters, dashes and underscores.&lt;/span&gt;
+        &lt;span class&#x3D;&quot;help-block&quot;
+              *ngIf&#x3D;&quot;form.showError(&#x27;name&#x27;, frm, &#x27;uniqueName&#x27;)&quot;
+              i18n&gt;The chosen erasure code profile name is already in use.&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+      &lt;label for&#x3D;&quot;plugin&quot;
+             class&#x3D;&quot;control-label col-sm-3&quot;&gt;
+        &lt;ng-container i18n&gt;Plugin&lt;/ng-container&gt;
+        &lt;span class&#x3D;&quot;required&quot;&gt;&lt;/span&gt;
+        &lt;cd-helper [html]&#x3D;&quot;tooltips.plugins[plugin].description&quot;&gt;
+        &lt;/cd-helper&gt;
+      &lt;/label&gt;
+      &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+        &lt;select class&#x3D;&quot;form-control&quot;
+                id&#x3D;&quot;plugin&quot;
+                name&#x3D;&quot;plugin&quot;
+                formControlName&#x3D;&quot;plugin&quot;&gt;
+          &lt;option *ngIf&#x3D;&quot;!plugins&quot;
+                  ngValue&#x3D;&quot;&quot;
+                  i18n&gt;Loading...&lt;/option&gt;
+          &lt;option *ngFor&#x3D;&quot;let plugin of plugins&quot;
+                  [ngValue]&#x3D;&quot;plugin&quot;&gt;
+            {{ plugin }}
+          &lt;/option&gt;
+        &lt;/select&gt;
+        &lt;span class&#x3D;&quot;help-block&quot;
+              *ngIf&#x3D;&quot;form.showError(&#x27;name&#x27;, frm, &#x27;required&#x27;)&quot;
+              i18n&gt;This field is required!&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;form-group&quot;
+         [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: form.showError(&#x27;k&#x27;, frm)}&quot;&gt;
+      &lt;label for&#x3D;&quot;k&quot;
+             class&#x3D;&quot;control-label col-sm-3&quot;&gt;
+        &lt;ng-container i18n&gt;Data chunks (k)&lt;/ng-container&gt;
+        &lt;span class&#x3D;&quot;required&quot;
+              *ngIf&#x3D;&quot;requiredControls.includes(&#x27;k&#x27;)&quot;&gt;&lt;/span&gt;
+        &lt;cd-helper [html]&#x3D;&quot;tooltips.k&quot;&gt;
+        &lt;/cd-helper&gt;
+      &lt;/label&gt;
+      &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+        &lt;input type&#x3D;&quot;number&quot;
+               id&#x3D;&quot;k&quot;
+               name&#x3D;&quot;k&quot;
+               class&#x3D;&quot;form-control&quot;
+               ng-model&#x3D;&quot;$ctrl.erasureCodeProfile.k&quot;
+               placeholder&#x3D;&quot;Data chunks...&quot;
+               formControlName&#x3D;&quot;k&quot;&gt;
+        &lt;span class&#x3D;&quot;help-block&quot;
+              *ngIf&#x3D;&quot;form.showError(&#x27;k&#x27;, frm, &#x27;required&#x27;)&quot;
+              i18n&gt;This field is required!&lt;/span&gt;
+        &lt;span class&#x3D;&quot;help-block&quot;
+              *ngIf&#x3D;&quot;form.showError(&#x27;k&#x27;, frm, &#x27;min&#x27;)&quot;
+              i18n&gt;Must be equal to or greater than 2.&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;form-group&quot;
+         [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: form.showError(&#x27;m&#x27;, frm)}&quot;&gt;
+      &lt;label for&#x3D;&quot;m&quot;
+             class&#x3D;&quot;control-label col-sm-3&quot;&gt;
+        &lt;ng-container i18n&gt;Coding chunks (m)&lt;/ng-container&gt;
+        &lt;span class&#x3D;&quot;required&quot;
+              *ngIf&#x3D;&quot;requiredControls.includes(&#x27;m&#x27;)&quot;&gt;&lt;/span&gt;
+        &lt;cd-helper [html]&#x3D;&quot;tooltips.m&quot;&gt;
+        &lt;/cd-helper&gt;
+      &lt;/label&gt;
+      &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+        &lt;input type&#x3D;&quot;number&quot;
+               id&#x3D;&quot;m&quot;
+               name&#x3D;&quot;m&quot;
+               class&#x3D;&quot;form-control&quot;
+               placeholder&#x3D;&quot;Coding chunks...&quot;
+               formControlName&#x3D;&quot;m&quot;&gt;
+        &lt;span class&#x3D;&quot;help-block&quot;
+              *ngIf&#x3D;&quot;form.showError(&#x27;m&#x27;, frm, &#x27;required&#x27;)&quot;
+              i18n&gt;This field is required!&lt;/span&gt;
+        &lt;span class&#x3D;&quot;help-block&quot;
+              *ngIf&#x3D;&quot;form.showError(&#x27;m&#x27;, frm, &#x27;min&#x27;)&quot;
+              i18n&gt;Must be equal to or greater than 1.&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;form-group&quot;
+         *ngIf&#x3D;&quot;plugin &#x3D;&#x3D;&#x3D; &#x27;shec&#x27;&quot;
+         [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: form.showError(&#x27;c&#x27;, frm)}&quot;&gt;
+      &lt;label for&#x3D;&quot;c&quot;
+             class&#x3D;&quot;control-label col-sm-3&quot;&gt;
+        &lt;ng-container i18n&gt;Durability estimator (c)&lt;/ng-container&gt;
+        &lt;cd-helper [html]&#x3D;&quot;tooltips.plugins.shec.c&quot;&gt;
+        &lt;/cd-helper&gt;
+      &lt;/label&gt;
+      &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+        &lt;input type&#x3D;&quot;number&quot;
+               id&#x3D;&quot;c&quot;
+               name&#x3D;&quot;c&quot;
+               class&#x3D;&quot;form-control&quot;
+               placeholder&#x3D;&quot;Coding chunks...&quot;
+               formControlName&#x3D;&quot;c&quot;&gt;
+        &lt;span class&#x3D;&quot;help-block&quot;
+              *ngIf&#x3D;&quot;form.showError(&#x27;c&#x27;, frm, &#x27;min&#x27;)&quot;
+              i18n&gt;Must be equal to or greater than 1.&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;form-group&quot;
+         *ngIf&#x3D;&quot;plugin &#x3D;&#x3D;&#x3D; PLUGIN.LRC&quot;
+         [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: form.showError(&#x27;l&#x27;, frm)}&quot;&gt;
+      &lt;label for&#x3D;&quot;l&quot;
+             class&#x3D;&quot;control-label col-sm-3&quot;&gt;
+        &lt;ng-container i18n&gt;Locality (l)&lt;/ng-container&gt;
+        &lt;span class&#x3D;&quot;required&quot;&gt;&lt;/span&gt;
+        &lt;cd-helper [html]&#x3D;&quot;tooltips.plugins.lrc.l&quot;&gt;
+        &lt;/cd-helper&gt;
+      &lt;/label&gt;
+      &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+        &lt;input type&#x3D;&quot;number&quot;
+               id&#x3D;&quot;l&quot;
+               name&#x3D;&quot;l&quot;
+               class&#x3D;&quot;form-control&quot;
+               placeholder&#x3D;&quot;Coding chunks...&quot;
+               formControlName&#x3D;&quot;l&quot;&gt;
+        &lt;span class&#x3D;&quot;help-block&quot;
+              *ngIf&#x3D;&quot;form.showError(&#x27;l&#x27;, frm, &#x27;required&#x27;)&quot;
+              i18n&gt;This field is required!&lt;/span&gt;
+        &lt;span class&#x3D;&quot;help-block&quot;
+              *ngIf&#x3D;&quot;form.showError(&#x27;l&#x27;, frm, &#x27;min&#x27;)&quot;
+              i18n&gt;Must be equal to or greater than 1.&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+      &lt;label for&#x3D;&quot;crushFailureDomain&quot;
+             class&#x3D;&quot;control-label col-sm-3&quot;&gt;
+        &lt;ng-container i18n&gt;Crush failure domain&lt;/ng-container&gt;
+        &lt;cd-helper [html]&#x3D;&quot;tooltips.crushFailureDomain&quot;&gt;
+        &lt;/cd-helper&gt;
+      &lt;/label&gt;
+      &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+        &lt;select class&#x3D;&quot;form-control&quot;
+                id&#x3D;&quot;crushFailureDomain&quot;
+                name&#x3D;&quot;crushFailureDomain&quot;
+                formControlName&#x3D;&quot;crushFailureDomain&quot;&gt;
+          &lt;option *ngIf&#x3D;&quot;!failureDomains&quot;
+                  ngValue&#x3D;&quot;&quot;
+                  i18n&gt;Loading...&lt;/option&gt;
+          &lt;option *ngFor&#x3D;&quot;let domain of failureDomains&quot;
+                  [ngValue]&#x3D;&quot;domain&quot;&gt;
+            {{ domain }}
+          &lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;form-group&quot;
+         *ngIf&#x3D;&quot;plugin &#x3D;&#x3D;&#x3D; PLUGIN.LRC&quot;&gt;
+      &lt;label for&#x3D;&quot;crushLocality&quot;
+             class&#x3D;&quot;control-label col-sm-3&quot;&gt;
+        &lt;ng-container i18n&gt;Crush Locality&lt;/ng-container&gt;
+        &lt;cd-helper [html]&#x3D;&quot;tooltips.plugins.lrc.crushLocality&quot;&gt;
+        &lt;/cd-helper&gt;
+      &lt;/label&gt;
+      &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+        &lt;select class&#x3D;&quot;form-control&quot;
+                id&#x3D;&quot;crushLocality&quot;
+                name&#x3D;&quot;crushLocality&quot;
+                formControlName&#x3D;&quot;crushLocality&quot;&gt;
+          &lt;option *ngIf&#x3D;&quot;!failureDomains&quot;
+                  ngValue&#x3D;&quot;&quot;
+                  i18n&gt;Loading...&lt;/option&gt;
+          &lt;option *ngIf&#x3D;&quot;failureDomains &amp;&amp; failureDomains.length &gt; 0&quot;
+                  ngValue&#x3D;&quot;&quot;
+                  i18n&gt;None&lt;/option&gt;
+          &lt;option *ngFor&#x3D;&quot;let domain of failureDomains&quot;
+                  [ngValue]&#x3D;&quot;domain&quot;&gt;
+            {{ domain }}
+          &lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;form-group&quot;
+         *ngIf&#x3D;&quot;[PLUGIN.JERASURE, PLUGIN.ISA].includes(plugin)&quot;&gt;
+      &lt;label for&#x3D;&quot;technique&quot;
+             class&#x3D;&quot;control-label col-sm-3&quot;&gt;
+        &lt;ng-container i18n&gt;Technique&lt;/ng-container&gt;
+        &lt;cd-helper [html]&#x3D;&quot;tooltips.plugins[plugin].technique&quot;&gt;
+        &lt;/cd-helper&gt;
+      &lt;/label&gt;
+      &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+        &lt;select class&#x3D;&quot;form-control&quot;
+                id&#x3D;&quot;technique&quot;
+                name&#x3D;&quot;technique&quot;
+                formControlName&#x3D;&quot;technique&quot;&gt;
+          &lt;option *ngFor&#x3D;&quot;let technique of techniques&quot;
+                  [ngValue]&#x3D;&quot;technique&quot;&gt;
+            {{ technique }}
+          &lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;form-group&quot;
+         *ngIf&#x3D;&quot;plugin &#x3D;&#x3D;&#x3D; PLUGIN.JERASURE&quot;
+         [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: form.showError(&#x27;packetSize&#x27;, frm)}&quot;&gt;
+      &lt;label for&#x3D;&quot;packetSize&quot;
+             class&#x3D;&quot;control-label col-sm-3&quot;&gt;
+        &lt;ng-container i18n&gt;Packetsize&lt;/ng-container&gt;
+        &lt;cd-helper [html]&#x3D;&quot;tooltips.plugins.jerasure.packetSize&quot;&gt;
+        &lt;/cd-helper&gt;
+      &lt;/label&gt;
+      &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+        &lt;input type&#x3D;&quot;number&quot;
+               id&#x3D;&quot;packetSize&quot;
+               name&#x3D;&quot;packetSize&quot;
+               class&#x3D;&quot;form-control&quot;
+               placeholder&#x3D;&quot;Packetsize...&quot;
+               formControlName&#x3D;&quot;packetSize&quot;&gt;
+        &lt;span class&#x3D;&quot;help-block&quot;
+              *ngIf&#x3D;&quot;form.showError(&#x27;packetSize&#x27;, frm, &#x27;min&#x27;)&quot;
+              i18n&gt;Must be equal to or greater than 1.&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;form-group&quot;
+         [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: form.showError(&#x27;crushRoot&#x27;, frm)}&quot;&gt;
+      &lt;label for&#x3D;&quot;crushRoot&quot;
+             class&#x3D;&quot;control-label col-sm-3&quot;&gt;
+        &lt;ng-container i18n&gt;Crush root&lt;/ng-container&gt;
+        &lt;cd-helper [html]&#x3D;&quot;tooltips.crushRoot&quot;&gt;
+        &lt;/cd-helper&gt;
+      &lt;/label&gt;
+      &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+        &lt;input type&#x3D;&quot;text&quot;
+               id&#x3D;&quot;crushRoot&quot;
+               name&#x3D;&quot;crushRoot&quot;
+               class&#x3D;&quot;form-control&quot;
+               placeholder&#x3D;&quot;root...&quot;
+               formControlName&#x3D;&quot;crushRoot&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+      &lt;label for&#x3D;&quot;crushDeviceClass&quot;
+             class&#x3D;&quot;control-label col-sm-3&quot;&gt;
+        &lt;ng-container i18n&gt;Crush device class&lt;/ng-container&gt;
+        &lt;cd-helper [html]&#x3D;&quot;tooltips.crushDeviceClass&quot;&gt;
+        &lt;/cd-helper&gt;
+      &lt;/label&gt;
+      &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+        &lt;select class&#x3D;&quot;form-control&quot;
+                id&#x3D;&quot;crushDeviceClass&quot;
+                name&#x3D;&quot;crushDeviceClass&quot;
+                formControlName&#x3D;&quot;crushDeviceClass&quot;&gt;
+          &lt;option ngValue&#x3D;&quot;&quot;
+                  i18n&gt;any&lt;/option&gt;
+          &lt;option *ngFor&#x3D;&quot;let deviceClass of devices&quot;
+                  [ngValue]&#x3D;&quot;deviceClass&quot;&gt;
+            {{ deviceClass }}
+          &lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+      &lt;label for&#x3D;&quot;directory&quot;
+             class&#x3D;&quot;control-label col-sm-3&quot;&gt;
+        &lt;ng-container i18n&gt;Directory&lt;/ng-container&gt;
+        &lt;cd-helper [html]&#x3D;&quot;tooltips.directory&quot;&gt;
+        &lt;/cd-helper&gt;
+      &lt;/label&gt;
+      &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+        &lt;input type&#x3D;&quot;text&quot;
+               id&#x3D;&quot;directory&quot;
+               name&#x3D;&quot;directory&quot;
+               class&#x3D;&quot;form-control&quot;
+               placeholder&#x3D;&quot;Path...&quot;
+               formControlName&#x3D;&quot;directory&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+    &lt;cd-submit-button
+      (submitAction)&#x3D;&quot;onSubmit()&quot;
+      i18n&#x3D;&quot;form action button|Example: Create Pool@@formActionButton&quot;
+      [form]&#x3D;&quot;frm&quot;&gt;{{ action | titlecase }} {{ resource | upperFirst }}&lt;/cd-submit-button&gt;
+    &lt;cd-back-button [back]&#x3D;&quot;bsModalRef.hide&quot;&gt;&lt;/cd-back-button&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./erasure-code-profile-form.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="modal-header">  <h4 i18n="form title|Example: Create Pool@@formTitle"      class="modal-title pull-left">{{ action | titlecase }} {{ resource | upperFirst }}</h4>  <button type="button"          class="close pull-right"          aria-label="Close"          (click)="bsModalRef.hide()">    <span aria-hidden="true">&times;</span>  </button></div><form class="form-horizontal"      #frm="ngForm"      [formGroup]="form"      novalidate>  <div class="modal-body">    <div class="form-group"         [ngClass]="{\'has-error\': form.showError(\'name\', frm)}">      <label for="name"             class="control-label col-sm-3">        <ng-container i18n>Name</ng-container>        <span class="required"></span>      </label>      <div class="col-sm-9">        <input type="text"               id="name"               name="name"               class="form-control"               placeholder="Name..."               formControlName="name"               autofocus>        <span class="help-block"              *ngIf="form.showError(\'name\', frm, \'required\')"              i18n>This field is required!</span>        <span class="help-block"              *ngIf="form.showError(\'name\', frm, \'pattern\')"              i18n>The name can only consist of alphanumeric characters, dashes and underscores.</span>        <span class="help-block"              *ngIf="form.showError(\'name\', frm, \'uniqueName\')"              i18n>The chosen erasure code profile name is already in use.</span>      </div>    </div>    <div class="form-group">      <label for="plugin"             class="control-label col-sm-3">        <ng-container i18n>Plugin</ng-container>        <span class="required"></span>        <cd-helper [html]="tooltips.plugins[plugin].description">        </cd-helper>      </label>      <div class="col-sm-9">        <select class="form-control"                id="plugin"                name="plugin"                formControlName="plugin">          <option *ngIf="!plugins"                  ngValue=""                  i18n>Loading...</option>          <option *ngFor="let plugin of plugins"                  [ngValue]="plugin">            {{ plugin }}          </option>        </select>        <span class="help-block"              *ngIf="form.showError(\'name\', frm, \'required\')"              i18n>This field is required!</span>      </div>    </div>    <div class="form-group"         [ngClass]="{\'has-error\': form.showError(\'k\', frm)}">      <label for="k"             class="control-label col-sm-3">        <ng-container i18n>Data chunks (k)</ng-container>        <span class="required"              *ngIf="requiredControls.includes(\'k\')"></span>        <cd-helper [html]="tooltips.k">        </cd-helper>      </label>      <div class="col-sm-9">        <input type="number"               id="k"               name="k"               class="form-control"               ng-model="$ctrl.erasureCodeProfile.k"               placeholder="Data chunks..."               formControlName="k">        <span class="help-block"              *ngIf="form.showError(\'k\', frm, \'required\')"              i18n>This field is required!</span>        <span class="help-block"              *ngIf="form.showError(\'k\', frm, \'min\')"              i18n>Must be equal to or greater than 2.</span>      </div>    </div>    <div class="form-group"         [ngClass]="{\'has-error\': form.showError(\'m\', frm)}">      <label for="m"             class="control-label col-sm-3">        <ng-container i18n>Coding chunks (m)</ng-container>        <span class="required"              *ngIf="requiredControls.includes(\'m\')"></span>        <cd-helper [html]="tooltips.m">        </cd-helper>      </label>      <div class="col-sm-9">        <input type="number"               id="m"               name="m"               class="form-control"               placeholder="Coding chunks..."               formControlName="m">        <span class="help-block"              *ngIf="form.showError(\'m\', frm, \'required\')"              i18n>This field is required!</span>        <span class="help-block"              *ngIf="form.showError(\'m\', frm, \'min\')"              i18n>Must be equal to or greater than 1.</span>      </div>    </div>    <div class="form-group"         *ngIf="plugin === \'shec\'"         [ngClass]="{\'has-error\': form.showError(\'c\', frm)}">      <label for="c"             class="control-label col-sm-3">        <ng-container i18n>Durability estimator (c)</ng-container>        <cd-helper [html]="tooltips.plugins.shec.c">        </cd-helper>      </label>      <div class="col-sm-9">        <input type="number"               id="c"               name="c"               class="form-control"               placeholder="Coding chunks..."               formControlName="c">        <span class="help-block"              *ngIf="form.showError(\'c\', frm, \'min\')"              i18n>Must be equal to or greater than 1.</span>      </div>    </div>    <div class="form-group"         *ngIf="plugin === PLUGIN.LRC"         [ngClass]="{\'has-error\': form.showError(\'l\', frm)}">      <label for="l"             class="control-label col-sm-3">        <ng-container i18n>Locality (l)</ng-container>        <span class="required"></span>        <cd-helper [html]="tooltips.plugins.lrc.l">        </cd-helper>      </label>      <div class="col-sm-9">        <input type="number"               id="l"               name="l"               class="form-control"               placeholder="Coding chunks..."               formControlName="l">        <span class="help-block"              *ngIf="form.showError(\'l\', frm, \'required\')"              i18n>This field is required!</span>        <span class="help-block"              *ngIf="form.showError(\'l\', frm, \'min\')"              i18n>Must be equal to or greater than 1.</span>      </div>    </div>    <div class="form-group">      <label for="crushFailureDomain"             class="control-label col-sm-3">        <ng-container i18n>Crush failure domain</ng-container>        <cd-helper [html]="tooltips.crushFailureDomain">        </cd-helper>      </label>      <div class="col-sm-9">        <select class="form-control"                id="crushFailureDomain"                name="crushFailureDomain"                formControlName="crushFailureDomain">          <option *ngIf="!failureDomains"                  ngValue=""                  i18n>Loading...</option>          <option *ngFor="let domain of failureDomains"                  [ngValue]="domain">            {{ domain }}          </option>        </select>      </div>    </div>    <div class="form-group"         *ngIf="plugin === PLUGIN.LRC">      <label for="crushLocality"             class="control-label col-sm-3">        <ng-container i18n>Crush Locality</ng-container>        <cd-helper [html]="tooltips.plugins.lrc.crushLocality">        </cd-helper>      </label>      <div class="col-sm-9">        <select class="form-control"                id="crushLocality"                name="crushLocality"                formControlName="crushLocality">          <option *ngIf="!failureDomains"                  ngValue=""                  i18n>Loading...</option>          <option *ngIf="failureDomains && failureDomains.length > 0"                  ngValue=""                  i18n>None</option>          <option *ngFor="let domain of failureDomains"                  [ngValue]="domain">            {{ domain }}          </option>        </select>      </div>    </div>    <div class="form-group"         *ngIf="[PLUGIN.JERASURE, PLUGIN.ISA].includes(plugin)">      <label for="technique"             class="control-label col-sm-3">        <ng-container i18n>Technique</ng-container>        <cd-helper [html]="tooltips.plugins[plugin].technique">        </cd-helper>      </label>      <div class="col-sm-9">        <select class="form-control"                id="technique"                name="technique"                formControlName="technique">          <option *ngFor="let technique of techniques"                  [ngValue]="technique">            {{ technique }}          </option>        </select>      </div>    </div>    <div class="form-group"         *ngIf="plugin === PLUGIN.JERASURE"         [ngClass]="{\'has-error\': form.showError(\'packetSize\', frm)}">      <label for="packetSize"             class="control-label col-sm-3">        <ng-container i18n>Packetsize</ng-container>        <cd-helper [html]="tooltips.plugins.jerasure.packetSize">        </cd-helper>      </label>      <div class="col-sm-9">        <input type="number"               id="packetSize"               name="packetSize"               class="form-control"               placeholder="Packetsize..."               formControlName="packetSize">        <span class="help-block"              *ngIf="form.showError(\'packetSize\', frm, \'min\')"              i18n>Must be equal to or greater than 1.</span>      </div>    </div>    <div class="form-group"         [ngClass]="{\'has-error\': form.showError(\'crushRoot\', frm)}">      <label for="crushRoot"             class="control-label col-sm-3">        <ng-container i18n>Crush root</ng-container>        <cd-helper [html]="tooltips.crushRoot">        </cd-helper>      </label>      <div class="col-sm-9">        <input type="text"               id="crushRoot"               name="crushRoot"               class="form-control"               placeholder="root..."               formControlName="crushRoot">      </div>    </div>    <div class="form-group">      <label for="crushDeviceClass"             class="control-label col-sm-3">        <ng-container i18n>Crush device class</ng-container>        <cd-helper [html]="tooltips.crushDeviceClass">        </cd-helper>      </label>      <div class="col-sm-9">        <select class="form-control"                id="crushDeviceClass"                name="crushDeviceClass"                formControlName="crushDeviceClass">          <option ngValue=""                  i18n>any</option>          <option *ngFor="let deviceClass of devices"                  [ngValue]="deviceClass">            {{ deviceClass }}          </option>        </select>      </div>    </div>    <div class="form-group">      <label for="directory"             class="control-label col-sm-3">        <ng-container i18n>Directory</ng-container>        <cd-helper [html]="tooltips.directory">        </cd-helper>      </label>      <div class="col-sm-9">        <input type="text"               id="directory"               name="directory"               class="form-control"               placeholder="Path..."               formControlName="directory">      </div>    </div>  </div>  <div class="modal-footer">    <cd-submit-button      (submitAction)="onSubmit()"      i18n="form action button|Example: Create Pool@@formActionButton"      [form]="frm">{{ action | titlecase }} {{ resource | upperFirst }}</cd-submit-button>    <cd-back-button [back]="bsModalRef.hide"></cd-back-button>  </div></form></div>'
+    var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'cd-about'},{'name': 'AdministrationComponent', 'selector': 'cd-administration'},{'name': 'AppComponent', 'selector': 'cd-root'},{'name': 'BackButtonComponent', 'selector': 'cd-back-button'},{'name': 'BreadcrumbsComponent', 'selector': 'cd-breadcrumbs'},{'name': 'CephfsChartComponent', 'selector': 'cd-cephfs-chart'},{'name': 'CephfsClientsComponent', 'selector': 'cd-cephfs-clients'},{'name': 'CephfsDetailComponent', 'selector': 'cd-cephfs-detail'},{'name': 'CephfsListComponent', 'selector': 'cd-cephfs-list'},{'name': 'ConfigurationComponent', 'selector': 'cd-configuration'},{'name': 'ConfigurationDetailsComponent', 'selector': 'cd-configuration-details'},{'name': 'ConfigurationFormComponent', 'selector': 'cd-configuration-form'},{'name': 'ConfirmationModalComponent', 'selector': 'cd-confirmation-modal'},{'name': 'CriticalConfirmationModalComponent', 'selector': 'cd-deletion-modal'},{'name': 'CrushmapComponent', 'selector': 'cd-crushmap'},{'name': 'DaemonListComponent', 'selector': 'cd-mirroring-daemons'},{'name': 'DashboardComponent', 'selector': 'cd-dashboard'},{'name': 'DashboardHelpComponent', 'selector': 'cd-dashboard-help'},{'name': 'ErasureCodeProfileFormComponent', 'selector': 'cd-erasure-code-profile-form'},{'name': 'ErrorPanelComponent', 'selector': 'cd-error-panel'},{'name': 'ForbiddenComponent', 'selector': 'cd-forbidden'},{'name': 'GrafanaComponent', 'selector': 'cd-grafana'},{'name': 'HealthComponent', 'selector': 'cd-health'},{'name': 'HealthPieComponent', 'selector': 'cd-health-pie'},{'name': 'HelperComponent', 'selector': 'cd-helper'},{'name': 'HostDetailsComponent', 'selector': 'cd-host-details'},{'name': 'HostsComponent', 'selector': 'cd-hosts'},{'name': 'IdentityComponent', 'selector': 'cd-identity'},{'name': 'ImageListComponent', 'selector': 'cd-mirroring-images'},{'name': 'InfoCardComponent', 'selector': 'cd-info-card'},{'name': 'InfoGroupComponent', 'selector': 'cd-info-group'},{'name': 'InfoPanelComponent', 'selector': 'cd-info-panel'},{'name': 'IscsiComponent', 'selector': 'cd-iscsi'},{'name': 'IscsiTabsComponent', 'selector': 'cd-iscsi-tabs'},{'name': 'IscsiTargetDetailsComponent', 'selector': 'cd-iscsi-target-details'},{'name': 'IscsiTargetDiscoveryModalComponent', 'selector': 'cd-iscsi-target-discovery-modal'},{'name': 'IscsiTargetFormComponent', 'selector': 'cd-iscsi-target-form'},{'name': 'IscsiTargetImageSettingsModalComponent', 'selector': 'cd-iscsi-target-image-settings-modal'},{'name': 'IscsiTargetIqnSettingsModalComponent', 'selector': 'cd-iscsi-target-iqn-settings-modal'},{'name': 'IscsiTargetListComponent', 'selector': 'cd-iscsi-target-list'},{'name': 'LanguageSelectorComponent', 'selector': 'cd-language-selector'},{'name': 'LoadingPanelComponent', 'selector': 'cd-loading-panel'},{'name': 'LoginComponent', 'selector': 'cd-login'},{'name': 'LogsComponent', 'selector': 'cd-logs'},{'name': 'MgrModuleDetailsComponent', 'selector': 'cd-mgr-module-details'},{'name': 'MgrModuleFormComponent', 'selector': 'cd-mgr-module-form'},{'name': 'MgrModuleListComponent', 'selector': 'cd-mgr-module-list'},{'name': 'ModalComponent', 'selector': 'cd-modal'},{'name': 'MonitorComponent', 'selector': 'cd-monitor'},{'name': 'NavigationComponent', 'selector': 'cd-navigation'},{'name': 'Nfs501Component', 'selector': 'cd-nfs-501'},{'name': 'NfsDetailsComponent', 'selector': 'cd-nfs-details'},{'name': 'NfsFormClientComponent', 'selector': 'cd-nfs-form-client'},{'name': 'NfsFormComponent', 'selector': 'cd-nfs-form'},{'name': 'NfsListComponent', 'selector': 'cd-nfs-list'},{'name': 'NotFoundComponent', 'selector': 'cd-not-found'},{'name': 'NotificationsComponent', 'selector': 'cd-notifications'},{'name': 'OsdDetailsComponent', 'selector': 'cd-osd-details'},{'name': 'OsdFlagsModalComponent', 'selector': 'cd-osd-flags-modal'},{'name': 'OsdListComponent', 'selector': 'cd-osd-list'},{'name': 'OsdPerformanceHistogramComponent', 'selector': 'cd-osd-performance-histogram'},{'name': 'OsdRecvSpeedModalComponent', 'selector': 'cd-osd-recv-speed-modal'},{'name': 'OsdReweightModalComponent', 'selector': 'cd-osd-reweight-modal'},{'name': 'OsdScrubModalComponent', 'selector': 'cd-osd-scrub-modal'},{'name': 'OverviewComponent', 'selector': 'cd-mirroring'},{'name': 'PerformanceCounterComponent', 'selector': 'cd-performance-counter'},{'name': 'PoolDetailsComponent', 'selector': 'cd-pool-details'},{'name': 'PoolEditModeModalComponent', 'selector': 'cd-pool-edit-mode-modal'},{'name': 'PoolEditPeerModalComponent', 'selector': 'cd-pool-edit-peer-modal'},{'name': 'PoolFormComponent', 'selector': 'cd-pool-form'},{'name': 'PoolListComponent', 'selector': 'cd-pool-list'},{'name': 'PoolListComponent', 'selector': 'cd-mirroring-pools'},{'name': 'PrometheusListComponent', 'selector': 'cd-prometheus-list'},{'name': 'RbdConfigurationFormComponent', 'selector': 'cd-rbd-configuration-form'},{'name': 'RbdConfigurationListComponent', 'selector': 'cd-rbd-configuration-table'},{'name': 'RbdDetailsComponent', 'selector': 'cd-rbd-details'},{'name': 'RbdFormComponent', 'selector': 'cd-rbd-form'},{'name': 'RbdImagesComponent', 'selector': 'cd-rbd-images'},{'name': 'RbdListComponent', 'selector': 'cd-rbd-list'},{'name': 'RbdSnapshotFormComponent', 'selector': 'cd-rbd-snapshot-form'},{'name': 'RbdSnapshotListComponent', 'selector': 'cd-rbd-snapshot-list'},{'name': 'RbdTrashListComponent', 'selector': 'cd-rbd-trash-list'},{'name': 'RbdTrashMoveModalComponent', 'selector': 'cd-rbd-trash-move-modal'},{'name': 'RbdTrashPurgeModalComponent', 'selector': 'cd-rbd-trash-purge-modal'},{'name': 'RbdTrashRestoreModalComponent', 'selector': 'cd-rbd-trash-restore-modal'},{'name': 'RefreshSelectorComponent', 'selector': 'cd-refresh-selector'},{'name': 'Rgw501Component', 'selector': 'cd-rgw-501'},{'name': 'RgwBucketDetailsComponent', 'selector': 'cd-rgw-bucket-details'},{'name': 'RgwBucketFormComponent', 'selector': 'cd-rgw-bucket-form'},{'name': 'RgwBucketListComponent', 'selector': 'cd-rgw-bucket-list'},{'name': 'RgwDaemonDetailsComponent', 'selector': 'cd-rgw-daemon-details'},{'name': 'RgwDaemonListComponent', 'selector': 'cd-rgw-daemon-list'},{'name': 'RgwUserCapabilityModalComponent', 'selector': 'cd-rgw-user-capability-modal'},{'name': 'RgwUserDetailsComponent', 'selector': 'cd-rgw-user-details'},{'name': 'RgwUserFormComponent', 'selector': 'cd-rgw-user-form'},{'name': 'RgwUserListComponent', 'selector': 'cd-rgw-user-list'},{'name': 'RgwUserS3KeyModalComponent', 'selector': 'cd-rgw-user-s3-key-modal'},{'name': 'RgwUserSubuserModalComponent', 'selector': 'cd-rgw-user-subuser-modal'},{'name': 'RgwUserSwiftKeyModalComponent', 'selector': 'cd-rgw-user-swift-key-modal'},{'name': 'RoleDetailsComponent', 'selector': 'cd-role-details'},{'name': 'RoleFormComponent', 'selector': 'cd-role-form'},{'name': 'RoleListComponent', 'selector': 'cd-role-list'},{'name': 'SelectBadgesComponent', 'selector': 'cd-select-badges'},{'name': 'SelectComponent', 'selector': 'cd-select'},{'name': 'SparklineComponent', 'selector': 'cd-sparkline'},{'name': 'SsoNotFoundComponent', 'selector': 'cd-sso-not-found'},{'name': 'SubmitButtonComponent', 'selector': 'cd-submit-button'},{'name': 'TableActionsComponent', 'selector': 'cd-table-actions'},{'name': 'TableComponent', 'selector': 'cd-table'},{'name': 'TableKeyValueComponent', 'selector': 'cd-table-key-value'},{'name': 'TablePerformanceCounterComponent', 'selector': 'cd-table-performance-counter'},{'name': 'TaskManagerComponent', 'selector': 'cd-task-manager'},{'name': 'UsageBarComponent', 'selector': 'cd-usage-bar'},{'name': 'UserFormComponent', 'selector': 'cd-user-form'},{'name': 'UserListComponent', 'selector': 'cd-user-list'},{'name': 'UserTabsComponent', 'selector': 'cd-user-tabs'},{'name': 'ViewCacheComponent', 'selector': 'cd-view-cache'},{'name': 'WarningPanelComponent', 'selector': 'cd-warning-panel'}];
+    var DIRECTIVES = [{'name': 'AutofocusDirective', 'selector': '[autofocus]'},{'name': 'Copy2ClipboardButtonDirective', 'selector': '[cdCopy2ClipboardButton]'},{'name': 'DimlessBinaryDirective', 'selector': '[cdDimlessBinary]'},{'name': 'DimlessBinaryPerSecondDirective', 'selector': '[cdDimlessBinaryPerSecond]'},{'name': 'IopsDirective', 'selector': '[cdIops]'},{'name': 'MillisecondsDirective', 'selector': '[cdMilliseconds]'},{'name': 'PasswordButtonDirective', 'selector': '[cdPasswordButton]'}];
+    var ACTUAL_COMPONENT = {'name': 'ErasureCodeProfileFormComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ErasureCodeProfileFormComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

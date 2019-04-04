@@ -1,0 +1,1139 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ceph-dashboard documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ceph-dashboard documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>RgwBucketFormComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/ceph/rgw/rgw-bucket-form/rgw-bucket-form.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>cd-rgw-bucket-form</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./rgw-bucket-form.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./rgw-bucket-form.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#action">action</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#actionLabels">actionLabels</a>
+                            </li>
+                            <li>
+                                <a href="#bucketForm">bucketForm</a>
+                            </li>
+                            <li>
+                                <a href="#editing">editing</a>
+                            </li>
+                            <li>
+                                <a href="#error">error</a>
+                            </li>
+                            <li>
+                                <a href="#loading">loading</a>
+                            </li>
+                            <li>
+                                <a href="#owners">owners</a>
+                            </li>
+                            <li>
+                                <a href="#resource">resource</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#bucketNameValidator">bucketNameValidator</a>
+                            </li>
+                            <li>
+                                <a href="#createForm">createForm</a>
+                            </li>
+                            <li>
+                                <a href="#goToListView">goToListView</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#submit">submit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, formBuilder: <a href="../injectables/CdFormBuilder.html">CdFormBuilder</a>, rgwBucketService: <a href="../injectables/RgwBucketService.html">RgwBucketService</a>, rgwUserService: <a href="../injectables/RgwUserService.html">RgwUserService</a>, notificationService: <a href="../injectables/NotificationService.html">NotificationService</a>, i18n: I18n, actionLabels: <a href="../injectables/ActionLabelsI18n.html">ActionLabelsI18n</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/ceph/rgw/rgw-bucket-form/rgw-bucket-form.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>formBuilder</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CdFormBuilder.html" target="_self" >CdFormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>rgwBucketService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RgwBucketService.html" target="_self" >RgwBucketService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>rgwUserService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RgwUserService.html" target="_self" >RgwUserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>notificationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NotificationService.html" target="_self" >NotificationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>i18n</td>
+                                                  
+                                                        <td>
+                                                                    <code>I18n</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>actionLabels</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ActionLabelsI18n.html" target="_self" >ActionLabelsI18n</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="bucketNameValidator"></a>
+                    <span class="name">
+                        <b>
+                            bucketNameValidator
+                        </b>
+                        <a href="#bucketNameValidator"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>bucketNameValidator()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="133"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-bucket-form/rgw-bucket-form.component.ts:133</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://angular.io/api/forms/AsyncValidatorFn" target="_blank" >AsyncValidatorFn</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createForm"></a>
+                    <span class="name">
+                        <b>
+                            createForm
+                        </b>
+                        <a href="#createForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="46"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-bucket-form/rgw-bucket-form.component.ts:46</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="goToListView"></a>
+                    <span class="name">
+                        <b>
+                            goToListView
+                        </b>
+                        <a href="#goToListView"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>goToListView()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="87"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-bucket-form/rgw-bucket-form.component.ts:87</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="54"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-bucket-form/rgw-bucket-form.component.ts:54</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="submit"></a>
+                    <span class="name">
+                        <b>
+                            submit
+                        </b>
+                        <a href="#submit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>submit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="91"
+                            class="link-to-prism">src/app/ceph/rgw/rgw-bucket-form/rgw-bucket-form.component.ts:91</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="action"></a>
+                        <span class="name">
+                            <b>
+                            action</b>
+                            <a href="#action"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/ceph/rgw/rgw-bucket-form/rgw-bucket-form.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="actionLabels"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            actionLabels</b>
+                            <a href="#actionLabels"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/ActionLabelsI18n.html" target="_self" >ActionLabelsI18n</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/ceph/rgw/rgw-bucket-form/rgw-bucket-form.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bucketForm"></a>
+                        <span class="name">
+                            <b>
+                            bucketForm</b>
+                            <a href="#bucketForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/CdFormGroup.html" target="_self" >CdFormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/ceph/rgw/rgw-bucket-form/rgw-bucket-form.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="editing"></a>
+                        <span class="name">
+                            <b>
+                            editing</b>
+                            <a href="#editing"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/ceph/rgw/rgw-bucket-form/rgw-bucket-form.component.ts:23</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="error"></a>
+                        <span class="name">
+                            <b>
+                            error</b>
+                            <a href="#error"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/ceph/rgw/rgw-bucket-form/rgw-bucket-form.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loading"></a>
+                        <span class="name">
+                            <b>
+                            loading</b>
+                            <a href="#loading"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/ceph/rgw/rgw-bucket-form/rgw-bucket-form.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="owners"></a>
+                        <span class="name">
+                            <b>
+                            owners</b>
+                            <a href="#owners"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>null</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>null</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/ceph/rgw/rgw-bucket-form/rgw-bucket-form.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="resource"></a>
+                        <span class="name">
+                            <b>
+                            resource</b>
+                            <a href="#resource"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/ceph/rgw/rgw-bucket-form/rgw-bucket-form.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { AbstractControl, AsyncValidatorFn, ValidationErrors, Validators } from &#x27;@angular/forms&#x27;;
+import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
+
+import { I18n } from &#x27;@ngx-translate/i18n-polyfill&#x27;;
+import * as _ from &#x27;lodash&#x27;;
+
+import { RgwBucketService } from &#x27;../../../shared/api/rgw-bucket.service&#x27;;
+import { RgwUserService } from &#x27;../../../shared/api/rgw-user.service&#x27;;
+import { ActionLabelsI18n, URLVerbs } from &#x27;../../../shared/constants/app.constants&#x27;;
+import { NotificationType } from &#x27;../../../shared/enum/notification-type.enum&#x27;;
+import { CdFormBuilder } from &#x27;../../../shared/forms/cd-form-builder&#x27;;
+import { CdFormGroup } from &#x27;../../../shared/forms/cd-form-group&#x27;;
+import { NotificationService } from &#x27;../../../shared/services/notification.service&#x27;;
+
+@Component({
+  selector: &#x27;cd-rgw-bucket-form&#x27;,
+  templateUrl: &#x27;./rgw-bucket-form.component.html&#x27;,
+  styleUrls: [&#x27;./rgw-bucket-form.component.scss&#x27;]
+})
+export class RgwBucketFormComponent implements OnInit {
+  bucketForm: CdFormGroup;
+  editing &#x3D; false;
+  error &#x3D; false;
+  loading &#x3D; false;
+  owners &#x3D; null;
+  action: string;
+  resource: string;
+
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private formBuilder: CdFormBuilder,
+    private rgwBucketService: RgwBucketService,
+    private rgwUserService: RgwUserService,
+    private notificationService: NotificationService,
+    private i18n: I18n,
+    public actionLabels: ActionLabelsI18n
+  ) {
+    this.editing &#x3D; this.router.url.startsWith(&#x60;/rgw/bucket/${URLVerbs.EDIT}&#x60;);
+    this.action &#x3D; this.editing ? this.actionLabels.EDIT : this.actionLabels.CREATE;
+    this.resource &#x3D; this.i18n(&#x27;bucket&#x27;);
+    this.createForm();
+  }
+
+  createForm() {
+    this.bucketForm &#x3D; this.formBuilder.group({
+      id: [null],
+      bid: [null, [Validators.required], [this.bucketNameValidator()]],
+      owner: [null, [Validators.required]]
+    });
+  }
+
+  ngOnInit() {
+    // Get the list of possible owners.
+    this.rgwUserService.enumerate().subscribe((resp: string[]) &#x3D;&gt; {
+      this.owners &#x3D; resp.sort();
+    });
+
+    // Process route parameters.
+    this.route.params.subscribe(
+      (params: { bid: string }) &#x3D;&gt; {
+        if (!params.hasOwnProperty(&#x27;bid&#x27;)) {
+          return;
+        }
+        const bid &#x3D; decodeURIComponent(params.bid);
+        this.loading &#x3D; true;
+
+        this.rgwBucketService.get(bid).subscribe((resp: object) &#x3D;&gt; {
+          this.loading &#x3D; false;
+          // Get the default values.
+          const defaults &#x3D; _.clone(this.bucketForm.value);
+          // Extract the values displayed in the form.
+          let value &#x3D; _.pick(resp, _.keys(this.bucketForm.value));
+          // Append default values.
+          value &#x3D; _.merge(defaults, value);
+          // Update the form.
+          this.bucketForm.setValue(value);
+        });
+      },
+      (error) &#x3D;&gt; {
+        this.error &#x3D; error;
+      }
+    );
+  }
+
+  goToListView() {
+    this.router.navigate([&#x27;/rgw/bucket&#x27;]);
+  }
+
+  submit() {
+    // Exit immediately if the form isn&#x27;t dirty.
+    if (this.bucketForm.pristine) {
+      this.goToListView();
+      return;
+    }
+    const bidCtl &#x3D; this.bucketForm.get(&#x27;bid&#x27;);
+    const ownerCtl &#x3D; this.bucketForm.get(&#x27;owner&#x27;);
+    if (this.editing) {
+      // Edit
+      const idCtl &#x3D; this.bucketForm.get(&#x27;id&#x27;);
+      this.rgwBucketService.update(bidCtl.value, idCtl.value, ownerCtl.value).subscribe(
+        () &#x3D;&gt; {
+          this.notificationService.show(
+            NotificationType.success,
+            this.i18n(&#x27;Updated Object Gateway bucket &quot;{{bid}}&quot;&#x27;, { bid: bidCtl.value })
+          );
+          this.goToListView();
+        },
+        () &#x3D;&gt; {
+          // Reset the &#x27;Submit&#x27; button.
+          this.bucketForm.setErrors({ cdSubmitButton: true });
+        }
+      );
+    } else {
+      // Add
+      this.rgwBucketService.create(bidCtl.value, ownerCtl.value).subscribe(
+        () &#x3D;&gt; {
+          this.notificationService.show(
+            NotificationType.success,
+            this.i18n(&#x27;Created Object Gateway bucket &quot;{{bid}}&quot;&#x27;, { bid: bidCtl.value })
+          );
+          this.goToListView();
+        },
+        () &#x3D;&gt; {
+          // Reset the &#x27;Submit&#x27; button.
+          this.bucketForm.setErrors({ cdSubmitButton: true });
+        }
+      );
+    }
+  }
+
+  bucketNameValidator(): AsyncValidatorFn {
+    const rgwBucketService &#x3D; this.rgwBucketService;
+    return (control: AbstractControl): Promise&lt;ValidationErrors | null&gt; &#x3D;&gt; {
+      return new Promise((resolve) &#x3D;&gt; {
+        // Exit immediately if user has not interacted with the control yet
+        // or the control value is empty.
+        if (control.pristine || control.value &#x3D;&#x3D;&#x3D; &#x27;&#x27;) {
+          resolve(null);
+          return;
+        }
+        // Validate the bucket name.
+        const nameRe &#x3D; /^[0-9A-Za-z][\w-\.]{2,254}$/;
+        if (!nameRe.test(control.value)) {
+          resolve({ bucketNameInvalid: true });
+          return;
+        }
+        // Does any bucket with the given name already exist?
+        rgwBucketService.exists(control.value).subscribe((resp: boolean) &#x3D;&gt; {
+          if (!resp) {
+            resolve(null);
+          } else {
+            resolve({ bucketNameExists: true });
+          }
+        });
+      });
+    };
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;cd-loading-panel *ngIf&#x3D;&quot;editing &amp;&amp; loading &amp;&amp; !error&quot;
+                  i18n&gt;Loading bucket data...&lt;/cd-loading-panel&gt;
+&lt;cd-error-panel *ngIf&#x3D;&quot;editing &amp;&amp; error&quot;
+                (backAction)&#x3D;&quot;goToListView()&quot;
+                i18n&gt;The bucket data could not be loaded.&lt;/cd-error-panel&gt;
+
+&lt;div class&#x3D;&quot;col-sm-12 col-lg-6&quot;
+     *ngIf&#x3D;&quot;!loading &amp;&amp; !error&quot;&gt;
+  &lt;form name&#x3D;&quot;bucketForm&quot;
+        class&#x3D;&quot;form-horizontal&quot;
+        #frm&#x3D;&quot;ngForm&quot;
+        [formGroup]&#x3D;&quot;bucketForm&quot;
+        novalidate&gt;
+    &lt;div class&#x3D;&quot;panel panel-default&quot;&gt;
+      &lt;div class&#x3D;&quot;panel-heading&quot;&gt;
+        &lt;h3 i18n&#x3D;&quot;form title|Example: Create Pool@@formTitle&quot;
+            class&#x3D;&quot;panel-title&quot;&gt;{{ action | titlecase }} {{ resource | upperFirst }}&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;panel-body&quot;&gt;
+
+        &lt;!-- Id --&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;
+             *ngIf&#x3D;&quot;editing&quot;&gt;
+          &lt;label i18n
+                 class&#x3D;&quot;col-sm-3 control-label&quot;
+                 for&#x3D;&quot;id&quot;&gt;Id&lt;/label&gt;
+          &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+            &lt;input id&#x3D;&quot;id&quot;
+                   name&#x3D;&quot;id&quot;
+                   class&#x3D;&quot;form-control&quot;
+                   type&#x3D;&quot;text&quot;
+                   formControlName&#x3D;&quot;id&quot;
+                   readonly&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Name --&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;
+             [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: bucketForm.showError(&#x27;bid&#x27;, frm)}&quot;&gt;
+          &lt;label class&#x3D;&quot;control-label col-sm-3&quot;
+                 for&#x3D;&quot;bid&quot;&gt;
+            &lt;ng-container i18n&gt;Name&lt;/ng-container&gt;
+            &lt;span class&#x3D;&quot;required&quot;
+                  *ngIf&#x3D;&quot;!editing&quot;&gt;&lt;/span&gt;
+          &lt;/label&gt;
+          &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+            &lt;input id&#x3D;&quot;bid&quot;
+                   name&#x3D;&quot;bid&quot;
+                   class&#x3D;&quot;form-control&quot;
+                   type&#x3D;&quot;text&quot;
+                   i18n-placeholder
+                   placeholder&#x3D;&quot;Name...&quot;
+                   formControlName&#x3D;&quot;bid&quot;
+                   [readonly]&#x3D;&quot;editing&quot;
+                   autofocus&gt;
+            &lt;span class&#x3D;&quot;help-block&quot;
+                  *ngIf&#x3D;&quot;bucketForm.showError(&#x27;bid&#x27;, frm, &#x27;required&#x27;)&quot;
+                  i18n&gt;This field is required.&lt;/span&gt;
+            &lt;span class&#x3D;&quot;help-block&quot;
+                  *ngIf&#x3D;&quot;bucketForm.showError(&#x27;bid&#x27;, frm, &#x27;bucketNameInvalid&#x27;)&quot;
+                  i18n&gt;The value is not valid.&lt;/span&gt;
+            &lt;span class&#x3D;&quot;help-block&quot;
+                  *ngIf&#x3D;&quot;bucketForm.showError(&#x27;bid&#x27;, frm, &#x27;bucketNameExists&#x27;)&quot;
+                  i18n&gt;The chosen name is already in use.&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Owner --&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;
+             [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: bucketForm.showError(&#x27;owner&#x27;, frm)}&quot;&gt;
+          &lt;label class&#x3D;&quot;control-label col-sm-3&quot;
+                 for&#x3D;&quot;owner&quot;&gt;
+            &lt;ng-container i18n&gt;Owner&lt;/ng-container&gt;
+            &lt;span class&#x3D;&quot;required&quot;&gt;&lt;/span&gt;
+          &lt;/label&gt;
+          &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+            &lt;select id&#x3D;&quot;owner&quot;
+                    name&#x3D;&quot;owner&quot;
+                    class&#x3D;&quot;form-control&quot;
+                    formControlName&#x3D;&quot;owner&quot;&gt;
+              &lt;option i18n
+                      *ngIf&#x3D;&quot;owners &#x3D;&#x3D;&#x3D; null&quot;
+                      [ngValue]&#x3D;&quot;null&quot;&gt;Loading...&lt;/option&gt;
+              &lt;option i18n
+                      *ngIf&#x3D;&quot;owners !&#x3D;&#x3D; null&quot;
+                      [ngValue]&#x3D;&quot;null&quot;&gt;-- Select a user --&lt;/option&gt;
+              &lt;option *ngFor&#x3D;&quot;let owner of owners&quot;
+                      [value]&#x3D;&quot;owner&quot;&gt;{{ owner }}&lt;/option&gt;
+            &lt;/select&gt;
+            &lt;span class&#x3D;&quot;help-block&quot;
+                  *ngIf&#x3D;&quot;bucketForm.showError(&#x27;owner&#x27;, frm, &#x27;required&#x27;)&quot;
+                  i18n&gt;This field is required.&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;panel-footer&quot;&gt;
+        &lt;div class&#x3D;&quot;button-group text-right&quot;&gt;
+          &lt;cd-submit-button
+            (submitAction)&#x3D;&quot;submit()&quot; [form]&#x3D;&quot;bucketForm&quot;
+            i18n&#x3D;&quot;form action button|Example: Create Pool@@formActionButton&quot;
+            type&#x3D;&quot;button&quot;&gt;{{ action | titlecase }} {{ resource | upperFirst }}&lt;/cd-submit-button&gt;
+          &lt;cd-back-button&gt;&lt;/cd-back-button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./rgw-bucket-form.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><cd-loading-panel *ngIf="editing && loading && !error"                  i18n>Loading bucket data...</cd-loading-panel><cd-error-panel *ngIf="editing && error"                (backAction)="goToListView()"                i18n>The bucket data could not be loaded.</cd-error-panel><div class="col-sm-12 col-lg-6"     *ngIf="!loading && !error">  <form name="bucketForm"        class="form-horizontal"        #frm="ngForm"        [formGroup]="bucketForm"        novalidate>    <div class="panel panel-default">      <div class="panel-heading">        <h3 i18n="form title|Example: Create Pool@@formTitle"            class="panel-title">{{ action | titlecase }} {{ resource | upperFirst }}</h3>      </div>      <div class="panel-body">        <!-- Id -->        <div class="form-group"             *ngIf="editing">          <label i18n                 class="col-sm-3 control-label"                 for="id">Id</label>          <div class="col-sm-9">            <input id="id"                   name="id"                   class="form-control"                   type="text"                   formControlName="id"                   readonly>          </div>        </div>        <!-- Name -->        <div class="form-group"             [ngClass]="{\'has-error\': bucketForm.showError(\'bid\', frm)}">          <label class="control-label col-sm-3"                 for="bid">            <ng-container i18n>Name</ng-container>            <span class="required"                  *ngIf="!editing"></span>          </label>          <div class="col-sm-9">            <input id="bid"                   name="bid"                   class="form-control"                   type="text"                   i18n-placeholder                   placeholder="Name..."                   formControlName="bid"                   [readonly]="editing"                   autofocus>            <span class="help-block"                  *ngIf="bucketForm.showError(\'bid\', frm, \'required\')"                  i18n>This field is required.</span>            <span class="help-block"                  *ngIf="bucketForm.showError(\'bid\', frm, \'bucketNameInvalid\')"                  i18n>The value is not valid.</span>            <span class="help-block"                  *ngIf="bucketForm.showError(\'bid\', frm, \'bucketNameExists\')"                  i18n>The chosen name is already in use.</span>          </div>        </div>        <!-- Owner -->        <div class="form-group"             [ngClass]="{\'has-error\': bucketForm.showError(\'owner\', frm)}">          <label class="control-label col-sm-3"                 for="owner">            <ng-container i18n>Owner</ng-container>            <span class="required"></span>          </label>          <div class="col-sm-9">            <select id="owner"                    name="owner"                    class="form-control"                    formControlName="owner">              <option i18n                      *ngIf="owners === null"                      [ngValue]="null">Loading...</option>              <option i18n                      *ngIf="owners !== null"                      [ngValue]="null">-- Select a user --</option>              <option *ngFor="let owner of owners"                      [value]="owner">{{ owner }}</option>            </select>            <span class="help-block"                  *ngIf="bucketForm.showError(\'owner\', frm, \'required\')"                  i18n>This field is required.</span>          </div>        </div>      </div>      <div class="panel-footer">        <div class="button-group text-right">          <cd-submit-button            (submitAction)="submit()" [form]="bucketForm"            i18n="form action button|Example: Create Pool@@formActionButton"            type="button">{{ action | titlecase }} {{ resource | upperFirst }}</cd-submit-button>          <cd-back-button></cd-back-button>        </div>      </div>    </div>  </form></div></div>'
+    var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'cd-about'},{'name': 'AdministrationComponent', 'selector': 'cd-administration'},{'name': 'AppComponent', 'selector': 'cd-root'},{'name': 'BackButtonComponent', 'selector': 'cd-back-button'},{'name': 'BreadcrumbsComponent', 'selector': 'cd-breadcrumbs'},{'name': 'CephfsChartComponent', 'selector': 'cd-cephfs-chart'},{'name': 'CephfsClientsComponent', 'selector': 'cd-cephfs-clients'},{'name': 'CephfsDetailComponent', 'selector': 'cd-cephfs-detail'},{'name': 'CephfsListComponent', 'selector': 'cd-cephfs-list'},{'name': 'ConfigurationComponent', 'selector': 'cd-configuration'},{'name': 'ConfigurationDetailsComponent', 'selector': 'cd-configuration-details'},{'name': 'ConfigurationFormComponent', 'selector': 'cd-configuration-form'},{'name': 'ConfirmationModalComponent', 'selector': 'cd-confirmation-modal'},{'name': 'CriticalConfirmationModalComponent', 'selector': 'cd-deletion-modal'},{'name': 'CrushmapComponent', 'selector': 'cd-crushmap'},{'name': 'DaemonListComponent', 'selector': 'cd-mirroring-daemons'},{'name': 'DashboardComponent', 'selector': 'cd-dashboard'},{'name': 'DashboardHelpComponent', 'selector': 'cd-dashboard-help'},{'name': 'ErasureCodeProfileFormComponent', 'selector': 'cd-erasure-code-profile-form'},{'name': 'ErrorPanelComponent', 'selector': 'cd-error-panel'},{'name': 'ForbiddenComponent', 'selector': 'cd-forbidden'},{'name': 'GrafanaComponent', 'selector': 'cd-grafana'},{'name': 'HealthComponent', 'selector': 'cd-health'},{'name': 'HealthPieComponent', 'selector': 'cd-health-pie'},{'name': 'HelperComponent', 'selector': 'cd-helper'},{'name': 'HostDetailsComponent', 'selector': 'cd-host-details'},{'name': 'HostsComponent', 'selector': 'cd-hosts'},{'name': 'IdentityComponent', 'selector': 'cd-identity'},{'name': 'ImageListComponent', 'selector': 'cd-mirroring-images'},{'name': 'InfoCardComponent', 'selector': 'cd-info-card'},{'name': 'InfoGroupComponent', 'selector': 'cd-info-group'},{'name': 'InfoPanelComponent', 'selector': 'cd-info-panel'},{'name': 'IscsiComponent', 'selector': 'cd-iscsi'},{'name': 'IscsiTabsComponent', 'selector': 'cd-iscsi-tabs'},{'name': 'IscsiTargetDetailsComponent', 'selector': 'cd-iscsi-target-details'},{'name': 'IscsiTargetDiscoveryModalComponent', 'selector': 'cd-iscsi-target-discovery-modal'},{'name': 'IscsiTargetFormComponent', 'selector': 'cd-iscsi-target-form'},{'name': 'IscsiTargetImageSettingsModalComponent', 'selector': 'cd-iscsi-target-image-settings-modal'},{'name': 'IscsiTargetIqnSettingsModalComponent', 'selector': 'cd-iscsi-target-iqn-settings-modal'},{'name': 'IscsiTargetListComponent', 'selector': 'cd-iscsi-target-list'},{'name': 'LanguageSelectorComponent', 'selector': 'cd-language-selector'},{'name': 'LoadingPanelComponent', 'selector': 'cd-loading-panel'},{'name': 'LoginComponent', 'selector': 'cd-login'},{'name': 'LogsComponent', 'selector': 'cd-logs'},{'name': 'MgrModuleDetailsComponent', 'selector': 'cd-mgr-module-details'},{'name': 'MgrModuleFormComponent', 'selector': 'cd-mgr-module-form'},{'name': 'MgrModuleListComponent', 'selector': 'cd-mgr-module-list'},{'name': 'ModalComponent', 'selector': 'cd-modal'},{'name': 'MonitorComponent', 'selector': 'cd-monitor'},{'name': 'NavigationComponent', 'selector': 'cd-navigation'},{'name': 'Nfs501Component', 'selector': 'cd-nfs-501'},{'name': 'NfsDetailsComponent', 'selector': 'cd-nfs-details'},{'name': 'NfsFormClientComponent', 'selector': 'cd-nfs-form-client'},{'name': 'NfsFormComponent', 'selector': 'cd-nfs-form'},{'name': 'NfsListComponent', 'selector': 'cd-nfs-list'},{'name': 'NotFoundComponent', 'selector': 'cd-not-found'},{'name': 'NotificationsComponent', 'selector': 'cd-notifications'},{'name': 'OsdDetailsComponent', 'selector': 'cd-osd-details'},{'name': 'OsdFlagsModalComponent', 'selector': 'cd-osd-flags-modal'},{'name': 'OsdListComponent', 'selector': 'cd-osd-list'},{'name': 'OsdPerformanceHistogramComponent', 'selector': 'cd-osd-performance-histogram'},{'name': 'OsdRecvSpeedModalComponent', 'selector': 'cd-osd-recv-speed-modal'},{'name': 'OsdReweightModalComponent', 'selector': 'cd-osd-reweight-modal'},{'name': 'OsdScrubModalComponent', 'selector': 'cd-osd-scrub-modal'},{'name': 'OverviewComponent', 'selector': 'cd-mirroring'},{'name': 'PerformanceCounterComponent', 'selector': 'cd-performance-counter'},{'name': 'PoolDetailsComponent', 'selector': 'cd-pool-details'},{'name': 'PoolEditModeModalComponent', 'selector': 'cd-pool-edit-mode-modal'},{'name': 'PoolEditPeerModalComponent', 'selector': 'cd-pool-edit-peer-modal'},{'name': 'PoolFormComponent', 'selector': 'cd-pool-form'},{'name': 'PoolListComponent', 'selector': 'cd-pool-list'},{'name': 'PoolListComponent', 'selector': 'cd-mirroring-pools'},{'name': 'PrometheusListComponent', 'selector': 'cd-prometheus-list'},{'name': 'RbdConfigurationFormComponent', 'selector': 'cd-rbd-configuration-form'},{'name': 'RbdConfigurationListComponent', 'selector': 'cd-rbd-configuration-table'},{'name': 'RbdDetailsComponent', 'selector': 'cd-rbd-details'},{'name': 'RbdFormComponent', 'selector': 'cd-rbd-form'},{'name': 'RbdImagesComponent', 'selector': 'cd-rbd-images'},{'name': 'RbdListComponent', 'selector': 'cd-rbd-list'},{'name': 'RbdSnapshotFormComponent', 'selector': 'cd-rbd-snapshot-form'},{'name': 'RbdSnapshotListComponent', 'selector': 'cd-rbd-snapshot-list'},{'name': 'RbdTrashListComponent', 'selector': 'cd-rbd-trash-list'},{'name': 'RbdTrashMoveModalComponent', 'selector': 'cd-rbd-trash-move-modal'},{'name': 'RbdTrashPurgeModalComponent', 'selector': 'cd-rbd-trash-purge-modal'},{'name': 'RbdTrashRestoreModalComponent', 'selector': 'cd-rbd-trash-restore-modal'},{'name': 'RefreshSelectorComponent', 'selector': 'cd-refresh-selector'},{'name': 'Rgw501Component', 'selector': 'cd-rgw-501'},{'name': 'RgwBucketDetailsComponent', 'selector': 'cd-rgw-bucket-details'},{'name': 'RgwBucketFormComponent', 'selector': 'cd-rgw-bucket-form'},{'name': 'RgwBucketListComponent', 'selector': 'cd-rgw-bucket-list'},{'name': 'RgwDaemonDetailsComponent', 'selector': 'cd-rgw-daemon-details'},{'name': 'RgwDaemonListComponent', 'selector': 'cd-rgw-daemon-list'},{'name': 'RgwUserCapabilityModalComponent', 'selector': 'cd-rgw-user-capability-modal'},{'name': 'RgwUserDetailsComponent', 'selector': 'cd-rgw-user-details'},{'name': 'RgwUserFormComponent', 'selector': 'cd-rgw-user-form'},{'name': 'RgwUserListComponent', 'selector': 'cd-rgw-user-list'},{'name': 'RgwUserS3KeyModalComponent', 'selector': 'cd-rgw-user-s3-key-modal'},{'name': 'RgwUserSubuserModalComponent', 'selector': 'cd-rgw-user-subuser-modal'},{'name': 'RgwUserSwiftKeyModalComponent', 'selector': 'cd-rgw-user-swift-key-modal'},{'name': 'RoleDetailsComponent', 'selector': 'cd-role-details'},{'name': 'RoleFormComponent', 'selector': 'cd-role-form'},{'name': 'RoleListComponent', 'selector': 'cd-role-list'},{'name': 'SelectBadgesComponent', 'selector': 'cd-select-badges'},{'name': 'SelectComponent', 'selector': 'cd-select'},{'name': 'SparklineComponent', 'selector': 'cd-sparkline'},{'name': 'SsoNotFoundComponent', 'selector': 'cd-sso-not-found'},{'name': 'SubmitButtonComponent', 'selector': 'cd-submit-button'},{'name': 'TableActionsComponent', 'selector': 'cd-table-actions'},{'name': 'TableComponent', 'selector': 'cd-table'},{'name': 'TableKeyValueComponent', 'selector': 'cd-table-key-value'},{'name': 'TablePerformanceCounterComponent', 'selector': 'cd-table-performance-counter'},{'name': 'TaskManagerComponent', 'selector': 'cd-task-manager'},{'name': 'UsageBarComponent', 'selector': 'cd-usage-bar'},{'name': 'UserFormComponent', 'selector': 'cd-user-form'},{'name': 'UserListComponent', 'selector': 'cd-user-list'},{'name': 'UserTabsComponent', 'selector': 'cd-user-tabs'},{'name': 'ViewCacheComponent', 'selector': 'cd-view-cache'},{'name': 'WarningPanelComponent', 'selector': 'cd-warning-panel'}];
+    var DIRECTIVES = [{'name': 'AutofocusDirective', 'selector': '[autofocus]'},{'name': 'Copy2ClipboardButtonDirective', 'selector': '[cdCopy2ClipboardButton]'},{'name': 'DimlessBinaryDirective', 'selector': '[cdDimlessBinary]'},{'name': 'DimlessBinaryPerSecondDirective', 'selector': '[cdDimlessBinaryPerSecond]'},{'name': 'IopsDirective', 'selector': '[cdIops]'},{'name': 'MillisecondsDirective', 'selector': '[cdMilliseconds]'},{'name': 'PasswordButtonDirective', 'selector': '[cdPasswordButton]'}];
+    var ACTUAL_COMPONENT = {'name': 'RgwBucketFormComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'RgwBucketFormComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
